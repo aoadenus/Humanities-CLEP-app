@@ -3,6 +3,7 @@
 .next/
 node_modules/
 .vercel/
+supabase/.temp/
 
 apps/web/.env.local
 apps/web/.env.production
