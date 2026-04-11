@@ -1,0 +1,60 @@
+Yes — and here is the clean distinction:
+
+## What counts as **official** for CLEP Humanities
+
+There is **no single official CLEP Humanities textbook** published by College Board. The official material is the **exam blueprint and practice material** from College Board: the Humanities exam page, the free **Humanities Resource Guide and Sample Questions**, and the paid **CLEP Humanities Examination Guide**. College Board also publishes a **suggested textbook list** for Humanities, but those books are **recommended resources**, not the official exam itself. ([CLEP][1])
+
+## What textbooks College Board officially recommends
+
+On the official College Board Humanities study-resources page, the suggested textbooks include:
+
+* **Fiero, *The Humanistic Tradition***
+* **Sayre, *The Humanities: Culture, Continuity, and Change, Vols. I and II***
+* plus Adams, Benton & DiYanni, Bishop, Cunningham, and Martin. ([CLEP][2])
+
+That means the books you already pulled — **Sayre** and **Fiero** — are actually the right direction. They are not “the official CLEP textbook,” but they are **officially recommended by College Board** as study resources for this exam. ([CLEP][2])
+
+## So the best source-material stack is this
+
+### Layer 1 — **Official College Board source**
+
+Use these as the non-negotiable foundation:
+
+* Humanities exam page
+* free **Humanities Resource Guide and Sample Questions**
+* paid **CLEP Humanities Examination Guide** if you want more official practice questions. ([CLEP][1])
+
+### Layer 2 — **Officially recommended textbooks**
+
+Use:
+
+* **Sayre** as your main course spine
+* **Fiero** as your support / alternate explanation source. ([CLEP][2])
+
+### Layer 3 — **Officially aligned free course support**
+
+College Board also points students toward study resources and free online course materials, and its CLEP/Modern States handout says Modern States offers CLEP-aligned courses with lectures, quizzes, and **free textbooks**. ([CLEP][3])
+
+## The blunt answer
+
+If you are asking, “What is the most official humanities source material I can use for this app?” the answer is:
+
+1. **College Board’s Humanities exam blueprint and sample-question resources**
+2. **College Board’s recommended textbooks list**
+3. **Your Sayre and Fiero books from that list** ([CLEP][1])
+
+## What I would lock in right now
+
+For your app, use:
+
+* **Official truth layer:** College Board Humanities exam page + free Resource Guide/Sample Questions
+* **Main textbook layer:** Sayre
+* **Support textbook layer:** Fiero. ([CLEP][1])
+
+That is the strongest “official + usable” setup you can get without pretending there is one secret CLEP textbook.
+
+Next, I can turn this into a **source hierarchy doc** for the repo: exactly which official College Board materials feed which app feature.
+
+[1]: https://clep.collegeboard.org/clep-exams/humanities?utm_source=chatgpt.com "Humanities Exam - CLEP - College Board"
+[2]: https://clep.collegeboard.org/prepare-for-an-exam/study-resources-by-exam/humanities?utm_source=chatgpt.com "Study Resources: Humanities - CLEP - College Board"
+[3]: https://clep.collegeboard.org/clep/pdf/information-test-takers-bulletin.pdf?utm_source=chatgpt.com "Information for Test Takers - CLEP - College Board"

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Movements Comparison</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,500&family=Josefin+Sans:wght@300;400;600;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0c0e14;
+    --card: #12151e;
+    --border: #232840;
+    --gold: #d4af6a;
+    --gold-dim: #6b5530;
+    --text: #ddd8cc;
+    --muted: #7a7a8a;
+    --accent: #c0c8f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Cormorant Garamond', serif;
+    min-height: 100vh;
+  }
+
+  /* Movement colors */
+  .c-renaissance { --mv: #e8b86d; --mvb: rgba(232,184,109,0.12); --mvline: rgba(232,184,109,0.5); }
+  .c-baroque      { --mv: #e07a5f; --mvb: rgba(224,122,95,0.12); --mvline: rgba(224,122,95,0.5); }
+  .c-romanticism  { --mv: #c77dff; --mvb: rgba(199,125,255,0.12); --mvline: rgba(199,125,255,0.5); }
+  .c-realism      { --mv: #8ecae6; --mvb: rgba(142,202,230,0.12); --mvline: rgba(142,202,230,0.5); }
+  .c-impressionism{ --mv: #a8d5ba; --mvb: rgba(168,213,186,0.12); --mvline: rgba(168,213,186,0.5); }
+  .c-cubism       { --mv: #f4a261; --mvb: rgba(244,162,97,0.12); --mvline: rgba(244,162,97,0.5); }
+  .c-surrealism   { --mv: #e63946; --mvb: rgba(230,57,70,0.12); --mvline: rgba(230,57,70,0.5); }
+  .c-absexp       { --mv: #06d6a0; --mvb: rgba(6,214,160,0.12); --mvline: rgba(6,214,160,0.5); }
+  .c-popart       { --mv: #f7b731; --mvb: rgba(247,183,49,0.12); --mvline: rgba(247,183,49,0.5); }
+
+  header {
+    text-align: center;
+    padding: 2.5rem 2rem 1.8rem;
+    background: linear-gradient(180deg, #0a0c14 0%, var(--bg) 100%);
+    position: relative;
+  }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+  }
+  .subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+  }
+  .divider {
+    width: 60px; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 1rem auto;
+  }
+
+  /* FILTER TABS */
+  .filters {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+  }
+  .filter-btn {
+    padding: 5px 14px;
+    border-radius: 2px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    color: var(--gold);
+    border-color: var(--gold-dim);
+    background: rgba(212,175,106,0.08);
+  }
+
+  /* TABLE */
+  .table-wrap { overflow-x: auto; padding: 2rem 1.5rem 3rem; }
+  table { width: 100%; border-collapse: separate; border-spacing: 0 8px; min-width: 900px; }
+  thead th {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 0 12px 8px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  thead th:first-child { width: 155px; }
+
+  .mv-row {
+    transition: all 0.2s;
+  }
+  .mv-row.hidden { display: none; }
+  .mv-row:hover td { filter: brightness(1.12); }
+
+  .mv-row td {
+    padding: 14px 14px;
+    background: var(--mvb);
+    border-top: 1px solid var(--mvline);
+    border-bottom: 1px solid var(--mvline);
+    vertical-align: top;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .mv-row td:first-child {
+    border-left: 3px solid var(--mv);
+    border-radius: 4px 0 0 4px;
+    padding-left: 16px;
+  }
+  .mv-row td:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .mv-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--mv);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .mv-dates {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.67rem;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 7px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 2px;
+    font-size: 0.76rem;
+    margin: 2px 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+  }
+
+  .artist-pill {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    margin: 2px 2px;
+    font-style: italic;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--mvline);
+    color: var(--mv);
+  }
+
+  .work-item {
+    font-size: 0.82rem;
+    color: var(--text);
+    font-style: italic;
+    display: block;
+    padding: 1px 0;
+  }
+  .work-item::before { content: '◆ '; font-size: 0.55rem; opacity: 0.6; }
+
+  .where-cell {
+    font-size: 0.84rem;
+    color: var(--text);
+    opacity: 0.85;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.2rem;
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-style: italic;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Art Movements Comparison Chart</h1>
+  <div class="divider"></div>
+  <div class="subtitle">Renaissance → Pop Art · Key Features · Dates · Signature Artists</div>
+</header>
+
+<div class="filters">
+  <button class="filter-btn active" onclick="filterAll(this)">All Movements</button>
+  <button class="filter-btn" onclick="filterBy(this,'renaissance')">Renaissance</button>
+  <button class="filter-btn" onclick="filterBy(this,'baroque')">Baroque</button>
+  <button class="filter-btn" onclick="filterBy(this,'romanticism')">Romanticism</button>
+  <button class="filter-btn" onclick="filterBy(this,'realism')">Realism</button>
+  <button class="filter-btn" onclick="filterBy(this,'impressionism')">Impressionism</button>
+  <button class="filter-btn" onclick="filterBy(this,'cubism')">Cubism</button>
+  <button class="filter-btn" onclick="filterBy(this,'surrealism')">Surrealism</button>
+  <button class="filter-btn" onclick="filterBy(this,'absexp')">Abst. Expressionism</button>
+  <button class="filter-btn" onclick="filterBy(this,'popart')">Pop Art</button>
+</div>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Movement</th>
+      <th>Key Features & Techniques</th>
+      <th>Philosophy / Big Idea</th>
+      <th>Signature Artists</th>
+      <th>Iconic Works</th>
+      <th>Where / Context</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr class="mv-row c-renaissance" data-mv="renaissance">
+      <td><div class="mv-name">Renaissance</div><div class="mv-dates">c. 1400–1600</div></td>
+      <td>
+        <span class="tag">Linear Perspective</span><span class="tag">Chiaroscuro</span><span class="tag">Sfumato</span><span class="tag">Contrapposto</span><span class="tag">Naturalism</span><span class="tag">Fresco</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">Humanism: man as the measure of all things. Rebirth of Classical Greco-Roman ideals. Science + art unified. Ideal beauty, rational order.</td>
+      <td>
+        <span class="artist-pill">Leonardo da Vinci</span><span class="artist-pill">Michelangelo</span><span class="artist-pill">Raphael</span><span class="artist-pill">Botticelli</span><span class="artist-pill">Donatello</span><span class="artist-pill">Titian</span>
+      </td>
+      <td>
+        <span class="work-item">Mona Lisa (Leonardo)</span>
+        <span class="work-item">Sistine Chapel ceiling (Michelangelo)</span>
+        <span class="work-item">School of Athens (Raphael)</span>
+        <span class="work-item">Birth of Venus (Botticelli)</span>
+      </td>
+      <td class="where-cell">Florence, then Rome & Venice · Italy · Medici patronage</td>
+    </tr>
+
+    <tr class="mv-row c-baroque" data-mv="baroque">
+      <td><div class="mv-name">Baroque</div><div class="mv-dates">c. 1600–1750</div></td>
+      <td>
+        <span class="tag">Dramatic Light</span><span class="tag">Chiaroscuro / Tenebrism</span><span class="tag">Movement</span><span class="tag">Theatricality</span><span class="tag">Rich Color</span><span class="tag">Elaborate Detail</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">Counter-Reformation: Church uses art to awe and convert. Emotion and grandeur over rational calm. Life is dramatic, unpredictable.</td>
+      <td>
+        <span class="artist-pill">Caravaggio</span><span class="artist-pill">Rembrandt</span><span class="artist-pill">Vermeer</span><span class="artist-pill">Rubens</span><span class="artist-pill">Bernini</span><span class="artist-pill">Velázquez</span>
+      </td>
+      <td>
+        <span class="work-item">The Calling of Saint Matthew (Caravaggio)</span>
+        <span class="work-item">Night Watch (Rembrandt)</span>
+        <span class="work-item">Girl with a Pearl Earring (Vermeer)</span>
+        <span class="work-item">Ecstasy of Saint Teresa (Bernini)</span>
+      </td>
+      <td class="where-cell">Italy, Flanders, Holland, Spain · Catholic Church & royal patronage</td>
+    </tr>
+
+    <tr class="mv-row c-romanticism" data-mv="romanticism">
+      <td><div class="mv-name">Romanticism</div><div class="mv-dates">c. 1800–1860</div></td>
+      <td>
+        <span class="tag">Emotion over Reason</span><span class="tag">Sublime Nature</span><span class="tag">Turbulent Composition</span><span class="tag">Nationalism</span><span class="tag">Exotic Subjects</span><span class="tag">Loose Brushwork</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">Reaction against Enlightenment rationalism. Individual feeling, nature's power, the irrational, and the heroic self are supreme.</td>
+      <td>
+        <span class="artist-pill">Delacroix</span><span class="artist-pill">Goya</span><span class="artist-pill">Turner</span><span class="artist-pill">Constable</span><span class="artist-pill">Géricault</span><span class="artist-pill">Caspar Friedrich</span>
+      </td>
+      <td>
+        <span class="work-item">Liberty Leading the People (Delacroix)</span>
+        <span class="work-item">The Third of May (Goya)</span>
+        <span class="work-item">The Fighting Temeraire (Turner)</span>
+        <span class="work-item">Wanderer Above the Sea of Fog (Friedrich)</span>
+      </td>
+      <td class="where-cell">France, Germany, England · Post-French Revolution & Industrial era</td>
+    </tr>
+
+    <tr class="mv-row c-realism" data-mv="realism">
+      <td><div class="mv-name">Realism</div><div class="mv-dates">c. 1848–1900</div></td>
+      <td>
+        <span class="tag">Ordinary Subjects</span><span class="tag">Working Class</span><span class="tag">No Idealization</span><span class="tag">Documentary Gaze</span><span class="tag">Muted Palette</span><span class="tag">Social Critique</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">Art should depict everyday life and social conditions truthfully, not glorify mythology or nobility. Aligned with socialism and photography.</td>
+      <td>
+        <span class="artist-pill">Courbet</span><span class="artist-pill">Millet</span><span class="artist-pill">Daumier</span><span class="artist-pill">Eakins</span><span class="artist-pill">Winslow Homer</span>
+      </td>
+      <td>
+        <span class="work-item">The Stone Breakers (Courbet)</span>
+        <span class="work-item">The Gleaners (Millet)</span>
+        <span class="work-item">A Burial at Ornans (Courbet)</span>
+      </td>
+      <td class="where-cell">France, USA · Revolution of 1848 · Rise of photography</td>
+    </tr>
+
+    <tr class="mv-row c-impressionism" data-mv="impressionism">
+      <td><div class="mv-name">Impressionism</div><div class="mv-dates">c. 1860–1900</div></td>
+      <td>
+        <span class="tag">Broken Brushwork</span><span class="tag">Optical Color Mixing</span><span class="tag">En Plein Air</span><span class="tag">Capturing Light</span><span class="tag">Fleeting Moment</span><span class="tag">Loose Form</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">Capture the ephemeral impression of light and atmosphere, not a finished "academic" image. The eye sees patches of color, not outlines.</td>
+      <td>
+        <span class="artist-pill">Monet</span><span class="artist-pill">Renoir</span><span class="artist-pill">Degas</span><span class="artist-pill">Pissarro</span><span class="artist-pill">Sisley</span><span class="artist-pill">Morisot</span>
+      </td>
+      <td>
+        <span class="work-item">Water Lilies series (Monet)</span>
+        <span class="work-item">Impression, Sunrise (Monet — named the movement)</span>
+        <span class="work-item">Luncheon of the Boating Party (Renoir)</span>
+        <span class="work-item">The Ballet Class (Degas)</span>
+      </td>
+      <td class="where-cell">Paris, France · Rejected by the Académie des Beaux-Arts</td>
+    </tr>
+
+    <tr class="mv-row c-cubism" data-mv="cubism">
+      <td><div class="mv-name">Cubism</div><div class="mv-dates">c. 1907–1920s</div></td>
+      <td>
+        <span class="tag">Multiple Viewpoints</span><span class="tag">Fragmented Form</span><span class="tag">Geometric Planes</span><span class="tag">Monochromatic Palette</span><span class="tag">Collage</span><span class="tag">Simultaneity</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">Reject single-point perspective. Show all sides of an object simultaneously. Influenced by Cézanne and African masks. Analytical vs. Synthetic phases.</td>
+      <td>
+        <span class="artist-pill">Picasso</span><span class="artist-pill">Braque</span><span class="artist-pill">Léger</span><span class="artist-pill">Juan Gris</span>
+      </td>
+      <td>
+        <span class="work-item">Les Demoiselles d'Avignon (Picasso, 1907)</span>
+        <span class="work-item">Guernica (Picasso, 1937)</span>
+        <span class="work-item">Violin and Candlestick (Braque)</span>
+      </td>
+      <td class="where-cell">Paris · Pre-WWI avant-garde · Montmartre studios</td>
+    </tr>
+
+    <tr class="mv-row c-surrealism" data-mv="surrealism">
+      <td><div class="mv-name">Surrealism</div><div class="mv-dates">c. 1924–1940s</div></td>
+      <td>
+        <span class="tag">Dream Imagery</span><span class="tag">Freudian Unconscious</span><span class="tag">Automatism</span><span class="tag">Irrational Juxtaposition</span><span class="tag">Hyperreal Technique</span><span class="tag">Chance</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">Tap the irrational unconscious mind. Art should bypass rational censorship to reveal primal truths. Two methods: dreamlike realism vs. automatic writing/drawing.</td>
+      <td>
+        <span class="artist-pill">Dalí</span><span class="artist-pill">Magritte</span><span class="artist-pill">Ernst</span><span class="artist-pill">Miró</span><span class="artist-pill">Kahlo</span><span class="artist-pill">de Chirico</span>
+      </td>
+      <td>
+        <span class="work-item">The Persistence of Memory (Dalí)</span>
+        <span class="work-item">The Treachery of Images (Magritte)</span>
+        <span class="work-item">The Two Fridas (Kahlo)</span>
+      </td>
+      <td class="where-cell">Paris, inter-war Europe · Founded by André Breton · Post-WWI trauma</td>
+    </tr>
+
+    <tr class="mv-row c-absexp" data-mv="absexp">
+      <td><div class="mv-name">Abstract Expressionism</div><div class="mv-dates">c. 1940s–1950s</div></td>
+      <td>
+        <span class="tag">Gestural Brushwork</span><span class="tag">Large Scale</span><span class="tag">Pure Emotion</span><span class="tag">No Figuration</span><span class="tag">Action Painting</span><span class="tag">Color Field</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">The act of painting IS the art. Raw emotion and the unconscious expressed directly. Two camps: Action Painters (Pollock) vs. Color Field (Rothko).</td>
+      <td>
+        <span class="artist-pill">Pollock</span><span class="artist-pill">de Kooning</span><span class="artist-pill">Rothko</span><span class="artist-pill">Kline</span><span class="artist-pill">Newman</span><span class="artist-pill">Frankenthaler</span>
+      </td>
+      <td>
+        <span class="work-item">Number 31 / Drip Paintings (Pollock)</span>
+        <span class="work-item">Orange and Yellow (Rothko)</span>
+        <span class="work-item">Woman I (de Kooning)</span>
+      </td>
+      <td class="where-cell">New York City · Post-WWII · CIA Cold War cultural export</td>
+    </tr>
+
+    <tr class="mv-row c-popart" data-mv="popart">
+      <td><div class="mv-name">Pop Art</div><div class="mv-dates">c. 1950s–1970s</div></td>
+      <td>
+        <span class="tag">Mass Media Imagery</span><span class="tag">Bold Color</span><span class="tag">Flat Design</span><span class="tag">Repetition</span><span class="tag">Consumer Culture</span><span class="tag">Irony</span>
+      </td>
+      <td style="font-style:italic;opacity:0.9">Embrace (or critique?) consumer culture and mass media. Blurs high art/low art distinction. Advertising, comics, celebrity as subject matter. Silk-screen, photography.</td>
+      <td>
+        <span class="artist-pill">Warhol</span><span class="artist-pill">Lichtenstein</span><span class="artist-pill">Jasper Johns</span><span class="artist-pill">Rauschenberg</span><span class="artist-pill">Hockney</span><span class="artist-pill">Hamilton</span>
+      </td>
+      <td>
+        <span class="work-item">Campbell's Soup Cans (Warhol)</span>
+        <span class="work-item">Marilyn Diptych (Warhol)</span>
+        <span class="work-item">Whaam! (Lichtenstein)</span>
+        <span class="work-item">Flag (Jasper Johns)</span>
+      </td>
+      <td class="where-cell">New York & London · Post-war affluence · TV age · Reacting against Abstract Expressionism</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<footer>CLEP Humanities Prep · Click filter buttons to isolate a movement · Hover rows for highlight</footer>
+
+<script>
+  function filterAll(btn) {
+    document.querySelectorAll('.mv-row').forEach(r => r.classList.remove('hidden'));
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  function filterBy(btn, mv) {
+    document.querySelectorAll('.mv-row').forEach(r => {
+      r.classList.toggle('hidden', r.dataset.mv !== mv);
+    });
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>

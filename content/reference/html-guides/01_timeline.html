@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humanities Master Timeline</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0b08;
+    --parchment: #1a1610;
+    --gold: #c9a84c;
+    --gold-light: #e8c96a;
+    --gold-dim: #7a6228;
+    --art: #c96a4c;
+    --lit: #4c8ac9;
+    --mus: #6ac97a;
+    --border: #2e2818;
+    --text: #e8dfc8;
+    --muted: #8a7d5a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Crimson Pro', serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  header {
+    text-align: center;
+    padding: 2.5rem 2rem 1.5rem;
+    border-bottom: 1px solid var(--gold-dim);
+    background: linear-gradient(180deg, #1a1408 0%, transparent 100%);
+    position: relative;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 10%; right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    color: var(--gold-light);
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+  }
+  .subtitle {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    margin-top: 0.4rem;
+  }
+  .legend {
+    display: flex; gap: 1.5rem; justify-content: center;
+    padding: 1rem 2rem;
+    background: var(--parchment);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .leg { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .art-dot { background: var(--art); }
+  .lit-dot { background: var(--lit); }
+  .mus-dot { background: var(--mus); }
+
+  .timeline-wrap {
+    overflow-x: auto;
+    padding: 2rem 1rem 3rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .timeline {
+    display: grid;
+    grid-template-columns: 120px repeat(22, minmax(130px, 1fr));
+    grid-template-rows: 40px repeat(3, auto) 40px;
+    min-width: 1100px;
+    gap: 0;
+    position: relative;
+  }
+
+  .era-header {
+    grid-row: 1;
+    background: linear-gradient(90deg, #2a1f0a, #1a1408);
+    border-top: 2px solid var(--gold-dim);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 0.7rem;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    padding: 0 4px;
+    text-align: center;
+  }
+  .era-header.classical { grid-column: 2 / span 4; }
+  .era-header.medieval  { grid-column: 6 / span 2; }
+  .era-header.renaissance { grid-column: 8 / span 2; }
+  .era-header.baroque   { grid-column: 10 / span 2; }
+  .era-header.enlighten { grid-column: 12 / span 2; }
+  .era-header.romantic  { grid-column: 14 / span 2; }
+  .era-header.modern    { grid-column: 16 / span 4; }
+  .era-header.contemp   { grid-column: 20 / span 4; }
+
+  .row-label {
+    grid-column: 1;
+    display: flex; align-items: center; justify-content: flex-end;
+    padding-right: 12px;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    border-right: 1px solid var(--border);
+  }
+  .row-label.art  { grid-row: 2; color: var(--art); }
+  .row-label.lit  { grid-row: 3; color: var(--lit); }
+  .row-label.mus  { grid-row: 4; color: var(--mus); }
+
+  .century-label {
+    grid-row: 5;
+    font-size: 0.68rem;
+    color: var(--muted);
+    text-align: center;
+    padding-top: 6px;
+    border-top: 1px solid var(--border);
+    font-style: italic;
+  }
+
+  .block {
+    margin: 4px 2px;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    position: relative;
+    cursor: default;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+  .block strong { display: block; font-size: 0.78rem; font-weight: 600; }
+  .block em { font-size: 0.68rem; opacity: 0.75; }
+
+  .art-block {
+    grid-row: 2;
+    background: linear-gradient(135deg, rgba(201,106,76,0.25), rgba(201,106,76,0.12));
+    border: 1px solid rgba(201,106,76,0.45);
+    color: #f0c0b0;
+  }
+  .lit-block {
+    grid-row: 3;
+    background: linear-gradient(135deg, rgba(76,138,201,0.25), rgba(76,138,201,0.12));
+    border: 1px solid rgba(76,138,201,0.45);
+    color: #b0ccf0;
+  }
+  .mus-block {
+    grid-row: 4;
+    background: linear-gradient(135deg, rgba(106,201,122,0.25), rgba(106,201,122,0.12));
+    border: 1px solid rgba(106,201,122,0.45);
+    color: #b0f0bc;
+  }
+
+  .century-grid { grid-column: 1; grid-row: 5; }
+
+  /* Tooltip */
+  .block[data-tip]:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%; transform: translateX(-50%);
+    background: #1e1a10;
+    border: 1px solid var(--gold-dim);
+    color: var(--text);
+    font-size: 0.72rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 100;
+    max-width: 240px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .corner-rule {
+    position: absolute;
+    font-size: 1.2rem;
+    color: var(--gold-dim);
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.2rem;
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-style: italic;
+    border-top: 1px solid var(--border);
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Master Humanities Timeline</h1>
+  <div class="subtitle">Art · Literature · Music — Classical Antiquity to the 21st Century</div>
+</header>
+
+<div class="legend">
+  <div class="leg"><div class="dot art-dot"></div> Visual Art & Architecture</div>
+  <div class="leg"><div class="dot lit-dot"></div> Literature & Philosophy</div>
+  <div class="leg"><div class="dot mus-dot"></div> Music</div>
+  <div class="leg" style="color:var(--muted);font-style:italic">Hover any block for key names</div>
+</div>
+
+<div class="timeline-wrap">
+<div class="timeline">
+
+  <!-- ERA HEADERS -->
+  <div class="era-header" style="grid-column:1; background:none; border:none;"></div>
+  <div class="era-header classical">Classical Antiquity<br>800 BCE – 500 CE</div>
+  <div class="era-header medieval">Medieval<br>500–1400</div>
+  <div class="era-header renaissance">Renaissance<br>1400–1600</div>
+  <div class="era-header baroque">Baroque<br>1600–1750</div>
+  <div class="era-header enlighten">Enlightenment<br>1700–1800</div>
+  <div class="era-header romantic">Romantic<br>1800–1900</div>
+  <div class="era-header modern">Modernism<br>1900–1970</div>
+  <div class="era-header contemp">Postmodern / Contemporary<br>1960–Present</div>
+
+  <!-- ROW LABELS -->
+  <div class="row-label art">ART</div>
+  <div class="row-label lit">LIT</div>
+  <div class="row-label mus">MUSIC</div>
+
+  <!-- === ART ROW === -->
+  <div class="block art-block" style="grid-column:2/span 4" data-tip="Greek Orders (Doric, Ionic, Corinthian) · Parthenon · Roman frescoes · Colosseum · Mosaics">
+    <strong>Classical Greek & Roman</strong><em>c.800 BCE – 400 CE</em>
+  </div>
+  <div class="block art-block" style="grid-column:6/span 2" data-tip="Byzantine icons · Illuminated manuscripts · Romanesque & Gothic cathedrals · Stained glass">
+    <strong>Byzantine / Medieval</strong><em>500–1400</em>
+  </div>
+  <div class="block art-block" style="grid-column:8/span 2" data-tip="Botticelli · Leonardo · Michelangelo · Raphael · Linear perspective · Humanism · Sfumato">
+    <strong>Renaissance</strong><em>1400–1600</em>
+  </div>
+  <div class="block art-block" style="grid-column:10/span 2" data-tip="Caravaggio · Rembrandt · Bernini · Rubens · Chiaroscuro · Drama · Theatricality">
+    <strong>Baroque</strong><em>1600–1750</em>
+  </div>
+  <div class="block art-block" style="grid-column:12/span 2" data-tip="Rococo (Watteau, Fragonard) · Neoclassicism (David) · Reason, clarity, order · Grand Tour">
+    <strong>Rococo / Neoclassical</strong><em>1700–1800</em>
+  </div>
+  <div class="block art-block" style="grid-column:14/span 2" data-tip="Delacroix · Goya · Turner · Constable · Emotion over reason · Sublime nature · Nationalism">
+    <strong>Romanticism</strong><em>1800–1860</em>
+  </div>
+  <div class="block art-block" style="grid-column:15/span 2" data-tip="Courbet · Millet · Social realism · Ordinary subjects · Photography influence">
+    <strong>Realism</strong><em>1848–1900</em>
+  </div>
+  <div class="block art-block" style="grid-column:16/span 2" data-tip="Monet · Renoir · Degas · Pissarro · Light effects · Broken brushwork · En plein air">
+    <strong>Impressionism</strong><em>1860–1900</em>
+  </div>
+  <div class="block art-block" style="grid-column:17/span 2" data-tip="Cézanne · Van Gogh · Gauguin · Seurat · Post-Impressionism bridges to Modernism">
+    <strong>Post-Impressionism</strong><em>1886–1905</em>
+  </div>
+  <div class="block art-block" style="grid-column:18" data-tip="Picasso · Braque · Multiple perspectives simultaneously · Fragmented form">
+    <strong>Cubism</strong><em>1907</em>
+  </div>
+  <div class="block art-block" style="grid-column:19" data-tip="Dalí · Magritte · Ernst · Freudian unconscious · Dreams & irrationality">
+    <strong>Surrealism</strong><em>1924</em>
+  </div>
+  <div class="block art-block" style="grid-column:20/span 2" data-tip="Pollock · De Kooning · Rothko · Gestural painting · Emotion · New York School · Action painting">
+    <strong>Abstract Expressionism</strong><em>1940s–50s</em>
+  </div>
+  <div class="block art-block" style="grid-column:21" data-tip="Warhol · Lichtenstein · Consumer culture critique · Mass media imagery">
+    <strong>Pop Art</strong><em>1950s–60s</em>
+  </div>
+  <div class="block art-block" style="grid-column:22/span 2" data-tip="Conceptual · Postmodernism · Street art · Digital art · Installation · Globalism">
+    <strong>Contemporary</strong><em>1970–Present</em>
+  </div>
+
+  <!-- === LITERATURE ROW === -->
+  <div class="block lit-block" style="grid-column:2/span 4" data-tip="Homer (Iliad, Odyssey) · Sappho · Sophocles · Plato · Aristotle · Virgil (Aeneid) · Ovid · Epic poetry & drama">
+    <strong>Classical Epic & Drama</strong><em>800 BCE – 400 CE</em>
+  </div>
+  <div class="block lit-block" style="grid-column:6/span 2" data-tip="Beowulf · Dante (Divine Comedy) · Chaucer (Canterbury Tales) · Chivalric romances · Troubadour poetry">
+    <strong>Medieval Literature</strong><em>500–1400</em>
+  </div>
+  <div class="block lit-block" style="grid-column:8/span 2" data-tip="Petrarch · Erasmus · Machiavelli · More · Montaigne · Shakespeare (1564–1616) · Cervantes">
+    <strong>Renaissance Humanism</strong><em>1400–1600</em>
+  </div>
+  <div class="block lit-block" style="grid-column:10/span 2" data-tip="Milton (Paradise Lost) · Molière · Racine · Donne · Metaphysical poetry · Spanish Golden Age">
+    <strong>Baroque / Metaphysical</strong><em>1600–1700</em>
+  </div>
+  <div class="block lit-block" style="grid-column:12/span 2" data-tip="Voltaire · Rousseau · Swift · Defoe · Pope · Reason, satire, social critique · Novel emerges">
+    <strong>Enlightenment / Neoclassical</strong><em>1700–1800</em>
+  </div>
+  <div class="block lit-block" style="grid-column:14/span 2" data-tip="Wordsworth · Keats · Shelley · Byron · Goethe · Poe · Emotion, nature, individualism, Gothic">
+    <strong>Romanticism</strong><em>1800–1850</em>
+  </div>
+  <div class="block lit-block" style="grid-column:15/span 2" data-tip="Dickens · Tolstoy · Flaubert · Zola · Hardy · Social commentary · Detailed observation">
+    <strong>Realism / Naturalism</strong><em>1850–1900</em>
+  </div>
+  <div class="block lit-block" style="grid-column:17/span 2" data-tip="Whitman · Baudelaire · Rimbaud · Verlaine · Symbol as vehicle for experience · Free verse">
+    <strong>Symbolism</strong><em>1880–1910</em>
+  </div>
+  <div class="block lit-block" style="grid-column:18/span 3" data-tip="Joyce · Woolf · T.S. Eliot · Kafka · Faulkner · Stream of consciousness · Fragmentation">
+    <strong>Literary Modernism</strong><em>1900–1945</em>
+  </div>
+  <div class="block lit-block" style="grid-column:21/span 2" data-tip="Beckett · Borges · García Márquez · Toni Morrison · Pynchon · Magical realism · Metafiction">
+    <strong>Postmodernism</strong><em>1950s–Present</em>
+  </div>
+
+  <!-- === MUSIC ROW === -->
+  <div class="block mus-block" style="grid-column:2/span 4" data-tip="Greek modes (Dorian, Phrygian) · Pythagoras on harmony · Roman instruments · Monophonic song">
+    <strong>Ancient Greek & Roman Music</strong><em>800 BCE – 400 CE</em>
+  </div>
+  <div class="block mus-block" style="grid-column:6/span 2" data-tip="Gregorian chant (plainchant) · Hildegard von Bingen · Organum · Troubadours · Polyphony begins">
+    <strong>Plainchant & Early Polyphony</strong><em>500–1400</em>
+  </div>
+  <div class="block mus-block" style="grid-column:8/span 2" data-tip="Josquin des Prez · Palestrina · Madrigals · Lute music · Sacred polyphony · Counterpoint">
+    <strong>Renaissance Polyphony</strong><em>1400–1600</em>
+  </div>
+  <div class="block mus-block" style="grid-column:10/span 2" data-tip="Bach · Handel · Vivaldi · Monteverdi (opera) · Figured bass · Counterpoint · Oratorio · Concerto grosso">
+    <strong>Baroque</strong><em>1600–1750</em>
+  </div>
+  <div class="block mus-block" style="grid-column:12/span 2" data-tip="Haydn · Mozart · Early Beethoven · Sonata form · Symphony · String quartet · Clarity & balance">
+    <strong>Classical Period</strong><em>1750–1820</em>
+  </div>
+  <div class="block mus-block" style="grid-column:14/span 2" data-tip="Beethoven (late) · Schubert · Chopin · Liszt · Brahms · Wagner · Schumann · Program music · Nationalism">
+    <strong>Romanticism</strong><em>1820–1900</em>
+  </div>
+  <div class="block mus-block" style="grid-column:16/span 2" data-tip="Debussy · Ravel · Whole-tone scales · Tone color · Anti-classical form · Impressionist sound-painting">
+    <strong>Impressionism</strong><em>1890–1920</em>
+  </div>
+  <div class="block mus-block" style="grid-column:17/span 2" data-tip="Stravinsky · Schoenberg · Bartók · Twelve-tone · Atonality · Neoclassicism · Rite of Spring (1913)">
+    <strong>Musical Modernism</strong><em>1900–1945</em>
+  </div>
+  <div class="block mus-block" style="grid-column:19/span 2" data-tip="Cage · Ligeti · Minimalism (Reich, Glass) · Electronic music · Serialism · Chance music">
+    <strong>Avant-Garde & Minimalism</strong><em>1945–1980</em>
+  </div>
+  <div class="block mus-block" style="grid-column:21/span 2" data-tip="Jazz (Miles Davis → Coltrane) · Rock · Hip-hop as cultural force · World music fusion · Digital production">
+    <strong>Popular & World Music</strong><em>1950s–Present</em>
+  </div>
+
+  <!-- CENTURY LABELS -->
+  <div class="century-label" style="grid-column:1; grid-row:5; text-align:right; padding-right:10px;">Century:</div>
+  <div class="century-label" style="grid-column:2; grid-row:5;">8–5 BCE</div>
+  <div class="century-label" style="grid-column:3; grid-row:5;">4–2 BCE</div>
+  <div class="century-label" style="grid-column:4; grid-row:5;">1 BCE–1 CE</div>
+  <div class="century-label" style="grid-column:5; grid-row:5;">2–5 CE</div>
+  <div class="century-label" style="grid-column:6; grid-row:5;">6–10</div>
+  <div class="century-label" style="grid-column:7; grid-row:5;">11–14</div>
+  <div class="century-label" style="grid-column:8; grid-row:5;">15th</div>
+  <div class="century-label" style="grid-column:9; grid-row:5;">16th</div>
+  <div class="century-label" style="grid-column:10; grid-row:5;">17th</div>
+  <div class="century-label" style="grid-column:11; grid-row:5;">1700s early</div>
+  <div class="century-label" style="grid-column:12; grid-row:5;">1700s late</div>
+  <div class="century-label" style="grid-column:13; grid-row:5;">1800 early</div>
+  <div class="century-label" style="grid-column:14; grid-row:5;">1820s–40s</div>
+  <div class="century-label" style="grid-column:15; grid-row:5;">1850s–70s</div>
+  <div class="century-label" style="grid-column:16; grid-row:5;">1880s–90s</div>
+  <div class="century-label" style="grid-column:17; grid-row:5;">1900s–10s</div>
+  <div class="century-label" style="grid-column:18; grid-row:5;">1920s–30s</div>
+  <div class="century-label" style="grid-column:19; grid-row:5;">1940s–50s</div>
+  <div class="century-label" style="grid-column:20; grid-row:5;">1960s</div>
+  <div class="century-label" style="grid-column:21; grid-row:5;">1970s–80s</div>
+  <div class="century-label" style="grid-column:22; grid-row:5;">1990s–2000s</div>
+  <div class="century-label" style="grid-column:23; grid-row:5;">2010–Now</div>
+
+</div>
+</div>
+
+<footer>CLEP Humanities Prep · Scroll horizontally to see full timeline · Hover any block for key artists, authors & composers</footer>
+</body>
+</html>

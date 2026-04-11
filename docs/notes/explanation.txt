@@ -1,0 +1,3959 @@
+Yeah — **do not build the app around that $10 review alone**.
+
+The official CLEP Humanities guide basically backs up your concern: the guide says CLEP materials are meant to help students understand question types and get test tips, **not** to teach all the subject matter, and for Humanities it explicitly says **no single book covers all the areas** on the exam. It also warns that some prep companies sell materials people do not actually need.  
+
+## What this means for the app
+
+There is **not** a public “official dataset of the real test questions.” What College Board gives you is the **exam blueprint**: about **140 questions in 90 minutes**, with skills weighted around **50% factual knowledge**, **30% recognition of style/technique**, and **20% interpretation**. Content is about **50% literature** and **50% arts**, and questions are fairly evenly spread across these periods: **Classical**, **Medieval/Renaissance**, **17th–18th centuries**, **19th century**, and **20th–21st centuries**, with **5–10%** from other cultures.  
+
+So the app should load a **study dataset that mirrors the blueprint**, not pretend to have the secret exam bank.
+
+# Best chapter structure
+
+Because the official exam is balanced by **time period** *and* by **literature vs arts**, the smartest chapter system is:
+
+## Chapter 1 — Classical World
+
+* Greek and Roman literature
+* epic, tragedy, myth, rhetoric, philosophy
+* classical sculpture, architecture, drama traditions
+
+## Chapter 2 — Medieval and Renaissance
+
+* Dante, Chaucer, Shakespeare-adjacent transition territory
+* humanism, religious art, medieval vs Renaissance style
+* cathedrals, painting, sculpture, courtly traditions
+
+## Chapter 3 — 17th and 18th Centuries
+
+* Baroque, Neoclassicism, Enlightenment
+* satire, essays, philosophy
+* music, painting, architecture, theater
+
+## Chapter 4 — 19th Century
+
+* Romanticism, Realism, early modern thought
+* poetry, fiction, opera, symphony, visual arts
+
+## Chapter 5 — 20th and 21st Centuries
+
+* Modernism, Postmodernism, film, dance, contemporary literature and art
+
+## Chapter 6 — Global / Non-Western Traditions
+
+* African, Asian, Latin American works, movements, and influences
+* this should be smaller but definitely present because the guide says at least 5–10% comes from other cultures 
+
+## Chapter 7 — Terminology, Genre, Style, Technique
+
+This is important because the guide says a substantial number of questions test **terminology, genre, and style**. 
+Examples:
+
+* rhyme scheme
+* meter
+* medium
+* genre
+* style period
+* architecture terms
+* music form
+* theater/film vocabulary
+
+## Chapter 8 — Mixed Mock Exams
+
+* timed
+* random
+* official weighting
+* weak-area review after submission
+
+# How each chapter test should be built
+
+This is the part that makes the app legit.
+
+For each chapter quiz, do **not** make random trivia dumps. Use the official proportions.
+
+## Per quiz blueprint
+
+For a 20-question chapter test:
+
+* **10 literature**
+* **10 arts**
+
+Inside the **literature 10**, roughly aim for:
+
+* 2 drama
+* 2–3 poetry
+* 3–4 fiction
+* 2 nonfiction/philosophy
+
+Inside the **arts 10**, roughly aim for:
+
+* 4 visual arts
+* 1 architecture
+* 3 music
+* 2 film/dance
+
+Then by skill:
+
+* **10 factual**
+* **6 recognition/style**
+* **4 interpretation**
+
+That structure comes straight from the official weighting, just converted into a chapter-friendly test format. 
+
+# The dataset you actually need to load
+
+You need **three source layers**.
+
+## Layer 1 — Official blueprint layer
+
+This is the truth layer.
+Use the official guide for:
+
+* periods
+* subject weights
+* skill weights
+* sample question style
+* terminology emphasis 
+
+## Layer 2 — Real content layer
+
+This is where the actual learning comes from.
+Use:
+
+* a real humanities textbook
+* reliable open educational sources
+* museum / literature / music history sources
+* maybe the two textbook examples named in the guide as reference points 
+
+## Layer 3 — Paid review layer
+
+Use the $10 review only as:
+
+* supplemental summaries
+* extra practice prompts
+* maybe quick explanations
+
+Not as the source of truth.
+
+That’s the big fix.
+
+# Best app data model
+
+Make every record tagged like this:
+
+```json
+{
+  "id": "hum-1-001",
+  "chapter": "Classical World",
+  "period": "Classical",
+  "discipline": "Literature",
+  "subtype": "Drama",
+  "skillType": "factual",
+  "topic": "Greek tragedy",
+  "title": "Sophocles",
+  "prompt": "Which playwright wrote Oedipus Rex?",
+  "choices": ["Sophocles", "Euripides", "Virgil", "Horace"],
+  "answer": "Sophocles",
+  "explanation": "Sophocles is the Greek tragedian associated with Oedipus Rex.",
+  "difficulty": 2,
+  "sourceType": "textbook",
+  "tags": ["author", "classical", "tragedy", "greece"]
+}
+```
+
+And for progress:
+
+```json
+{
+  "userId": "bf-001",
+  "chapter": "Classical World",
+  "mastery": 0.72,
+  "lastScore": 16,
+  "lastAttemptedAt": "2026-04-10",
+  "weakTags": ["architecture", "myth", "philosophy"],
+  "questionsSeen": 48,
+  "questionsCorrect": 35
+}
+```
+
+# What the app should track
+
+For each chapter, track:
+
+* completion %
+* last quiz score
+* best quiz score
+* mastery by subtopic
+* mastery by skill type
+* weak tags
+* streak
+* whether he passed the chapter threshold
+
+## Pass system
+
+Set chapter states like:
+
+* **Not Started**
+* **Learning**
+* **Needs Review**
+* **Passed**
+* **Mastered**
+
+Example:
+
+* below 60% = Needs Review
+* 60–74% = Learning
+* 75–84% = Passed
+* 85%+ = Mastered
+
+# The best study flow
+
+## 1. Study mode
+
+For each chapter:
+
+* overview
+* key people
+* key works
+* key movements
+* key terms
+* compare section
+
+## 2. Drill mode
+
+* 10-question mini quiz
+* instant feedback
+* “why this is right”
+
+## 3. Chapter test
+
+* 20 or 25 questions
+* weighted like the real blueprint
+* no answers until the end
+
+## 4. Review mode
+
+* missed only
+* weak-tag only
+* recognition/style only
+* interpretation only
+
+## 5. Mock exam mode
+
+* mixed all chapters
+* timed
+* real weightings
+
+# What to avoid
+
+Do **not** organize the whole app as:
+
+* random flashcards
+* alphabetical author list
+* giant encyclopedia
+* one giant mixed quiz bank with no structure
+
+That sounds useful, but it wrecks retention.
+
+He needs:
+
+* **chaptered progression**
+* **period-based organization**
+* **weighted quizzes**
+* **clear weak-spot tracking**
+
+# The strongest build strategy
+
+## Build order
+
+1. Load official blueprint
+2. Build chapter system
+3. Add real textbook-based content
+4. Add quizzes by weight
+5. Add progress tracking
+6. Add mock exam mode
+7. Then optionally blend in the cheap review where it helps
+
+I did the search, and here’s the clean answer:
+
+## The best way to make this feel like a **real course**
+
+Do **not** build it around that $10 review packet.
+
+Build it as a **College Board-aligned humanities course shell** using:
+
+1. **College Board** as the exam contract,
+2. **Modern States** as the closest ready-made CLEP course spine,
+3. **real college humanities syllabi** as the course-design model,
+4. **museum/library educational sources** for the actual learning content. ([CLEP][1])
+
+## What is actually official
+
+The **most official source** is the College Board Humanities exam page. It says the exam is broad, covers literature, art, music, architecture, dance, theater, film, and philosophy, spans classical through contemporary periods, and has about **140 questions in 90 minutes**. It also gives the skill weighting and topic weighting, which is exactly what you should use to drive quizzes and progress tracking. ([CLEP][1])
+
+College Board also has a **Humanities study resources page**. That page explicitly lists recommended textbooks and points students to **Modern States: Humanities** as a free online CLEP Humanities course. At the same time, College Board says those outside resources are **not designed specifically for CLEP prep** and that it does **not guarantee their accuracy**, which means your app should say “College Board-aligned,” not “official CLEP course.” ([CLEP][2])
+
+College Board’s **Practice Questions and Examination Guides** page also says the official e-guides contain official practice questions, and it offers a downloadable **Humanities Resource Guide and Sample Questions**. That is the best official practice layer to load into the app after the blueprint itself. ([CLEP][3])
+
+## The strongest course spine I found
+
+The best backbone is **Modern States Humanities**. It is a free, self-paced course aligned to the CLEP Humanities exam, and its syllabus says it is organized into **six topical chapters/modules** with short video lessons, exercises, and readings. Those six modules are:
+
+* Classical Period
+* Middle Ages
+* Renaissance
+* Baroque and Enlightenment
+* Romanticism and Realism
+* Twentieth and Twenty-First Centuries ([Modern States][4])
+
+That is honestly the cleanest “real course” skeleton for your app because it is already organized like a class instead of a random cram sheet. ([Modern States][5])
+
+## What real humanities classes do that your app should copy
+
+A recent **Pensacola State College** Introduction to Humanities syllabus shows a real college course covering ancient to contemporary material with **modules, quizzes, work identification, terms review, analysis assignments, and exams**. Its Spring 2026 syllabus breaks the course into many specific modules like Prehistory, Mesopotamia, Egypt and Bronze Age Greece, Classical Greece, Roman culture, Byzantine/Islamic world, Middle Ages, Renaissance, Reformation, Humanism/Exploration, and Enlightenment/Romanticism. It also uses a grading structure of **30% homework/classwork, 30% quizzes, and 40% unit exams**. ([Pensacola State College][6])
+
+That same syllabus is gold for app design because it uses repeated assessment types: **terms assignments**, **work or artist identification**, **discussion/analysis**, **module quizzes**, and **unit exams**. That is exactly how you make the app feel like a course instead of a flashcard toy. ([Pensacola State College][6])
+
+Another official college syllabus, from **Amarillo College**, lays out strong learning outcomes that your app can track: awareness of major works, ability to place them in historical/social context, critical analysis, understanding the influence of literature/philosophy/arts on culture, and awareness of the creative process. Those are excellent app mastery categories. ([Amarillo College][7])
+
+## The best content sources to feed the course
+
+For **art history and chronology**, the best structured source I found is the **Metropolitan Museum of Art’s Heilbrunn Timeline of Art History**. It pairs essays, works of art, and chronology, and it is built around time periods and regions, which matches the CLEP’s period-based spread really well. ([The Metropolitan Museum of Art][8])
+
+For **primary sources and classroom-style materials**, the **Library of Congress** is strong. Its classroom materials and primary source sets are built for teaching and include teacher guides, context, and suggestions for analysis. That is perfect for turning your app into “study + interpretation + source recognition” instead of just memorization. ([The Library of Congress][9])
+
+## So what should the app’s course structure be?
+
+Here is the smartest version:
+
+### Course shell
+
+Call it something like:
+**CLEP Humanities Course Lab**
+Subtitle:
+**College Board-aligned, course-structured prep**
+
+### Modules
+
+Use Modern States as the top-level six-unit spine:
+
+1. Classical
+2. Middle Ages
+3. Renaissance
+4. Baroque and Enlightenment
+5. Romanticism and Realism
+6. Twentieth and Twenty-First Centuries ([Modern States][5])
+
+### Inside each module
+
+Use the Pensacola model:
+
+* **Terms**
+* **Work/artist identification**
+* **Short explanation cards**
+* **Mini quiz**
+* **Analysis/comparison task**
+* **Unit checkpoint** ([Pensacola State College][6])
+
+### Mastery categories
+
+Use Amarillo-style outcomes:
+
+* scope/variety of works
+* historical/social context
+* critical response
+* cultural influence
+* creative process ([Amarillo College][7])
+
+### Assessment weighting
+
+Use a real-course feel:
+
+* **30% learning activities**
+* **30% quizzes**
+* **40% unit exams** ([Pensacola State College][6])
+
+That will feel like an actual online class.
+
+## My strongest recommendation
+
+Use a **4-layer resource stack**:
+
+**Layer 1: College Board**
+
+* exam breakdown
+* sample questions
+* official practice guide
+* skill/topic weighting ([CLEP][1])
+
+**Layer 2: Modern States**
+
+* six-module course spine
+* self-paced lesson sequence ([Modern States][4])
+
+**Layer 3: College syllabi**
+
+* learning outcomes
+* assignment types
+* grading logic
+* module progression ([Pensacola State College][6])
+
+**Layer 4: Museum/library content**
+
+* Met Timeline for art chronology
+* Library of Congress for primary sources and guided analysis ([The Metropolitan Museum of Art][8])
+
+## Bottom line
+
+Yes, you can absolutely make this into something that feels like a **real course**. The best move is to stop treating the app like a review packet viewer and start treating it like a **mini LMS course** built from:
+
+* **College Board exam specs**
+* **Modern States course structure**
+* **real college humanities syllabus design**
+* **institution-backed content sources** ([CLEP][1])
+
+Next step: I can turn this into a **full course blueprint** with exact modules, lesson types, quiz types, and a JSON schema for your app.
+
+[1]: https://clep.collegeboard.org/clep-exams/humanities "https://clep.collegeboard.org/clep-exams/humanities"
+[2]: https://clep.collegeboard.org/prepare-for-an-exam/study-resources-by-exam/humanities "https://clep.collegeboard.org/prepare-for-an-exam/study-resources-by-exam/humanities"
+[3]: https://clep.collegeboard.org/prepare-for-an-exam/practice-questions-study-guides "https://clep.collegeboard.org/prepare-for-an-exam/practice-questions-study-guides"
+[4]: https://modernstates.org/course/humanities/ "https://modernstates.org/course/humanities/"
+[5]: https://courses.modernstates.org/asset-v1%3AModernStatesX%2BHumanities%2B2017%2Btype%40asset%2Bblock%40Humanities_-_Syllabus.pdf "https://courses.modernstates.org/asset-v1%3AModernStatesX%2BHumanities%2B2017%2Btype%40asset%2Bblock%40Humanities_-_Syllabus.pdf"
+[6]: https://www.pensacolastate.edu/docs/syllabi/2026-Spring/HUM2020-D9437.pdf "https://www.pensacolastate.edu/docs/syllabi/2026-Spring/HUM2020-D9437.pdf"
+[7]: https://www.actx.edu/syllabus/syllabus_view.php?id=482744 "https://www.actx.edu/syllabus/syllabus_view.php?id=482744"
+[8]: https://www.metmuseum.org/toah/chronology "https://www.metmuseum.org/toah/chronology"
+[9]: https://www.loc.gov/programs/teachers/classroom-materials/ "https://www.loc.gov/programs/teachers/classroom-materials/"
+Yes — **this is the right direction**.
+
+What you are really building is **a guided CLEP Humanities course disguised as an app**, and that is way better than a random quiz bank.
+
+The official CLEP guide says the Humanities exam is broad, about **140 questions in 90 minutes**, and covers literature plus the arts across periods from **classical to contemporary**. It also says no single book covers everything, and students should use college textbooks plus supplementary resources. The exam weights are also clear: **50% factual knowledge, 30% recognition of style/technique, 20% interpretation**; and the subject split is **50% literature, 50% arts**.   
+
+The Sayre textbook structure lines up extremely well with the six-module course you want: **Book 1 Ancient/Classical, Book 2 Medieval, Book 3 Renaissance, Book 4 Baroque/Enlightenment, Book 5 Romanticism/Realism, Book 6 Modernism to the present**. So yes — using those six as your six big “chapters” is not just cleaner, it is academically smart.  
+
+## First, one important correction
+
+You said you want “actual clips from the textbook” and “graphics from these textbooks.”
+
+**Summaries based on the textbook? Yes.**
+**Directly embedding textbook pages, scans, or publisher-owned graphics in a real app? Bad idea.**
+
+The instructor review copy you uploaded explicitly says it is for classroom review use and that dissemination or sale of any part of it, including on the web, is not permitted.  
+
+So the safe, serious approach is:
+
+* use the textbooks as the **content spine**
+* create **your own summaries, timelines, quizzes, flashcards, and graphics**
+* use **open-access museum images, public-domain texts, and embeddable videos**
+* keep any direct textbook excerpting very limited and internal
+
+That matters a lot if this app is going to be polished or shared.
+
+# The product should feel like this
+
+## **Textbook Mode + Coach Mode + Game Mode**
+
+Not one screen doing everything.
+
+Each chapter should feel like a mini course with a clear progression:
+
+1. **Learn**
+2. **Watch**
+3. **Play**
+4. **Quiz**
+5. **Weakness review**
+6. **Chapter test**
+7. **Unlock next chapter**
+8. **Cumulative review after milestones**
+
+That flow matches how the CLEP guide says people should prepare: study the outline, use textbooks, practice with sample questions, assess readiness, and then review weak areas.  
+
+# The six chapters
+
+Use these exactly:
+
+## Chapter 1 — Classical
+
+Built from the ancient/classical span in Sayre Book 1. 
+
+## Chapter 2 — Middle Ages
+
+Built from Sayre Book 2. 
+
+## Chapter 3 — Renaissance
+
+Built from Sayre Book 3 in the series contents. 
+
+## Chapter 4 — Baroque and Enlightenment
+
+Built from Sayre Book 4. 
+
+## Chapter 5 — Romanticism and Realism
+
+Built from Sayre Book 5. 
+
+## Chapter 6 — Twentieth and Twenty-First Centuries
+
+Built from Sayre Book 6. 
+
+# The section template inside every chapter
+
+This is where the app becomes **really good** instead of messy.
+
+The textbook itself gives you the pattern to imitate: it uses **readings**, **special features like Cultural Parallels, Focus, and Voices**, plus **critical thinking questions**. That is gold for app structure.    
+
+## Every chapter should contain these sections
+
+### 1. **Chapter Opener**
+
+* one clean intro
+* why this era matters
+* what changed from the previous era
+* 5–8 “must know” names, works, and ideas
+
+### 2. **Big Picture Timeline**
+
+* dates
+* movements
+* major people
+* major events
+* literature, art, architecture, music, philosophy all on one strip
+
+### 3. **Section Lessons**
+
+Break each chapter into **4 to 6 sections**.
+
+Each section should include:
+
+* short summary
+* key works
+* key people
+* key terms
+* “exam clues”
+* one image or artifact
+* one compare/contrast note
+
+### 4. **Focus Work**
+
+One deep dive on a single painting, text, building, musical idea, or film example.
+
+### 5. **Voices / Reading Room**
+
+A short primary-source style reading or excerpt summary.
+This should be “read, then explain what it shows.”
+
+### 6. **Cultural Parallels**
+
+Cross-links across regions or forms.
+Example:
+
+* Gothic cathedral vs Islamic design logic
+* Romantic poetry vs Romantic music
+* Postmodern architecture vs postmodern fiction
+
+### 7. **Terms Lab**
+
+Glossary drill:
+
+* meter
+* medium
+* realism
+* satire
+* sonata
+* fresco
+* allegory
+* humanism
+* etc.
+
+### 8. **Watch Videos Playlist**
+
+A clean tab with embedded videos so it feels like a purposeful watchlist, not scrolling.
+
+### 9. **Flashcards**
+
+Two layers:
+
+* chapter flashcards
+* section flashcards
+
+### 10. **Game Hub**
+
+Games tied to that chapter only.
+
+### 11. **Quick Quiz**
+
+Low-stakes, immediate feedback.
+
+### 12. **Weakness Lab**
+
+Shows:
+
+* missed terms
+* confused people
+* weak time periods
+* weak art forms
+* weak skill type
+
+### 13. **Chapter Test**
+
+Timed, no hints, score saved.
+
+# The exact study flow
+
+This is the real engine.
+
+## Inside one chapter
+
+The app should guide him in this order:
+
+### Step 1 — Learn
+
+* read the chapter opener
+* go through section summaries
+* browse key images and works
+* build the timeline mentally
+
+### Step 2 — Watch
+
+* go to Watch Videos playlist
+* watch selected clips tied to that chapter only
+* mark videos complete
+
+### Step 3 — Play
+
+* use games to reinforce memory
+* drag timeline
+* match artist to movement
+* identify work by clue
+* “who/what/why” challenge
+
+### Step 4 — Quiz
+
+* 10–15 questions
+* instant feedback
+* explanation after each answer
+
+### Step 5 — Weakness Review
+
+* app surfaces weak areas automatically
+* section gets tagged red/yellow/green
+* flashcards adapt to missed items
+
+### Step 6 — Chapter Test
+
+* 20–30 questions
+* timed
+* no hints
+* chapter score stored
+
+### Step 7 — Unlock Next Chapter
+
+* once threshold is met, the next chapter becomes primary
+
+# Macro progression across the whole course
+
+This is the structure you described, cleaned up:
+
+## Phase 1
+
+* Chapter 1
+* Chapter 2
+* Chapter 3
+* **Cumulative Quiz A: Chapters 1–3**
+* **Midpoint Exam A: Chapters 1–3**
+
+## Phase 2
+
+* Chapter 4
+* Chapter 5
+* Chapter 6
+* **Cumulative Quiz B: Chapters 4–6**
+* **Final Full Quiz: Chapters 1–6**
+* **Final Full Exam: Chapters 1–6**
+
+That gives him both:
+
+* **confidence by chunk**
+* **retention by cumulative review**
+
+# How the home screen should change dynamically
+
+This is big.
+
+The dashboard should not stay static. It should react to where he is.
+
+## Before starting a chapter
+
+Show:
+
+* current chapter
+* chapter readiness
+* recommended next action
+* time estimate
+
+## After finishing Learn mode
+
+Show:
+
+* “Now watch videos”
+* unlocked games
+* section flashcards ready
+
+## After finishing Quiz mode
+
+Show:
+
+* weakest topics
+* “Go to Weakness Lab”
+* chapter test locked/unlocked depending on score
+
+## After passing a chapter test
+
+Show:
+
+* chapter badge
+* next chapter promoted
+* cumulative review banner if milestone reached
+
+## After chapter 3
+
+Home screen should shift into:
+
+* **Midpoint Review Mode**
+* quiz across 1–3
+* test across 1–3
+
+## After chapter 6
+
+Home screen should shift into:
+
+* **Final Review Mode**
+* mixed flashcards
+* mixed games
+* full mock exam
+
+# The states the app should track
+
+Every chapter needs status states:
+
+* **Not Started**
+* **Learning**
+* **Watching**
+* **Practicing**
+* **Weakness Review**
+* **Ready to Test**
+* **Passed**
+* **Mastered**
+
+And every section should have mastery colors:
+
+* red = weak
+* yellow = developing
+* green = solid
+
+# The chapter data model you need
+
+Each chapter should be broken into:
+
+* sections
+* key people
+* key works
+* key terms
+* key themes
+* images
+* videos
+* flashcards
+* games
+* quiz bank
+* chapter test bank
+* weakness tags
+
+Each question should be tagged by:
+
+* chapter
+* section
+* discipline
+* period
+* skill type
+* difficulty
+* source confidence
+* whether he missed it before
+
+## Skill type tags should mirror CLEP
+
+Because the exam weights matter, every question should be tagged as:
+
+* **factual**
+* **recognition/style**
+* **interpretation** 
+
+## Discipline tags should mirror CLEP too
+
+* drama
+* poetry
+* fiction
+* nonfiction/philosophy
+* visual arts
+* architecture
+* music
+* film/dance 
+
+That way your quizzes are not random — they are structured like the real exam.
+
+# The best game hub setup
+
+Do not make the games cheesy. Make them useful.
+
+## Core games
+
+* **Timeline Builder**
+* **Match the Work**
+* **Movement Sort**
+* **Who Said It / Who Made It**
+* **Era Detective**
+* **Odd One Out**
+* **Image Clue Challenge**
+* **Speed Round**
+* **Term Trap**
+* **Compare Two Movements**
+
+## One killer game
+
+### **Museum Run**
+
+He moves through a gallery and has to:
+
+* place works in the right era
+* identify style
+* connect work to idea
+* avoid “trap” answers
+
+That would go hard.
+
+# Flashcards should be split into layers
+
+## Layer 1 — Chapter flashcards
+
+Broad, high-yield.
+
+## Layer 2 — Section flashcards
+
+More specific.
+
+## Layer 3 — Weakness flashcards
+
+Auto-generated from misses.
+
+## Layer 4 — Cumulative flashcards
+
+After Chapter 3 and after Chapter 6.
+
+# The “Watch Videos” playlist
+
+This is a genuinely strong idea.
+
+Make it a real tab with:
+
+* chapter playlist
+* short clips first
+* longer optional lecture clips second
+* completion tracking
+* notes button
+* “add to review” button
+
+## Video rules
+
+Only include videos that are:
+
+* directly tied to the chapter
+* short enough to actually watch
+* educational, not fluff
+* embeddable
+
+And give each video tags like:
+
+* chapter
+* section
+* person/work
+* skill focus
+
+# What “Learn” should really mean
+
+You said when you say learn, you mean real textbook clips summarized or not.
+
+Here is the best version:
+
+## Learn Mode = three layers
+
+### Layer A — **Quick Summary**
+
+A short, clean explanation in plain language.
+
+### Layer B — **Deep Dive**
+
+Longer textbook-based summary with more detail.
+
+### Layer C — **Primary/Work Lens**
+
+One object, one excerpt, one building, one poem, one painting, one film clue.
+
+That keeps it from being too shallow.
+
+# Graphics strategy
+
+This is where people mess up.
+
+## Do not rely on textbook scans
+
+Use:
+
+* original timelines
+* original comparison charts
+* original maps where possible
+* original summary diagrams
+* open-access museum images
+* public-domain visuals
+
+The Sayre materials clearly came with a whole publisher ecosystem — digital image library, audio/video, flashcards, lab tools — which shows the multimodal direction is smart, but those assets are proprietary. Build your own equivalents instead of copying them.  
+
+# The strongest section blueprint
+
+Use this exact template for every section:
+
+## Section page
+
+* title
+* 2-minute summary
+* why it matters
+* key names
+* key works
+* key terms
+* one visual
+* one compare note
+* one “exam clue” box
+* one short reading or passage
+* one checkpoint question
+* add-to-flashcards
+* add-to-weakness review
+
+That is textbook energy without feeling like homework hell.
+
+# My blunt recommendation
+
+Do **not** start by building every feature.
+
+Build in this order:
+
+## Build Order
+
+1. course shell
+2. six chapters
+3. section template
+4. progress engine
+5. quiz engine
+6. weakness engine
+7. flashcards
+8. game hub
+9. video playlist
+10. cumulative exams
+
+Because if the progression engine is weak, all the “cool stuff” becomes decoration.
+
+# The smartest content rule
+
+Use this rule for all content creation:
+
+## **Textbook for structure. CLEP for weighting. Open resources for media.**
+
+That is the formula.
+
+* **CLEP** tells you what matters on the exam. 
+* **Sayre** gives you a real course spine and rich section ideas.  
+* **Open assets** keep the app usable and safe.
+
+# Final product vision
+
+This should feel like:
+
+**a humanities textbook + Duolingo-style progression + quiz coach + museum/media lab**
+
+That is the lane.
+
+## The one-line product definition
+
+**A chapter-based CLEP Humanities study course where each era is learned, watched, played, quizzed, diagnosed, and tested before the next era unlocks.**
+
+That is clean and strong.
+
+Next, we should map **Chapter 1: Classical** into exact sections, flashcard categories, game types, video slots, and the first question bank.
+I get why you want that. But I can’t help you **copy or package substantial textbook pages or publisher graphics into the app**, even for a personal-use build. The instructor review copy you uploaded explicitly says it is protected by copyright, provided only for instructors reviewing course materials, and that dissemination or sale of any part of it, including on the web, is not permitted. 
+
+What I **can** help you build is the version that gets you almost all the value without turning the app into a repackaged textbook.
+
+## Best safe setup
+
+### Option A — **Local textbook viewer + study layer**
+
+This is the smartest route.
+
+The app does **not** bundle the textbook pages.
+Instead, it lets **you open your own local PDF files on your own device**, then layers study tools on top:
+
+* chapter bookmarks
+* highlighted pages
+* notes
+* flashcards
+* quizzes
+* weak-spot tracker
+* “watch videos” playlist
+* games
+* chapter completion
+
+So the app becomes a **personal study shell around your own files**, not a copied textbook distribution.
+
+## What that would look like
+
+### In the app
+
+Each chapter has:
+
+* **Read from textbook**
+* **Summary**
+* **Watch**
+* **Play**
+* **Flashcards**
+* **Quiz**
+* **Weakness review**
+* **Chapter test**
+
+### In “Read from textbook”
+
+You manually attach the relevant local PDF and page ranges:
+
+* Chapter 1 → Book 1 pages you choose
+* Chapter 2 → Book 2 pages you choose
+* Chapter 3 → Book 3 pages you choose
+* etc.
+
+The app stores:
+
+* file name
+* chapter mapping
+* page start/end
+* your notes
+* your highlights
+* your last page viewed
+
+That gives you the real-book feel without me helping you republish the book.
+
+## Why this fits your plan so well
+
+The Sayre series is already split into the exact course arc you want:
+
+* Book 1: Ancient/Classical
+* Book 2: Medieval
+* Book 3: Renaissance
+* Book 4: Baroque/Enlightenment
+* Book 5: Romanticism/Realism
+* Book 6: Modernism to the Present.  
+
+So your app can use the textbook as the **reader source**, while the app itself supplies:
+
+* structure
+* summaries
+* tests
+* games
+* tracking
+* video playlist
+* adaptive review
+
+## Best compromise for graphics
+
+I cannot help you bulk-copy the textbook’s graphics into the app.
+
+But you can make the app still feel rich by using:
+
+* your own diagrams and timelines
+* open-access museum images
+* public-domain works
+* screenshots or notes you personally keep outside the app
+* local-reader mode for the textbook visuals
+
+That way:
+
+* the **reader tab** gives the real page experience
+* the **learning tab** gives your clean summaries and custom visuals
+
+## The app architecture I recommend
+
+### 1. **Library**
+
+Where you import your personal PDFs locally.
+
+Fields:
+
+* title
+* chapter
+* source type
+* page ranges
+* tags
+
+### 2. **Reader**
+
+Client-side PDF viewer only.
+
+Features:
+
+* open local file
+* jump to mapped chapter pages
+* bookmark page
+* add note
+* mark “important”
+* send page/topic to flashcards
+* send page/topic to weakness lab
+
+### 3. **Course Mode**
+
+Your six chapters:
+
+* Classical
+* Middle Ages
+* Renaissance
+* Baroque and Enlightenment
+* Romanticism and Realism
+* Twentieth and Twenty-First Centuries
+
+### 4. **Dynamic flow**
+
+For each chapter:
+
+* Read
+* Learn
+* Watch
+* Play
+* Quiz
+* Weakness review
+* Test
+* Unlock next chapter
+
+### 5. **Milestone reviews**
+
+* after chapters 1–3: cumulative quiz + test
+* after chapters 4–6: cumulative quiz + test
+* full final across all six
+
+## What “Learn” should be now
+
+Since we are not copying big textbook chunks into the app, Learn mode should be:
+
+* **Quick summary**
+* **Deep summary**
+* **Key names**
+* **Key works**
+* **Key terms**
+* **Exam clues**
+* **Compare box**
+* **Go read pages X–Y in your local reader**
+
+That last part matters. The app should point him back to his reader when he needs the full source.
+
+## Best feature for personal use
+
+### **Page-linked notes**
+
+Example:
+
+* “Chapter 2, Section 3 → linked to Book 2 pages 430–441”
+* note says: “Romanesque architecture: pilgrimage, crusade, thick walls, rounded arches”
+* quiz engine can then pull from that section
+
+That would make the app feel like a real textbook companion.
+
+## My blunt take
+
+If you want the app to be **really good**, do not make it a textbook copier.
+
+Make it a **private textbook companion system**.
+
+That gives you:
+
+* the real pages for reading
+* the real graphics for viewing
+* the clean app experience for studying
+* way less mess
+* way less risk
+
+That is the version I would build.
+
+I can map the full app around this **local-reader + chapter progression** model next, including the exact screens and data structure.
+Absolutely. Here is **your plan, written cleanly and exactly in the direction you want**.
+
+# CLEP Humanities App Plan
+
+## Core Vision
+
+Build the app as a **real textbook-style humanities course**, not a basic study app.
+
+The goal is for it to feel like:
+
+* a real class
+* a real textbook
+* a real study system
+* a real progress-based course experience
+
+It should be **less intimidating** than a giant exam by breaking everything into **6 clear chapters/modules**, and each module should feel like its own contained learning unit.
+
+---
+
+# Course Structure
+
+## The 6 Main Chapters
+
+These are the main chapters of the app:
+
+1. **Classical**
+2. **Middle Ages**
+3. **Renaissance**
+4. **Baroque and Enlightenment**
+5. **Romanticism and Realism**
+6. **Twentieth and Twenty-First Centuries**
+
+Each module is treated like a **chapter in a textbook**.
+
+---
+
+# Overall Learning Flow
+
+The app should not just dump content. It should guide him through a clear flow.
+
+## Chapter-by-Chapter Flow
+
+For each chapter, the experience should be:
+
+1. **Study / Learn**
+2. **Watch videos**
+3. **Play games**
+4. **Use flashcards**
+5. **Take a quiz**
+6. **Review weaknesses**
+7. **Take a chapter test**
+8. **Unlock the next chapter**
+
+That flow should repeat for every chapter.
+
+---
+
+# Bigger Progression System
+
+## Phase 1
+
+* Complete Chapter 1
+* Complete Chapter 2
+* Complete Chapter 3
+* Take a **3-chapter quiz**
+* Take a **3-chapter test**
+
+## Phase 2
+
+* Complete Chapter 4
+* Complete Chapter 5
+* Complete Chapter 6
+* Take a **6-chapter cumulative quiz**
+* Take a **6-chapter cumulative final test**
+
+So the app progresses like a real course:
+
+* chapter mastery
+* milestone review
+* cumulative testing
+
+---
+
+# Dynamic App Behavior
+
+The app should **change automatically based on progress**.
+
+## Example
+
+If he finishes the Learn part of a chapter:
+
+* the app pushes him to Watch next
+
+If he finishes Watch:
+
+* the app pushes him to Play and use Flashcards
+
+If he struggles on the Quiz:
+
+* the app pushes him into Weakness Review
+
+If he passes the Chapter Test:
+
+* the next chapter unlocks and becomes the new focus
+
+If he finishes 3 chapters:
+
+* the home screen changes into **Midpoint Review Mode**
+
+If he finishes all 6:
+
+* the home screen changes into **Final Review Mode**
+
+So the app should feel alive and adaptive, not static.
+
+---
+
+# Chapter Structure
+
+Each main chapter should be broken into **sections**.
+
+## Inside Each Chapter
+
+Each chapter should have:
+
+* **Chapter introduction**
+* **Timeline / era overview**
+* **Sections**
+* **Key people**
+* **Key works**
+* **Key ideas**
+* **Key terms**
+* **Graphics / visuals**
+* **Videos**
+* **Flashcards**
+* **Games**
+* **Quiz**
+* **Weakness review**
+* **Chapter test**
+
+---
+
+# Section Structure
+
+Each chapter section should feel like a real lesson.
+
+## Each Section Should Include
+
+* section title
+* short summary
+* longer explanation
+* key people
+* key works
+* key terms
+* visual or graphic
+* why it matters
+* exam clues
+* quick checkpoint question
+* flashcards tied to that section
+* section-specific quiz items
+
+So instead of one giant chapter wall, each chapter becomes a series of manageable lesson blocks.
+
+---
+
+# Learn Mode
+
+When you say **learn**, you mean real learning, not just trivia.
+
+## Learn Mode Should Include
+
+* actual textbook-based content
+* summarized explanations
+* sometimes deeper, less summarized explanations
+* visuals and graphics
+* important examples
+* clear explanations of why the material matters
+* reading experience that feels real and serious
+
+This part should feel like the student is actually moving through a humanities textbook/course, not just clicking quiz cards.
+
+---
+
+# Textbook Experience
+
+The app should be **textbook-first**, not quiz-first.
+
+## Textbook Feel
+
+The learning side should feel like:
+
+* reading a real chapter
+* seeing real humanities visuals
+* understanding context, not just memorizing names
+* moving through organized sections
+* having meaningful explanations before testing
+
+The app should reduce the feeling of randomness and overwhelm by making the course feel structured and academic.
+
+---
+
+# Video System
+
+There should be a dedicated feature called:
+
+## **Watch Videos**
+
+This should be a playlist-based feature with embedded videos.
+
+Purpose:
+
+* replace mindless scrolling
+* turn watching into intentional studying
+* keep chapter-related videos organized
+
+## Video Playlist Features
+
+* embedded videos inside the app
+* chapter-specific playlists
+* section-specific videos
+* watch progress tracking
+* mark as watched
+* save for review later
+* “watch before quiz” or “watch after weakness review” suggestions
+
+Videos should support the chapter currently being studied.
+
+---
+
+# Flashcard System
+
+Flashcards should exist at multiple levels.
+
+## Flashcard Types
+
+### Chapter Flashcards
+
+Broad high-yield content for the whole chapter
+
+### Section Flashcards
+
+More detailed and tied to a specific lesson section
+
+### Weakness Flashcards
+
+Auto-generated from missed questions and weak areas
+
+### Cumulative Flashcards
+
+Unlocked after 3 chapters and again after all 6
+
+Flashcards should not be random. They should reflect actual progress and weak spots.
+
+---
+
+# Game Hub
+
+There should be a dedicated **Game Hub**.
+
+The games should be fun, but still academically useful.
+
+## Purpose of Game Hub
+
+* reinforce memory
+* improve recognition
+* reduce boredom
+* make repetition less painful
+* help him interact with the material in multiple ways
+
+## Game Types
+
+* timeline ordering
+* match the person to the work
+* match the work to the era
+* identify the movement
+* image recognition
+* clue-based guessing
+* compare and contrast games
+* speed round review
+* “odd one out”
+* term matching
+* era sorting
+
+Games should be available by:
+
+* chapter
+* section
+* weakness area
+* cumulative review mode
+
+---
+
+# Quiz System
+
+Each chapter should have quizzes before the real chapter test.
+
+## Quiz Purpose
+
+* low-pressure practice
+* immediate feedback
+* build confidence
+* identify weaknesses before the test
+
+## Quiz Features
+
+* chapter quizzes
+* section quizzes
+* mixed quizzes
+* instant explanations
+* retry missed questions
+* category breakdown after submission
+
+Quizzes should prepare him for the chapter test, not just exist separately.
+
+---
+
+# Weakness Review System
+
+The app should actively diagnose and teach weaknesses.
+
+## Weakness Review Should Show
+
+* weak sections
+* weak terms
+* weak people
+* weak works
+* weak time periods
+* weak question types
+* repeated mistakes
+
+## Weakness Review Should Then Offer
+
+* targeted flashcards
+* short review summaries
+* video suggestions
+* mini drills
+* mini games
+* retry quizzes
+
+This should make the app feel smart and responsive.
+
+---
+
+# Chapter Testing
+
+Every chapter ends with a real test.
+
+## Chapter Test
+
+* more serious than the quiz
+* timed or semi-timed
+* scored
+* saved in progress tracking
+* determines readiness to move on
+
+After passing:
+
+* the next chapter unlocks
+* progress updates
+* dashboard changes
+
+---
+
+# Cumulative Testing
+
+The app should not only test one chapter at a time.
+
+## Milestone Tests
+
+### After Chapter 3
+
+* 3-chapter cumulative quiz
+* 3-chapter cumulative test
+
+### After Chapter 6
+
+* 6-chapter cumulative quiz
+* 6-chapter cumulative final test
+
+This is important so he retains earlier chapters instead of forgetting them once he moves on.
+
+---
+
+# Dashboard / Home Screen
+
+The dashboard should be dynamic and progress-based.
+
+## Dashboard Should Show
+
+* current active chapter
+* chapter completion %
+* what step he is on now
+* strongest areas
+* weakest areas
+* next recommended action
+* chapter test readiness
+* cumulative milestone status
+* videos watched
+* flashcards completed
+* quiz scores
+* streak / momentum
+
+The dashboard should always tell him:
+
+## **What am I doing next?**
+
+---
+
+# Progress Tracking
+
+The app should track progress at every level.
+
+## Track Progress By
+
+* chapter
+* section
+* videos watched
+* flashcards completed
+* games played
+* quiz scores
+* test scores
+* weak topics
+* mastery status
+* cumulative review status
+
+## Suggested Status Labels
+
+* Not Started
+* Learning
+* Watching
+* Practicing
+* Reviewing Weaknesses
+* Ready to Test
+* Passed
+* Mastered
+
+---
+
+# Visual and Content Quality Standard
+
+This needs to feel high-quality and serious.
+
+## Quality Standard
+
+* clean and polished
+* visually rich
+* well-organized
+* clearly written
+* not childish
+* not cluttered
+* not random
+* strong learning flow
+* strong humanities feel
+* real academic structure
+
+This should feel like a premium personal study course.
+
+---
+
+# Main Product Identity
+
+This is not just:
+
+* a flashcard app
+* a quiz app
+* a notes app
+
+It is:
+
+## **a textbook-style CLEP Humanities course app**
+
+with:
+
+* chapter learning
+* section breakdowns
+* videos
+* graphics
+* games
+* flashcards
+* quizzes
+* weakness review
+* chapter tests
+* cumulative milestone testing
+* dynamic progression
+
+---
+
+# One-Sentence Definition
+
+## **A chapter-based CLEP Humanities course app where each era is studied like a textbook, reinforced with videos, games, flashcards, quizzes, weakness review, and tests before the next chapter unlocks.**
+
+---
+
+# Build Priorities
+
+If you want the priorities listed in the right order:
+
+1. **Define the 6 chapters**
+2. **Break each chapter into sections**
+3. **Build the Learn flow**
+4. **Build the dynamic progression logic**
+5. **Add Watch Videos playlists**
+6. **Add chapter and section flashcards**
+7. **Build Game Hub**
+8. **Build quizzes**
+9. **Build weakness review**
+10. **Build chapter tests**
+11. **Build cumulative 3-chapter and 6-chapter testing**
+12. **Polish dashboard and progress tracking**
+
+---
+
+# Your Exact Intent
+
+You want this app to:
+
+* make the CLEP Humanities exam less intimidating
+* turn scattered content into a real course
+* give him a step-by-step path
+* replace passive scrolling with intentional studying
+* combine textbook learning with interactive practice
+* adapt as he progresses
+* feel serious, rich, and actually useful
+
+That is the plan.
+
+I can turn this next into a **full app blueprint with screens, tabs, and feature hierarchy**.
+Yes — and this actually clarifies the move.
+
+## The big takeaway
+
+You do **not** need twenty equal textbooks. You need **one main spine** and then a few support books.
+
+The official CLEP Humanities guide literally says **no single book covers all areas** and recommends using college textbooks, supplementary reading, and course materials. It specifically names **Henry M. Sayre, *The Humanities: Culture, Continuity, and Change, Volumes I and II*** as one of the textbook resources. It also says the study guide is **not intended to replace a textbook** and suggests using a syllabus and course materials to guide textbook selection.   
+
+## What that means for your library
+
+Your best move is:
+
+### **Primary spine**
+
+Use **Sayre** as the main course backbone.
+
+Why? Because Sayre is already split almost perfectly into the exact era progression you want:
+
+* **Book 1** = Ancient/Classical
+* **Book 2** = Middle Ages
+* **Book 3** = Renaissance
+* **Book 4** = Baroque and Enlightenment
+* **Book 5** = Romanticism and Realism
+* **Book 6** = Twentieth century to present
+
+And the series is also packaged as:
+
+* **Volume I = Books 1–3**
+* **Volume II = Books 4–6**.  
+
+That is basically your app structure already sitting there.
+
+### **Secondary support**
+
+Use **Fiero** as the comparison / second voice.
+
+Not as the main skeleton.
+As the **backup explanation source** when:
+
+* one chapter feels weak in Sayre,
+* you want alternate wording,
+* you want another angle on the same era.
+
+## So here is the clean organization
+
+### Keep as your **main framework**
+
+* **Sayre Volume I**
+* **Sayre Volume II**
+  or, if you prefer the smaller split:
+* **Sayre Book 1**
+* **Sayre Book 2**
+* **Sayre Book 3**
+* **Sayre Book 4**
+* **Sayre Book 5**
+* **Sayre Book 6**
+
+The reason I am pushing Sayre hard is that the book is intentionally built around **connections across disciplines, cultures, and time periods**, and each chapter is centered on a specific place and period with integrated humanities coverage. That is exactly the kind of structure your app needs.  
+
+### Keep as **supporting textbooks**
+
+* **Fiero Book 1** for early civilizations / classical foundations
+* **Fiero Volume 2** for early modern onward
+* **Fiero Book 6** for modern / global / contemporary reinforcement
+
+### Probably redundant
+
+* duplicate copies of **Sayre Volume I**
+* multiple copies of **Sayre Book 2**
+* the **Instructor’s Review Copy** version if you also have a cleaner regular copy
+
+You do not need three versions of the same era book sitting in your workflow. That just creates mess.
+
+## The smartest textbook-to-chapter mapping
+
+Here is the mapping I would use for the app.
+
+### Chapter 1 — Classical
+
+**Main source:** Sayre Book 1
+**Support:** Fiero Book 1
+
+### Chapter 2 — Middle Ages
+
+**Main source:** Sayre Book 2
+**Support:** Fiero where relevant, if you have medieval coverage elsewhere
+
+### Chapter 3 — Renaissance
+
+**Main source:** Sayre Book 3
+**Support:** Fiero Volume 2
+
+### Chapter 4 — Baroque and Enlightenment
+
+**Main source:** Sayre Book 4
+**Support:** Fiero Volume 2
+
+### Chapter 5 — Romanticism and Realism
+
+**Main source:** Sayre Book 5
+**Support:** Fiero Volume 2
+
+### Chapter 6 — Twentieth and Twenty-First Centuries
+
+**Main source:** Sayre Book 6
+**Support:** Fiero Book 6
+
+That is the cleanest possible system.
+
+## Your actual textbook stack goal
+
+You want the app to feel like a real course, so your stack should look like this:
+
+### Layer 1 — **Official exam contract**
+
+Use the CLEP Humanities guide for:
+
+* exam scope
+* weightings
+* style of questions
+* what counts as success.  
+
+### Layer 2 — **Main course textbook**
+
+Use **Sayre** for:
+
+* chapter order
+* section structure
+* readings
+* cross-discipline connections
+* chapter flow
+
+### Layer 3 — **Secondary textbook**
+
+Use **Fiero** for:
+
+* alternative explanations
+* second summaries
+* reinforcing weak eras
+* filling gaps
+
+### Layer 4 — **Outside media**
+
+Use videos, museum resources, and interactive stuff to power:
+
+* Watch Videos
+* Game Hub
+* visual review
+* less boring repetition
+
+## The practical truth
+
+Right now, your danger is not “not enough content.”
+
+It is **too many overlapping books with no system**.
+
+So this is the rule:
+
+## **One era = one primary textbook source**
+
+Do not mix five books equally inside one chapter.
+
+For each chapter:
+
+* pick one main book
+* use one backup book
+* build your summaries from the main one
+* only pull from the backup when it adds something useful
+
+That will keep the app coherent.
+
+## The part I would clean up immediately
+
+Make a master inventory like this:
+
+### Main
+
+* Sayre Volume I
+* Sayre Volume II
+
+### Supplemental
+
+* Fiero Book 1
+* Fiero Volume 2
+* Fiero Book 6
+
+### Redundant / archive
+
+* duplicate Sayre Volume I copy
+* duplicate Sayre Book 2 copy
+* instructor review duplicate if regular scan is cleaner
+
+That is the cleanup move.
+
+## Why Sayre fits your app especially well
+
+Sayre is not just divided by era. It also emphasizes:
+
+* chapter openers,
+* visual snapshots,
+* quotes from readings,
+* major topics,
+* integrated humanities coverage,
+* context and connections across disciplines and time periods.  
+
+That is basically the app you described:
+
+* textbook feel
+* section learning
+* visuals
+* cross-links
+* deeper context
+* not just trivia
+
+So honestly, **Sayre is your app blueprint hiding inside a textbook series**.
+
+## My recommendation in one line
+
+Use **Sayre as the main course**, **Fiero as the supporting explainer**, and cut the duplicate clutter.
+
+## The best next step
+
+Before you build any more features, make a **source map**:
+
+* Chapter 1 → main textbook + backup textbook
+* Chapter 2 → main textbook + backup textbook
+* Chapter 3 → main textbook + backup textbook
+* Chapter 4 → main textbook + backup textbook
+* Chapter 5 → main textbook + backup textbook
+* Chapter 6 → main textbook + backup textbook
+
+Once that is locked, the rest of the app becomes way easier.
+
+I can make that **exact source map table plus the chapter-by-chapter section plan** next.
+Perfect. I’m locking this into a **clean source map + chapter plan**.
+
+The safest academic backbone is still **Sayre as the primary spine**, because the CLEP Humanities guide says the exam is extremely broad, split across literature and the arts, spread across major historical periods, and that students should use **one or more college textbooks** because **no single book covers everything**. The same CLEP guide specifically names **Henry M. Sayre, *The Humanities: Culture, Continuity, and Change, Volumes I and II*** as a study resource.  
+
+Sayre’s series is already divided into **two volumes / six books**, which matches your six-module app structure almost perfectly: Book 1 ancient/classical, Book 2 medieval, Book 3 renaissance, Book 4 baroque/enlightenment, Book 5 romanticism/realism, and Book 6 modernism to the present.  
+
+## Locked source map
+
+### Chapter 1 — Classical
+
+**Primary source:** Sayre Volume I, especially **Book 1, Chapters 1–8**.
+**Support source:** Fiero **Book 1** for first civilizations and ancient foundations, but not as the main spine.
+**Reason:** Sayre Book 1 explicitly covers the ancient world through Rome, which gives you the cleanest course arc for the whole classical block. 
+
+### Chapter 2 — Middle Ages
+
+**Primary source:** Sayre Volume I, especially **Book 2, Chapters 9–16**.
+**Support source:** mostly Sayre for now. Based on the files you listed, you do not yet have a clearly matched Fiero medieval book in the searchable set, so this chapter should lean heavily on Sayre.
+**Reason:** Book 2 is directly titled *Medieval Europe and the Shaping of World Cultures: 200 CE to 1400*.  
+
+### Chapter 3 — Renaissance
+
+**Primary source:** Sayre Volume I, especially **Book 3, Chapters 17–24**.
+**Support source:** Fiero **Volume 2** for alternate explanations and reinforcement.
+**Reason:** Sayre Book 3 is directly organized around the Renaissance and Age of Encounter. 
+
+### Chapter 4 — Baroque and Enlightenment
+
+**Primary source:** Sayre Volume II, especially **Book 4, Chapters 25–32**.
+**Support source:** Fiero **Volume 2**.
+**Reason:** Sayre Book 4 directly covers 1600–1800 and breaks that period into the exact baroque/enlightenment sequence you want.  
+
+### Chapter 5 — Romanticism and Realism
+
+**Primary source:** Sayre Volume II, especially **Book 5, Chapters 33–40**.
+**Support source:** Fiero **Volume 2**.
+**Reason:** Sayre Book 5 explicitly covers 1800–1900 and already splits the era into Romanticism, realism, bourgeois culture, empire, and symbolism.  
+
+### Chapter 6 — Twentieth and Twenty-First Centuries
+
+**Primary source:** Sayre Volume II, especially **Book 6, Chapters 41–48**.
+**Support source:** Fiero **Book 6**.
+**Reason:** Sayre Book 6 directly covers modernism, world wars, postmodernism, and the information age, which is exactly your last module.  
+
+## The master section template for every chapter
+
+This part matters a lot. Sayre is useful not just because of its timeline, but because it already uses recurring learning features like **chapter openers**, **Focus**, **Context**, **Voices**, **Cultural Parallels**, **maps**, and **Continuity & Change**. Those are basically your app’s built-in pedagogical model.     
+
+So every chapter should use this structure:
+
+1. **Chapter opener**
+   Snapshot of the era, why it matters, what changed, major topics.
+
+2. **Timeline + map**
+   Dates, places, people, movements, cross-links.
+
+3. **Section lessons**
+   Short explanation, then deeper explanation.
+
+4. **Focus work**
+   One major artwork, building, text, performance, or artifact.
+
+5. **Voices / reading room**
+   First-person or primary-source flavor.
+
+6. **Cultural parallels**
+   Show what was happening elsewhere at the same time.
+
+7. **Continuity & change**
+   Compare this era with the previous one.
+
+8. **Learn → Watch → Play → Quiz → Weakness → Test**
+   This is your app flow layered onto the content spine.
+
+## Chapter-by-chapter section plan
+
+### Chapter 1 — Classical
+
+Use **6 sections**.
+
+**Section 1: Origins and the rise of culture**
+Prehistory, early settlement, the birth of symbolic culture.
+
+**Section 2: Mesopotamia and Egypt**
+Power, religion, writing, monumentality.
+
+**Section 3: Early civilizations beyond the Mediterranean**
+China, India, Africa foundations.
+
+**Section 4: Aegean world and Greek beginnings**
+Bronze Age networks, heroic world, transition to city-states.
+
+**Section 5: Classical Greece**
+Athens, drama, philosophy, sculpture, democracy, human form.
+
+**Section 6: Rome**
+Empire, law, urban culture, literature, engineering, architecture.
+
+**Best support note:** Use Fiero Book 1 mainly for the early-civilization part; let Sayre carry the full chapter. Sayre’s Book 1 table of contents gives this progression directly from prehistory through Rome. 
+
+### Chapter 2 — Middle Ages
+
+Use **8 sections**.
+
+**Section 1: Late Rome, Judaism, and Christianity**
+Collapse/transition, belief systems, early Christian symbols.
+
+**Section 2: Byzantium**
+Constantinople, mosaics, imperial Christianity, icons.
+
+**Section 3: Rise and spread of Islam**
+Religion, empire, scholarship, cultural transmission.
+
+**Section 4: Fiefdom and monastery**
+Feudal order, literacy, monastic culture, manuscript life.
+
+**Section 5: Romanesque world**
+Pilgrimage, crusade, church power, early medieval architecture.
+
+**Section 6: Gothic age**
+Cathedrals, light, inquiry, scholasticism, urban life.
+
+**Section 7: Siena and Florence before the Renaissance**
+Commerce, civic culture, proto-humanism.
+
+**Section 8: Global medieval worlds**
+China, India, Japan, Africa, the Americas before 1400.
+
+This is a very strong chapter because Sayre Book 2 already lays out these eight medieval units almost exactly. 
+
+### Chapter 3 — Renaissance
+
+Use **8 sections**.
+
+**Section 1: Florence and early Renaissance humanism**
+Civic life, patrons, revival of classical ideals.
+
+**Section 2: High Renaissance Rome**
+Papal power, monumental art, ideal form.
+
+**Section 3: Venice**
+Trade wealth, color, courtly culture, music and spectacle.
+
+**Section 4: Northern Renaissance**
+Domesticity, detail, wealth, reform-minded moral vision.
+
+**Section 5: Reformation**
+New church politics, print, argument, visual change.
+
+**Section 6: Counter-Reformation and Mannerism**
+Restraint, distortion, spiritual intensity, invention.
+
+**Section 7: Encounter and expansion**
+West Africa, China, Japan, cultural exchange and conflict.
+
+**Section 8: Tudor England**
+Court culture, poetry, theater, national identity.
+
+That sequence comes straight from Sayre Book 3’s contents. 
+
+### Chapter 4 — Baroque and Enlightenment
+
+Use **8 sections**.
+
+**Section 1: Italian Baroque**
+Church appeal, theatricality, grandeur, persuasion.
+
+**Section 2: Northern Baroque**
+Observation, domestic realism, science, Protestant culture.
+
+**Section 3: Court culture and absolutism**
+Royal patronage, state power, spectacle.
+
+**Section 4: Enlightenment in England**
+Reason, empiricism, political thought, satire.
+
+**Section 5: Rococo and continental Enlightenment**
+Privilege, elegance, wit, critique.
+
+**Section 6: Cross-cultural encounter in the Enlightenment**
+Trade, empire, circulation of ideas and goods.
+
+**Section 7: Rights of Man / America**
+Revolutionary ideals, liberty, political culture.
+
+**Section 8: France, neoclassicism, and revolution**
+Order, civic virtue, upheaval, changing aesthetics.
+
+This is not guesswork — Sayre Book 4 already gives you that exact sequence.  
+
+### Chapter 5 — Romanticism and Realism
+
+Use **8 sections**.
+
+**Section 1: The self in nature**
+Emotion, individualism, sublime, early Romanticism.
+
+**Section 2: Napoleon and the Romantic imagination**
+Heroism, conflict, nationalism, drama.
+
+**Section 3: Industry and the working class**
+Urbanization, labor, realism, social critique.
+
+**Section 4: Revolution, civil war, and modern life**
+Political rupture and new social conditions.
+
+**Section 5: Bourgeois culture**
+Domesticity, respectability, middle-class ideals.
+
+**Section 6: The Gilded Age in America**
+Expansion, conflict, wealth, national identity.
+
+**Section 7: Global confrontations**
+Empire, colonialism, cultural identity pressure.
+
+**Section 8: From realism to symbolism**
+Psychology, decadence, fin de siècle transition.
+
+Again, this chapter is basically already planned by Sayre Book 5.  
+
+### Chapter 6 — Twentieth and Twenty-First Centuries
+
+Use **8 sections**.
+
+**Section 1: Paris and early modernism**
+Experiment, rupture, invention.
+
+**Section 2: The Great War and the Lost Generation**
+Trauma, fragmentation, anti-illusion.
+
+**Section 3: New York and skyscraper culture**
+Modern city, scale, jazz-age energy, American rise.
+
+**Section 4: Between the wars**
+Anxiety, mass culture, ideology, surrealism.
+
+**Section 5: World War II and aftermath**
+Devastation, recovery, existential art, postwar shifts.
+
+**Section 6: The 1960s**
+Counterculture, protest, identity, experimentation.
+
+**Section 7: Postmodernism**
+Multiple meanings, irony, media saturation, instability.
+
+**Section 8: Global village / information age**
+Globalization, hybrid identity, new media, boundary-blurring.
+
+That structure follows Sayre Book 6 directly.  
+
+## How the question bank should be tagged
+
+To keep the app feeling like a real CLEP-prep course, every section and chapter bank should be tagged to match the exam blueprint:
+
+* **50% literature / 50% arts**
+* skill tags for **factual knowledge**, **recognition of style/technique**, and **interpretation**
+* across the full course, coverage should stay balanced across the major periods
+* at least some material should deliberately include **African, Asian, and Latin American** perspectives because CLEP says **5–10%** of the exam draws on other cultures. 
+
+That means your app should not become “mostly Western painting with random quotes.” It needs real balance.
+
+## Final recommendation
+
+Lock the build around this rule:
+
+**Sayre = chapter architecture**
+**Fiero = support explanations where useful**
+**CLEP guide = assessment blueprint**
+
+That is the clean system.
+
+## What I would lock next
+
+The next thing to freeze is the **exact content object list for Chapter 1**:
+
+* section names
+* key people
+* key works
+* key terms
+* flashcard buckets
+* video slots
+* game types
+* quiz categories
+* chapter test categories
+
+That is the point where the app stops being an idea and starts becoming a real build.
+Locked. Here is the **rest of the spec, fixed**.
+
+Your app is now officially a **chapter-based CLEP Humanities course system**, with **CLEP as the assessment blueprint** and **Sayre as the main course architecture**. That makes sense because the official Humanities guide says the exam is broad, covers literature and the arts from classical to contemporary, contains about **140 questions in 90 minutes**, and is best prepared for with **one or more college textbooks**, not the study guide alone. The same guide specifically names **Henry M. Sayre, *The Humanities: Culture, Continuity, and Change, Volumes I and II*** as a study resource.   
+
+Sayre is the right spine because it is already split into **two volumes / six books**, matching your six-course-chapter structure, and it is built around recurring teaching features like **chapter openers, Focus, Context, Materials and Techniques, Voices, Cultural Parallels, Continuity & Change, readings, and critical thinking questions**. That is basically your app structure hiding inside a textbook.     
+
+# 1. Locked foundation rules
+
+These are now fixed:
+
+1. **CLEP guide = exam truth**
+2. **Sayre = primary content spine**
+3. **Fiero = support / alternate explanations**
+4. **Each module = one textbook-style chapter**
+5. **Progression is gated**
+6. **The app must change based on what he has completed**
+7. **No random study flow**
+8. **Everything points toward chapter mastery, cumulative mastery, then full mock**
+
+# 2. Locked course structure
+
+These six chapters are final:
+
+## Chapter 1 — Classical
+
+Sections:
+
+* Origins and the rise of culture
+* Mesopotamia and Egypt
+* Early civilizations beyond the Mediterranean
+* Aegean world and Greek beginnings
+* Classical Greece
+* Rome
+
+## Chapter 2 — Middle Ages
+
+Sections:
+
+* Late Rome, Judaism, and Christianity
+* Byzantium
+* Rise and spread of Islam
+* Fiefdom and monastery
+* Romanesque world
+* Gothic age
+* Siena and Florence before the Renaissance
+* Global medieval worlds
+
+## Chapter 3 — Renaissance
+
+Sections:
+
+* Florence and early Renaissance humanism
+* High Renaissance Rome
+* Venice
+* Northern Renaissance
+* Reformation
+* Counter-Reformation and Mannerism
+* Encounter and expansion
+* Tudor England
+
+## Chapter 4 — Baroque and Enlightenment
+
+Sections:
+
+* Italian Baroque
+* Northern Baroque
+* Court culture and absolutism
+* Enlightenment in England
+* Rococo and continental Enlightenment
+* Cross-cultural encounter
+* Rights of Man / America
+* France, neoclassicism, and revolution
+
+## Chapter 5 — Romanticism and Realism
+
+Sections:
+
+* The self in nature
+* Napoleon and the Romantic imagination
+* Industry and the working class
+* Revolution, civil war, and modern life
+* Bourgeois culture
+* Gilded Age in America
+* Global confrontations
+* Realism to symbolism
+
+## Chapter 6 — Twentieth and Twenty-First Centuries
+
+Sections:
+
+* Paris and early modernism
+* The Great War and Lost Generation
+* New York and skyscraper culture
+* Between the wars
+* World War II and aftermath
+* The 1960s
+* Postmodernism
+* Global village / information age
+
+This is aligned with Sayre’s book split and chapter ranges.  
+
+# 3. Locked screen map
+
+These are the main screens.
+
+## Dashboard
+
+Shows:
+
+* current chapter
+* current phase
+* next required action
+* chapter completion
+* weak spots
+* recent scores
+* milestone status
+* streak / momentum
+
+## Course
+
+Shows the 6 chapter cards and their status:
+
+* Not Started
+* In Progress
+* Ready to Test
+* Passed
+* Mastered
+
+## Reader / Learn
+
+This is textbook mode:
+
+* chapter opener
+* section lessons
+* key terms
+* key people
+* key works
+* visuals
+* notes
+* highlights
+* reading progress
+
+## Watch Videos
+
+Playlist-based, chapter-tagged, section-tagged.
+
+## Flashcards
+
+Filtered by:
+
+* chapter
+* section
+* weakness
+* cumulative
+* starred
+
+## Game Hub
+
+Filtered by:
+
+* chapter
+* section
+* weakness
+* cumulative
+
+## Quiz Center
+
+Contains:
+
+* section quizzes
+* chapter quizzes
+* cumulative quizzes
+* quick drills
+
+## Weakness Lab
+
+Auto-generates:
+
+* missed terms
+* missed works
+* confused eras
+* weak disciplines
+* weak question types
+
+## Test Center
+
+Contains:
+
+* chapter tests
+* 3-chapter exam
+* 6-chapter final
+* full mock CLEP mode
+
+## Progress
+
+Shows:
+
+* accuracy
+* mastery by chapter
+* mastery by section
+* time spent
+* videos watched
+* flashcards completed
+* game performance
+* quiz/test history
+
+# 4. Locked study loop
+
+This loop is fixed for every chapter.
+
+## Section flow
+
+**Learn → Watch → Play → Flashcards → Section Quiz → Weakness Fix**
+
+## Chapter flow
+
+**Chapter intro → section loop for all sections → chapter quiz → weakness lab → chapter test**
+
+## Milestone flow
+
+After Chapter 3:
+**3-chapter cumulative quiz → 3-chapter cumulative test**
+
+After Chapter 6:
+**6-chapter cumulative quiz → 6-chapter cumulative final → full mock CLEP**
+
+# 5. Locked gating rules
+
+These thresholds are fixed.
+
+## Section complete
+
+A section becomes complete when:
+
+* Learn viewed
+* at least 1 video watched or marked complete
+* flashcards attempted
+* section quiz score is **70%+**
+
+## Chapter ready
+
+A chapter becomes ready for its test when:
+
+* all sections are complete
+* chapter quiz average is **75%+**
+
+## Chapter passed
+
+A chapter is passed when:
+
+* chapter test score is **75%+**
+
+## Chapter mastered
+
+A chapter is mastered when:
+
+* chapter test score is **85%+**
+* weakness items for that chapter are mostly cleared
+
+## Unlock logic
+
+* Chapter 2 unlocks after Chapter 1 passed
+* Chapter 3 unlocks after Chapter 2 passed
+* Midpoint review unlocks after Chapters 1–3 passed
+* Chapter 4 unlocks after midpoint test
+* Chapter 5 unlocks after Chapter 4 passed
+* Chapter 6 unlocks after Chapter 5 passed
+* Final review unlocks after Chapter 6 passed
+
+## Failure logic
+
+If a chapter test is below 75%:
+
+* do not advance
+* send him to Weakness Lab
+* assign targeted flashcards
+* assign one replayable game set
+* require a retake readiness quiz first
+
+# 6. Locked assessment structure
+
+The CLEP blueprint says Humanities is about **140 questions in 90 minutes**, with **50% literature**, **50% arts**, and skill weighting of **50% factual knowledge**, **30% recognition/style**, and **20% interpretation**. It also says the exam is fairly evenly divided across major periods and that **5–10%** of questions draw on other cultures.   
+
+So your internal assessment numbers are now locked like this:
+
+## Section checkpoint
+
+* 3 questions
+* quick understanding check
+
+## Section quiz
+
+* 8 to 10 questions
+* instant feedback
+* explanation after answer
+
+## Chapter quiz
+
+* 15 questions
+* mixed across the whole chapter
+* untimed or lightly timed
+
+## Weakness drill
+
+* 10 questions
+* only missed topics
+
+## Chapter test
+
+* 25 questions
+* timed
+* no instant answer reveal
+
+## 3-chapter cumulative quiz
+
+* 30 questions
+
+## 3-chapter cumulative exam
+
+* 45 questions
+
+## 6-chapter cumulative quiz
+
+* 50 questions
+
+## 6-chapter final course exam
+
+* 75 questions
+
+## Full mock CLEP mode
+
+* **140 questions**
+* **90 minutes**
+* exam-weighted
+* full breakdown after submission
+
+# 7. Locked question distribution rules
+
+Every question in your bank must have these tags:
+
+* chapter
+* section
+* period
+* discipline
+* subtype
+* skillType
+* difficulty
+* source
+* explanation
+* retryEligible
+* weaknessTag
+
+## Discipline tags
+
+* drama
+* poetry
+* fiction
+* nonfiction/philosophy
+* visual arts
+* architecture
+* music
+* film/dance
+
+## Skill type tags
+
+* factual
+* recognition_style
+* interpretation
+
+## Required balance
+
+Across chapter tests and cumulative tests:
+
+* **50% literature**
+* **50% arts**
+* skill balance should approximate official CLEP weighting
+* at least **5–10% non-Western / cross-cultural content** across the full course 
+
+# 8. Locked section template
+
+Every section page uses this structure:
+
+1. **Section title**
+2. **2-minute summary**
+3. **deep explanation**
+4. **why it matters**
+5. **key people**
+6. **key works**
+7. **key terms**
+8. **one visual / artifact**
+9. **one compare note**
+10. **one exam clue box**
+11. **one quick checkpoint**
+12. **flashcards tied to this section**
+13. **videos tied to this section**
+14. **games tied to this section**
+15. **section quiz**
+
+# 9. Locked chapter template
+
+Every chapter page uses this structure:
+
+1. Chapter opener
+2. Big picture timeline
+3. Section list
+4. Key people list
+5. Key works gallery
+6. Key terms bank
+7. Focus work
+8. Voices / reading room
+9. Cultural parallels
+10. Continuity & change
+11. Watch playlist
+12. Flashcards
+13. Game hub
+14. Chapter quiz
+15. Weakness lab
+16. Chapter test
+
+That follows the teaching logic embedded in Sayre’s recurring chapter features.  
+
+# 10. Locked video system
+
+This feature is now fixed as:
+
+## Watch Videos
+
+Rules:
+
+* videos belong to a chapter and section
+* every chapter has a playlist
+* every section can have 1 to 3 priority videos
+* videos can be marked watched
+* videos can be saved to review later
+* videos can be pushed automatically after weak quiz performance
+
+## Video slots per chapter
+
+* 8–12 core videos
+* 2–3 optional longer videos
+* 1 recap playlist
+
+## Video categories
+
+* overview
+* key figure
+* artwork/building analysis
+* philosophy/literature explainer
+* recap/review
+
+# 11. Locked flashcard system
+
+Flashcards are now split into four levels.
+
+## Level 1 — Section flashcards
+
+Detailed, lesson-specific.
+
+## Level 2 — Chapter flashcards
+
+High-yield chapter summary.
+
+## Level 3 — Weakness flashcards
+
+Auto-built from misses and low confidence areas.
+
+## Level 4 — Cumulative flashcards
+
+Unlocked after chapter 3 and chapter 6.
+
+## Flashcard card types
+
+* term → definition
+* person → contribution
+* work → creator
+* work → period
+* clue → movement
+* image → identification
+* quote → person/work
+* compare X vs Y
+
+# 12. Locked game hub
+
+Games are fixed to these core modes:
+
+* Timeline Builder
+* Match the Work
+* Era Sort
+* Person to Work
+* Work to Movement
+* Image ID
+* Odd One Out
+* Speed Round
+* Term Trap
+* Compare and Contrast
+* Quote Hunt
+* Cultural Crossroads
+
+## Game rules
+
+* every game must reinforce real content
+* every game must be chapter-tagged
+* every game must feed back into weakness tracking
+* no purely decorative games
+
+# 13. Locked dashboard behavior
+
+The dashboard must react to state.
+
+## If chapter not started
+
+Show:
+
+* current chapter card
+* start learn button
+
+## If learning incomplete
+
+Show:
+
+* resume section
+* next section
+* recommended watch items
+
+## If quizzes weak
+
+Show:
+
+* weakness alert
+* retry quiz
+* weakness flashcards
+* targeted game suggestion
+
+## If chapter ready
+
+Show:
+
+* chapter test banner
+
+## If chapter passed
+
+Show:
+
+* unlock next chapter
+* chapter badge
+* progress animation
+
+## After chapter 3
+
+Dashboard mode changes to:
+
+* Midpoint Review
+
+## After chapter 6
+
+Dashboard mode changes to:
+
+* Final Review
+
+# 14. Locked progress statuses
+
+These labels are fixed:
+
+* Not Started
+* Learning
+* Watching
+* Practicing
+* Reviewing Weaknesses
+* Ready to Test
+* Passed
+* Mastered
+
+And each section also gets:
+
+* red = weak
+* yellow = developing
+* green = solid
+
+# 15. Locked source hierarchy
+
+Use this hierarchy and stop rethinking it.
+
+## Primary
+
+* Sayre for chapter order, section order, course feel
+
+## Secondary
+
+* Fiero for alternate explanations and filling weak spots
+
+## Official layer
+
+* CLEP guide for weighting, scope, and test structure
+
+The CLEP guide itself says to use the study guide plus **syllabus, course materials, reading lists, and textbooks**, and says the guide is **not intended to replace a textbook**.  
+
+# 16. Locked data objects
+
+This is the minimum object model.
+
+```json
+{
+  "chapter": {
+    "id": "ch1",
+    "title": "Classical",
+    "status": "learning",
+    "sections": [],
+    "keyPeople": [],
+    "keyWorks": [],
+    "keyTerms": [],
+    "videos": [],
+    "games": [],
+    "flashcards": [],
+    "chapterQuiz": [],
+    "chapterTest": [],
+    "mastery": 0.0
+  }
+}
+```
+
+```json
+{
+  "section": {
+    "id": "ch1-sec3",
+    "chapterId": "ch1",
+    "title": "Mesopotamia and Egypt",
+    "summaryShort": "",
+    "summaryLong": "",
+    "people": [],
+    "works": [],
+    "terms": [],
+    "videos": [],
+    "games": [],
+    "flashcards": [],
+    "quizIds": [],
+    "status": "not_started",
+    "mastery": 0.0
+  }
+}
+```
+
+```json
+{
+  "question": {
+    "id": "q-001",
+    "chapterId": "ch1",
+    "sectionId": "ch1-sec3",
+    "discipline": "visual_arts",
+    "skillType": "recognition_style",
+    "difficulty": 2,
+    "prompt": "",
+    "choices": [],
+    "answer": "",
+    "explanation": "",
+    "tags": ["egypt", "monumentality", "architecture"]
+  }
+}
+```
+
+```json
+{
+  "progress": {
+    "currentChapter": "ch2",
+    "completedSections": [],
+    "videoCompletions": [],
+    "gameHistory": [],
+    "quizScores": [],
+    "testScores": [],
+    "weaknessTags": [],
+    "streak": 0
+  }
+}
+```
+
+# 17. Locked build order
+
+This is the order. Do not jump around.
+
+1. Build chapter shell
+2. Build section shell
+3. Build progress / status engine
+4. Build Learn pages
+5. Build quiz engine
+6. Build weakness engine
+7. Build chapter tests
+8. Build dashboard logic
+9. Build flashcards
+10. Build games
+11. Build video playlists
+12. Build cumulative assessments
+13. Build full mock CLEP mode
+14. Polish visuals
+
+# 18. Final locked product definition
+
+**A six-chapter CLEP Humanities course app where each era is studied like a textbook, reinforced with videos, flashcards, games, quizzes, weakness review, and chapter tests, then rolled into cumulative milestone exams and a full CLEP-style mock.**
+
+That is the spec. Build against this, not against scattered ideas.
+Good news: **this is actually cleaner than it looked**.
+
+## What you really have
+
+Your filenames are messy, but the **Sayre files are the key**:
+
+* Your **Sayre Volume I** PDF is correctly **Volume I: Prehistory to 1600**, and its front matter shows **Volume I = Books 1, 2, and 3**. 
+* The file named **“THE HUMANITIES… Book 2 — Instructor’s Review Copy”** is **not actually Book 2** on the title pages. The pages shown identify it as **Sayre Volume II: 1600 to the Present**, and its front matter shows **Volume II = Books 4, 5, and 6**. 
+
+So with just those two Sayre PDFs, you already have the **full six-chapter backbone**:
+
+* **Volume I** → Chapters 1–3
+* **Volume II** → Chapters 4–6  
+
+## Lock this in as your actual library
+
+### Core books to keep
+
+Keep these as your **main course library**:
+
+1. **Sayre Volume I**
+   Rename to something like:
+   `Sayre_Volume_I_Prehistory_to_1600.pdf`
+
+2. **That mislabeled “Book 2 Instructor’s Review Copy” PDF**
+   Rename it to what it actually is:
+   `Sayre_Volume_II_1600_to_Present.pdf`
+
+That is your main spine. Done.
+
+### Optional support books to keep
+
+Keep these as **backup explanation sources**, not your main structure:
+
+* **Fiero Volume 2_ The Early Modern World**
+* **Fiero Book 6_ Modernism, Globalism...**
+
+These are useful for alternate explanations, especially later chapters.
+
+### Duplicate / clutter / not needed right now
+
+You can archive or ignore:
+
+* the duplicate **Sayre Volume I** file with `(1)` in the name
+* the **canceled** Fiero Volume 2 download
+* the **deleted** Fiero Book 1
+* the **deleted** regular Sayre Book 2
+
+You do **not** need the deleted regular Sayre Book 2, because **Sayre Volume I already contains Book 2 content inside it**. 
+
+## Your final source map now
+
+### Chapter 1 — Classical
+
+**Primary:** Sayre Volume I
+**Optional support:** none required right now
+
+### Chapter 2 — Middle Ages
+
+**Primary:** Sayre Volume I
+**Optional support:** none required right now
+
+### Chapter 3 — Renaissance
+
+**Primary:** Sayre Volume I
+
+### Chapter 4 — Baroque and Enlightenment
+
+**Primary:** Sayre Volume II
+
+### Chapter 5 — Romanticism and Realism
+
+**Primary:** Sayre Volume II
+**Support:** Fiero Volume 2
+
+### Chapter 6 — Twentieth and Twenty-First Centuries
+
+**Primary:** Sayre Volume II
+**Support:** Fiero Book 6
+
+## What I would do next on your laptop
+
+Make one clean folder:
+
+**CLEP Humanities Sources**
+
+Inside it:
+
+* `01_Sayre_Volume_I_Prehistory_to_1600.pdf`
+* `02_Sayre_Volume_II_1600_to_Present.pdf`
+* `03_Fiero_Volume_2_Early_Modern_World.pdf`
+* `04_Fiero_Book_6_Modernism_Globalism.pdf`
+* `Archive/` for duplicates and junk names
+
+## The important conclusion
+
+You do **not** need to keep hunting for more core textbooks right now.
+
+You already have the main structure:
+
+* **Sayre Volume I** = first half of the course
+* **Sayre Volume II** = second half of the course  
+
+That means the textbook side is now stable enough to move into actual build planning.
+
+Next thing to lock is the **exact app tabs and navigation structure** so you stop brainstorming and start building.
+Yes — here’s the **simple quick list** of what you want:
+
+## What you want this app to be
+
+* A **real CLEP Humanities course app**, not a basic flashcard app
+* Built like a **textbook with chapters**, so it feels less overwhelming
+* The 6 chapters are:
+
+  * Classical
+  * Middle Ages
+  * Renaissance
+  * Baroque and Enlightenment
+  * Romanticism and Realism
+  * Twentieth and Twenty-First Centuries
+
+## What each chapter should have
+
+* Sections/subsections
+* Learn mode with real textbook-based material
+* Graphics/visuals
+* Embedded video playlist
+* Flashcards for both chapter and section
+* Games
+* Quiz
+* Weakness review
+* Chapter test
+
+## The study flow you want
+
+For each chapter:
+
+* Learn
+* Watch videos
+* Play games
+* Use flashcards
+* Take quiz
+* Review weaknesses
+* Take chapter test
+* Unlock next chapter
+
+## The bigger progression you want
+
+* Finish Chapters 1–3
+* Then do a **3-chapter quiz**
+* Then a **3-chapter test**
+* Then continue Chapters 4–6
+* Then do a **6-chapter cumulative quiz**
+* Then a **6-chapter cumulative final test**
+
+## How you want the app to behave
+
+* It should **change dynamically** based on what he finishes
+* It should always tell him the **next thing to do**
+* It should push weakness review when he struggles
+* It should unlock the next chapter only after progress is made
+
+## Your content/source plan
+
+* **Sayre** is the main backbone
+* **Fiero** is support
+* **CLEP structure** guides the quiz/test logic
+
+## The vibe you want
+
+* Serious
+* Rich
+* Organized
+* Visual
+* Interactive
+* Feels like a real class, not random studying
+
+## The main goal
+
+* Make the CLEP Humanities exam feel **structured, doable, and way less intimidating**
+
+That’s your plan in the simplest form.
+Yep — I see the repo direction.
+
+## What’s in the repo right now
+
+From the scan, you currently have:
+
+* **1 official CLEP Humanities exam guide**
+* **4 Quizlet-style study PDFs**
+* **Sayre Volume I**
+* **a duplicate copy of Sayre Volume I**
+* **Sayre Book 2 (Medieval)**
+* **the mislabeled Sayre instructor/review PDF that functions as your Volume II source**
+* **Fiero Book 1**
+* **Fiero Book 6** 
+
+## What that means for your plan
+
+This repo is already shaping into the exact system you wanted:
+
+### Core structure
+
+* **CLEP guide** = exam truth / test blueprint
+* **Sayre** = main textbook backbone
+* **Fiero** = support / alternate explanation layer
+* **Quizlet PDFs** = extra review material / flashcard support 
+
+## What looks good
+
+You already have enough to support:
+
+* **Chapter 1–3** from **Sayre Volume I**
+* **Chapter 2 deeper support** from **Sayre Book 2**
+* **late-period support** from **Fiero Book 6**
+* **exam structure** from the CLEP guide
+* **extra study/review assets** from the Quizlet PDFs 
+
+## What looks messy
+
+The repo also has some clutter:
+
+* **duplicate Sayre Volume I**
+* overlapping Sayre medieval material
+* multiple Quizlet exports with messy names
+* the mislabeled Sayre instructor file that should be renamed clearly 
+
+## The simple truth
+
+So yes, I understand your setup:
+
+You are building a **serious humanities course app** with:
+
+* textbook-based learning
+* chapter progression
+* review assets
+* quiz/game/flashcard support
+* official CLEP alignment
+
+And the repo right now is basically the **content foundation**, but it needs cleaner organization before it becomes easy to build from. 
+
+## If I reduce it to one sentence
+
+Your repo currently contains the **core textbook spine, the official CLEP guide, and supplemental review material**, but it needs cleanup so the content maps cleanly to your six-chapter app structure. 
+
+## The immediate next move
+
+I’d organize the repo into:
+
+* `core/`
+* `support/`
+* `flashcards/`
+* `archive/`
+
+and map each file to one of your six chapters.
+Yes — for **this** app, the backend should be built around one core idea:
+
+## **mobile-first, offline-first, content-heavy, progress-driven**
+
+That means the backend should **not** act like a giant textbook server that sends huge files every time.
+It should act like a **smart course engine** that sends:
+
+* the right chapter
+* the right progress state
+* the right quiz/test data
+* the right weakness updates
+* the right next action
+
+---
+
+# 1. Core backend strategy
+
+Split the backend into **2 big layers**:
+
+## A. **Content layer**
+
+This is mostly read-only.
+
+It stores:
+
+* chapters
+* sections
+* summaries
+* key people
+* key works
+* key terms
+* flashcards
+* quizzes
+* tests
+* game prompts
+* video playlists
+* image metadata
+
+## B. **User progress layer**
+
+This is personalized and changes constantly.
+
+It stores:
+
+* current chapter
+* section completion
+* quiz attempts
+* test attempts
+* flashcard progress
+* watched videos
+* weakness tags
+* mastery levels
+* unlock status
+* notes/bookmarks
+
+That separation is huge because mobile works way better when:
+
+* content is cached hard
+* only progress needs frequent syncing
+
+---
+
+# 2. Best backend architecture
+
+## Recommended stack
+
+For your case, I would build it like this:
+
+### **Database**
+
+* **PostgreSQL**
+
+### **Backend/API**
+
+* **Supabase** or **Node.js + Express/NestJS**
+* My honest pick for speed: **Supabase**
+
+### **Storage**
+
+* object storage for:
+
+  * images
+  * PDF references
+  * chapter assets
+  * thumbnails
+  * optional exported study packs
+
+### **Auth**
+
+* Supabase Auth or simple email auth
+* for personal use, even a lightweight single-user profile setup is enough at first
+
+### **Caching / mobile local storage**
+
+* **SQLite on device**
+* cache chapter bundles locally
+* queue progress updates when offline
+
+So the structure is:
+
+**App frontend**
+→ **API/backend**
+→ **Postgres + storage**
+while the phone also keeps a **local offline cache**
+
+---
+
+# 3. Most important mobile rule
+
+## **Do not make the mobile app depend on live PDF reading from the server**
+
+That will feel slow and annoying fast.
+
+Instead:
+
+### For runtime
+
+Send **chapter bundles**:
+
+* chapter metadata
+* section summaries
+* flashcards
+* quiz banks
+* video links
+* image references
+
+### For source/content creation
+
+Use your textbooks and PDFs **behind the scenes** to create the structured course content.
+
+That way mobile users are not downloading giant raw textbook files every time they open a chapter.
+
+---
+
+# 4. The backend should be API-first
+
+Even if you start with web, build the backend like it will power:
+
+* web
+* mobile
+* tablet
+* maybe even offline export later
+
+So the backend should expose clean endpoints like:
+
+## Bootstrap
+
+* `GET /me/dashboard`
+* returns:
+
+  * current chapter
+  * next step
+  * weak areas
+  * unlocked chapters
+  * recent scores
+
+## Course content
+
+* `GET /chapters`
+* `GET /chapters/:id`
+* `GET /sections/:id`
+
+## Flashcards
+
+* `GET /flashcards?chapter=1`
+* `GET /flashcards?section=1.2`
+* `GET /flashcards?mode=weakness`
+
+## Videos
+
+* `GET /videos?chapter=2`
+* `POST /videos/:id/complete`
+
+## Quizzes/tests
+
+* `GET /quiz/section/:id`
+* `GET /quiz/chapter/:id`
+* `POST /quiz/submit`
+* `GET /test/chapter/:id`
+* `POST /test/submit`
+
+## Progress
+
+* `POST /progress/section-complete`
+* `POST /progress/flashcards`
+* `POST /progress/game-result`
+* `POST /progress/sync`
+
+## Weakness engine
+
+* `GET /weaknesses`
+* `GET /recommendations/next`
+
+---
+
+# 5. Database plan
+
+Here is the clean backend schema direction.
+
+## Core content tables
+
+### `chapters`
+
+* id
+* title
+* order
+* description
+* cover_image
+* estimated_time
+
+### `sections`
+
+* id
+* chapter_id
+* title
+* order
+* short_summary
+* long_summary
+* exam_clues
+* duration_estimate
+
+### `key_people`
+
+* id
+* section_id
+* name
+* description
+* tags
+
+### `key_works`
+
+* id
+* section_id
+* title
+* creator
+* period
+* medium
+* image_url
+* notes
+
+### `key_terms`
+
+* id
+* section_id
+* term
+* definition
+
+### `videos`
+
+* id
+* chapter_id
+* section_id nullable
+* title
+* embed_url
+* duration
+* priority
+* tags
+
+### `flashcards`
+
+* id
+* chapter_id
+* section_id nullable
+* type
+* front
+* back
+* tags
+* difficulty
+
+### `questions`
+
+* id
+* chapter_id
+* section_id nullable
+* mode
+* discipline
+* skill_type
+* prompt
+* choices
+* answer
+* explanation
+* difficulty
+* tags
+
+### `games`
+
+* id
+* chapter_id
+* section_id nullable
+* game_type
+* config_json
+
+---
+
+## User tables
+
+### `users`
+
+* id
+* name
+* created_at
+
+### `user_progress`
+
+* user_id
+* current_chapter_id
+* current_phase
+* streak
+* updated_at
+
+### `section_progress`
+
+* user_id
+* section_id
+* learn_complete
+* watch_complete
+* play_complete
+* flashcards_complete
+* quiz_score
+* status
+* mastery_score
+
+### `chapter_progress`
+
+* user_id
+* chapter_id
+* quiz_avg
+* test_score
+* status
+* unlocked
+* mastery_score
+
+### `quiz_attempts`
+
+* id
+* user_id
+* quiz_type
+* chapter_id
+* section_id nullable
+* score
+* answers_json
+* created_at
+
+### `test_attempts`
+
+* id
+* user_id
+* test_type
+* chapter_id nullable
+* score
+* answers_json
+* created_at
+
+### `weakness_tags`
+
+* id
+* user_id
+* tag
+* source_type
+* source_id
+* weight
+* last_seen_at
+
+### `video_progress`
+
+* user_id
+* video_id
+* watched
+* watched_at
+
+### `flashcard_progress`
+
+* user_id
+* flashcard_id
+* confidence
+* last_reviewed_at
+* next_review_at
+
+### `notes`
+
+* id
+* user_id
+* chapter_id
+* section_id nullable
+* content
+* created_at
+
+---
+
+# 6. The weakness engine
+
+This is one of the most important backend pieces.
+
+The backend should not just save scores.
+It should interpret them.
+
+## How it should work
+
+Every missed question updates weakness tags such as:
+
+* `gothic_architecture`
+* `romantic_poetry`
+* `renaissance_humanism`
+* `baroque_music`
+* `nonwestern_content`
+* `recognition_style`
+* `interpretation`
+
+Then the backend recalculates:
+
+* weak sections
+* weak chapters
+* weak skill types
+* weak disciplines
+
+Then it returns:
+
+* recommended flashcards
+* recommended videos
+* recommended mini quiz
+* recommended game
+
+So the backend becomes a **study coach**, not just a storage box.
+
+---
+
+# 7. Progression logic on the backend
+
+This should be controlled server-side, not only in the frontend.
+
+That matters because you want consistent unlock rules.
+
+## Rules to store in backend logic
+
+* section complete at 70%+
+* chapter ready after all sections complete
+* chapter passed at 75%+
+* chapter mastered at 85%+
+* midpoint review unlock after chapters 1–3 passed
+* final review unlock after chapter 6 passed
+
+The frontend should ask:
+
+* “What is unlocked?”
+* “What is next?”
+* “What should I push the user into now?”
+
+The backend should answer that.
+
+---
+
+# 8. Mobile-first performance plan
+
+This part matters a lot.
+
+## Backend must optimize for:
+
+* low bandwidth
+* slow networks
+* intermittent internet
+* small screens
+* short sessions
+
+## So do this:
+
+### Use small chapter payloads
+
+Do not send one giant course object.
+Send:
+
+* one chapter at a time
+* one section at a time when needed
+
+### Use content versioning
+
+Each chapter bundle should have:
+
+* `version`
+* `updated_at`
+
+So the app only re-downloads changed content.
+
+### Use compressed assets
+
+* WebP/AVIF for images
+* thumbnails first
+* full image only when tapped
+
+### Lazy-load everything heavy
+
+* images
+* long summaries
+* videos
+* galleries
+
+### Cache aggressively
+
+Once chapter 2 is downloaded, it should open even offline.
+
+### Queue writes offline
+
+If he finishes a quiz without internet:
+
+* save locally
+* sync later
+
+That is non-negotiable for mobile feeling good.
+
+---
+
+# 9. Offline-first behavior
+
+For this app, offline support is worth it.
+
+## What should work offline
+
+* reading downloaded chapter summaries
+* flashcards
+* previously downloaded quizzes
+* games
+* notes
+* seeing prior progress
+
+## What can require internet
+
+* new video embeds
+* syncing attempts
+* downloading new chapters
+* cloud backup
+
+## Sync model
+
+The app should:
+
+1. save locally first
+2. update UI immediately
+3. sync in background
+4. resolve conflicts by latest timestamp or server merge rules
+
+This is how mobile apps feel smooth.
+
+---
+
+# 10. Media strategy
+
+Since the app is rich in visuals and videos, the backend should handle media smartly.
+
+## Images
+
+Store:
+
+* thumbnail URL
+* mobile URL
+* full-size URL
+* alt text
+* attribution/source note
+
+## Videos
+
+Do not pipe video through your backend unless necessary.
+Store:
+
+* embed URL
+* duration
+* chapter/section tags
+* thumbnail
+* watched state
+
+## PDFs / textbook files
+
+For mobile, the backend should store:
+
+* source references
+* page mappings
+* section-to-page associations
+
+Not necessarily serve giant files as the main learning mode.
+
+---
+
+# 11. Best backend product shape
+
+Honestly, the cleanest backend architecture is:
+
+## **Content service**
+
+Serves chapters, sections, flashcards, questions, videos
+
+## **Progress service**
+
+Saves user state, unlocks, completions, scores
+
+## **Assessment service**
+
+Grades quizzes/tests, calculates mastery, updates weakness tags
+
+## **Recommendation service**
+
+Determines next action:
+
+* “watch this”
+* “review this”
+* “retake this”
+* “you unlocked chapter 4”
+
+For MVP, these can all live in one backend.
+Later they can be separated logically.
+
+---
+
+# 12. Recommended MVP backend plan
+
+Do not overbuild first.
+
+## Phase 1 — MVP backend
+
+Build:
+
+* auth
+* chapters
+* sections
+* flashcards
+* quiz/test bank
+* progress tables
+* weakness tagging
+* dashboard endpoint
+
+That is enough to make the app real.
+
+## Phase 2
+
+Add:
+
+* game data
+* notes
+* bookmarks
+* video progress
+* cumulative assessments
+
+## Phase 3
+
+Add:
+
+* smarter recommendations
+* spaced repetition
+* analytics
+* downloadable study packs
+* push reminders
+
+---
+
+# 13. My actual recommendation
+
+For speed and sanity:
+
+## Use this stack
+
+* **Supabase**
+* **Postgres**
+* **Supabase Storage**
+* **Edge Functions** for quiz grading + weakness updates
+* **React Native/Expo frontend** or **PWA with strong mobile layout**
+* **SQLite local cache** on device
+
+Why this works:
+
+* fast to build
+* clean schema
+* built-in auth
+* built-in storage
+* mobile-friendly
+* easy API layer
+* good for a personal project without insane backend overhead
+
+---
+
+# 14. Final backend philosophy
+
+The backend should do **four things really well**:
+
+## 1. Deliver content in small mobile-friendly bundles
+
+## 2. Save and sync progress reliably
+
+## 3. Calculate mastery + weaknesses intelligently
+
+## 4. Tell the app what the user should do next
+
+That is the real job.
+
+Not “host giant textbooks.”
+Not “be complicated for no reason.”
+
+---
+
+# 15. One-line backend definition
+
+## **A mobile-first, offline-friendly course backend that serves chapter content, tracks mastery, grades assessments, updates weaknesses, and controls progression through the six-module CLEP Humanities study system.**
+
+Next step should be turning this into a **real backend spec with exact tables, API routes, and Supabase schema**.
+Yep — here’s the **official Humanities CLEP exam blueprint** pulled straight from the guide.
+
+## Official Humanities CLEP exam
+
+### What the exam covers
+
+The Humanities CLEP tests **general knowledge of literature, art, music, and the other performing arts**. It is broad across **all periods from classical to contemporary** and includes **poetry, prose, philosophy, art, architecture, music, dance, theater, and film**. The exam expects students to show **specific knowledge, concept understanding, and analysis/interpretation of works of art**.  
+
+### Exam length and size
+
+The exam contains **about 140 questions** to be answered in **90 minutes**. Some of those are **pretest questions** and do **not** count toward the score. 
+
+## Official skill weighting
+
+Questions are designed around these abilities:
+
+* **50%** knowledge of factual information, such as **authors and works**
+* **30%** recognition of techniques, style, rhyme scheme, medium, and identification of writers, artists, schools, or periods
+* **20%** understanding and interpretation of literary passages and art reproductions that will likely be unfamiliar to most test takers 
+
+## Official subject breakdown
+
+### Literature — **50%**
+
+* **10%** Drama
+* **10–15%** Poetry
+* **15–20%** Fiction
+* **10%** Nonfiction, including philosophy 
+
+### The Arts — **50%**
+
+* **20%** Visual arts: painting, sculpture, etc.
+* **5%** Visual arts: architecture
+* **15%** Performing arts: music
+* **10%** Performing arts: film, dance, etc. 
+
+## Official historical period coverage
+
+The exam says questions are **fairly evenly divided** among these periods:
+
+* Classical
+* Medieval and Renaissance
+* Seventeenth and eighteenth centuries
+* Nineteenth century
+* Twentieth and twenty-first centuries 
+
+## Other-cultures requirement
+
+The guide says **at least 5–10%** of the questions draw on **other cultures**, including **African, Asian, and Latin American** material. It also says some questions **cross disciplines and/or chronological periods**, and a substantial number test **terminology, genre, and style**. 
+
+## Important note about images
+
+The guide notes that while some images in the printed guide are black and white, **works shown on the actual exam will be in color**. 
+
+## Important note about “the official exam”
+
+What the guide gives you is the **official exam description and blueprint**, plus **sample questions**. It does **not** publish the actual live exam questions. The guide explicitly says the sample questions are **representative** and **do not appear on any CLEP examination**. 
+
+## The exact app implication
+
+So for your app, the **real official exam spec** to build around is:
+
+* **140 questions**
+* **90 minutes**
+* **50% literature / 50% arts**
+* skills weighted **50 factual / 30 recognition-style / 20 interpretation**
+* periods fairly balanced across the five major eras
+* **5–10% non-Western / other cultures**
+* meaningful coverage of **terminology, genre, and style** 
+
+That is the official backbone. The rest of your course design should hang off this, not off random prep material.
