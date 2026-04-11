@@ -1,4 +1,4 @@
-import type { ModuleSummary, Objective, Section, SourceRef } from "@/lib/types";
+import type { ModuleSummary, Objective, Section, SourceRef } from "../lib/types";
 
 export const module2Summary: ModuleSummary = {
   id: "module-2-middle-ages",

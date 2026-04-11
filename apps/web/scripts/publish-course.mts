@@ -4,12 +4,6 @@ import { fileURLToPath } from "node:url";
 
 import { createClient } from "@supabase/supabase-js";
 
-import {
-  getModuleBundle,
-  getModuleSummaries,
-  getSourceRefsForObjective,
-} from "../src/content/course";
-
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const appDir = resolve(scriptDir, "..");
 
@@ -67,10 +61,13 @@ async function main() {
     },
   });
 
+  const course = await import("../src/content/course.js");
+  const { getModuleSummaries, getModuleBundle, getSourceRefsForObjective } = course;
+
   const summaries = getModuleSummaries();
   const bundles = summaries
-    .map((summary) => getModuleBundle(summary.id))
-    .filter((bundle): bundle is NonNullable<typeof bundle> => Boolean(bundle));
+    .map((summary: ReturnType<typeof getModuleSummaries>[number]) => getModuleBundle(summary.id))
+    .filter((bundle: unknown): bundle is NonNullable<typeof bundle> => Boolean(bundle));
 
   const modules = bundles.map((bundle) => ({
     id: bundle.id,
@@ -176,59 +173,25 @@ async function main() {
     notes: sourceRef.notes ?? null,
   }));
 
-  const upserts: Array<PromiseLike<{ error: { message: string } | null }>> = [];
+  // Must run in FK dependency order (modules → sections → objectives → children)
+  const steps: Array<{ name: string; run: () => Promise<{ error: { message: string } | null }> }> = [
+    { name: "modules", run: () => modules.length ? client.from("modules").upsert(modules, { onConflict: "id" }) : Promise.resolve({ error: null }) },
+    { name: "sections", run: () => sections.length ? client.from("sections").upsert(sections, { onConflict: "id" }) : Promise.resolve({ error: null }) },
+    { name: "objectives", run: () => objectives.length ? client.from("objectives").upsert(objectives, { onConflict: "id" }) : Promise.resolve({ error: null }) },
+    { name: "lesson_blocks", run: () => lessonBlocks.length ? client.from("lesson_blocks").upsert(lessonBlocks, { onConflict: "objective_id" }) : Promise.resolve({ error: null }) },
+    { name: "flashcards", run: () => flashcards.length ? client.from("flashcards").upsert(flashcards, { onConflict: "id" }) : Promise.resolve({ error: null }) },
+    { name: "video_support", run: () => videos.length ? client.from("video_support").upsert(videos, { onConflict: "id" }) : Promise.resolve({ error: null }) },
+    { name: "question_variants", run: () => questionVariants.length ? client.from("question_variants").upsert(questionVariants, { onConflict: "id" }) : Promise.resolve({ error: null }) },
+    { name: "source_refs", run: () => sourceRefs.length ? client.from("source_refs").upsert(sourceRefs, { onConflict: "id" }) : Promise.resolve({ error: null }) },
+    { name: "objective_source_refs", run: () => objectiveSourceRefs.length ? client.from("objective_source_refs").upsert(objectiveSourceRefs, { onConflict: "objective_id,source_ref_id" }) : Promise.resolve({ error: null }) },
+  ];
 
-  if (modules.length) {
-    upserts.push(client.from("modules").upsert(modules, { onConflict: "id" }));
-  }
+  for (const step of steps) {
+    const { error } = await step.run();
 
-  if (sections.length) {
-    upserts.push(client.from("sections").upsert(sections, { onConflict: "id" }));
-  }
-
-  if (objectives.length) {
-    upserts.push(client.from("objectives").upsert(objectives, { onConflict: "id" }));
-  }
-
-  if (lessonBlocks.length) {
-    upserts.push(
-      client.from("lesson_blocks").upsert(lessonBlocks, {
-        onConflict: "objective_id",
-      }),
-    );
-  }
-
-  if (flashcards.length) {
-    upserts.push(client.from("flashcards").upsert(flashcards, { onConflict: "id" }));
-  }
-
-  if (videos.length) {
-    upserts.push(client.from("video_support").upsert(videos, { onConflict: "id" }));
-  }
-
-  if (questionVariants.length) {
-    upserts.push(
-      client.from("question_variants").upsert(questionVariants, { onConflict: "id" }),
-    );
-  }
-
-  if (sourceRefs.length) {
-    upserts.push(client.from("source_refs").upsert(sourceRefs, { onConflict: "id" }));
-  }
-
-  if (objectiveSourceRefs.length) {
-    upserts.push(
-      client.from("objective_source_refs").upsert(objectiveSourceRefs, {
-        onConflict: "objective_id,source_ref_id",
-      }),
-    );
-  }
-
-  const results = await Promise.all(upserts);
-  const error = results.find((result) => result.error)?.error;
-
-  if (error) {
-    throw new Error(error.message);
+    if (error) {
+      throw new Error(`${step.name}: ${error.message}`);
+    }
   }
 
   console.log("Published course content to Supabase.");

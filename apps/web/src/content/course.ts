@@ -6,13 +6,13 @@ import type {
   Objective,
   Section,
   SourceRef,
-} from "@/lib/types";
+} from "../lib/types";
 import {
   module2Objectives,
   module2Sections,
   module2SourceRefs,
   module2Summary,
-} from "@/content/module-2";
+} from "./module-2";
 
 const sourceRefs: SourceRef[] = [
   {
@@ -233,13 +233,13 @@ const objectives: Objective[] = [
     sourceRefIds: ["cb-aag", "classical-unit", "classical-transcript", "sayre-vol-1"],
     learn: {
       conciseExplanation:
-        "Ancient Greece matters on the CLEP because it joins politics, theater, and philosophy in one public culture. The exam often treats democracy, debate, and inquiry as connected habits rather than isolated facts.",
+        "Ancient Greece is the starting point for Western humanities because the Greeks were the first civilization to treat public life — politics, religion, art, and philosophy — as deeply interconnected rather than separate domains. The basic unit of Greek society was the polis (city-state): a small, self-governing community where citizens participated directly in both government and culture. In a city like Athens, attending tragedy at the Festival of Dionysus was a civic duty as much as a cultural event — the state funded the plays and citizens were expected to attend. Philosophers like Socrates held conversations in the agora (public marketplace), and Athenian democracy meant citizens debated policy openly in the assembly rather than deferring to kings or priests. The exam consistently treats these habits — democratic debate, theatrical festival, philosophical inquiry — as expressions of a single Greek civic spirit rather than as separate facts to memorize in isolation.",
       keyExample:
-        "Athens is the core example: democratic participation, public theater festivals, and philosophical debate all lived in the same civic world.",
+        "Athens is the central example: the city funded theater festivals as public civic institutions, citizens voted in the assembly on the Pnyx hillside, and Socrates conducted philosophy by questioning anyone willing to speak in the agora — politics, drama, and inquiry shared the same public space and the same participants.",
       examClue:
-        "If a question links public life, reasoned debate, or civic identity to an early Western source, Greece is often the anchor.",
+        "If a CLEP question links early Western civic participation, reasoned public debate, tragic festivals, or democratic ideals to a single cultural source, the answer is almost always Ancient Greece and Athens in particular — and the key phrase is that all these activities belonged to one civic culture, not separate departments.",
       compareContrast:
-        "Compare Greece with Rome: Greece is often the model of experimentation and inquiry, while Rome is more often the model of adaptation, law, and imperial scale.",
+        "Greece is the culture of small-scale experimentation and reflective inquiry — intense, civic, and questioning; Rome, by contrast, is the culture of administration, law, and imperial scale, adapting Greek ideas to govern a vast multi-ethnic empire. Greek theater asked what justice is; Roman theater mostly entertained. Greek philosophers debated the ideal city; Roman lawyers codified how to run the actual one.",
     },
     flashcards: [
       {
@@ -343,13 +343,13 @@ const objectives: Objective[] = [
     sourceRefIds: ["cb-aag", "sample-set", "classical-unit", "videos-playlist"],
     learn: {
       conciseExplanation:
-        "Homer anchors classical literature because the CLEP treats the Iliad and Odyssey as major templates for heroism, memory, war, and journey. You need to recognize both titles and the values they dramatize.",
+        "The Homeric epics — the Iliad and the Odyssey — are the oldest major works in the Western literary tradition, and they set the template for heroism, war, identity, and journey that later writers returned to for centuries. Homer (traditionally described as a blind bard) recorded oral traditions that had circulated in performance for generations before being written down, roughly in the 8th century BC. The Iliad is set during the Trojan War and focuses on the warrior Achilles: his rage after being dishonored by the general Agamemnon drives him to withdraw from battle, and his return comes only after his closest companion Patroclus is killed by the Trojan hero Hector. The poem explores pride, honor, grief, and the brutal cost of war. The Odyssey follows a different kind of hero — Odysseus, whose ten-year voyage home from Troy is shaped not by martial power but by cleverness, disguise, endurance, and the longing for home. Each episode tests Odysseus differently: the Cyclops, the Sirens, Circe, the land of the dead — all demand intelligence and adaptability rather than brute strength.",
       keyExample:
-        "The Iliad centers on rage, honor, and war; the Odyssey centers on return, endurance, and cunning.",
+        "The Iliad's emotional core is Achilles' grief over the death of Patroclus and his choice to re-enter battle knowing it will lead to his own death — a meditation on honor, loss, and mortal glory. The Odyssey's most famous episodes include the Cyclops (outwitted by 'Nobody') and Odysseus' return home disguised as a beggar, proving himself by stringing his great bow.",
       examClue:
-        "When a question describes a long heroic journey, clever survival, or a homecoming after war, the Odyssey is often the best fit.",
+        "On the CLEP, when a question describes a hero defined by cleverness, endurance, and a difficult sea voyage home, the answer is the Odyssey and Odysseus. When it describes martial honor, rage, and battlefield glory at Troy, the answer is the Iliad and Achilles. Both epics are attributed to Homer.",
       compareContrast:
-        "Compare Odysseus to Achilles: Odysseus is defined by strategy and endurance, Achilles by martial honor and rage.",
+        "Achilles is the supreme warrior whose flaw is honor-rage — he is the greatest fighter but nearly destroys his own side through pride. Odysseus is the supreme survivor whose virtue is intelligence — he wins not by being the strongest but by being the most adaptable. Greek literature treats both as heroic ideals, for different reasons and in different contexts.",
     },
     flashcards: [
       {
@@ -437,13 +437,13 @@ const objectives: Objective[] = [
     sourceRefIds: ["cb-aag", "sample-set", "practice-bank", "links-classical"],
     learn: {
       conciseExplanation:
-        "Greek tragedy is exam-critical because it combines dramatic form with philosophical language about human error, fate, and emotional release. Catharsis and the chorus are recurring recognition cues.",
+        "Greek tragedy was not entertainment in the modern sense — it was a civic and religious institution performed at state-funded festivals in honor of the god Dionysus. Tragedies were staged outdoors in large stone amphitheaters before as many as 15,000 Athenian citizens at once, making them a form of collective public reflection on fate, power, and moral responsibility. The typical tragic structure follows a protagonist of high status (a king, hero, or noble) who is brought low by a fatal error or flaw (hamartia), often through a combination of pride, mistaken identity, or divine will. The chorus — a group of singers and dancers who remained on stage throughout — commented on the action and voiced the community's moral response. Aristotle's Poetics, written roughly a century after the great tragedians, defined the emotional effect of tragedy as catharsis: a purging or release of pity and fear in the audience caused by witnessing the hero's suffering. The three great tragedians are Aeschylus (who invented tragedy and added a second actor), Sophocles (who added a third actor and is considered the structural master), and Euripides (more psychologically modern and controversial).",
       keyExample:
-        "Sophocles' Oedipus Rex is a standard anchor for tragic downfall, recognition, and the consequences of human blindness.",
+        "Sophocles' Oedipus Rex is the definitive CLEP tragedy example: Oedipus, king of Thebes, learns through investigation that he has unwittingly killed his own father and married his mother, fulfilling the exact fate a prophecy foretold. His recognition (anagnorisis) — realizing the truth — leads to horror, self-blinding, and exile. The audience knows the truth before Oedipus does, creating profound dramatic irony and cathartic emotional release.",
       examClue:
-        "If a question asks about pity and fear, catharsis is the answer pattern to expect.",
+        "If a CLEP question mentions pity and fear, the emotional purging produced by watching a hero's downfall, or a noble figure destroyed by a fatal flaw or mistaken identity, the answer category is catharsis and the form is Greek tragedy. The word catharsis is Aristotle's, not Sophocles' — it describes the audience's experience.",
       compareContrast:
-        "Compare tragedy with epic: epic follows extended heroic action, while tragedy compresses crisis, error, and emotional recognition into staged drama.",
+        "Epic follows a hero's action across years and vast geography, celebrating strength and endurance in an open world. Tragedy compresses action to a day or two inside a city, and instead of celebrating the hero, it strips away everything — power, identity, certainty — until the protagonist is left with only recognition of what has happened. Epic is expansive and triumphant; tragedy is closed and devastating.",
     },
     flashcards: [
       {
@@ -541,13 +541,13 @@ const objectives: Objective[] = [
     sourceRefIds: ["cb-aag", "practice-bank", "classical-unit", "sayre-vol-1"],
     learn: {
       conciseExplanation:
-        "Classical philosophy appears on the CLEP as both authors-and-works knowledge and as a style of reasoning. You need to distinguish Plato's ideal inquiry from Aristotle's more analytic, classificatory approach.",
+        "Greek philosophy begins not with books but with conversation. Socrates (469–399 BC) wrote nothing; instead he questioned Athenian citizens in public — exposing the limits of their assumed knowledge through a method called the elenchus, or Socratic questioning. Accused of corrupting youth and impiety, he was tried by a jury of 500 and chose death rather than exile, making his death one of the most discussed events in intellectual history. His student Plato (428–347 BC) preserved Socratic ideas in dramatic dialogues and added his own theory of Forms: real things in the physical world are imperfect shadows of perfect, eternal ideal types that exist in a higher realm of thought. Plato's Republic argues for government by philosopher-kings and contains the Allegory of the Cave — prisoners in a cave mistake shadows projected on a wall for reality, just as ordinary people mistake appearances for truth without philosophical education. Aristotle (384–322 BC), Plato's greatest student, rejected the separate realm of Forms and instead studied the actual world methodically — classifying animals, political systems, forms of tragedy, and ethical principles in a body of work that shaped Western science, logic, and literary criticism for two millennia. He tutored Alexander the Great and founded his own school, the Lyceum.",
       keyExample:
-        "Plato's Allegory of the Cave belongs to the Republic; Aristotle's Poetics defines tragedy and catharsis.",
+        "Plato's Allegory of the Cave, from the Republic, is the most important single philosophy passage for the CLEP: prisoners chained underground see only shadows of objects passing behind them and mistake the shadows for reality — philosophy frees the prisoner to turn around, leave the cave, and see the sun (truth) directly. This image of education as turning toward the light is one of the most quoted passages in Western thought.",
       examClue:
-        "If the question asks who analyzed drama systematically or tutored Alexander the Great, Aristotle is the likely answer.",
+        "Match authors to works: Plato → Republic (the Cave, justice, philosopher-kings); Aristotle → Poetics (catharsis, tragic structure) and Nicomachean Ethics (virtue as the mean). If the question asks who tutored Alexander the Great, classified drama systematically, or applied logic to biology and politics, the answer is Aristotle.",
       compareContrast:
-        "Compare Plato and Aristotle: Plato often points upward toward ideals; Aristotle often organizes concrete forms, causes, and genres.",
+        "Plato tends upward and inward — away from appearances toward ideal, eternal forms; his philosophy is visionary and mathematical. Aristotle tends outward and downward — into the actual world to observe, classify, and find causes; his philosophy is empirical and systematic. Both are critical for the CLEP, but they represent opposite temperaments that recur throughout intellectual history.",
     },
     flashcards: [
       {
@@ -629,13 +629,13 @@ const objectives: Objective[] = [
     sourceRefIds: ["cb-aag", "practice-bank", "architecture-import", "links-classical"],
     learn: {
       conciseExplanation:
-        "Greek architecture is heavily testable because style recognition works well in image questions. The fastest win is mastering Doric, Ionic, and Corinthian capitals, plus knowing the temple as a house for the gods rather than a modern congregation hall.",
+        "Ancient Greek temples were built according to highly standardized architectural systems called the orders, each specifying the proportions, surface decoration, and visual character of the entire building — but the fastest identifier for each order is always the column capital (the carved block at the top of the column). Doric is the oldest and most austere: thick, sturdy columns with no base, a plain square capital, and an overall feeling of powerful simplicity. Ionic is more slender and elegant, with a base beneath each column and a capital bearing two horizontal scroll-shapes called volutes on each side. Corinthian is the most ornate, with a capital densely covered in carved acanthus leaves arranged around a small central core — rarely used by the Greeks but adopted enthusiastically by Rome. Beyond the column type, it is essential to understand what a Greek temple actually was: not a congregation hall but a house for a cult statue of the deity. Worshippers gathered outside for ritual; the interior naos held the image of the god. The whole building was designed to be seen from the outside, its proportions calculated mathematically to appear perfectly harmonious.",
       keyExample:
-        "The Parthenon is the signature classical Greek temple and is commonly paired with questions about columns, proportion, and civic-religious identity.",
+        "The Parthenon on the Athenian Acropolis (447–432 BC, architects Ictinus and Callicrates) is the supreme example of classical Greek architecture — primarily Doric with Ionic friezes on the outer wall. Its proportions were minutely calculated to compensate for optical illusions (the columns swell slightly in the middle and lean inward) so that the building appears perfectly straight to the human eye.",
       examClue:
-        "Scroll capitals indicate Ionic; leafy capitals indicate Corinthian; sturdy plain capitals indicate Doric.",
+        "The fastest CLEP rule for Greek orders: scroll capitals = Ionic; leafy carved capitals = Corinthian; plain, sturdy rectangular capitals with thick columns = Doric. Any image question showing column capitals can usually be answered by this rule alone, even without knowing the building's name.",
       compareContrast:
-        "Compare Greek temples with Roman engineering: Greek style emphasizes order and proportion, while Rome is more often associated with arches, domes, and concrete scale.",
+        "Greek temples are designed as objects to be seen from outside — marble, columns, carved decoration, and human-scale proportion emphasizing visual harmony. Roman imperial buildings borrow the orders as decoration but combine them with concrete, arches, vaults, and domes that create vast enclosed interiors — Roman architecture is experienced from inside as much as outside, and it operates at far larger scale.",
     },
     flashcards: [
       {
@@ -741,13 +741,13 @@ const objectives: Objective[] = [
     sourceRefIds: ["cb-aag", "timeline-import", "architecture-import", "practice-bank"],
     learn: {
       conciseExplanation:
-        "Classical sculpture often appears as a style-recognition problem. The core idea is idealized balance: calm proportion, anatomical order, and the believable shift of weight called contrapposto.",
+        "Greek sculpture developed through three clearly distinct phases, each representing an evolving understanding of the human body and what sculpture is for. Archaic Greek sculpture (700–480 BC) is stiff and frontal: the kouros (nude male youth) figures stand rigidly with one foot slightly forward, arms at sides, and a fixed, slightly upturned expression called the 'archaic smile' — they resemble Egyptian models and feel symbolic rather than lifelike. The Classical period (480–323 BC) breaks through this rigidity by discovering naturalism and idealization simultaneously: bodies show correct anatomy, muscles, and bone; the weight shifts naturally from one leg to the other in a pose called contrapposto; and the face carries calm, idealized dignity rather than the archaic smile. This weight shift — one hip dropping as the standing leg relaxes — is called contrapposto, and it became the foundational language of Western figurative sculpture. Hellenistic sculpture (323–31 BC), following Alexander the Great's conquests, pushes emotion, drama, and psychological intensity: figures writhe in agony, reach dramatically into space, or collapse in defeat. For the CLEP, the Classical period's calm idealism is the central anchor.",
       keyExample:
-        "A standing figure whose weight settles into one hip is the standard visual for contrapposto and for the move away from stiff frontality.",
+        "The Doryphoros (Spear-Bearer) by the sculptor Polykleitos (c. 450 BC, known only through Roman marble copies) is the canonical Classical sculpture: it demonstrates contrapposto and Polykleitos' kanon — a mathematical system for ideal human proportions. The figure looks alive and balanced, standing as though about to take a step but at rest, ideal without being stiff.",
       examClue:
-        "If the figure looks balanced, idealized, and calm rather than wildly emotional, think Classical Greece rather than Hellenistic drama.",
+        "If a sculpture shows a natural weight shift (hips not level, shoulders tilted opposite to hips), calm and idealized features, and anatomical realism without emotional excess, it belongs to the Classical Greek period. Rage, writhing, or extreme theatrical distortion signals Hellenistic.",
       compareContrast:
-        "Compare Classical and Hellenistic sculpture: Classical favors calm balance and ideal proportion; Hellenistic pushes emotion, motion, and theatrical intensity.",
+        "Archaic sculpture is symbolic and rigid — a geometric body wearing a human surface. Classical sculpture is balanced, idealized, and anatomically real — a human body perfected but calm. Hellenistic sculpture is emotionally theatrical — a human body in crisis, caught in suffering or dramatic action. Each period is a deliberate development beyond the previous one, and the CLEP frequently asks you to place an image in the right phase.",
     },
     flashcards: [
       {
@@ -835,13 +835,13 @@ const objectives: Objective[] = [
     sourceRefIds: ["cb-aag", "practice-bank", "timeline-import", "architecture-import"],
     learn: {
       conciseExplanation:
-        "Roman art and architecture often appear as engineering recognition. The quick identifiers are the arch, vault, dome, concrete construction, and large public spaces such as the amphitheater.",
+        "Roman architecture is distinguished above all by engineering ambition, made possible by the Romans' mastery of concrete — opus caementicium — a material they could pour into any mold, that set hard without firing, and that was far cheaper and more versatile than cut stone. Concrete liberated Roman builders from the post-and-lintel logic of Greek temples, where spans are limited to what a stone or wooden beam can bridge. Combined with the round arch (adapted from Etruscan models), concrete enabled the barrel vault (a long, tunnel-shaped ceiling of continuous arched masonry), the groin vault (two barrel vaults intersecting at right angles), and ultimately the dome — the most structurally impressive form in the ancient world. The Pantheon in Rome (rebuilt under Emperor Hadrian, dedicated 128 AD) has an unreinforced concrete dome spanning 43.3 meters from pier to pier, lit through a central opening — the oculus — 9 meters in diameter. This structural feat was not surpassed in unreinforced concrete for over 1,300 years. The Colosseum (Flavian Amphitheater, 70–80 AD) used the same arched system at colossal scale to seat 50,000–80,000 spectators for gladiatorial games, animal hunts, and public spectacles — the largest arena in the Roman world.",
       keyExample:
-        "The Pantheon is the signature Roman dome question; the Colosseum is the signature spectacle/amphitheater question.",
+        "The Pantheon is the masterpiece of Roman engineering: its hemispherical dome rests on a circular drum of concrete walls, and as the dome rises it gradually thins in thickness, using lighter and lighter aggregate (pumice near the top) to reduce weight. The oculus at the apex is the only light source, and its beam moves across the interior through the day like a sundial — one of the most sophisticated spatial experiences in architectural history.",
       examClue:
-        "If a question mentions dome mastery or an oculus, think Pantheon. If it mentions gladiatorial contests, think amphitheater/Colosseum.",
+        "If a CLEP question mentions a dome with a central round opening at the top, the answer is the Pantheon. If it asks about gladiatorial combat and massive tiered seating, the answer is the Colosseum or amphitheater. If it asks what structural system made Roman large-scale buildings possible, the answer is concrete and the arch.",
       compareContrast:
-        "Compare Greece and Rome: Greece is more often tested through proportional temple orders; Rome through arches, domes, concrete, and imperial scale.",
+        "Greek architecture is about proportion, exterior beauty, and the idealized surface of marble columns — buildings designed to be contemplated from outside. Roman imperial architecture is about interior space, structural engineering, and the experience of enclosed grandeur — buildings whose interiors were the main event. A Roman dome is an inside-out statement; a Greek temple is an outside statement.",
     },
     flashcards: [
       {
@@ -930,13 +930,13 @@ const objectives: Objective[] = [
     sourceRefIds: ["cb-aag", "classical-unit", "practice-bank", "sample-set"],
     learn: {
       conciseExplanation:
-        "Rome often appears in literature questions through Virgil, Ovid, and Horace. The exam expects you to know how Roman literature adapts Greek models while asserting Roman duty, empire, transformation, and cultivated poetic voice.",
+        "Roman literature of the Augustan Age (31 BC–14 AD) represents a conscious effort by Roman writers — with the patronage of Emperor Augustus — to build a national literary culture equal to Greece's, but with a distinctly Roman moral and political vision. Virgil (70–19 BC) is the supreme figure: his Aeneid is a twelve-book epic modeled on both the Iliad (books 1–6, war and wandering) and the Odyssey (books 7–12, arrival and struggle), but its hero Aeneas is defined not by wrath or cleverness but by pietas — duty to gods, family, and the Roman state. Aeneas carries his elderly father from burning Troy, leads his people across the sea, and founds the line that will eventually become Rome, sacrificing his own desires for a destiny he will not live to see complete. Horace (65–8 BC) gave Rome its lyric poetry — elegant, reflective odes in Latin that matched Greek lyric masters while expressing Roman temperament. Ovid (43 BC–17 AD) took a more playful approach: his Metamorphoses weaves together 250 Greek and Roman mythological stories unified by the theme of transformation, from the creation of the world to the deification of Julius Caesar — it became one of the most influential sourcebooks for later Western art, literature, and visual culture.",
       keyExample:
-        "Virgil's Aeneid is the Roman national epic and emphasizes duty, destiny, and sacrifice for a larger civic mission.",
+        "The founding scene of the Aeneid — Aeneas carrying his father Anchises on his back while leading his young son Iulus by the hand out of burning Troy — is perhaps the most famous image of Roman pietas in all of literature. It pictures the Roman hero as one who sacrifices personal desire and safety for family obligation and divine mission, not for personal glory.",
       examClue:
-        "If the question describes the Roman national epic or its hero Aeneas, the answer is Virgil or the Aeneid.",
+        "If a CLEP question asks about the Roman national epic, the hero Aeneas, or the founding of Rome, the answer is Virgil and the Aeneid. If it asks about myths of transformation in a collected narrative, the answer is Ovid and Metamorphoses. If it asks about polished, philosophical Roman lyric poetry, think Horace and the Odes.",
       compareContrast:
-        "Compare Homer and Virgil: Homeric epic centers older Greek heroic traditions, while Virgil reshapes epic into a Roman story of mission, empire, and duty.",
+        "Homer's Odysseus is driven home by personal longing — to see his wife, reclaim his house, and reassert his identity. Virgil's Aeneas is driven forward by divine duty — toward a Rome he will never see, for a people not yet born. Greek epic celebrates the heroic individual; Latin epic conscripts heroism into service of the state and history — an important distinction for understanding how Roman culture adapted and transformed its Greek inheritance.",
     },
     flashcards: [
       {
