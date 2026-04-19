@@ -3,9 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
+  allowedDevOrigins: ["192.168.1.194"],
   typescript: {
     ignoreBuildErrors: false,
   },
