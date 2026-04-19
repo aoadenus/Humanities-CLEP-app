@@ -1,6 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import {
+  EDITORIAL_CHAPTER_BLUEPRINTS,
+  type EditorialChapterBlueprint,
+  type EditorialSectionMeta,
+} from "@/content/editorial-chapters";
 import type {
   EditorialCallout,
   EditorialChapter,
@@ -30,65 +35,6 @@ const MATERIALS: EditorialMaterial[] = [
   { id: "results", title: "Results", emoji: "📊", type: "results" },
   { id: "hard-test", title: "Hard Test", emoji: "🏆", type: "hard-test", lockedUntilQuizPass: true },
 ];
-
-const SECTION_META = [
-  {
-    id: "s1",
-    title: "From Survival to Culture",
-    emoji: "🌍",
-    anchors: [
-      "I rebuilt this to match your locked Chapter 1 — Classical, Section 1 — From Survival to Culture scope",
-      "Chapter 1 — Classical, Section 1 — From Survival to Culture",
-    ],
-  },
-  {
-    id: "s2",
-    title: "Mesopotamia and Egypt",
-    emoji: "🗿",
-    anchors: [
-      "Rebuilt for your current student-facing textbook engine: Chapter 1 — Classical, Section 2 — Mesopotamia and Egypt",
-      "Section 2 — Mesopotamia and Egypt\n1) Section Relevance and Stakes",
-    ],
-  },
-  {
-    id: "s3",
-    title: "Early Civilizations Beyond the Mediterranean",
-    emoji: "🌏",
-    anchors: [
-      "Using your student-facing textbook engine and the verified-links-only rule, here is the rebuilt Chapter 1, Section 3",
-      "Section 3 — China, India, and Africa: Early Civilizations\n1) Section Relevance and Stakes",
-      "Section 3 — Early Civilizations Beyond the Mediterranean\n1) Section Relevance and Stakes",
-    ],
-  },
-  {
-    id: "s4",
-    title: "The Aegean World and Greek Beginnings",
-    emoji: "🌀",
-    anchors: [
-      "Section: Section 4 — The Aegean World and Greek Beginnings",
-      "Section 4 — The Aegean World and Greek Beginnings\n1) Section Relevance and Stakes",
-    ],
-  },
-  {
-    id: "s5",
-    title: "Classical Greece",
-    emoji: "🏛️",
-    anchors: [
-      "Section 5 — Classical Greece\n1) Section Relevance and Stakes",
-      "Chapter 1, Section 5 = Classical Greece",
-    ],
-  },
-  {
-    id: "s6",
-    title: "Rome",
-    emoji: "🦅",
-    anchors: [
-      "Absolutely — here is a full redo of Chapter 1, Section 6 rebuilt around Rome: Urban Life and Imperial Majesty",
-      "Chapter 1, Section 6\nRome: Urban Life and Imperial Majesty",
-      "Section 6 — Rome\n1) Section Relevance and Stakes",
-    ],
-  },
-] as const;
 
 const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
   s1: {
@@ -149,18 +95,27 @@ const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
 
 let cachedCourse: EditorialCourse | null = null;
 
-function getSourcePath() {
+function getSourcePath(sourceFile: string, sourceEnvVar?: string) {
+  const envPath = sourceEnvVar ? process.env[sourceEnvVar] : "";
+  const directEnvPath = envPath
+    ? path.isAbsolute(envPath)
+      ? envPath
+      : path.resolve(
+          /* turbopackIgnore: true */ process.cwd(),
+          envPath,
+        )
+    : "";
   const directPath = path.resolve(
     /* turbopackIgnore: true */ process.cwd(),
-    "CHAPTER 1 SECTION 1-6.txt",
+    sourceFile,
   );
   const workspacePath = path.resolve(
     /* turbopackIgnore: true */ process.cwd(),
     "..",
     "..",
-    "CHAPTER 1 SECTION 1-6.txt",
+    sourceFile,
   );
-  const candidates = [directPath, workspacePath];
+  const candidates = [directEnvPath, directPath, workspacePath].filter(Boolean);
 
   for (const candidate of candidates) {
     if (fs.existsSync(candidate)) {
@@ -168,11 +123,16 @@ function getSourcePath() {
     }
   }
 
-  throw new Error("Could not find CHAPTER 1 SECTION 1-6.txt.");
+  return null;
 }
 
-function getSourceText() {
-  return fs.readFileSync(getSourcePath(), "utf8").replace(/\r\n/g, "\n");
+function getSourceText(sourceFile: string, sourceEnvVar?: string) {
+  const sourcePath = getSourcePath(sourceFile, sourceEnvVar);
+  if (!sourcePath) {
+    return null;
+  }
+
+  return fs.readFileSync(sourcePath, "utf8").replace(/\r\n/g, "\n");
 }
 
 function cleanText(value: string) {
@@ -197,8 +157,8 @@ function findLastIndexOfAny(source: string, anchors: readonly string[]) {
   }, -1);
 }
 
-function getSectionSlices(source: string) {
-  const starts = SECTION_META.map((meta) => {
+function getSectionSlices(source: string, sectionMeta: readonly EditorialSectionMeta[]) {
+  const starts = sectionMeta.map((meta) => {
     const index = findLastIndexOfAny(source, meta.anchors);
     if (index < 0) {
       throw new Error(`Could not find marker for ${meta.id}.`);
@@ -965,35 +925,75 @@ function buildSection(raw: string, sectionId: string, title: string, emoji: stri
   };
 }
 
+function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): EditorialChapter {
+  const sectionMeta = blueprint.sectionMeta ?? [];
+
+  if (!blueprint.sourceFile || !sectionMeta.length) {
+    return {
+      id: blueprint.id,
+      title: blueprint.title,
+      emoji: blueprint.emoji,
+      color: blueprint.color,
+      locked: blueprint.locked,
+      sections: [],
+    };
+  }
+
+  const source = getSourceText(blueprint.sourceFile, blueprint.sourceEnvVar);
+  if (!source) {
+    return {
+      id: blueprint.id,
+      title: blueprint.title,
+      emoji: blueprint.emoji,
+      color: blueprint.color,
+      locked: true,
+      sections: [],
+    };
+  }
+
+  try {
+    const sections = getSectionSlices(source, sectionMeta).map((slice) =>
+      buildSection(slice.raw, slice.id, slice.title, slice.emoji),
+    );
+
+    const locked = sections.length
+      ? blueprint.unlockWhenSectionsReady
+        ? false
+        : blueprint.locked
+      : true;
+
+    return {
+      id: blueprint.id,
+      title: blueprint.title,
+      emoji: blueprint.emoji,
+      color: blueprint.color,
+      locked,
+      sections,
+    };
+  } catch {
+    return {
+      id: blueprint.id,
+      title: blueprint.title,
+      emoji: blueprint.emoji,
+      color: blueprint.color,
+      locked: true,
+      sections: [],
+    };
+  }
+}
+
 export function getEditorialCourse(): EditorialCourse {
   if (cachedCourse) {
     return cachedCourse;
   }
 
-  const source = getSourceText();
-  const sections = getSectionSlices(source).map((slice) =>
-    buildSection(slice.raw, slice.id, slice.title, slice.emoji),
-  );
-
-  const chapter1: EditorialChapter = {
-    id: "ch1",
-    title: "Classical",
-    emoji: "🏛️",
-    color: "var(--ch1-color)",
-    locked: false,
-    sections,
-  };
-
   cachedCourse = {
-    chapters: [
-      chapter1,
-      { id: "ch2", title: "Medieval", emoji: "⚔️", color: "var(--ch2-color)", locked: true, sections: [] },
-      { id: "ch3", title: "Renaissance", emoji: "🎨", color: "var(--ch3-color)", locked: true, sections: [] },
-      { id: "ch4", title: "Baroque & Enlightenment", emoji: "💡", color: "var(--ch4-color)", locked: true, sections: [] },
-      { id: "ch5", title: "19th Century", emoji: "🏭", color: "var(--ch5-color)", locked: true, sections: [] },
-      { id: "ch6", title: "20th Century & Beyond", emoji: "🌐", color: "var(--ch6-color)", locked: true, sections: [] },
-    ],
+    chapters: EDITORIAL_CHAPTER_BLUEPRINTS.map((blueprint) => buildChapterFromBlueprint(blueprint)),
   };
 
   return cachedCourse;
 }
+
+export default {
+  getEditorialCourse,
+};
