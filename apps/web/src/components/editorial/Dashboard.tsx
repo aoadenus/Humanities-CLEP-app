@@ -10,7 +10,7 @@ import { buildChapterHref, getChapterProgressRatio } from "@/lib/editorial-navig
 import type { EditorialCourse } from "@/lib/types";
 
 const chapterNotes: Record<string, string> = {
-  ch1: "Full Chapter 1 study path with 6 sections, quizzes, flashcards, and hard tests.",
+  ch1: "Full Chapter 1 textbook path with 6 sections, full reading pages, flashcards, media resources, and rigorous tests.",
   ch2: "Locked placeholder for the next chapter release.",
   ch3: "Locked placeholder for the next chapter release.",
   ch4: "Locked placeholder for the next chapter release.",
@@ -22,20 +22,21 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
   const { progress, ready } = useEditorialProgress();
 
   return (
-    <main className="min-h-screen bg-[var(--bg-primary)] px-4 py-6 md:px-8 md:py-8">
+    <main className="min-h-screen bg-(--bg-primary) px-4 py-6 md:px-8 md:py-8">
       <div className="mx-auto max-w-6xl space-y-6">
         <Card className="surface-tint overflow-hidden p-6 md:p-8">
           <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_260px] md:items-end">
             <div>
-              <div className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-[var(--text-muted)]">
-                📚 Canvas-Style Study Dashboard
+              <div className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-(--text-muted)">
+                📚 Textbook-Style Study Dashboard
               </div>
-              <h1 className="font-reading text-4xl font-bold leading-tight text-[var(--text-primary)] md:text-5xl">
+              <h1 className="font-reading text-4xl font-bold leading-tight text-(--text-primary) md:text-5xl">
                 CLEP Humanities
               </h1>
-              <p className="mt-4 max-w-3xl text-[18px] leading-8 text-[var(--text-secondary)]">
-                Chapter 1 is built as a warm, colorful study flow with big readable text, quick navigation,
-                flashcards, videos, quizzes, and local progress that stays in your browser.
+              <p className="mt-4 max-w-3xl text-[18px] leading-8 text-(--text-secondary)">
+                Chapter 1 is built as a detailed textbook experience with sustained reading passages, objective-linked
+                callouts, references, flashcards, videos, quizzes, and persistent local progress tracking in your
+                browser.
               </p>
             </div>
 
@@ -45,10 +46,10 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                   Resume where you left off →
                 </Link>
               ) : null}
-              <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-4">
-                <div className="text-sm font-bold text-[var(--text-primary)]">Current build</div>
-                <div className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">
-                  Full Chapter 1 experience now. Chapters 2-6 stay visible but locked.
+              <div className="rounded-2xl border border-(--border) bg-(--bg-card) p-4">
+                <div className="text-sm font-bold text-(--text-primary)">Current build</div>
+                <div className="mt-2 text-sm leading-6 text-(--text-secondary)">
+                  Full Chapter 1 textbook experience is live now. Chapters 2-6 stay visible but locked.
                 </div>
               </div>
             </div>
@@ -78,16 +79,16 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+                      <div className="text-sm font-bold uppercase tracking-[0.08em] text-(--text-muted)">
                         Chapter {index + 1}
                       </div>
                       <div className="mt-3 flex items-center gap-3">
                         <span className="text-3xl">{chapter.emoji}</span>
                         <div>
-                          <h2 className="font-reading text-2xl font-bold text-[var(--text-primary)]">
+                          <h2 className="font-reading text-2xl font-bold text-(--text-primary)">
                             {chapter.title}
                           </h2>
-                          <p className="mt-1 text-sm leading-6 text-[var(--text-secondary)]">
+                          <p className="mt-1 text-sm leading-6 text-(--text-secondary)">
                             {chapterNotes[chapter.id] ?? "Study chapter"}
                           </p>
                         </div>
@@ -98,14 +99,14 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                   </div>
 
                   <div className="mt-6 space-y-3">
-                    <div className="flex items-center justify-between text-sm font-semibold text-[var(--text-secondary)]">
+                    <div className="flex items-center justify-between text-sm font-semibold text-(--text-secondary)">
                       <span>Progress</span>
                       <span>{unlocked ? `${Math.round(ratio * 100)}%` : "Locked"}</span>
                     </div>
                     <ProgressBar value={unlocked ? ratio : 0} />
                   </div>
 
-                  <div className="mt-6 text-sm font-bold text-[var(--accent)]">
+                  <div className="mt-6 text-sm font-bold text-(--accent)">
                     {unlocked ? "Open chapter →" : "🔒 Locked until later"}
                   </div>
                 </div>

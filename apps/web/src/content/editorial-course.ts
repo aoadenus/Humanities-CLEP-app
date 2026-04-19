@@ -237,12 +237,46 @@ function extractNumberedBlock(raw: string, number: number, nextNumbers: number[]
   return cleanText(endMatch && endMatch.index !== undefined ? remainder.slice(0, endMatch.index) : remainder);
 }
 
+function extractNumberedBlockRaw(raw: string, number: number, nextNumbers: number[] = []) {
+  const startRegex = new RegExp(`(?:^|\\n)${number}\\)\\s+[^\\n]*\\n`, "i");
+  const startMatch = raw.match(startRegex);
+  if (!startMatch || startMatch.index === undefined) {
+    return "";
+  }
+
+  const start = startMatch.index + startMatch[0].length;
+  const remainder = raw.slice(start);
+
+  if (!nextNumbers.length) {
+    return remainder.trim();
+  }
+
+  const endRegex = new RegExp(
+    `(?:^|\\n)(?:${nextNumbers.map((value) => `${value}\\)`).join("|")})\\s+[^\\n]*\\n`,
+    "im",
+  );
+  const endMatch = remainder.match(endRegex);
+
+  return (endMatch && endMatch.index !== undefined ? remainder.slice(0, endMatch.index) : remainder).trim();
+}
+
 function extractPurpose(raw: string) {
   const block =
     extractNumberedBlock(raw, 1, [2]) ||
     extractNumberedBlock(raw, 1, [3]) ||
     extractNumberedBlock(raw, 1, [4]);
   return paragraphize(block).slice(0, 2).join(" ");
+}
+
+function extractFoundationalContext(raw: string) {
+  const blocks = [
+    extractNumberedBlock(raw, 1, [2]),
+    extractNumberedBlock(raw, 2, [3]),
+    extractNumberedBlock(raw, 3, [4]),
+    extractNumberedBlock(raw, 4, [5]),
+  ].filter(Boolean);
+
+  return paragraphize(blocks.join("\n\n"));
 }
 
 function humanizeTag(tag: string) {
@@ -350,6 +384,26 @@ function extractTextbook(raw: string) {
   ];
 
   return cleanText(candidates.find(Boolean) ?? "");
+}
+
+function extractTextbookRaw(raw: string) {
+  const candidates = [
+    extractNumberedBlockRaw(raw, 5, [6, 7]),
+    extractNumberedBlockRaw(raw, 5, [10]),
+    extractNumberedBlockRaw(raw, 5, [8]),
+  ];
+
+  return candidates.find(Boolean) ?? "";
+}
+
+function extractStudentGuide(raw: string) {
+  const textbookRaw = extractTextbookRaw(raw);
+  if (!textbookRaw) {
+    return "";
+  }
+
+  const h1Index = textbookRaw.search(/(?:^|\n)H1\s*[-—–:]/i);
+  return cleanText(h1Index >= 0 ? textbookRaw.slice(h1Index) : textbookRaw);
 }
 
 function parseTakeaways(block: string) {
@@ -797,14 +851,15 @@ function buildCallout(text: string, index: number): EditorialCallout {
 function buildLearnPages(
   sectionId: string,
   raw: string,
-  resources: EditorialResource[],
   mnemonics: EditorialMnemonic[],
 ): EditorialLearnPage[] {
   const textbook = extractTextbook(raw);
   const h2Blocks = cleanText(textbook).split(/(?=^H2\s+[-—–]\s+)/gim).filter(Boolean);
   const groupedBlocks = splitIntoGroups(h2Blocks.length ? h2Blocks : paragraphize(textbook), 4);
-  const bigIdeas = parseBigIdeas(raw);
-  const takeaways = parseTakeaways(textbook);
+  const foundationalContext = extractFoundationalContext(raw);
+  const groupedBigIdeas = splitIntoGroups(parseBigIdeas(raw), 4);
+  const groupedTakeaways = splitIntoGroups(parseTakeaways(textbook), 4);
+  const groupedMnemonics = splitIntoGroups(mnemonics, 4);
 
   return groupedBlocks.map((group, pageIndex) => {
     const blocks: EditorialLearnPage["blocks"] = [];
@@ -815,18 +870,28 @@ function buildLearnPages(
       text: firstHeading?.[1]?.trim() ?? `Learn ${pageIndex + 1}`,
     });
 
-    if (bigIdeas[pageIndex]) {
+    if (pageIndex === 0 && foundationalContext.length) {
+      blocks.push({
+        type: "heading",
+        text: "Section Foundations",
+      });
+
+      for (const paragraph of foundationalContext) {
+        blocks.push({ type: "paragraph", text: paragraph });
+      }
+    }
+
+    for (const [ideaIndex, idea] of (groupedBigIdeas[pageIndex] ?? []).entries()) {
       blocks.push({
         type: "callout",
-        callout: buildCallout(`${bigIdeas[pageIndex].title}: ${bigIdeas[pageIndex].text}`, pageIndex),
+        callout: buildCallout(`${idea.title}: ${idea.text}`, pageIndex + ideaIndex),
       });
     }
 
     for (const groupBlock of group) {
       const cleanedBlock = cleanText(
         groupBlock
-          .replace(/^H2\s+[-—–]\s+.+$/im, "")
-          .replace(/Key Takeaways Box[\s\S]*$/im, ""),
+          .replace(/^H2\s+[-—–]\s+.+$/im, ""),
       );
 
       for (const paragraph of paragraphize(cleanedBlock)) {
@@ -834,12 +899,16 @@ function buildLearnPages(
       }
     }
 
-    if (takeaways[pageIndex]?.length) {
+    for (const [takeawayIndex, takeawayItems] of (groupedTakeaways[pageIndex] ?? []).entries()) {
+      if (!takeawayItems.length) {
+        continue;
+      }
+
       blocks.push({
         type: "key-takeaways",
         takeaway: {
-          title: "What to Remember",
-          items: takeaways[pageIndex],
+          title: `What to Remember ${groupedTakeaways[pageIndex]!.length > 1 ? `(${takeawayIndex + 1})` : ""}`.trim(),
+          items: takeawayItems,
         },
       });
     }
@@ -851,17 +920,10 @@ function buildLearnPages(
       });
     }
 
-    if (resources[pageIndex]) {
-      blocks.push({
-        type: "resource",
-        resource: resources[pageIndex],
-      });
-    }
-
-    if (mnemonics[pageIndex]) {
+    for (const mnemonic of groupedMnemonics[pageIndex] ?? []) {
       blocks.push({
         type: "mnemonic",
-        mnemonic: mnemonics[pageIndex],
+        mnemonic,
       });
     }
 
@@ -890,9 +952,10 @@ function buildSection(raw: string, sectionId: string, title: string, emoji: stri
     title,
     emoji,
     purpose: extractPurpose(raw),
+    studentGuide: extractStudentGuide(raw),
     materials: MATERIALS,
     objectives,
-    learnPages: buildLearnPages(sectionId, raw, resources, mnemonics),
+    learnPages: buildLearnPages(sectionId, raw, mnemonics),
     flashcards: parseFlashcards(raw, sectionId),
     videos,
     resources,

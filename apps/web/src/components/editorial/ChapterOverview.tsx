@@ -20,11 +20,11 @@ export function ChapterOverview({
   if (chapter.locked && !chapterProgress?.unlocked) {
     return (
       <Card className="p-8">
-        <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+        <div className="text-sm font-bold uppercase tracking-[0.08em] text-(--text-muted)">
           🔒 Locked Chapter
         </div>
-        <h1 className="font-reading mt-3 text-3xl font-bold text-[var(--text-primary)]">{chapter.title}</h1>
-        <p className="mt-4 max-w-2xl text-[18px] leading-8 text-[var(--text-secondary)]">
+        <h1 className="font-reading mt-3 text-3xl font-bold text-(--text-primary)">{chapter.title}</h1>
+        <p className="mt-4 max-w-2xl text-[18px] leading-8 text-(--text-secondary)">
           This chapter is still a placeholder. Chapter 1 is the active build right now.
         </p>
       </Card>
@@ -34,13 +34,14 @@ export function ChapterOverview({
   return (
     <div className="space-y-6">
       <Card className="surface-tint p-6 md:p-8">
-        <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+        <div className="text-sm font-bold uppercase tracking-[0.08em] text-(--text-muted)">
           {chapter.emoji} Chapter Overview
         </div>
-        <h1 className="font-reading mt-3 text-4xl font-bold text-[var(--text-primary)]">{chapter.title}</h1>
-        <p className="mt-4 max-w-3xl text-[18px] leading-8 text-[var(--text-secondary)]">
-          Work through the six sections below. Each section unlocks after the previous section hard test is
-          passed, but once a section is open you can move freely between its materials.
+        <h1 className="font-reading mt-3 text-4xl font-bold text-(--text-primary)">{chapter.title}</h1>
+        <p className="mt-4 max-w-3xl text-[18px] leading-8 text-(--text-secondary)">
+          Work through the six sections below as a sequential textbook track. Each section unlocks after the
+          previous section hard test is passed, and each unlocked section contains complete instructional
+          materials, references, and assessment sets designed for full-depth study.
         </p>
       </Card>
 
@@ -68,18 +69,17 @@ export function ChapterOverview({
             <Card className={`p-5 md:p-6 ${unlocked ? "transition-transform hover:-translate-y-1" : "opacity-70"}`}>
               <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
                 <div className="min-w-0">
-                  <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+                  <div className="text-sm font-bold uppercase tracking-[0.08em] text-(--text-muted)">
                     Section {index + 1}
                   </div>
                   <div className="mt-3 flex items-start gap-3">
                     <span className="text-3xl">{section.emoji}</span>
                     <div className="min-w-0">
-                      <h2 className="font-reading text-2xl font-bold text-[var(--text-primary)]">
+                      <h2 className="font-reading text-2xl font-bold text-(--text-primary)">
                         {section.title}
                       </h2>
-                      <p className="mt-2 text-[17px] leading-7 text-[var(--text-secondary)]">
-                        {section.purpose.slice(0, 220)}
-                        {section.purpose.length > 220 ? "..." : ""}
+                      <p className="mt-2 text-[17px] leading-7 text-(--text-secondary)">
+                        {section.purpose}
                       </p>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ export function ChapterOverview({
               </div>
 
               <div className="mt-5">
-                <div className="mb-2 flex items-center justify-between text-sm font-semibold text-[var(--text-secondary)]">
+                <div className="mb-2 flex items-center justify-between text-sm font-semibold text-(--text-secondary)">
                   <span>Section progress</span>
                   <span>{unlocked ? `${Math.round(ratio * 100)}%` : "Locked"}</span>
                 </div>

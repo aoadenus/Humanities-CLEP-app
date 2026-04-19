@@ -356,6 +356,7 @@ export interface EditorialSection {
   title: string;
   emoji: string;
   purpose: string;
+  studentGuide: string;
   materials: EditorialMaterial[];
   objectives: EditorialObjective[];
   learnPages: EditorialLearnPage[];

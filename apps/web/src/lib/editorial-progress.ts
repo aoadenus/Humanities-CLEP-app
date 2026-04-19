@@ -107,12 +107,17 @@ export function applyUnlockRules(
 }
 
 export async function loadEditorialProgress(course: EditorialCourse) {
-  const saved = await get<EditorialProgress>(STORAGE_KEY);
+  const timeout = new Promise<undefined>((resolve) => setTimeout(() => resolve(undefined), 3000));
+  const saved = await Promise.race([get<EditorialProgress>(STORAGE_KEY), timeout]).catch(() => undefined);
   return ensureEditorialProgress(saved, course);
 }
 
 export async function persistEditorialProgress(progress: EditorialProgress) {
-  await set(STORAGE_KEY, progress);
+  try {
+    await set(STORAGE_KEY, progress);
+  } catch {
+    // IndexedDB unavailable (e.g. cross-origin network access)
+  }
 }
 
 export function markMaterialVisited(
