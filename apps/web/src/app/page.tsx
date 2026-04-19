@@ -1,6 +1,8 @@
-import { getModuleSummaries } from "@/content/course";
-import { StudyShell } from "@/components/study-shell";
+import { Dashboard } from "@/components/editorial/Dashboard";
+import { getEditorialCourse } from "@/content/editorial-course";
 
 export default function Home() {
-  return <StudyShell initialModules={getModuleSummaries()} />;
+  const course = getEditorialCourse();
+
+  return <Dashboard course={course} />;
 }

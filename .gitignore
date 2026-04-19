@@ -18,3 +18,6 @@ docs/slides/
 docs/transcripts/
 01_unit-01/
 01_unit-1-the-classical-period.html/
+
+# Local agent settings may contain tokens/secrets
+.claude/settings.json

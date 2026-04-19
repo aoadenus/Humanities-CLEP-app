@@ -1,6 +1,7 @@
 import type {
   AssessmentBundle,
   AssessmentQuestion,
+  Flashcard,
   ModuleBundle,
   ModuleSummary,
   Objective,
@@ -217,7 +218,7 @@ const sections: Section[] = [
   ...module2Sections,
 ];
 
-const objectives: Objective[] = [
+const baseObjectives: Objective[] = [
   {
     id: "classical.lit.civic_imagination",
     moduleId: "module-1-classical",
@@ -265,7 +266,7 @@ const objectives: Objective[] = [
       {
         id: "vid-civic-1",
         title: "Ancient Greece in 18 Minutes",
-        url: "http://www.youtube.com/watch?v=gFRxmi4uCGo",
+        url: "https://www.youtube.com/watch?v=gFRxmi4uCGo",
         watchFor:
           "Watch for how politics, philosophy, and drama are described as parts of one culture.",
         retrievalPrompt:
@@ -274,7 +275,7 @@ const objectives: Objective[] = [
       {
         id: "vid-civic-2",
         title: "The Persians & Greeks: Crash Course World History #5",
-        url: "http://www.youtube.com/watch?v=Q-mkVSasZIM",
+        url: "https://www.youtube.com/watch?v=Q-mkVSasZIM",
         watchFor:
           "Watch for the historical rise of Greek city-states and how that context shapes public culture.",
         retrievalPrompt:
@@ -375,7 +376,7 @@ const objectives: Objective[] = [
       {
         id: "vid-homer-1",
         title: "The Odyssey: Crash Course Literature 201",
-        url: "http://www.youtube.com/watch?v=MS4jk5kavy4",
+        url: "https://www.youtube.com/watch?v=MS4jk5kavy4",
         watchFor:
           "Watch for how the Odyssey turns homecoming and cunning into literary identity.",
         retrievalPrompt:
@@ -469,7 +470,8 @@ const objectives: Objective[] = [
       {
         id: "vid-tragedy-1",
         title: "Quizlet: Ancient Greek Drama & Philosophy",
-        url: "https://www.google.com/search?q=https://quizlet.com/512903721/clep-humanities-ancient-greece-and-rome-flash-cards/",
+        url: "https://quizlet.com/512903721/clep-humanities-ancient-greece-and-rome-flash-cards/",
+        resourceType: "reference",
         watchFor:
           "Use this as a quick recognition review for tragedy vocabulary and key figures.",
         retrievalPrompt:
@@ -573,7 +575,7 @@ const objectives: Objective[] = [
       {
         id: "vid-phil-1",
         title: "Ancient Greece in 18 Minutes",
-        url: "http://www.youtube.com/watch?v=gFRxmi4uCGo",
+        url: "https://www.youtube.com/watch?v=gFRxmi4uCGo",
         watchFor:
           "Focus on the segments that connect philosophers to the larger Greek public world.",
         retrievalPrompt:
@@ -667,7 +669,8 @@ const objectives: Objective[] = [
       {
         id: "vid-orders-1",
         title: "The Three Greek Orders",
-        url: "https://www.google.com/search?q=https://www.khanacademy.org/humanities/ap-art-history/ancient-mediterranean-ap/greece-etruria-rome/a/greek-architectural-orders",
+        url: "https://www.khanacademy.org/humanities/ap-art-history/ancient-mediterranean-ap/greece-etruria-rome/a/greek-architectural-orders",
+        resourceType: "reference",
         watchFor:
           "Watch for the visual difference in capitals and proportions; this is pure image-question prep.",
         retrievalPrompt:
@@ -676,7 +679,8 @@ const objectives: Objective[] = [
       {
         id: "vid-orders-2",
         title: "Greek ruins and site tours",
-        url: "https://www.google.com/search?q=https://artsandculture.google.com/project/talking-tours",
+        url: "https://artsandculture.google.com/project/talking-tours",
+        resourceType: "reference",
         watchFor:
           "Use the site view to connect the order labels to actual temple settings rather than isolated diagrams.",
         retrievalPrompt:
@@ -867,7 +871,7 @@ const objectives: Objective[] = [
       {
         id: "vid-rome-1",
         title: "Rise & Fall of Ancient Greece",
-        url: "http://www.youtube.com/watch?v=Z_5Cl9nK-qA",
+        url: "https://www.youtube.com/watch?v=Z_5Cl9nK-qA",
         watchFor:
           "Use this for chronological context so Roman adaptation lands in sequence after Greek foundations.",
         retrievalPrompt:
@@ -1008,6 +1012,120 @@ const objectives: Objective[] = [
   },
   ...module2Objectives,
 ];
+
+function clipText(text: string, maxLength = 220) {
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength - 1).trim()}...`;
+}
+
+function sanitizeId(value: string) {
+  return value.replace(/[^a-zA-Z0-9_-]/g, "-");
+}
+
+function buildSupplementalFlashcard(objective: Objective, index: number): Flashcard {
+  const clue = clipText(objective.learn.examClue, 200);
+  const core = clipText(objective.learn.conciseExplanation, 220);
+  const example = clipText(objective.learn.keyExample, 220);
+  const compare = clipText(objective.learn.compareContrast, 220);
+  const tagHint = objective.tags.slice(0, 4).join(", ");
+  const variant = index % 6;
+
+  if (variant === 0) {
+    return {
+      id: `fc-auto-${sanitizeId(objective.id)}-${index}`,
+      front: `What is the core takeaway for ${objective.title}?`,
+      back: core,
+      direction: "concept",
+    };
+  }
+
+  if (variant === 1) {
+    return {
+      id: `fc-auto-${sanitizeId(objective.id)}-${index}`,
+      front: `Which key example should you remember for ${objective.title}?`,
+      back: example,
+      direction: "feature_to_term",
+    };
+  }
+
+  if (variant === 2) {
+    return {
+      id: `fc-auto-${sanitizeId(objective.id)}-${index}`,
+      front: `What exam clue best identifies ${objective.title}?`,
+      back: clue,
+      direction: "term_to_feature",
+    };
+  }
+
+  if (variant === 3) {
+    return {
+      id: `fc-auto-${sanitizeId(objective.id)}-${index}`,
+      front: `How does ${objective.title} compare with a nearby concept?`,
+      back: compare,
+      direction: "concept",
+    };
+  }
+
+  if (variant === 4) {
+    return {
+      id: `fc-auto-${sanitizeId(objective.id)}-${index}`,
+      front: `Which tags are strongest anchors for ${objective.title}?`,
+      back: tagHint || objective.title,
+      direction: "feature_to_term",
+    };
+  }
+
+  return {
+    id: `fc-auto-${sanitizeId(objective.id)}-${index}`,
+    front: `What CLEP task type does ${objective.title} train?`,
+    back: `This objective trains ${objective.examTaskType.replace(/_/g, " ")} through ${objective.skillType.replace(/_/g, " ")} practice.`,
+    direction: "concept",
+  };
+}
+
+function ensureSectionFlashcardMinimum(
+  objectives: Objective[],
+  sections: Section[],
+  minimumPerSection: number,
+): Objective[] {
+  const objectiveMap = new Map(
+    objectives.map((objective) => [
+      objective.id,
+      {
+        ...objective,
+        flashcards: [...objective.flashcards],
+      },
+    ]),
+  );
+
+  for (const section of sections) {
+    const sectionObjectives = section.objectiveIds
+      .map((objectiveId) => objectiveMap.get(objectiveId))
+      .filter((objective): objective is Objective => Boolean(objective));
+
+    if (!sectionObjectives.length) continue;
+
+    const currentCount = sectionObjectives.reduce(
+      (total, objective) => total + objective.flashcards.length,
+      0,
+    );
+
+    let needed = minimumPerSection - currentCount;
+    let turn = 0;
+
+    while (needed > 0) {
+      const objective = sectionObjectives[turn % sectionObjectives.length];
+      const cardIndex = objective.flashcards.length + 1;
+      objective.flashcards.push(buildSupplementalFlashcard(objective, cardIndex));
+      needed -= 1;
+      turn += 1;
+    }
+  }
+
+  return objectives.map((objective) => objectiveMap.get(objective.id) ?? objective);
+}
+
+const objectives = ensureSectionFlashcardMinimum(baseObjectives, sections, 20);
 
 const objectiveById = new Map(objectives.map((objective) => [objective.id, objective]));
 const sourceRefById = new Map(sourceRefs.map((sourceRef) => [sourceRef.id, sourceRef]));

@@ -67,6 +67,7 @@ export interface VideoSupport {
   id: string;
   title: string;
   url: string;
+  resourceType?: "video" | "reference";
   watchFor: string;
   retrievalPrompt: string;
 }
@@ -215,4 +216,196 @@ export interface Recommendation {
 export interface CoachMessage {
   role: "user" | "assistant";
   content: string;
+}
+
+export type EditorialMaterialId =
+  | "hub"
+  | "learn-1"
+  | "learn-2"
+  | "learn-3"
+  | "learn-4"
+  | "flashcards"
+  | "videos"
+  | "quiz"
+  | "results"
+  | "hard-test";
+
+export type EditorialCalloutTone =
+  | "beginner"
+  | "exam"
+  | "why"
+  | "recognition"
+  | "compare"
+  | "info";
+
+export type EditorialChartType = "flow" | "bar" | "line";
+
+export interface EditorialCallout {
+  tone: EditorialCalloutTone;
+  label: string;
+  emoji: string;
+  text: string;
+}
+
+export interface EditorialKeyTakeaway {
+  title: string;
+  items: string[];
+}
+
+export interface EditorialMnemonic {
+  label: string;
+  purpose: string;
+  lines: string[];
+}
+
+export interface EditorialDiagramDefinition {
+  id: string;
+  title: string;
+  type: EditorialChartType;
+  labels: string[];
+  values: number[];
+  valueLabel?: string;
+  accentColor?: string;
+  description?: string;
+}
+
+export interface EditorialResource {
+  id: string;
+  title: string;
+  url: string;
+  source?: string;
+  description: string;
+  objectiveTags?: string[];
+  kind: "image" | "resource";
+}
+
+export interface EditorialVideo {
+  id: string;
+  title: string;
+  url: string;
+  embedUrl: string;
+  watchFor: string;
+  objectiveTags?: string[];
+}
+
+export interface EditorialFlashcard {
+  id: string;
+  front: string;
+  back: string;
+  objectiveTags?: string[];
+  deck: "core" | "extra";
+}
+
+export interface EditorialQuestion {
+  id: number;
+  text: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+  objectiveTags: string[];
+  reviewMaterialIds: EditorialMaterialId[];
+}
+
+export interface EditorialCheatSheet {
+  summaryLine: string;
+  highlights: string[];
+  mnemonics: string[];
+}
+
+export type EditorialContentBlock =
+  | { type: "heading"; text: string }
+  | { type: "paragraph"; text: string }
+  | { type: "callout"; callout: EditorialCallout }
+  | { type: "key-takeaways"; takeaway: EditorialKeyTakeaway }
+  | { type: "mnemonic"; mnemonic: EditorialMnemonic }
+  | { type: "resource"; resource: EditorialResource }
+  | { type: "diagram"; diagram: EditorialDiagramDefinition };
+
+export interface EditorialLearnPage {
+  id: Extract<
+    EditorialMaterialId,
+    "learn-1" | "learn-2" | "learn-3" | "learn-4"
+  >;
+  title: string;
+  emoji: string;
+  blocks: EditorialContentBlock[];
+}
+
+export interface EditorialMaterial {
+  id: EditorialMaterialId;
+  title: string;
+  emoji: string;
+  type:
+    | "hub"
+    | "learn"
+    | "flashcards"
+    | "videos"
+    | "quiz"
+    | "results"
+    | "hard-test";
+  lockedUntilQuizPass?: boolean;
+}
+
+export interface EditorialObjective {
+  id: string;
+  label: string;
+}
+
+export interface EditorialSection {
+  id: string;
+  title: string;
+  emoji: string;
+  purpose: string;
+  materials: EditorialMaterial[];
+  objectives: EditorialObjective[];
+  learnPages: EditorialLearnPage[];
+  flashcards: EditorialFlashcard[];
+  videos: EditorialVideo[];
+  resources: EditorialResource[];
+  quiz: {
+    questions: EditorialQuestion[];
+    passThreshold: number;
+  };
+  hardTest: {
+    questions: EditorialQuestion[];
+    passThreshold: number;
+  };
+  cheatSheet: EditorialCheatSheet;
+}
+
+export interface EditorialChapter {
+  id: string;
+  title: string;
+  emoji: string;
+  color: string;
+  locked: boolean;
+  sections: EditorialSection[];
+}
+
+export interface EditorialCourse {
+  chapters: EditorialChapter[];
+}
+
+export interface EditorialSectionProgress {
+  unlocked: boolean;
+  completed: boolean;
+  visitedMaterials: EditorialMaterialId[];
+  flashcardPosition: number;
+  starredFlashcards: string[];
+  quizAnswers: Record<number, number>;
+  quizSubmitted: boolean;
+  quizScore: number | null;
+  hardTestAnswers: Record<number, number>;
+  hardTestSubmitted: boolean;
+  hardTestScore: number | null;
+}
+
+export interface EditorialChapterProgress {
+  unlocked: boolean;
+  sections: Record<string, EditorialSectionProgress>;
+}
+
+export interface EditorialProgress {
+  currentRoute: string;
+  chapters: Record<string, EditorialChapterProgress>;
 }

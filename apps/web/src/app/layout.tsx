@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Source_Sans_3 } from "next/font/google";
+import { DM_Sans, Literata } from "next/font/google";
 
+import { getEditorialCourse } from "@/content/editorial-course";
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
+import { EditorialProgressProvider } from "@/components/editorial/editorial-progress-provider";
 import { PwaRegister } from "@/components/pwa-register";
 import "./globals.css";
 
-const display = Space_Grotesk({
+const sans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-display",
+  variable: "--font-sans",
   weight: ["400", "500", "600", "700"],
 });
 
-const sans = Source_Sans_3({
+const reading = Literata({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-reading",
   weight: ["400", "500", "600", "700"],
 });
 
@@ -28,11 +30,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const course = getEditorialCourse();
+
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable}`}>
-      <body>
+    <html lang="en" className={`${sans.variable} ${reading.variable}`}>
+      <body className="bg-[var(--bg-primary)] text-[var(--text-primary)]">
         <PwaRegister />
-        {children}
+        <EditorialProgressProvider course={course}>{children}</EditorialProgressProvider>
       </body>
     </html>
   );

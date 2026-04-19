@@ -1,9 +1,9 @@
-// @ts-nocheck
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { createClient } from "@supabase/supabase-js";
+import type { ModuleBundle, SourceRef } from "../src/lib/types";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const appDir = resolve(scriptDir, "..");
@@ -66,9 +66,10 @@ async function main() {
   const { getModuleSummaries, getModuleBundle, getSourceRefsForObjective } = course;
 
   const summaries = getModuleSummaries();
-  const rawBundles = summaries.map((summary: ReturnType<typeof getModuleSummaries>[number]) => getModuleBundle(summary.id));
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const bundles = rawBundles.filter((b): b is NonNullable<any> => b !== null && b !== undefined);
+  const rawBundles: Array<ModuleBundle | null> = summaries.map(
+    (summary: ReturnType<typeof getModuleSummaries>[number]) => getModuleBundle(summary.id),
+  );
+  const bundles = rawBundles.filter((bundle): bundle is ModuleBundle => bundle !== null);
 
   const modules = bundles.map((bundle) => ({
     id: bundle.id,
@@ -152,7 +153,7 @@ async function main() {
     ),
   );
 
-  const sourceRefMap = new Map<string, ReturnType<typeof getSourceRefsForObjective>[number]>();
+  const sourceRefMap = new Map<string, SourceRef>();
   const objectiveSourceRefs = bundles.flatMap((bundle) =>
     bundle.objectives.flatMap((objective) =>
       getSourceRefsForObjective(objective).map((sourceRef) => {
@@ -176,10 +177,14 @@ async function main() {
 
   // Must run in FK dependency order (modules → sections → objectives → children)
   async function upsert(table: string, rows: unknown[], conflict: string) {
-    if (!rows.length) return;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const { error } = await (client.from(table as any).upsert(rows as any, { onConflict: conflict }) as Promise<{ error: { message: string } | null }>);
-    if (error) throw new Error(`${table}: ${error.message}`);
+    if (!rows.length) {
+      return;
+    }
+
+    const { error } = await client.from(table).upsert(rows, { onConflict: conflict });
+    if (error) {
+      throw new Error(`${table}: ${error.message}`);
+    }
   }
 
   await upsert("modules", modules, "id");

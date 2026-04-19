@@ -53,42 +53,49 @@ export async function POST(request: Request) {
     });
   }
 
-  const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  try {
+    const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-  const response = await client.responses.create({
-    model: "gpt-5-mini",
-    input: [
-      {
-        role: "system",
-        content: [
-          {
-            type: "input_text",
-            text:
-              "You are a private CLEP Humanities study coach. Answer only from the supplied course context. Keep the answer concise, practical, and study-focused. Do not introduce unsupported facts or raw-source claims.",
-          },
-        ],
-      },
-      {
-        role: "user",
-        content: [
-          {
-            type: "input_text",
-            text: JSON.stringify(
-              {
-                question: body.question,
-                courseContext: coachContext,
-              },
-              null,
-              2,
-            ),
-          },
-        ],
-      },
-    ],
-  });
+    const response = await client.responses.create({
+      model: "gpt-5-mini",
+      input: [
+        {
+          role: "system",
+          content: [
+            {
+              type: "input_text",
+              text:
+                "You are a private CLEP Humanities study coach. Answer only from the supplied course context. Keep the answer concise, practical, and study-focused. Do not introduce unsupported facts or raw-source claims.",
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: [
+            {
+              type: "input_text",
+              text: JSON.stringify(
+                {
+                  question: body.question,
+                  courseContext: coachContext,
+                },
+                null,
+                2,
+              ),
+            },
+          ],
+        },
+      ],
+    });
 
-  return NextResponse.json({
-    reply: response.output_text || buildFallbackResponse(body.question, coachContext),
-    mode: "openai",
-  });
+    return NextResponse.json({
+      reply: response.output_text || buildFallbackResponse(body.question, coachContext),
+      mode: "openai",
+    });
+  } catch {
+    return NextResponse.json({
+      reply: buildFallbackResponse(body.question, coachContext),
+      mode: "local-fallback",
+    });
+  }
 }
