@@ -463,7 +463,8 @@ function parseBigIdeas(raw: string) {
     const lines = paragraphize(chunk);
     const titleLine = lines[0] ?? "";
     const title = titleLine.replace(/^Big Idea \d+\s*[-—:]\s*/i, "").trim() || `Big Idea ${index + 1}`;
-    const text = lines.slice(1).join(" ").trim() || titleLine.trim();
+    const bodyLines = lines.slice(1).filter((l) => !/^Big Idea \d+/i.test(l));
+    const text = bodyLines[0]?.trim() || "";
     const tones: EditorialCallout["tone"][] = ["beginner", "exam", "why", "recognition", "compare", "info"];
 
     return {
@@ -1380,41 +1381,19 @@ function buildLearnPages(
   const textbook = extractTextbook(raw);
   const textbookBlocks = extractTextbookH2Blocks(textbook);
   const groupedBlocks = buildSectionPageGroups(sectionId, textbookBlocks);
-  const foundationalContext = sanitizeParagraphsForLearnFlow(extractFoundationalContext(raw));
   const bigIdeas = parseBigIdeas(raw);
   const groupedMnemonics = splitIntoGroups(mnemonics, 4);
 
   return groupedBlocks.map((group, pageIndex) => {
     const blocks: EditorialLearnPage["blocks"] = [];
 
-    blocks.push({
-      type: "heading",
-      text: group.title,
-    });
-
-    if (pageIndex === 0 && foundationalContext.length) {
-      blocks.push({
-        type: "heading",
-        text: "Section Foundations",
-      });
-
-      for (const paragraph of foundationalContext) {
-        blocks.push({ type: "paragraph", text: paragraph });
-      }
-    }
-
-    if (pageIndex === 0 && bigIdeas.length) {
-      blocks.push({
-        type: "heading",
-        text: "Big Ideas",
-      });
-
-      for (const [ideaIndex, idea] of bigIdeas.entries()) {
-        blocks.push({
-          type: "callout",
-          callout: buildCallout(`${idea.title}: ${idea.text}`, pageIndex + ideaIndex),
-        });
-      }
+    // Distribute big ideas as labeled callouts across pages
+    const groupedBigIdeas = splitIntoGroups(bigIdeas, 4);
+    for (const [ideaIndex, idea] of (groupedBigIdeas[pageIndex] ?? []).entries()) {
+      if (!idea.text) continue;
+      const callout = buildCallout(idea.text, pageIndex + ideaIndex);
+      callout.label = idea.title.toUpperCase();
+      blocks.push({ type: "callout", callout });
     }
 
     for (const groupBlock of group.blocks) {
@@ -1441,6 +1420,7 @@ function buildLearnPages(
           continue;
         }
 
+        if (/^(classical\.\S+|M\d-S\d-OBJ|Plain-English|Skill type:|Exam task|Answer:)/i.test(paragraph.trim())) continue;
         blocks.push({ type: "paragraph", text: paragraph });
       }
 

@@ -55,10 +55,29 @@ export function SectionHub({
 
         <div className="mt-6">
           <div className="mb-2 flex items-center justify-between text-sm font-semibold text-[var(--text-secondary)]">
-            <span>Progress through section materials</span>
+            <span>Section progress</span>
             <span>{Math.round(ratio * 100)}%</span>
           </div>
           <ProgressBar value={ratio} />
+        </div>
+
+        {/* Recommended learning flow */}
+        <div className="mt-6 overflow-x-auto">
+          <div className="flex min-w-max items-center gap-1 text-xs font-semibold text-[var(--text-muted)]">
+            {(["Learn 1–4", "Flashcards", "Videos", "Quiz", "Results", "Hard Test"] as const).map(
+              (step, i, arr) => (
+                <span key={step} className="flex items-center gap-1">
+                  <span className="rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-2.5 py-1">
+                    {step}
+                  </span>
+                  {i < arr.length - 1 && <span className="text-[var(--border)]">→</span>}
+                </span>
+              ),
+            )}
+          </div>
+          <p className="mt-2 text-xs text-[var(--text-muted)]">
+            Work through each material in order. Score {section.quiz.passThreshold}/10 on the Quiz to unlock the Hard Test.
+          </p>
         </div>
 
         <div className="mt-6 flex flex-wrap gap-3">
@@ -69,35 +88,34 @@ export function SectionHub({
             Open Flashcards
           </a>
           <a href={buildMaterialHref(chapterId, section.id, "quiz")} className="button-secondary inline-flex">
-            Open Quiz
+            Take Quiz
           </a>
         </div>
       </Card>
 
-      <Card className="p-6">
-        <div className="mb-3 text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
-          Objectives
-        </div>
-        <div className="flex flex-wrap gap-3">
-          {section.objectives.map((objective) => (
-            <span
-              key={objective.id}
-              className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-2 text-sm font-semibold text-[var(--text-secondary)]"
-            >
-              {objective.label}
-            </span>
-          ))}
-        </div>
-      </Card>
+      {section.objectives.length > 0 && (
+        <Card className="p-6">
+          <div className="mb-3 text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+            What you will learn
+          </div>
+          <ul className="space-y-2">
+            {section.objectives.map((objective) => (
+              <li key={objective.id} className="flex items-start gap-2 text-[15px] text-[var(--text-secondary)]">
+                <span className="mt-0.5 shrink-0 font-bold text-[var(--accent)]">→</span>
+                <span>{objective.label}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      )}
 
       <Card className="p-6">
         <div className="mb-2 text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
           Materials
         </div>
-        <p className="mb-5 text-[16px] leading-7 text-[var(--text-secondary)]">
-          Use the section like a course module: move from the learn pages into flashcards, videos, quiz,
-          results, and then the hard test. Once a section is open, everything except the hard test stays
-          freely accessible.
+        <p className="mb-5 text-[15px] leading-7 text-[var(--text-secondary)]">
+          Everything except the Hard Test is freely accessible once this section is unlocked. The Hard Test
+          requires a passing quiz score ({section.quiz.passThreshold}/10) and unlocks the next section.
         </p>
 
         <div className="grid gap-4 md:grid-cols-2">

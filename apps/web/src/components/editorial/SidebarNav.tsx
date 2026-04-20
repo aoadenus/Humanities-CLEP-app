@@ -52,7 +52,13 @@ function NavItem({
         </div>
         {secondary ? <div className="mt-1 text-xs text-[var(--text-secondary)]">{secondary}</div> : null}
       </div>
-      <span className="ml-3 text-xs text-[var(--text-muted)]">{locked ? "Locked" : active ? "Here" : "Open"}</span>
+      <span className="ml-3 shrink-0 text-xs font-semibold">
+        {locked ? (
+          <span className="text-[var(--text-muted)]">🔒</span>
+        ) : active ? (
+          <span className="inline-block h-2 w-2 rounded-full bg-[var(--accent)]" aria-label="current" />
+        ) : null}
+      </span>
     </div>
   );
 
@@ -188,9 +194,9 @@ export function SidebarNav({
                   secondary={
                     unlocked
                       ? sectionProgress?.completed
-                        ? "Complete"
+                        ? "✓ Completed"
                         : `${Math.round(ratio * 100)}% explored`
-                      : "Finish the previous hard test"
+                      : "Complete previous hard test"
                   }
                   onClick={onClose}
                 />
@@ -224,12 +230,12 @@ export function SidebarNav({
                   label={material.title}
                   secondary={
                     status === "complete"
-                      ? "Complete"
+                      ? "✓ Done"
                       : status === "in_progress"
                         ? "In progress"
                         : status === "locked"
-                          ? "Locked"
-                          : "Ready"
+                          ? "Finish quiz to unlock"
+                          : undefined
                   }
                   onClick={onClose}
                 />
@@ -241,11 +247,10 @@ export function SidebarNav({
 
       {currentSection ? (
         <Card className="mt-auto p-4">
-          <div className="text-sm font-bold text-[var(--text-primary)]">Current section</div>
-          <p className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">{currentSection.title}</p>
-          <div className="mt-3 text-xs leading-6 text-[var(--text-muted)]">
-            Materials stay open inside a section. Only the hard test stays locked until the quiz is passed.
-          </div>
+          <div className="text-sm font-bold text-[var(--text-primary)]">Recommended order</div>
+          <p className="mt-1 text-xs leading-5 text-[var(--text-muted)]">
+            Learn 1–4 → Flashcards → Videos → Quiz → Hard Test
+          </p>
         </Card>
       ) : null}
     </aside>

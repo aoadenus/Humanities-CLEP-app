@@ -8,12 +8,12 @@ import { buildChapterHref, getChapterProgressRatio } from "@/lib/editorial-navig
 import type { EditorialCourse } from "@/lib/types";
 
 const chapterNotes: Record<string, string> = {
-  ch1: "Full Chapter 1 flow: six sections, learn pages, flashcards, videos, quiz, results, and hard test.",
-  ch2: "Locked placeholder for the next chapter release.",
-  ch3: "Locked placeholder for the next chapter release.",
-  ch4: "Locked placeholder for the next chapter release.",
-  ch5: "Locked placeholder for the next chapter release.",
-  ch6: "Locked placeholder for the next chapter release.",
+  ch1: "Six sections covering the Classical period, from prehistoric symbolic thinking through Rome. Complete each section's hard test to advance.",
+  ch2: "Medieval and Renaissance — unlocks after completing Chapter 1.",
+  ch3: "17th and 18th century — unlocks after completing Chapter 2.",
+  ch4: "19th century — unlocks after completing Chapter 3.",
+  ch5: "20th and 21st century — unlocks after completing Chapter 4.",
+  ch6: "Cumulative review and exam preparation — unlocks after completing Chapter 5.",
 };
 
 export function Dashboard({ course }: { course: EditorialCourse }) {
