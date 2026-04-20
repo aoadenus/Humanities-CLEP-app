@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import { Card } from "@/components/editorial/Card";
 import { ProgressBar } from "@/components/editorial/ProgressBar";
 import { StatusBadge } from "@/components/editorial/StatusBadge";
@@ -21,9 +19,9 @@ export function ChapterOverview({
     return (
       <div className="space-y-4">
         <div>
-          <Link href="/" className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
+          <a href="/" className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
             Back to Dashboard
-          </Link>
+          </a>
         </div>
         <Card className="p-8">
           <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
@@ -41,9 +39,9 @@ export function ChapterOverview({
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
-        <Link href="/" className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
+        <a href="/" className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
           Back to Dashboard
-        </Link>
+        </a>
       </div>
 
       <Card className="surface-tint p-6 md:p-8">
@@ -114,9 +112,9 @@ export function ChapterOverview({
 
               {unlocked ? (
                 <div className="mt-5">
-                  <Link href={sectionHref} className="button-primary inline-flex items-center gap-2 px-5 py-2 text-sm">
+                  <a href={sectionHref} className="button-primary inline-flex items-center gap-2 px-5 py-2 text-sm">
                     {sectionProgress?.completed ? "Review Section" : ratio > 0 ? "Continue to Section" : "Enter Section"}
-                  </Link>
+                  </a>
                 </div>
               ) : null}
             </Card>

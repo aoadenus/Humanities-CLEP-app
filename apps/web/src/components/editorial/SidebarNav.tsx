@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import { Card } from "@/components/editorial/Card";
 import { StatusBadge } from "@/components/editorial/StatusBadge";
 import { getMaterialStatus } from "@/components/editorial/editorial-progress-provider";
@@ -63,9 +61,9 @@ function NavItem({
   }
 
   return (
-    <Link href={href} onClick={onClick}>
+    <a href={href} onClick={onClick}>
       {body}
-    </Link>
+    </a>
   );
 }
 
@@ -109,7 +107,7 @@ export function SidebarNav({
       </div>
 
       <div>
-        <Link
+        <a
           href="/"
           className={[
             "flex items-center gap-3 rounded-xl border px-3 py-3 text-sm font-bold transition-all",
@@ -121,7 +119,7 @@ export function SidebarNav({
         >
           <span className="text-base">Home</span>
           <span>Dashboard</span>
-        </Link>
+        </a>
       </div>
 
       <Card className="surface-tint p-4">

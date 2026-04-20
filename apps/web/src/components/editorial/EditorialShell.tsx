@@ -1,6 +1,4 @@
 "use client";
-
-import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 import { Breadcrumbs } from "@/components/editorial/Breadcrumbs";
@@ -213,9 +211,9 @@ export function EditorialShell({
             return locked ? (
               <span key={material.id}>{chip}</span>
             ) : (
-              <Link href={href} key={material.id}>
+              <a href={href} key={material.id}>
                 {chip}
-              </Link>
+              </a>
             );
           })}
         </div>
@@ -306,13 +304,13 @@ export function EditorialShell({
       <main className="min-w-0">
         <div className="border-b border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 md:hidden">
           <div className="flex items-center gap-2">
-            <Link
+            <a
               href="/"
               aria-label="Dashboard"
               className="flex items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--bg-card)] px-3 py-2 text-sm font-bold transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
             >
               Home
-            </Link>
+            </a>
             <button className="button-secondary px-3 py-2 text-sm" onClick={() => setMobileOpen(true)} type="button">
               Menu
             </button>

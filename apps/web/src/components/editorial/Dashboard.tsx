@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import { Card } from "@/components/editorial/Card";
 import { ProgressBar } from "@/components/editorial/ProgressBar";
 import { StatusBadge } from "@/components/editorial/StatusBadge";
@@ -40,9 +38,9 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
 
             <div className="space-y-3">
               {ready && progress?.currentRoute && progress.currentRoute !== "/" ? (
-                <Link href={progress.currentRoute} className="button-primary inline-flex w-full justify-center">
+                <a href={progress.currentRoute} className="button-primary inline-flex w-full justify-center">
                   Resume where you left off
-                </Link>
+                </a>
               ) : null}
               <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-4">
                 <div className="flex items-center gap-2">
@@ -120,9 +118,9 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
             );
 
             return unlocked ? (
-              <Link href={buildChapterHref(chapter.id)} key={chapter.id}>
+              <a href={buildChapterHref(chapter.id)} key={chapter.id}>
                 {cardBody}
-              </Link>
+              </a>
             ) : (
               <div key={chapter.id}>{cardBody}</div>
             );

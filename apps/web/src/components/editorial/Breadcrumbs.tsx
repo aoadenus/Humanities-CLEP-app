@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 export function Breadcrumbs({
   items,
 }: {
@@ -13,9 +11,9 @@ export function Breadcrumbs({
         {items.map((item, index) => (
           <li key={`${item.label}-${index}`} className="flex items-center gap-2">
             {item.href ? (
-              <Link href={item.href} className="transition-colors hover:text-[var(--accent)]">
+              <a href={item.href} className="transition-colors hover:text-[var(--accent)]">
                 {item.label}
-              </Link>
+              </a>
             ) : (
               <span className="text-[var(--text-primary)]">{item.label}</span>
             )}

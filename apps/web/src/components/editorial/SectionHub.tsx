@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import { Card } from "@/components/editorial/Card";
 import { ProgressBar } from "@/components/editorial/ProgressBar";
 import { StatusBadge } from "@/components/editorial/StatusBadge";
@@ -22,9 +20,9 @@ export function SectionHub({
     return (
       <div className="space-y-4">
         <div>
-          <Link href={buildChapterHref(chapterId)} className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
+          <a href={buildChapterHref(chapterId)} className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
             Back to Chapter Overview
-          </Link>
+          </a>
         </div>
         <Card className="p-8">
           <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
@@ -44,9 +42,9 @@ export function SectionHub({
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
-        <Link href={buildChapterHref(chapterId)} className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
+        <a href={buildChapterHref(chapterId)} className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
           Back to Chapter Overview
-        </Link>
+        </a>
       </div>
       <Card className="surface-tint p-6 md:p-8">
         <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
@@ -64,15 +62,15 @@ export function SectionHub({
         </div>
 
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link href={buildMaterialHref(chapterId, section.id, "learn-1")} className="button-primary inline-flex">
+          <a href={buildMaterialHref(chapterId, section.id, "learn-1")} className="button-primary inline-flex">
             Begin Learn 1
-          </Link>
-          <Link href={buildMaterialHref(chapterId, section.id, "flashcards")} className="button-secondary inline-flex">
+          </a>
+          <a href={buildMaterialHref(chapterId, section.id, "flashcards")} className="button-secondary inline-flex">
             Open Flashcards
-          </Link>
-          <Link href={buildMaterialHref(chapterId, section.id, "quiz")} className="button-secondary inline-flex">
+          </a>
+          <a href={buildMaterialHref(chapterId, section.id, "quiz")} className="button-secondary inline-flex">
             Open Quiz
-          </Link>
+          </a>
         </div>
       </Card>
 
@@ -151,9 +149,9 @@ export function SectionHub({
             return locked ? (
               <div key={material.id}>{cardBody}</div>
             ) : (
-              <Link href={buildMaterialHref(chapterId, section.id, material.id)} key={material.id} className="block">
+              <a href={buildMaterialHref(chapterId, section.id, material.id)} key={material.id} className="block">
                 {cardBody}
-              </Link>
+              </a>
             );
           })}
         </div>
