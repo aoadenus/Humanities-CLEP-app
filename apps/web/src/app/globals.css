@@ -135,6 +135,51 @@ button, input, textarea, select { font: inherit; }
   border-radius: var(--radius-md);
 }
 
+.memory-aid-card {
+  background: linear-gradient(145deg, #FFFDF9 0%, #F4EEE2 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 22px 24px;
+}
+
+.memory-aid-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.memory-aid-divider {
+  height: 1px;
+  margin: 14px 0 12px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+
+.key-takeaway-card {
+  background: linear-gradient(150deg, #FFFDFB 0%, #F2F7FF 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.key-takeaway-topline {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3D5F96, #4A7C59, #C49A2A);
+}
+
 /* ── Flip card ──────────────────────────────────────────── */
 .flip-perspective { perspective: 1200px; }
 
@@ -311,10 +356,40 @@ button, input, textarea, select { font: inherit; }
 
 /* ── Reading typography ─────────────────────────────────── */
 .reading-body {
-  font-size: 18px;
-  line-height: 1.9;
-  letter-spacing: 0.003em;
+  font-size: 19px;
+  line-height: 2;
+  letter-spacing: 0.01em;
+  word-spacing: 0.06em;
   color: var(--text-primary);
+}
+
+.learn-heading-h2,
+.learn-heading-h3 {
+  font-family: var(--font-sans), sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+.learn-heading-h1 {
+  font-family: var(--font-sans), sans-serif;
+  font-size: clamp(2rem, 3.1vw, 3rem);
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  color: #5A3F22;
+}
+
+.learn-heading-h2 {
+  color: #275D8D;
+  font-size: clamp(1.6rem, 2vw, 2.15rem);
+  line-height: 1.25;
+}
+
+.learn-heading-h3 {
+  color: #2E6F4F;
+  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  line-height: 1.35;
 }
 
 /* ── Learn page textbook styles ─────────────────────────── */

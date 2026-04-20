@@ -8,12 +8,12 @@ import { buildChapterHref, getChapterProgressRatio } from "@/lib/editorial-navig
 import type { EditorialCourse } from "@/lib/types";
 
 const chapterNotes: Record<string, string> = {
-  ch1: "Six sections covering the Classical period, from prehistoric symbolic thinking through Rome. Complete each section's hard test to advance.",
-  ch2: "Medieval and Renaissance — unlocks after completing Chapter 1.",
-  ch3: "17th and 18th century — unlocks after completing Chapter 2.",
-  ch4: "19th century — unlocks after completing Chapter 3.",
-  ch5: "20th and 21st century — unlocks after completing Chapter 4.",
-  ch6: "Cumulative review and exam preparation — unlocks after completing Chapter 5.",
+  ch1: "Six sections covering the Classical period, from prehistoric symbolic thinking through Rome.",
+  ch2: "Six sections covering the Medieval world, from Late Rome and Byzantium through Gothic cathedrals and the late medieval Italian cities.",
+  ch3: "Renaissance and Reformation with Florence, the High Renaissance, the Northern Renaissance, and the Reformation.",
+  ch4: "19th century content is still in placeholder mode.",
+  ch5: "20th and 21st century content is still in placeholder mode.",
+  ch6: "Cumulative review and exam preparation will appear after the remaining chapters are built.",
 };
 
 export function Dashboard({ course }: { course: EditorialCourse }) {
@@ -32,7 +32,7 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                 CLEP Humanities
               </h1>
               <p className="mt-4 max-w-3xl text-[18px] leading-8 text-[var(--text-secondary)]">
-                Start at Chapter 1, open a section, and move through the materials in order.
+                Open any live chapter, pick a section, and move through the materials at your own pace.
               </p>
             </div>
 
@@ -45,10 +45,11 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
               <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-4">
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-[var(--success)]" />
-                  <div className="text-sm font-bold text-[var(--text-primary)]">Chapter 1 active</div>
+                  <div className="text-sm font-bold text-[var(--text-primary)]">Live chapters ready</div>
                 </div>
                 <div className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">
-                  Chapters 2-6 are visible but locked. Complete each section hard test to progress.
+                  Chapters with real content are open. Inside each section, the hard test stays locked until the quiz
+                  is submitted.
                 </div>
               </div>
             </div>

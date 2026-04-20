@@ -10,7 +10,7 @@ import { KeyTakeawayBox } from "@/components/editorial/KeyTakeawayBox";
 import type { EditorialLearnPage, EditorialSection } from "@/lib/types";
 
 // Filters out leaked authoring/machine-ID strings that should never render as body text
-const MACHINE_ID_RE = /^(classical\.|M\d+-?S\d+-|objective[-_]id\b)/i;
+const MACHINE_ID_RE = /^(\w+\.s\d+\.[\w.-]+|M\d+-?S\d+-|objective[-_]id\b)/i;
 
 function slugify(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -23,11 +23,24 @@ function estimateReadMinutes(blocks: EditorialLearnPage["blocks"]): number {
   return Math.max(1, Math.ceil(wordCount / 200));
 }
 
+function buildLessonOutcomes(page: EditorialLearnPage, section: EditorialSection) {
+  const headingOutcomes = page.blocks
+    .filter((block): block is Extract<EditorialLearnPage["blocks"][number], { type: "heading" }> => block.type === "heading")
+    .slice(0, 3)
+    .map((block) => `Explain ${block.text.toLowerCase()}.`);
+
+  if (headingOutcomes.length > 0) {
+    return headingOutcomes;
+  }
+
+  return section.objectives.slice(0, 3).map((objective) => objective.label);
+}
+
 function TableOfContents({
   headings,
   activeId,
 }: {
-  headings: { id: string; text: string }[];
+  headings: { id: string; text: string; level: 1 | 2 | 3 }[];
   activeId: string;
 }) {
   if (!headings.length) return null;
@@ -42,6 +55,7 @@ function TableOfContents({
           href={`#${h.id}`}
           className={[
             "block truncate rounded-lg px-3 py-2 text-sm transition-colors",
+            h.level === 3 ? "ml-3" : "",
             activeId === h.id
               ? "bg-[var(--bg-secondary)] font-bold text-[var(--text-primary)]"
               : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]",
@@ -64,6 +78,7 @@ export function LearnPage({
   const pageIndex = section.learnPages.findIndex((p) => p.id === page.id);
   const pageNumber = pageIndex + 1;
   const totalPages = section.learnPages.length;
+  const lessonOutcomes = buildLessonOutcomes(page, section);
 
   // Strip machine-ID paragraphs before rendering
   const filteredBlocks = page.blocks.filter((b) => {
@@ -75,8 +90,17 @@ export function LearnPage({
 
   // Build heading list for TOC and progress tracking
   const headings = filteredBlocks
-    .filter((b): b is { type: "heading"; text: string } => b.type === "heading")
-    .map((b) => ({ id: slugify(b.text), text: b.text }));
+    .flatMap((block, index) => {
+      if (block.type !== "heading") {
+        return [];
+      }
+
+      return [{
+        id: `${slugify(block.text)}-${index}`,
+        text: block.text,
+        level: block.level,
+      }];
+    });
 
   const [activeId, setActiveId] = useState(headings[0]?.id ?? "");
   const headingRefs = useRef<Map<string, HTMLElement>>(new Map());
@@ -120,20 +144,20 @@ export function LearnPage({
             </div>
           </div>
 
-          <h1 className="font-reading mt-3 text-4xl font-bold text-[var(--text-primary)] md:text-5xl">
+          <h1 className="learn-heading-h1 mt-3 md:text-5xl">
             {section.title}
           </h1>
 
-          {section.objectives.length > 0 && (
+          {lessonOutcomes.length > 0 && (
             <div className="mt-5 border-t border-[var(--border)] pt-5">
               <div className="mb-2 text-xs font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
-                After this section you should be able to
+                On this lesson you should be able to
               </div>
               <ul className="space-y-1.5">
-                {section.objectives.slice(0, 5).map((obj) => (
-                  <li key={obj.id} className="flex items-start gap-2 text-sm text-[var(--text-secondary)]">
+                {lessonOutcomes.map((outcome) => (
+                  <li key={outcome} className="flex items-start gap-2 text-sm text-[var(--text-secondary)]">
                     <span className="mt-0.5 shrink-0 font-bold text-[var(--accent)]">→</span>
-                    <span>{obj.label}</span>
+                    <span>{outcome}</span>
                   </li>
                 ))}
               </ul>
@@ -165,19 +189,32 @@ export function LearnPage({
         <div className="space-y-5">
           {filteredBlocks.map((block, index) => {
             if (block.type === "heading") {
-              const id = slugify(block.text);
+              const id = `${slugify(block.text)}-${index}`;
               return (
                 <Card key={`${block.type}-${index}`} className="p-6 md:p-7">
-                  <h2
-                    id={id}
-                    ref={(el) => {
-                      if (el) headingRefs.current.set(id, el);
-                      else headingRefs.current.delete(id);
-                    }}
-                    className="scroll-mt-24 font-reading text-3xl font-bold text-[var(--text-primary)] md:text-4xl"
-                  >
-                    📖 {block.text}
-                  </h2>
+                  {block.level === 3 ? (
+                    <h3
+                      id={id}
+                      ref={(el) => {
+                        if (el) headingRefs.current.set(id, el);
+                        else headingRefs.current.delete(id);
+                      }}
+                      className="learn-heading-h3 scroll-mt-24"
+                    >
+                      {block.text}
+                    </h3>
+                  ) : (
+                    <h2
+                      id={id}
+                      ref={(el) => {
+                        if (el) headingRefs.current.set(id, el);
+                        else headingRefs.current.delete(id);
+                      }}
+                      className="learn-heading-h2 scroll-mt-24"
+                    >
+                      {block.text}
+                    </h2>
+                  )}
                 </Card>
               );
             }
@@ -185,7 +222,7 @@ export function LearnPage({
             if (block.type === "paragraph") {
               return (
                 <Card key={`${block.type}-${index}`} className="p-6 md:p-7">
-                  <p className="reading-body m-0">{block.text}</p>
+                  <p className="reading-body m-0 max-w-[72ch]">{block.text}</p>
                 </Card>
               );
             }
@@ -200,13 +237,17 @@ export function LearnPage({
 
             if (block.type === "mnemonic") {
               return (
-                <div key={`${block.type}-${index}`} className="mnemonic-card">
-                  <div className="text-xs font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+                <div key={`${block.type}-${index}`} className="memory-aid-card">
+                  <div className="memory-aid-chip">
                     🧠 Memory Aid
                   </div>
-                  <div className="mt-2 text-3xl font-bold text-[var(--text-primary)]">{block.mnemonic.label}</div>
-                  <p className="mt-2 text-[17px] leading-7 text-[var(--text-secondary)]">{block.mnemonic.purpose}</p>
-                  <ul className="mt-4 space-y-2 pl-5 text-[16px] leading-7 text-[var(--text-primary)]">
+                  <div className="mt-3 text-2xl font-bold leading-tight text-[var(--text-primary)]">{block.mnemonic.label}</div>
+                  <p className="mt-2 max-w-[72ch] text-[17px] leading-8 text-[var(--text-secondary)]">{block.mnemonic.purpose}</p>
+                  <div className="memory-aid-divider" />
+                  <div className="text-xs font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+                    Use it this way
+                  </div>
+                  <ul className="mt-3 space-y-2 pl-5 text-[16px] leading-8 text-[var(--text-primary)]">
                     {block.mnemonic.lines.map((line) => (
                       <li key={line}>{line}</li>
                     ))}

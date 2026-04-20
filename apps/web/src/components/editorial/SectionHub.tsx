@@ -30,7 +30,7 @@ export function SectionHub({
           </div>
           <h1 className="font-reading mt-3 text-3xl font-bold text-[var(--text-primary)]">{section.title}</h1>
           <p className="mt-4 text-[18px] leading-8 text-[var(--text-secondary)]">
-            Finish the previous section hard test to unlock this section.
+            This section is not available yet.
           </p>
         </Card>
       </div>
@@ -38,6 +38,16 @@ export function SectionHub({
   }
 
   const ratio = getSectionProgressRatio(section, sectionProgress);
+  const firstLearnId = section.learnPages[0]?.id ?? null;
+  const learnStepLabels = section.learnPages.map((page) => page.title);
+  const flowLabels = [
+    ...learnStepLabels,
+    "Flashcards",
+    "Videos",
+    "Quiz",
+    "Results",
+    "Hard Test",
+  ];
 
   return (
     <div className="space-y-6">
@@ -61,28 +71,29 @@ export function SectionHub({
           <ProgressBar value={ratio} />
         </div>
 
-        {/* Recommended learning flow */}
         <div className="mt-6 overflow-x-auto">
           <div className="flex min-w-max items-center gap-1 text-xs font-semibold text-[var(--text-muted)]">
-            {(["Learn 1–4", "Flashcards", "Videos", "Quiz", "Results", "Hard Test"] as const).map(
-              (step, i, arr) => (
-                <span key={step} className="flex items-center gap-1">
-                  <span className="rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-2.5 py-1">
-                    {step}
-                  </span>
-                  {i < arr.length - 1 && <span className="text-[var(--border)]">→</span>}
+            {flowLabels.map((step, index) => (
+              <span key={step} className="flex items-center gap-1">
+                <span className="rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-2.5 py-1">
+                  {step}
                 </span>
-              ),
-            )}
+                {index < flowLabels.length - 1 && <span className="text-[var(--border)]">→</span>}
+              </span>
+            ))}
           </div>
           <p className="mt-2 text-xs text-[var(--text-muted)]">
-            Work through each material in order. Score {section.quiz.passThreshold}/10 on the Quiz to unlock the Hard Test.
+            Start with the learn material, use flashcards and videos as reinforcement, then submit the quiz to unlock
+            the hard test.
           </p>
         </div>
 
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href={buildMaterialHref(chapterId, section.id, "learn-1")} className="button-primary inline-flex">
-            Begin Learn 1
+          <a
+            href={buildMaterialHref(chapterId, section.id, firstLearnId ?? "flashcards")}
+            className="button-primary inline-flex"
+          >
+            {firstLearnId ? `Begin ${section.learnPages[0]?.title ?? "Learn"}` : "Open Flashcards"}
           </a>
           <a href={buildMaterialHref(chapterId, section.id, "flashcards")} className="button-secondary inline-flex">
             Open Flashcards
@@ -114,8 +125,7 @@ export function SectionHub({
           Materials
         </div>
         <p className="mb-5 text-[15px] leading-7 text-[var(--text-secondary)]">
-          Everything except the Hard Test is freely accessible once this section is unlocked. The Hard Test
-          requires a passing quiz score ({section.quiz.passThreshold}/10) and unlocks the next section.
+          All section materials are open except the hard test. The hard test unlocks after quiz submission.
         </p>
 
         <div className="grid gap-4 md:grid-cols-2">

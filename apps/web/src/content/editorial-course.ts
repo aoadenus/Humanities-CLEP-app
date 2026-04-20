@@ -23,6 +23,7 @@ import type {
   EditorialVideo,
 } from "@/lib/types";
 
+
 const MATERIALS: EditorialMaterial[] = [
   { id: "hub", title: "Section Hub", emoji: "🧭", type: "hub" },
   { id: "learn-1", title: "Learn 1", emoji: "📖", type: "learn" },
@@ -36,8 +37,12 @@ const MATERIALS: EditorialMaterial[] = [
   { id: "hard-test", title: "Hard Test", emoji: "🏆", type: "hard-test", lockedUntilQuizPass: true },
 ];
 
+const BASE_MATERIALS_AFTER_LEARN = MATERIALS.filter(
+  (material) => material.id !== "hub" && !material.id.startsWith("learn-"),
+);
+
 const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
-  s1: {
+  "ch1.s1": {
     id: "s1-flow",
     title: "From Symbol to Civilization",
     type: "flow",
@@ -46,7 +51,7 @@ const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
     accentColor: "#5B4A3F",
     description: "The core progression from symbolic thought to organized culture.",
   },
-  s2: {
+  "ch1.s2": {
     id: "s2-compare",
     title: "Mesopotamia vs Egypt",
     type: "bar",
@@ -55,7 +60,7 @@ const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
     accentColor: "#4A6FA5",
     description: "A study comparison of the two major river-valley systems.",
   },
-  s3: {
+  "ch1.s3": {
     id: "s3-world",
     title: "China / India / Africa Foundations",
     type: "bar",
@@ -64,7 +69,7 @@ const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
     accentColor: "#7B6B8D",
     description: "Shared civilization-building themes across three regions.",
   },
-  s4: {
+  "ch1.s4": {
     id: "s4-aegean",
     title: "Cycladic → Minoan → Mycenaean",
     type: "line",
@@ -73,7 +78,7 @@ const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
     accentColor: "#4A7C59",
     description: "A fast timeline of the early Greek world.",
   },
-  s5: {
+  "ch1.s5": {
     id: "s5-athens",
     title: "Athens Civic System",
     type: "flow",
@@ -82,7 +87,7 @@ const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
     accentColor: "#A3443A",
     description: "How public life and cultural forms reinforce one another in Athens.",
   },
-  s6: {
+  "ch1.s6": {
     id: "s6-rome",
     title: "Roman Systems",
     type: "flow",
@@ -91,10 +96,64 @@ const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
     accentColor: "#D4A843",
     description: "A quick map of Rome as organized public culture.",
   },
+  "ch2.s1": {
+    id: "ch2-s1-flow",
+    title: "Rome to Christian Rome",
+    type: "flow",
+    labels: ["Late Rome", "Judaism", "Christianity", "Constantine", "Basilica"],
+    values: [1, 2, 3, 4, 5],
+    accentColor: "#6B4A3F",
+    description: "The transformation from classical Rome into an early Christian world.",
+  },
+  "ch2.s2": {
+    id: "ch2-s2-bar",
+    title: "Byzantine Priorities",
+    type: "bar",
+    labels: ["Dome", "Mosaic", "Icon", "Empire", "Liturgy"],
+    values: [5, 5, 5, 4, 4],
+    accentColor: "#3D5F96",
+    description: "What Byzantine art and architecture emphasize most.",
+  },
+  "ch2.s3": {
+    id: "ch2-s3-bar",
+    title: "Pillars of Islamic Culture",
+    type: "bar",
+    labels: ["Qur'an", "Mosque", "Mihrab", "Calligraphy", "Learning"],
+    values: [5, 5, 4, 5, 4],
+    accentColor: "#3D6B5A",
+    description: "Core forms that structure early Islamic humanities.",
+  },
+  "ch2.s4": {
+    id: "ch2-s4-flow",
+    title: "Feudal and Monastic Order",
+    type: "flow",
+    labels: ["Lord", "Vassal", "Manor", "Monastery", "Pilgrimage"],
+    values: [1, 2, 3, 4, 5],
+    accentColor: "#7B6B8D",
+    description: "How medieval society organized land, memory, and sacred travel.",
+  },
+  "ch2.s5": {
+    id: "ch2-s5-bar",
+    title: "Gothic Structure",
+    type: "bar",
+    labels: ["Pointed Arch", "Rib Vault", "Flying Buttress", "Stained Glass", "Height"],
+    values: [5, 5, 5, 5, 5],
+    accentColor: "#4A5D8A",
+    description: "The structural toolkit that makes Gothic cathedrals possible.",
+  },
+  "ch2.s6": {
+    id: "ch2-s6-line",
+    title: "Late Medieval Arc",
+    type: "line",
+    labels: ["Siena", "Dante", "Giotto", "Plague", "Global"],
+    values: [2, 4, 5, 1, 3],
+    accentColor: "#8B3A3A",
+    description: "A fast arc through late medieval Italy and the wider medieval world.",
+  },
 };
 
 const MEDIA_FALLBACKS: Record<string, { resources: Array<{ title: string; url: string }>; videos: Array<{ title: string; url: string }> }> = {
-  s1: {
+  "ch1.s1": {
     resources: [
       { title: "Smarthistory: Prehistoric Art Introduction", url: "https://smarthistory.org/prehistoric-art-an-introduction/" },
       { title: "Britannica: Stonehenge", url: "https://www.britannica.com/topic/Stonehenge" },
@@ -105,7 +164,7 @@ const MEDIA_FALLBACKS: Record<string, { resources: Array<{ title: string; url: s
       { title: "YouTube: Neolithic Revolution Overview", url: "https://www.youtube.com/results?search_query=neolithic+revolution+overview" },
     ],
   },
-  s2: {
+  "ch1.s2": {
     resources: [
       { title: "Smarthistory: Ancient Mesopotamia", url: "https://smarthistory.org/tag/mesopotamia/" },
       { title: "Smarthistory: Ancient Egypt", url: "https://smarthistory.org/tag/ancient-egypt/" },
@@ -116,7 +175,7 @@ const MEDIA_FALLBACKS: Record<string, { resources: Array<{ title: string; url: s
       { title: "YouTube: Smarthistory Hammurabi", url: "https://www.youtube.com/results?search_query=smarthistory+hammurabi" },
     ],
   },
-  s3: {
+  "ch1.s3": {
     resources: [
       { title: "Smarthistory: Ancient China", url: "https://smarthistory.org/tag/china/" },
       { title: "Smarthistory: South Asia", url: "https://smarthistory.org/tag/south-asia/" },
@@ -127,9 +186,73 @@ const MEDIA_FALLBACKS: Record<string, { resources: Array<{ title: string; url: s
       { title: "YouTube: Sanchi Stupa Overview", url: "https://www.youtube.com/results?search_query=sanchi+stupa+overview" },
     ],
   },
-  s6: {
+  "ch1.s6": {
     resources: [],
     videos: [],
+  },
+  "ch2.s1": {
+    resources: [
+      { title: "Smarthistory: Early Christian Art", url: "https://smarthistory.org/tag/early-christian/" },
+      { title: "Smarthistory: Sarcophagus of Junius Bassus", url: "https://smarthistory.org/sarcophagus-of-junius-bassus/" },
+    ],
+    videos: [
+      { title: "YouTube: Early Christian Art Overview", url: "https://www.youtube.com/results?search_query=smarthistory+early+christian+art" },
+    ],
+  },
+  "ch2.s2": {
+    resources: [
+      { title: "Smarthistory: Byzantine Art", url: "https://smarthistory.org/tag/byzantine/" },
+      { title: "Smarthistory: Hagia Sophia", url: "https://smarthistory.org/hagia-sophia-istanbul/" },
+      { title: "Smarthistory: San Vitale", url: "https://smarthistory.org/san-vitale/" },
+    ],
+    videos: [
+      { title: "YouTube: Smarthistory Hagia Sophia", url: "https://www.youtube.com/results?search_query=smarthistory+hagia+sophia" },
+      { title: "YouTube: Justinian and Theodora Mosaics", url: "https://www.youtube.com/results?search_query=justinian+theodora+mosaics" },
+    ],
+  },
+  "ch2.s3": {
+    resources: [
+      { title: "Smarthistory: Islamic Art Introduction", url: "https://smarthistory.org/arts-of-the-islamic-world-an-introduction/" },
+      { title: "Smarthistory: Dome of the Rock", url: "https://smarthistory.org/the-dome-of-the-rock/" },
+      { title: "Smarthistory: Great Mosque of Córdoba", url: "https://smarthistory.org/the-great-mosque-of-cordoba/" },
+    ],
+    videos: [
+      { title: "YouTube: Dome of the Rock Overview", url: "https://www.youtube.com/results?search_query=smarthistory+dome+of+the+rock" },
+      { title: "YouTube: Great Mosque of Córdoba", url: "https://www.youtube.com/results?search_query=smarthistory+great+mosque+cordoba" },
+    ],
+  },
+  "ch2.s4": {
+    resources: [
+      { title: "Smarthistory: Romanesque Art", url: "https://smarthistory.org/tag/romanesque/" },
+      { title: "Smarthistory: Book of Kells", url: "https://smarthistory.org/the-book-of-kells/" },
+      { title: "Smarthistory: Bayeux Tapestry", url: "https://smarthistory.org/the-bayeux-tapestry/" },
+    ],
+    videos: [
+      { title: "YouTube: Romanesque Overview", url: "https://www.youtube.com/results?search_query=smarthistory+romanesque" },
+      { title: "YouTube: Bayeux Tapestry", url: "https://www.youtube.com/results?search_query=smarthistory+bayeux+tapestry" },
+    ],
+  },
+  "ch2.s5": {
+    resources: [
+      { title: "Smarthistory: Gothic Art", url: "https://smarthistory.org/tag/gothic/" },
+      { title: "Smarthistory: Chartres Cathedral", url: "https://smarthistory.org/chartres-cathedral/" },
+      { title: "Smarthistory: Saint-Denis", url: "https://smarthistory.org/abbot-suger-and-the-abbey-church-of-saint-denis/" },
+    ],
+    videos: [
+      { title: "YouTube: Gothic Architecture Overview", url: "https://www.youtube.com/results?search_query=smarthistory+gothic+architecture" },
+      { title: "YouTube: Chartres Cathedral", url: "https://www.youtube.com/results?search_query=smarthistory+chartres+cathedral" },
+    ],
+  },
+  "ch2.s6": {
+    resources: [
+      { title: "Smarthistory: Giotto, Arena Chapel", url: "https://smarthistory.org/giotto-arena-scrovegni-chapel/" },
+      { title: "Smarthistory: Late Gothic Italy", url: "https://smarthistory.org/tag/late-gothic/" },
+      { title: "Smarthistory: Song Dynasty Landscape", url: "https://smarthistory.org/tag/song-dynasty/" },
+    ],
+    videos: [
+      { title: "YouTube: Giotto Arena Chapel", url: "https://www.youtube.com/results?search_query=smarthistory+giotto+arena+chapel" },
+      { title: "YouTube: Song Dynasty Painting", url: "https://www.youtube.com/results?search_query=smarthistory+song+dynasty+painting" },
+    ],
   },
 };
 
@@ -377,7 +500,7 @@ function extractFoundationalContext(raw: string) {
 
 function humanizeTag(tag: string) {
   return tag
-    .replace(/^classical\./, "")
+    .replace(/^\w+\./, "")
     .replace(/^rome\./, "")
     .replace(/^s\d+\./, "")
     .split(/[._-]+/)
@@ -387,6 +510,7 @@ function humanizeTag(tag: string) {
 }
 
 function normalizeObjectiveTag(tag: string, sectionId: string) {
+  // Normalize legacy "classical.rome." → "classical.s6."
   if (sectionId === "s6" && tag.startsWith("classical.rome.")) {
     return tag.replace("classical.rome.", "classical.s6.");
   }
@@ -413,7 +537,7 @@ function parseObjectives(raw: string, sectionId: string): EditorialObjective[] {
     const spacedColumns = tabColumns.length > 1
       ? tabColumns
       : trimmed.split(/\s{2,}/).map((part) => part.trim()).filter(Boolean);
-    const objectiveFromTable = spacedColumns[0]?.match(/^classical\.[\w.-]+$/i) ? {
+    const objectiveFromTable = spacedColumns[0]?.match(/^\w+\.s\d+\.[\w.-]+$/i) ? {
       id: normalizeObjectiveTag(spacedColumns[0], sectionId),
       label: spacedColumns[1] ?? "",
     } : null;
@@ -423,7 +547,7 @@ function parseObjectives(raw: string, sectionId: string): EditorialObjective[] {
       continue;
     }
 
-    if (/^(classical\.[\w.-]+|M\d-S\d-OBJ-\d+)\b/.test(trimmed)) {
+    if (/^(\w+\.s\d+\.[\w.-]+|M\d-S\d-OBJ-\d+)\b/.test(trimmed)) {
       currentId = normalizeObjectiveTag(trimmed.split(/\s+/)[0], sectionId);
       continue;
     }
@@ -442,7 +566,7 @@ function parseObjectives(raw: string, sectionId: string): EditorialObjective[] {
   }
 
   const tags = new Set<string>();
-  for (const match of raw.matchAll(/classical\.(?:rome|s\d)\.[\w.-]+/g)) {
+  for (const match of raw.matchAll(/\w+\.(?:rome|s\d)\.[\w.-]+/g)) {
     tags.add(normalizeObjectiveTag(match[0], sectionId));
   }
 
@@ -909,8 +1033,8 @@ function sanitizeMediaTitle(title: string, url: string, fallbackPrefix: string, 
 function scoreHeadingBlockForSection(block: string, sectionId: string) {
   const urlCount = (block.match(/https?:\/\//gi) ?? []).length;
   const supportTagRegex = sectionId === "s6"
-    ? /classical\.(?:s6|rome)\./gi
-    : new RegExp(`classical\\.${sectionId}\\.`, "gi");
+    ? /\w+\.(?:s6|rome)\./gi
+    : new RegExp(`\\w+\\.${sectionId}\\.`, "gi");
   const supportTagCount = (block.match(supportTagRegex) ?? []).length;
   const hintCount = (block.match(/\b(Link|Watch-for|Why|Supports|Linked)\b/gi) ?? []).length;
   return urlCount * 20 + supportTagCount * 5 + hintCount;
@@ -1107,6 +1231,7 @@ function parseRawUrls(raw: string) {
 
 function ensureSectionMedia(
   raw: string,
+  chapterId: string,
   sectionId: string,
   resources: EditorialResource[],
   videos: EditorialVideo[],
@@ -1144,7 +1269,7 @@ function ensureSectionMedia(
     }
   }
 
-  const fallback = MEDIA_FALLBACKS[sectionId];
+  const fallback = MEDIA_FALLBACKS[`${chapterId}.${sectionId}`];
   if (fallback) {
     for (const resource of fallback.resources) {
       if (resultResources.length >= 6 || seenResourceUrls.has(resource.url)) {
@@ -1204,7 +1329,10 @@ function buildCallout(text: string, index: number): EditorialCallout {
 
 interface TextbookH2Block {
   heading: string;
-  body: string;
+  bodyBlocks: Array<
+    | { type: "paragraph"; text: string }
+    | { type: "subheading"; text: string }
+  >;
   takeaways: string[];
 }
 
@@ -1228,41 +1356,77 @@ const OUT_OF_PLACE_PARAGRAPH_PATTERNS = [
 ];
 
 const SECTION_PAGE_ARCHITECTURE: Record<string, SectionPagePlan[]> = {
-  s1: [
+  "ch1.s1": [
     { title: "Meaning and Symbols", headingKeywords: ["humanities", "prehistory", "symbol", "paleolithic"] },
     { title: "Settlement and Civilization", headingKeywords: ["neolithic", "agriculture", "civilization", "megalith"] },
     { title: "Writing and Foundations", headingKeywords: ["writing", "mesopotamia", "egypt"] },
     { title: "Classical Long Arc", headingKeywords: ["classical", "long development", "long arc"] },
   ],
-  s2: [
+  "ch1.s2": [
     { title: "River Civilizations", headingKeywords: ["river", "surplus", "city-state", "temple"] },
     { title: "Mesopotamian Systems", headingKeywords: ["mesopotamia", "ziggurat", "hammurabi", "ur"] },
     { title: "Egyptian Systems", headingKeywords: ["egypt", "pharaoh", "pyramid", "afterlife", "maat"] },
     { title: "Power and Comparison", headingKeywords: ["compare", "contrast", "kingship", "divine", "state"] },
   ],
-  s3: [
+  "ch1.s3": [
     { title: "China Foundations", headingKeywords: ["china", "shang", "oracle", "confucian", "dao"] },
     { title: "India Foundations", headingKeywords: ["india", "dharma", "gita", "stupa", "nataraja"] },
     { title: "Africa Foundations", headingKeywords: ["africa", "nok", "ife", "zimbabwe"] },
     { title: "Cross-Civilization Logic", headingKeywords: ["compare", "shared", "cross", "civilization"] },
   ],
-  s4: [
+  "ch1.s4": [
     { title: "Aegean Beginnings", headingKeywords: ["aegean", "cycladic", "trade", "island"] },
     { title: "Minoan and Mycenaean", headingKeywords: ["minoan", "mycenaean", "knossos", "lion gate"] },
     { title: "Myth and Memory", headingKeywords: ["homer", "iliad", "odyssey", "myth"] },
     { title: "Toward the Polis", headingKeywords: ["polis", "sanctuary", "kouros", "athens"] },
   ],
-  s5: [
+  "ch1.s5": [
     { title: "Polis and Democracy", headingKeywords: ["polis", "citizenship", "democracy", "agora"] },
     { title: "Architecture and Space", headingKeywords: ["acropolis", "parthenon", "order", "erechtheion"] },
     { title: "Drama and Thought", headingKeywords: ["drama", "tragedy", "comedy", "plato", "aristotle", "socrates"] },
     { title: "Classical Forms", headingKeywords: ["contrapposto", "doryphoros", "diskobolos", "sculpture"] },
   ],
-  s6: [
+  "ch1.s6": [
     { title: "Roman Identity", headingKeywords: ["rome", "roots", "identity", "pietas", "patronage"] },
     { title: "Public Space and Power", headingKeywords: ["forum", "colosseum", "spectacle", "public"] },
     { title: "Engineering and Architecture", headingKeywords: ["arch", "vault", "concrete", "pantheon"] },
     { title: "Literature and Legacy", headingKeywords: ["aeneid", "virgil", "law", "legacy", "empire"] },
+  ],
+  "ch2.s1": [
+    { title: "Rome Transforms", headingKeywords: ["late rome", "roman setting", "roman world"] },
+    { title: "Jewish Foundations", headingKeywords: ["judaism", "jewish", "scripture", "emergence", "christianity"] },
+    { title: "Public Christianity", headingKeywords: ["constantine", "public christianity", "basilica"] },
+    { title: "Art and Thought", headingKeywords: ["iconography", "symbol", "augustine", "boethius", "christian mind"] },
+  ],
+  "ch2.s2": [
+    { title: "Eastern Capital", headingKeywords: ["constantinople", "eastern roman", "byzantine empire"] },
+    { title: "Imperial Vision", headingKeywords: ["justinian", "theodora", "ravenna", "san vitale", "imperial"] },
+    { title: "Hagia Sophia", headingKeywords: ["hagia sophia", "pendentive", "dome", "structure", "light"] },
+    { title: "Images and Conflict", headingKeywords: ["mosaic", "icon", "iconoclasm", "sacred image"] },
+  ],
+  "ch2.s3": [
+    { title: "Foundations of Islam", headingKeywords: ["muhammad", "revelation", "birth of islam", "hijra"] },
+    { title: "Qur'an and Word", headingKeywords: ["qur'an", "quran", "arabic", "prestige of writing"] },
+    { title: "Sacred Space", headingKeywords: ["mosque", "mihrab", "minbar", "dome of the rock", "córdoba", "cordoba"] },
+    { title: "Learning and Culture", headingKeywords: ["al-andalus", "islamic spain", "scholarship", "literary culture"] },
+  ],
+  "ch2.s4": [
+    { title: "Feudal Order", headingKeywords: ["lord", "vassal", "feudal", "medieval society"] },
+    { title: "Monastic Life", headingKeywords: ["monastery", "scriptorium", "memory", "carolingian"] },
+    { title: "Manuscripts and Epic", headingKeywords: ["manuscript", "medieval book", "heroic", "kells", "beowulf", "roland"] },
+    { title: "Pilgrimage and Castle", headingKeywords: ["pilgrimage", "relic", "romanesque", "saint-sernin", "castle", "courtly", "bayeux"] },
+  ],
+  "ch2.s5": [
+    { title: "Birth of Gothic", headingKeywords: ["saint-denis", "suger", "birth of gothic"] },
+    { title: "Gothic Structure", headingKeywords: ["pointed arch", "rib vault", "flying buttress"] },
+    { title: "Cathedrals", headingKeywords: ["chartres", "sculpture", "stained glass", "cathedral", "urban"] },
+    { title: "Thought and Universities", headingKeywords: ["university", "scholasticism", "aquinas", "thomas"] },
+  ],
+  "ch2.s6": [
+    { title: "Italian Cities", headingKeywords: ["siena", "florence", "urban turn"] },
+    { title: "Dante and Giotto", headingKeywords: ["dante", "vernacular", "giotto", "sacred narrative", "moral"] },
+    { title: "Plague and Fragility", headingKeywords: ["black death", "plague", "fragility"] },
+    { title: "Global Medieval", headingKeywords: ["china", "japan", "africa", "americas", "before 1400", "global"] },
   ],
 };
 
@@ -1272,13 +1436,44 @@ function extractTextbookH2Blocks(textbook: string): TextbookH2Block[] {
     return [];
   }
 
-  const chunks = normalized.split(/(?=^H2\s+[-—–]\s+)/gim).filter(Boolean);
-  return chunks.map((chunk) => {
-    const headingMatch = chunk.match(/^H2\s+[-—–]\s+(.+)$/im);
-    const body = cleanText(chunk.replace(/^H2\s+[-—–]\s+.+$/im, ""));
-    const heading = headingMatch?.[1]?.trim() ?? inferFallbackHeadingFromBody(body);
+  const structuredChunks = normalized
+    .replace(/^H1\s*[-:\u2014\u2013]\s+.+$/im, "")
+    .trim()
+    .split(/(?=^H2\s+[-:\u2014\u2013]\s+)/gim)
+    .filter(Boolean);
+
+  return structuredChunks.map((chunk) => {
+    const parsedHeadingMatch = chunk.match(/^H2\s+[-:\u2014\u2013]\s+(.+)$/im);
+    const parsedBody = cleanText(
+      chunk
+        .replace(/^H2\s+[-:\u2014\u2013]\s+.+$/im, "")
+        .replace(/\nKey Takeaways Box\s*\n[\s\S]*$/i, ""),
+    );
+    const heading = parsedHeadingMatch?.[1]?.trim() ?? inferFallbackHeadingFromBody(parsedBody);
     const takeaways = parseTakeaways(chunk).flat();
-    return { heading, body, takeaways };
+    return {
+      heading,
+      bodyBlocks: paragraphize(parsedBody).flatMap((paragraph) => {
+        const lines = paragraph
+          .split("\n")
+          .map((line) => cleanText(line))
+          .filter(Boolean);
+        const firstLine = lines[0] ?? "";
+        const h3Match = firstLine.match(/^H3\s*[-:\u2014\u2013]\s+(.+)$/i);
+
+        if (!h3Match) {
+          return [{ type: "paragraph" as const, text: cleanText(lines.join("\n")) }];
+        }
+
+        const blocks: TextbookH2Block["bodyBlocks"] = [{ type: "subheading", text: h3Match[1].trim() }];
+        const remainder = cleanText(lines.slice(1).join("\n"));
+        if (remainder) {
+          blocks.push({ type: "paragraph", text: remainder });
+        }
+        return blocks;
+      }),
+      takeaways,
+    };
   });
 }
 
@@ -1313,7 +1508,9 @@ function inferFallbackHeadingFromBody(body: string) {
 }
 
 function splitSingleBlockAcrossPages(block: TextbookH2Block, pagePlan: SectionPagePlan[]) {
-  const paragraphs = sanitizeParagraphsForLearnFlow(paragraphize(block.body));
+  const paragraphs = block.bodyBlocks
+    .filter((bodyBlock): bodyBlock is { type: "paragraph"; text: string } => bodyBlock.type === "paragraph")
+    .map((bodyBlock) => bodyBlock.text);
   const groupedParagraphs = splitIntoGroups(paragraphs, pagePlan.length);
   const groupedTakeaways = splitIntoGroups(block.takeaways, pagePlan.length);
 
@@ -1321,14 +1518,17 @@ function splitSingleBlockAcrossPages(block: TextbookH2Block, pagePlan: SectionPa
     title: plan.title,
     blocks: [{
       heading: `${plan.title} Focus`,
-      body: groupedParagraphs[index]?.join("\n\n") ?? "",
+      bodyBlocks: (groupedParagraphs[index] ?? []).map((paragraph) => ({
+        type: "paragraph" as const,
+        text: paragraph,
+      })),
       takeaways: groupedTakeaways[index] ?? [],
     }],
   }));
 }
 
-function buildSectionPageGroups(sectionId: string, textbookBlocks: TextbookH2Block[]) {
-  const pagePlan = SECTION_PAGE_ARCHITECTURE[sectionId] ?? [
+function buildSectionPageGroups(scopedSectionKey: string, textbookBlocks: TextbookH2Block[]) {
+  const pagePlan = SECTION_PAGE_ARCHITECTURE[scopedSectionKey] ?? [
     { title: "Foundations", headingKeywords: [] },
     { title: "Core Concepts", headingKeywords: [] },
     { title: "Applications", headingKeywords: [] },
@@ -1373,22 +1573,93 @@ function buildSectionPageGroups(sectionId: string, textbookBlocks: TextbookH2Blo
   return pageGroups;
 }
 
+function getTextbookHeading(raw: string) {
+  const textbook = extractTextbook(raw);
+  const match = textbook.match(/^H1\s*[-:\u2014\u2013]\s+(.+)$/im);
+  return cleanText(match?.[1] ?? "");
+}
+
+function countMeaningfulBlocks(blocks: EditorialLearnPage["blocks"]) {
+  return blocks.filter((block) => {
+    if (block.type === "paragraph") return Boolean(block.text.trim());
+    if (block.type === "callout") return Boolean(block.callout.text.trim());
+    if (block.type === "key-takeaways") return block.takeaway.items.length > 0;
+    if (block.type === "resource") return true;
+    return false;
+  }).length;
+}
+
+function compactLearnPages(pages: EditorialLearnPage[]) {
+  const compacted: EditorialLearnPage[] = [];
+
+  for (const page of pages) {
+    const meaningfulCount = countMeaningfulBlocks(page.blocks);
+    if (meaningfulCount > 0) {
+      compacted.push(page);
+      continue;
+    }
+
+    const previous = compacted[compacted.length - 1];
+    if (previous) {
+      previous.blocks.push(...page.blocks);
+    }
+  }
+
+  // Merge very light pages into the previous page to avoid micro-lessons that feel empty.
+  const balanced = compacted.reduce<EditorialLearnPage[]>((result, page) => {
+    const meaningfulCount = countMeaningfulBlocks(page.blocks);
+    const previous = result[result.length - 1];
+    if (previous && meaningfulCount < 3 && result.length >= 1) {
+      previous.blocks.push(...page.blocks);
+      return result;
+    }
+
+    result.push(page);
+    return result;
+  }, []);
+
+  return balanced.map((page, index) => ({
+    ...page,
+    id: `learn-${index + 1}` as EditorialLearnPage["id"],
+  }));
+}
+
+function buildSectionMaterials(learnPages: EditorialLearnPage[]): EditorialMaterial[] {
+  const learnMaterials = learnPages.map((page) => ({
+    id: page.id,
+    title: page.title,
+    emoji: page.emoji,
+    type: "learn" as const,
+  }));
+
+  return [
+    MATERIALS[0]!,
+    ...learnMaterials,
+    ...BASE_MATERIALS_AFTER_LEARN,
+  ];
+}
+
 function buildLearnPages(
+  chapterId: string,
   sectionId: string,
   raw: string,
   mnemonics: EditorialMnemonic[],
 ): EditorialLearnPage[] {
+  const scopedKey = `${chapterId}.${sectionId}`;
   const textbook = extractTextbook(raw);
   const textbookBlocks = extractTextbookH2Blocks(textbook);
-  const groupedBlocks = buildSectionPageGroups(sectionId, textbookBlocks);
+  const groupedBlocks = buildSectionPageGroups(scopedKey, textbookBlocks).filter((group) =>
+    group.blocks.some((block) => block.bodyBlocks.length || block.takeaways.length),
+  );
   const bigIdeas = parseBigIdeas(raw);
-  const groupedMnemonics = splitIntoGroups(mnemonics, 4);
+  const pageCount = Math.max(groupedBlocks.length, 1);
+  const groupedMnemonics = splitIntoGroups(mnemonics, pageCount);
+  const groupedBigIdeas = splitIntoGroups(bigIdeas, pageCount);
 
-  return groupedBlocks.map((group, pageIndex) => {
+  const pages = groupedBlocks.map((group, pageIndex) => {
     const blocks: EditorialLearnPage["blocks"] = [];
 
     // Distribute big ideas as labeled callouts across pages
-    const groupedBigIdeas = splitIntoGroups(bigIdeas, 4);
     for (const [ideaIndex, idea] of (groupedBigIdeas[pageIndex] ?? []).entries()) {
       if (!idea.text) continue;
       const callout = buildCallout(idea.text, pageIndex + ideaIndex);
@@ -1399,20 +1670,38 @@ function buildLearnPages(
     for (const groupBlock of group.blocks) {
       blocks.push({
         type: "heading",
+        level: 2,
         text: groupBlock.heading,
       });
 
-      for (const paragraph of sanitizeParagraphsForLearnFlow(paragraphize(groupBlock.body))) {
+      for (const bodyBlock of groupBlock.bodyBlocks) {
+        if (bodyBlock.type === "subheading") {
+          blocks.push({ type: "heading", level: 3, text: bodyBlock.text });
+          continue;
+        }
+
+        const paragraph = cleanText(bodyBlock.text);
+        const h2Heading = paragraph.match(/^H2\s*[-:\u2014\u2013]\s+(.+)$/i);
+        if (h2Heading) {
+          blocks.push({ type: "heading", level: 2, text: h2Heading[1].trim() });
+          continue;
+        }
+
+        const h3Heading = paragraph.match(/^H3\s*[-:\u2014\u2013]\s+(.+)$/i);
+        if (h3Heading) {
+          blocks.push({ type: "heading", level: 3, text: h3Heading[1].trim() });
+          continue;
+        }
         const bigIdeaParagraph = paragraph.match(/^Big Idea\s+(\d+)\s*[-—:]\s*(.+)$/i);
         if (bigIdeaParagraph) {
-          blocks.push({ type: "heading", text: `Big Idea ${bigIdeaParagraph[1]}` });
+          blocks.push({ type: "heading", level: 3, text: `Big Idea ${bigIdeaParagraph[1]}` });
           blocks.push({ type: "paragraph", text: bigIdeaParagraph[2].trim() });
           continue;
         }
 
         const whatToNotice = paragraph.match(/^What you might not notice\s*[:—-]?\s*(.*)$/i);
         if (whatToNotice) {
-          blocks.push({ type: "heading", text: "What You Might Not Notice" });
+          blocks.push({ type: "heading", level: 3, text: "What You Might Not Notice" });
           const detail = whatToNotice[1]?.trim();
           if (detail) {
             blocks.push({ type: "paragraph", text: detail });
@@ -1420,7 +1709,27 @@ function buildLearnPages(
           continue;
         }
 
-        if (/^(classical\.\S+|M\d-S\d-OBJ|Plain-English|Skill type:|Exam task|Answer:)/i.test(paragraph.trim())) continue;
+        if (/^(\w+\.s\d+\.\S+|M\d-S\d-OBJ|Plain-English|Skill type:|Exam task|Answer:)/i.test(paragraph.trim())) continue;
+
+        // Inline image reference: [See: Title | URL]
+        const inlineImage = paragraph.match(/^\[See:\s*(.+?)\s*\|\s*(https?:\/\/\S+)\s*\]$/i);
+        if (inlineImage) {
+          const imgTitle = inlineImage[1].trim();
+          const imgUrl = inlineImage[2].trim();
+          blocks.push({
+            type: "resource",
+            resource: {
+              id: `inline-${blocks.length}`,
+              title: imgTitle,
+              url: imgUrl,
+              source: titleFromUrl(imgUrl).split(":")[0] ?? "Reference",
+              description: "",
+              kind: "image",
+            },
+          });
+          continue;
+        }
+
         blocks.push({ type: "paragraph", text: paragraph });
       }
 
@@ -1431,16 +1740,16 @@ function buildLearnPages(
       blocks.push({
         type: "key-takeaways",
         takeaway: {
-          title: "What to Remember",
+          title: "Key Takeaways",
           items: sanitizeParagraphsForLearnFlow(groupBlock.takeaways),
         },
       });
     }
 
-    if (DIAGRAMS[sectionId] && pageIndex === 0) {
+    if (DIAGRAMS[scopedKey] && pageIndex === 0) {
       blocks.push({
         type: "diagram",
-        diagram: DIAGRAMS[sectionId],
+        diagram: DIAGRAMS[scopedKey],
       });
     }
 
@@ -1458,43 +1767,51 @@ function buildLearnPages(
       blocks,
     };
   });
+
+  return compactLearnPages(pages);
 }
 
-function buildSection(raw: string, sectionId: string, title: string, emoji: string): EditorialSection {
+function buildSection(raw: string, chapterId: string, sectionId: string, title: string, emoji: string): EditorialSection {
   const parsedResources = [
     ...parseResourceSection(raw, sectionId, /^Link Images(?: That Help)?$/i, "image"),
     ...parseResourceSection(raw, sectionId, /^References?$/i, "resource"),
   ];
   const parsedVideos = parseVideos(raw, sectionId);
-  const { resources, videos } = ensureSectionMedia(raw, sectionId, parsedResources, parsedVideos);
+  const { resources, videos } = ensureSectionMedia(raw, chapterId, sectionId, parsedResources, parsedVideos);
   const mnemonics = parseMnemonics(raw);
   const objectives = parseObjectives(raw, sectionId);
   const quiz = parseQuiz(raw, sectionId);
   const hardTest = parseHardTest(raw, sectionId, quiz.questions);
+  const learnPages = buildLearnPages(chapterId, sectionId, raw, mnemonics);
 
   if (process.env.NODE_ENV !== "production") {
-    const warnings: string[] = [];
-    if (!objectives.length) warnings.push("objectives");
-    if (!quiz.questions.length) warnings.push("quiz");
-    if (!hardTest.questions.length) warnings.push("hard-test");
-    if (!resources.length) warnings.push("resources");
-    if (!videos.length) warnings.push("videos");
-    if (!warnings.length) {
-      // no-op when section has expected payloads
-    } else {
-      console.warn(`[editorial-course] ${sectionId} has missing parsed blocks: ${warnings.join(", ")}`);
+    // Only warn when the raw text has real numbered-block content.
+    // Placeholder / empty sections (e.g. "[PASTE … HERE]") have no numbered
+    // headings and would always trigger false-positive warnings.
+    const hasNumberedBlocks = /(?:^|\n)\d+\)\s+[^\n]+\n/.test(raw);
+    if (hasNumberedBlocks) {
+      const warnings: string[] = [];
+      if (!objectives.length) warnings.push("objectives");
+      if (!quiz.questions.length) warnings.push("quiz");
+      if (!hardTest.questions.length) warnings.push("hard-test");
+      if (!resources.length) warnings.push("resources");
+      if (!videos.length) warnings.push("videos");
+      if (warnings.length) {
+        console.warn(`[editorial-course] ${sectionId} has missing parsed blocks: ${warnings.join(", ")}`);
+      }
     }
   }
 
   return {
     id: sectionId,
     title,
+    textbookHeading: getTextbookHeading(raw) || title,
     emoji,
     purpose: extractPurpose(raw),
     studentGuide: extractStudentGuide(raw),
-    materials: MATERIALS,
+    materials: buildSectionMaterials(learnPages),
     objectives,
-    learnPages: buildLearnPages(sectionId, raw, mnemonics),
+    learnPages,
     flashcards: parseFlashcards(raw, sectionId),
     videos,
     resources,
@@ -1549,7 +1866,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
 
     const sections = sectionMeta.map((meta) => {
       const mergedRaw = (sectionRawById.get(meta.id) ?? []).join("\n\n");
-      return buildSection(mergedRaw, meta.id, meta.title, meta.emoji);
+      return buildSection(mergedRaw, blueprint.id, meta.id, meta.title, meta.emoji);
     });
 
     const locked = sections.length

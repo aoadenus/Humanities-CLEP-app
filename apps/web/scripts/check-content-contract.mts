@@ -8,7 +8,12 @@ function fail(message: string): never {
   process.exit(1);
 }
 
-const CANONICAL_SOURCE_FILE = "src/content/sources/CHAPTER 1 SECTION 1-6.CANONICAL.txt";
+const CHAPTERS_TO_CHECK: Array<{ id: string; sourceFile: string }> = [
+  { id: "ch1", sourceFile: "src/content/sources/CHAPTER 1 SECTION 1-6.CANONICAL.txt" },
+  { id: "ch2", sourceFile: "src/content/sources/CHAPTER 2 SECTION 1-6.CANONICAL.txt" },
+  { id: "ch3", sourceFile: "src/content/sources/CHAPTER 3 SECTION 1-6.CANONICAL.txt" },
+];
+
 const CANONICAL_SECTION_HEADERS = [
   "## Section 1 (Canonical)",
   "## Section 2 (Canonical)",
@@ -18,80 +23,86 @@ const CANONICAL_SECTION_HEADERS = [
   "## Section 6 (Canonical)",
 ];
 
-const sourcePath = path.resolve(process.cwd(), CANONICAL_SOURCE_FILE);
-if (!fs.existsSync(sourcePath)) {
-  fail(`Primary source file not found at ${sourcePath}`);
+for (const chapterSpec of CHAPTERS_TO_CHECK) {
+  const sourcePath = path.resolve(process.cwd(), chapterSpec.sourceFile);
+  if (!fs.existsSync(sourcePath)) {
+    fail(`Primary source file not found at ${sourcePath}`);
+  }
+
+  const sourceText = fs.readFileSync(sourcePath, "utf8").replace(/\r\n/g, "\n");
+
+  for (let index = 0; index < CANONICAL_SECTION_HEADERS.length; index += 1) {
+    const sectionHeader = CANONICAL_SECTION_HEADERS[index]!;
+    const sectionId = `s${index + 1}`;
+
+    const start = sourceText.indexOf(sectionHeader);
+    if (start < 0) {
+      fail(`${chapterSpec.id}: missing section header in source: ${sectionHeader}`);
+    }
+
+    const nextSectionHeaders = CANONICAL_SECTION_HEADERS.filter((header) => header !== sectionHeader);
+
+    const nextStartCandidates = nextSectionHeaders
+      .map((header) => sourceText.indexOf(header, start + sectionHeader.length))
+      .filter((index) => index > start)
+      .sort((a, b) => a - b);
+    const end = nextStartCandidates[0] ?? sourceText.length;
+    const raw = sourceText.slice(start, end);
+
+    const hasNarrativeHeading =
+      /(?:^|\n)H1\b/i.test(raw) ||
+      /\n\d+\)\s*(?:DETAILED STORY-LIKE LESSON NOTES|Detailed lesson notes|THE FULL TEXTBOOK SECTION)/i.test(raw);
+    if (!hasNarrativeHeading) {
+      fail(`${chapterSpec.id} ${sectionId} is missing a narrative textbook heading.`);
+    }
+
+    if (!/(Key Takeaways Box|What to Remember|CLEP Keys)/i.test(raw)) {
+      fail(`${chapterSpec.id} ${sectionId} is missing takeaways guidance.`);
+    }
+
+    if (!/Core 10/i.test(raw) || !/Extra 10/i.test(raw)) {
+      fail(`${chapterSpec.id} ${sectionId} is missing Core 10 / Extra 10 flashcard decks.`);
+    }
+  }
+
+  const chapter = editorialCourse.getEditorialCourse().chapters.find((c) => c.id === chapterSpec.id);
+  if (!chapter) {
+    fail(`Parsed course is missing ${chapterSpec.id}.`);
+  }
+
+  if (chapter.sections.length !== 6) {
+    fail(`${chapterSpec.id}: expected 6 sections, got ${chapter.sections.length}.`);
+  }
+
+  for (const section of chapter.sections) {
+    if (section.learnPages.length < 1) {
+      fail(`${chapterSpec.id} ${section.id} has no learn pages.`);
+    }
+
+    if (section.learnPages.length > 4) {
+      fail(`${chapterSpec.id} ${section.id} has ${section.learnPages.length} learn pages, expected at most 4.`);
+    }
+
+    if (section.flashcards.length < 20) {
+      fail(`${chapterSpec.id} ${section.id} has fewer than 20 flashcards.`);
+    }
+
+    if (section.quiz.questions.length !== 10) {
+      fail(`${chapterSpec.id} ${section.id} quiz question count is ${section.quiz.questions.length}, expected 10.`);
+    }
+
+    if (section.hardTest.questions.length !== 10) {
+      fail(`${chapterSpec.id} ${section.id} hard-test question count is ${section.hardTest.questions.length}, expected 10.`);
+    }
+
+    if (section.resources.length < 1) {
+      fail(`${chapterSpec.id} ${section.id} has no resources.`);
+    }
+
+    if (section.videos.length < 1) {
+      fail(`${chapterSpec.id} ${section.id} has no videos.`);
+    }
+  }
+
+  console.log(`[check:content] ${chapterSpec.id} content contract passed.`);
 }
-
-const sourceText = fs.readFileSync(sourcePath, "utf8").replace(/\r\n/g, "\n");
-
-for (let index = 0; index < CANONICAL_SECTION_HEADERS.length; index += 1) {
-  const sectionHeader = CANONICAL_SECTION_HEADERS[index]!;
-  const sectionId = `s${index + 1}`;
-
-  const start = sourceText.indexOf(sectionHeader);
-  if (start < 0) {
-    fail(`Missing section header in source: ${sectionHeader}`);
-  }
-
-  const nextSectionHeaders = CANONICAL_SECTION_HEADERS.filter((header) => header !== sectionHeader);
-
-  const nextStartCandidates = nextSectionHeaders
-    .map((header) => sourceText.indexOf(header, start + sectionHeader.length))
-    .filter((index) => index > start)
-    .sort((a, b) => a - b);
-  const end = nextStartCandidates[0] ?? sourceText.length;
-  const raw = sourceText.slice(start, end);
-
-  const hasNarrativeHeading =
-    /\nH1\s*[-—–:]/i.test(raw) ||
-    /\n\d+\)\s*(?:DETAILED STORY-LIKE LESSON NOTES|Detailed lesson notes|THE FULL TEXTBOOK SECTION)/i.test(raw);
-  if (!hasNarrativeHeading) {
-    fail(`Section ${sectionId} is missing a narrative textbook heading.`);
-  }
-
-  if (!/(Key Takeaways Box|What to Remember)/i.test(raw)) {
-    fail(`Section ${sectionId} is missing takeaways guidance.`);
-  }
-
-  if (!/Core 10/i.test(raw) || !/Extra 10/i.test(raw)) {
-    fail(`Section ${sectionId} is missing Core 10 / Extra 10 flashcard decks.`);
-  }
-}
-
-const chapter1 = editorialCourse.getEditorialCourse().chapters.find((chapter) => chapter.id === "ch1");
-if (!chapter1) {
-  fail("Parsed course is missing Chapter 1.");
-}
-
-if (chapter1.sections.length !== 6) {
-  fail(`Expected 6 sections, got ${chapter1.sections.length}.`);
-}
-
-for (const section of chapter1.sections) {
-  if (section.learnPages.length < 4) {
-    fail(`Section ${section.id} has fewer than 4 learn pages.`);
-  }
-
-  if (section.flashcards.length < 20) {
-    fail(`Section ${section.id} has fewer than 20 flashcards.`);
-  }
-
-  if (section.quiz.questions.length !== 10) {
-    fail(`Section ${section.id} quiz question count is ${section.quiz.questions.length}, expected 10.`);
-  }
-
-  if (section.hardTest.questions.length !== 10) {
-    fail(`Section ${section.id} hard-test question count is ${section.hardTest.questions.length}, expected 10.`);
-  }
-
-  if (section.resources.length < 1) {
-    fail(`Section ${section.id} has no resources.`);
-  }
-
-  if (section.videos.length < 1) {
-    fail(`Section ${section.id} has no videos.`);
-  }
-}
-
-console.log("[check:content] Chapter 1 content contract passed.");

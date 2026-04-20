@@ -19,7 +19,7 @@ export function HardTestPage({
 }) {
   const { progress } = useEditorialProgress();
   const sectionProgress = progress?.chapters[chapterId]?.sections[section.id] ?? null;
-  const unlocked = (sectionProgress?.quizScore ?? 0) >= section.quiz.passThreshold;
+  const unlocked = Boolean(sectionProgress?.quizSubmitted);
   const currentIndex = chapter.sections.findIndex((item) => item.id === section.id);
   const nextSection = chapter.sections[currentIndex + 1] ?? null;
 
@@ -29,9 +29,9 @@ export function HardTestPage({
         <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
           🔒 Hard Test Locked
         </div>
-        <h1 className="font-reading mt-3 text-3xl font-bold text-[var(--text-primary)]">Pass the quiz first</h1>
+        <h1 className="font-reading mt-3 text-3xl font-bold text-[var(--text-primary)]">Submit the quiz first</h1>
         <p className="mt-4 text-[18px] leading-8 text-[var(--text-secondary)]">
-          Score at least {section.quiz.passThreshold}/10 on the section quiz to unlock this harder test.
+          Finish and submit the section quiz to unlock this harder test.
         </p>
       </Card>
     );
@@ -45,19 +45,19 @@ export function HardTestPage({
         <Card className="p-6">
           <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
             {sectionProgress.hardTestScore !== null && sectionProgress.hardTestScore >= section.hardTest.passThreshold
-              ? "🎉 Section Unlocked"
+              ? "🎉 Section Complete"
               : "📚 Keep Going"}
           </div>
           <h2 className="font-reading mt-3 text-3xl font-bold text-[var(--text-primary)]">
             {sectionProgress.hardTestScore !== null && sectionProgress.hardTestScore >= section.hardTest.passThreshold
-              ? "Section complete"
+              ? "Hard test passed"
               : "Review and try again"}
           </h2>
           <p className="mt-4 text-[18px] leading-8 text-[var(--text-secondary)]">
             {sectionProgress.hardTestScore !== null && sectionProgress.hardTestScore >= section.hardTest.passThreshold
               ? nextSection
-                ? `You passed the hard test. Section ${currentIndex + 2} is now unlocked.`
-                : "You passed the final Chapter 1 section hard test."
+                ? `This section is complete. You can move straight into Section ${currentIndex + 2} or stay here to review.`
+                : "This section is complete."
               : "You can reset the hard test above, revisit the learn pages, or reinforce with flashcards."}
           </p>
 

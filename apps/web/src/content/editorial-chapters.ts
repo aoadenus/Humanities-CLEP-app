@@ -90,6 +90,96 @@ export const CHAPTER_1_SECTION_META = [
   },
 ] as const satisfies readonly EditorialSectionMeta[];
 
+export const CHAPTER_2_SECTION_META = [
+  {
+    id: "s1",
+    title: "Late Rome, Judaism, and Christianity",
+    emoji: "🏚️",
+    canonicalHeader: "## Section 1 (Canonical)",
+    anchors: ["Section 1 — Late Rome, Judaism, and Christianity", "Late Rome, Judaism, and Christianity"],
+  },
+  {
+    id: "s2",
+    title: "Byzantium",
+    emoji: "✝️",
+    canonicalHeader: "## Section 2 (Canonical)",
+    anchors: ["Section 2 — Byzantium", "Byzantium"],
+  },
+  {
+    id: "s3",
+    title: "Rise and Spread of Islam",
+    emoji: "☪️",
+    canonicalHeader: "## Section 3 (Canonical)",
+    anchors: ["Section 3 — Rise and Spread of Islam", "Rise and Spread of Islam"],
+  },
+  {
+    id: "s4",
+    title: "Fiefdom, Monastery, and Romanesque World",
+    emoji: "⛪",
+    canonicalHeader: "## Section 4 (Canonical)",
+    anchors: ["Section 4 — Fiefdom, Monastery, and Romanesque World", "Fiefdom, Monastery, and Romanesque World"],
+  },
+  {
+    id: "s5",
+    title: "Gothic Age",
+    emoji: "🏰",
+    canonicalHeader: "## Section 5 (Canonical)",
+    anchors: ["Section 5 — Gothic Age", "Gothic Age"],
+  },
+  {
+    id: "s6",
+    title: "Siena, Florence, and Global Medieval Worlds",
+    emoji: "🌍",
+    canonicalHeader: "## Section 6 (Canonical)",
+    anchors: ["Section 6 — Siena, Florence, and Global Medieval Worlds", "Siena, Florence, and Global Medieval Worlds"],
+  },
+] as const satisfies readonly EditorialSectionMeta[];
+
+export const CHAPTER_3_SECTION_META = [
+  {
+    id: "s1",
+    title: "Florence and Early Renaissance Humanism",
+    emoji: "🌸",
+    canonicalHeader: "## Section 1 (Canonical)",
+    anchors: ["Section 1 — Florence and Early Renaissance Humanism", "Florence and Early Renaissance Humanism"],
+  },
+  {
+    id: "s2",
+    title: "High Renaissance Rome and Venice",
+    emoji: "🎨",
+    canonicalHeader: "## Section 2 (Canonical)",
+    anchors: ["Section 2 — High Renaissance Rome and Venice", "High Renaissance Rome and Venice"],
+  },
+  {
+    id: "s3",
+    title: "Northern Renaissance",
+    emoji: "🪟",
+    canonicalHeader: "## Section 3 (Canonical)",
+    anchors: ["Section 3 — Northern Renaissance", "Northern Renaissance"],
+  },
+  {
+    id: "s4",
+    title: "Reformation",
+    emoji: "📜",
+    canonicalHeader: "## Section 4 (Canonical)",
+    anchors: ["Section 4 — Reformation", "Reformation"],
+  },
+  {
+    id: "s5",
+    title: "Counter-Reformation and Mannerism",
+    emoji: "⛪",
+    canonicalHeader: "## Section 5 (Canonical)",
+    anchors: ["Section 5 — Counter-Reformation and Mannerism", "Counter-Reformation and Mannerism"],
+  },
+  {
+    id: "s6",
+    title: "Encounter, Expansion, and Tudor England",
+    emoji: "🌍",
+    canonicalHeader: "## Section 6 (Canonical)",
+    anchors: ["Section 6 — Encounter, Expansion, and Tudor England", "Encounter, Expansion, and Tudor England"],
+  },
+] as const satisfies readonly EditorialSectionMeta[];
+
 export const EDITORIAL_CHAPTER_BLUEPRINTS: readonly EditorialChapterBlueprint[] = [
   {
     id: "ch1",
@@ -110,18 +200,22 @@ export const EDITORIAL_CHAPTER_BLUEPRINTS: readonly EditorialChapterBlueprint[] 
     title: "Medieval",
     emoji: "⚔️",
     color: "var(--ch2-color)",
-    locked: true,
+    locked: false,
     unlockWhenSectionsReady: true,
-    sourceFile: "CHAPTER 2 SECTION 1-6.txt",
+    sourceFile: "src/content/sources/CHAPTER 2 SECTION 1-6.CANONICAL.txt",
     sourceEnvVar: "EDITORIAL_CH2_SOURCE_FILE",
-    sectionMeta: [],
+    sectionMeta: CHAPTER_2_SECTION_META,
   },
   {
     id: "ch3",
     title: "Renaissance",
     emoji: "🎨",
     color: "var(--ch3-color)",
-    locked: true,
+    locked: false,
+    unlockWhenSectionsReady: true,
+    sourceFile: "src/content/sources/CHAPTER 3 SECTION 1-6.CANONICAL.txt",
+    sourceEnvVar: "EDITORIAL_CH3_SOURCE_FILE",
+    sectionMeta: CHAPTER_3_SECTION_META,
   },
   {
     id: "ch4",

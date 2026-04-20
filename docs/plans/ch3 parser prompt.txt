@@ -1,0 +1,228 @@
+# CLEP Humanities App — Chapter 3 Source File Generation Prompt
+
+## HOW TO USE THIS PROMPT
+
+1. Copy everything from START PROMPT to END PROMPT below
+2. Paste it into Claude, ChatGPT-4o, or Gemini 1.5 Pro
+3. Do not change the exact structure rules
+4. The AI will output a complete .CANONICAL.txt file
+5. Save the output as CHAPTER 3 SECTION 1-6.CANONICAL.txt
+6. Drop it into apps/web/src/content/sources/
+7. Register it in editorial-chapters.ts using the template at the bottom of your existing source-file workflow
+
+---
+
+## START PROMPT
+
+You are generating a source file for a CLEP Humanities study app. The file must follow an exact format — the app parser reads it programmatically. Do not deviate from the structure.
+
+CHAPTER_NUMBER: 3
+CHAPTER_TITLE: Renaissance
+
+---
+
+### WHAT TO GENERATE
+
+A complete source file covering exactly 6 sections of Chapter 3 — Renaissance.
+
+This chapter has already been normalized from an earlier 8-section Renaissance outline into the 6 sections below. Do not recreate 8 sections. Do not add bonus sections. Do not change the parser structure. Generate only these 6 sections:
+
+1. Florence and Early Renaissance Humanism
+2. High Renaissance Rome and Venice
+3. Northern Renaissance
+4. Reformation
+5. Counter-Reformation and Mannerism
+6. Encounter, Expansion, and Tudor England
+
+Each section follows the identical numbered-block structure shown below. Generate all 6 sections back to back, each preceded by its canonical header.
+
+---
+
+### SOURCE RULE FOR CHAPTER 3
+
+Primary source spine:
+Use Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, as the main narrative and organizational spine for this chapter.
+
+Use this mapping:
+- Section 1 = Sayre Chapter 17
+- Section 2 = Sayre Chapters 18–19 combined
+- Section 3 = Sayre Chapter 20
+- Section 4 = Sayre Chapter 21
+- Section 5 = Sayre Chapter 22
+- Section 6 = Sayre Chapters 23–24 combined
+
+Support rule:
+Use Fiero Volume II only as reinforcement when it adds clarity or stronger humanities framing. Do not treat it as an equal second spine.
+
+Assessment rule:
+Keep CLEP tone focused on recognition of works, styles, periods, terms, and major ideas. Balance literature, religion, visual art, architecture, political thought, print culture, and cross-cultural encounter.
+
+Compression rule:
+This is a 6-section production file. Original Renaissance topics that would have been split more finely must be absorbed into the six sections above, not left floating.
+
+---
+
+### EXACT FILE FORMAT
+
+The file begins with Section 1 and ends after Section 6. Each section starts with:
+
+## Section N (Canonical)
+
+Then immediately follows these numbered blocks in order, with no extra headings between them:
+
+1) Section Relevance and Stakes
+2) Big Ideas
+3) Common Misconceptions to Correct
+4) Learning Objectives
+5) Textbook Content
+6) Canonical Works and Terms
+7) Primary Source Excerpts
+8) Timeline Anchors
+9) Exam Hot Zones
+10) 10-Question Section Quiz
+11) Answer Key with Explanations
+12) Flashcards
+13) 10 Later Test Questions
+14) Link Images That Help
+15) Link Videos to Embed
+16) References
+17) Mnemonics
+18) Fast Cheat Sheet
+
+---
+
+### BLOCK-BY-BLOCK RULES
+
+Use the exact same BLOCK-BY-BLOCK RULES, parser wording rules, output restrictions, and formatting conventions from the finalized Chapter 2 source-file prompt, unchanged except where Chapter 3-specific labels, section titles, objective prefixes, or source mappings require replacement.
+
+That means:
+- keep the same parser-safe numbered-block order
+- keep the same style and density rules
+- keep the same quiz / flashcard / later-test expectations
+- keep the same formatting discipline
+- keep the same image / video / references handling rules
+- keep the same anti-drift behavior used in Chapter 2
+
+Do not invent a new block system for Chapter 3.
+Do not simplify the parser.
+Do not switch to essay format.
+Do not summarize the chapter as a broad survey.
+Stay section-by-section and block-by-block.
+
+---
+
+### LEARNING OBJECTIVE PREFIX RULE
+
+Use the Chapter 3 parser-safe objective pattern:
+
+- renaissance.s1.slug
+- renaissance.s2.slug
+- renaissance.s3.slug
+- renaissance.s4.slug
+- renaissance.s5.slug
+- renaissance.s6.slug
+
+Examples:
+- renaissance.s1.florentine_humanism
+- renaissance.s2.high_renaissance_patronage
+- renaissance.s3.northern_print_culture
+- renaissance.s4.luther_and_reform
+- renaissance.s5.mannerist_style_shift
+- renaissance.s6.tudor_identity_and_encounter
+
+Every objective must clearly belong to its section and stay compatible with section-level quiz tagging and weakness routing.
+
+---
+
+### CHAPTER 3 CONTENT BOUNDARIES
+
+Use these section boundaries:
+
+#### Section 1 — Florence and Early Renaissance Humanism
+Focus on:
+- Florence as an urban/commercial/civic center
+- revival of classical learning
+- Petrarch, civic humanism, Medici patronage
+- Brunelleschi, Donatello, Masaccio
+- perspective, proportion, realism, human-centered inquiry
+- early Renaissance architecture and painting
+- the relation between classical recovery and new artistic confidence
+
+#### Section 2 — High Renaissance Rome and Venice
+Focus on:
+- papal patronage in Rome
+- Leonardo, Michelangelo, Raphael, Bramante
+- ideal balance, monumentality, harmony, central-plan architecture
+- Saint Peter’s and papal image-making
+- Venetian color, atmosphere, and courtly / mercantile setting
+- Bellini, Giorgione, Titian
+- why Rome and Venice together form the Italian High Renaissance climax
+
+#### Section 3 — Northern Renaissance
+Focus on:
+- urban wealth and merchant culture
+- oil painting, detail, domestic realism, symbolism
+- Jan van Eyck, Bosch, Dürer, Holbein, Bruegel
+- printmaking and circulation of ideas
+- Erasmus, More, and Christian humanism
+- differences between Italian and Northern Renaissance priorities
+
+#### Section 4 — Reformation
+Focus on:
+- Luther, Calvin, the challenge to the Church
+- print culture and reform
+- vernacular religion and the reshaping of authority
+- iconoclasm, music, and changing sacred art
+- Cranach and visual propaganda
+- the Anglican break and wider cultural effects
+- why the Reformation matters for both belief and artistic production
+
+#### Section 5 — Counter-Reformation and Mannerism
+Focus on:
+- Catholic response to Protestant reform
+- Council of Trent context
+- Mannerism as tension, distortion, elegance, instability, invention
+- Pontormo, Parmigianino, El Greco where relevant
+- the Church’s changing use of art
+- transition from Renaissance balance toward a more emotionally charged style world
+- why Mannerism is not “bad Renaissance” but a real stylistic shift
+
+#### Section 6 — Encounter, Expansion, and Tudor England
+Focus on:
+- cross-cultural encounter involving Europe, Africa, Asia, and the Americas
+- exploration, exchange, empire, and changing world horizons
+- how encounter affects worldview and representation
+- Tudor political/cultural identity
+- Elizabethan world, Shakespeare, court culture
+- literature and performance in Tudor England
+- why this section closes the chapter as a bridge from Renaissance confidence into a more fractured early modern world
+
+---
+
+### CHAPTER 3 QUALITY CONTROL RULES
+
+1. Keep the chapter recognizably Renaissance, not a generic Europe survey.
+2. Do not let Section 6 become only exploration history; keep humanities emphasis.
+3. Do not let Section 4 become only theology; keep visual / literary / musical implications visible.
+4. Do not let Section 5 collapse into early Baroque; keep Mannerism and Counter-Reformation distinct.
+5. Do not split Venice back out into a seventh section.
+6. Do not split Tudor England back out into a seventh section.
+7. Keep Chapter 3 readable for CLEP recognition: works, artists, terms, styles, and major intellectual shifts should be easy to identify.
+8. Use cross-cultural encounter carefully and concretely, not as filler.
+
+---
+
+### OUTPUT REMINDER
+
+Generate the full Chapter 3 canonical source file only.
+
+Do not explain what you are doing.
+Do not add notes before Section 1.
+Do not add commentary after Section 6.
+Do not wrap the result in markdown fences.
+Do not apologize.
+Do not mention parser safety.
+Do not mention this prompt.
+Just output the complete chapter source file in the exact required format.
+
+## END PROMPT

@@ -2,9 +2,11 @@
 
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from "react";
@@ -64,6 +66,11 @@ export function EditorialProgressProvider({
 }) {
   const [progress, setProgress] = useState<EditorialProgress | null>(null);
   const [ready, setReady] = useState(false);
+  const courseRef = useRef(course);
+
+  useEffect(() => {
+    courseRef.current = course;
+  }, [course]);
 
   useEffect(() => {
     let active = true;
@@ -91,61 +98,130 @@ export function EditorialProgressProvider({
     void persistEditorialProgress(progress);
   }, [progress, ready]);
 
+  const touchRoute = useCallback(
+    (route: string) => {
+      setProgress((current) =>
+        setCurrentRoute(ensureEditorialProgress(current, courseRef.current), route),
+      );
+    },
+    [],
+  );
+
+  const visitMaterial = useCallback(
+    (chapterId: string, sectionId: string, materialId: EditorialMaterialId) => {
+      setProgress((current) =>
+        markMaterialVisited(
+          ensureEditorialProgress(current, courseRef.current),
+          chapterId,
+          sectionId,
+          materialId,
+        ),
+      );
+    },
+    [],
+  );
+
+  const updateFlashcardPosition = useCallback(
+    (chapterId: string, sectionId: string, position: number) => {
+      setProgress((current) =>
+        setFlashcardPosition(
+          ensureEditorialProgress(current, courseRef.current),
+          chapterId,
+          sectionId,
+          position,
+        ),
+      );
+    },
+    [],
+  );
+
+  const toggleStar = useCallback(
+    (chapterId: string, sectionId: string, cardId: string) => {
+      setProgress((current) =>
+        toggleStarredFlashcard(
+          ensureEditorialProgress(current, courseRef.current),
+          chapterId,
+          sectionId,
+          cardId,
+        ),
+      );
+    },
+    [],
+  );
+
+  const answerQuestion = useCallback(
+    (
+      chapterId: string,
+      sectionId: string,
+      questionId: number,
+      answerIndex: number,
+      mode: "quiz" | "hard-test",
+    ) => {
+      setProgress((current) =>
+        setQuizAnswer(
+          ensureEditorialProgress(current, courseRef.current),
+          chapterId,
+          sectionId,
+          questionId,
+          answerIndex,
+          mode,
+        ),
+      );
+    },
+    [],
+  );
+
+  const finalizeAssessment = useCallback(
+    (chapterId: string, sectionId: string, score: number, mode: "quiz" | "hard-test") => {
+      setProgress((current) =>
+        submitAssessment(
+          ensureEditorialProgress(current, courseRef.current),
+          courseRef.current,
+          chapterId,
+          sectionId,
+          mode,
+          score,
+        ),
+      );
+    },
+    [],
+  );
+
+  const clearAssessment = useCallback(
+    (chapterId: string, sectionId: string, mode: "quiz" | "hard-test") => {
+      setProgress((current) =>
+        resetAssessment(ensureEditorialProgress(current, courseRef.current), chapterId, sectionId, mode),
+      );
+    },
+    [],
+  );
+
   const value = useMemo<EditorialProgressContextValue>(() => {
     const safeProgress = ensureEditorialProgress(progress, course);
 
     return {
       progress: safeProgress,
       ready,
-      touchRoute(route) {
-        setProgress((current) => setCurrentRoute(ensureEditorialProgress(current, course), route));
-      },
-      visitMaterial(chapterId, sectionId, materialId) {
-        setProgress((current) =>
-          markMaterialVisited(ensureEditorialProgress(current, course), chapterId, sectionId, materialId),
-        );
-      },
-      updateFlashcardPosition(chapterId, sectionId, position) {
-        setProgress((current) =>
-          setFlashcardPosition(ensureEditorialProgress(current, course), chapterId, sectionId, position),
-        );
-      },
-      toggleStar(chapterId, sectionId, cardId) {
-        setProgress((current) =>
-          toggleStarredFlashcard(ensureEditorialProgress(current, course), chapterId, sectionId, cardId),
-        );
-      },
-      answerQuestion(chapterId, sectionId, questionId, answerIndex, mode) {
-        setProgress((current) =>
-          setQuizAnswer(
-            ensureEditorialProgress(current, course),
-            chapterId,
-            sectionId,
-            questionId,
-            answerIndex,
-            mode,
-          ),
-        );
-      },
-      finalizeAssessment(chapterId, sectionId, score, mode) {
-        setProgress((current) =>
-          submitAssessment(
-            ensureEditorialProgress(current, course),
-            course,
-            chapterId,
-            sectionId,
-            mode,
-            score,
-          ),
-        );
-      },
-      clearAssessment(chapterId, sectionId, mode) {
-        setProgress((current) =>
-          resetAssessment(ensureEditorialProgress(current, course), chapterId, sectionId, mode),
-        );
-      },
+      touchRoute,
+      visitMaterial,
+      updateFlashcardPosition,
+      toggleStar,
+      answerQuestion,
+      finalizeAssessment,
+      clearAssessment,
     };
-  }, [course, progress, ready]);
+  }, [
+    answerQuestion,
+    clearAssessment,
+    course,
+    finalizeAssessment,
+    progress,
+    ready,
+    toggleStar,
+    touchRoute,
+    updateFlashcardPosition,
+    visitMaterial,
+  ]);
 
   return (
     <EditorialProgressContext.Provider value={value}>

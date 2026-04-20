@@ -313,7 +313,7 @@ export interface EditorialCheatSheet {
 }
 
 export type EditorialContentBlock =
-  | { type: "heading"; text: string }
+  | { type: "heading"; text: string; level: 1 | 2 | 3 }
   | { type: "paragraph"; text: string }
   | { type: "callout"; callout: EditorialCallout }
   | { type: "key-takeaways"; takeaway: EditorialKeyTakeaway }
@@ -354,6 +354,7 @@ export interface EditorialObjective {
 export interface EditorialSection {
   id: string;
   title: string;
+  textbookHeading: string;
   emoji: string;
   purpose: string;
   studentGuide: string;

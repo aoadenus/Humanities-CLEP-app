@@ -7,17 +7,11 @@ import type {
   EditorialSectionProgress,
 } from "@/lib/types";
 
-export const MATERIAL_NAV_ORDER: EditorialMaterialId[] = [
-  "learn-1",
-  "learn-2",
-  "learn-3",
-  "learn-4",
-  "flashcards",
-  "videos",
-  "quiz",
-  "results",
-  "hard-test",
-];
+function getSectionMaterialOrder(section: EditorialSection) {
+  return section.materials
+    .filter((material) => material.id !== "hub")
+    .map((material) => material.id);
+}
 
 export function buildChapterHref(chapterId: string) {
   return `/chapter/${chapterId}`;
@@ -114,22 +108,24 @@ export function getChapterProgressRatio(
   return completedSections / chapter.sections.length;
 }
 
-export function getPreviousMaterialId(materialId: EditorialMaterialId) {
-  const currentIndex = MATERIAL_NAV_ORDER.indexOf(materialId);
+export function getPreviousMaterialId(section: EditorialSection, materialId: EditorialMaterialId) {
+  const materialOrder = getSectionMaterialOrder(section);
+  const currentIndex = materialOrder.indexOf(materialId);
   if (currentIndex <= 0) {
     return null;
   }
 
-  return MATERIAL_NAV_ORDER[currentIndex - 1] ?? null;
+  return materialOrder[currentIndex - 1] ?? null;
 }
 
-export function getNextMaterialId(materialId: EditorialMaterialId) {
-  const currentIndex = MATERIAL_NAV_ORDER.indexOf(materialId);
-  if (currentIndex < 0 || currentIndex === MATERIAL_NAV_ORDER.length - 1) {
+export function getNextMaterialId(section: EditorialSection, materialId: EditorialMaterialId) {
+  const materialOrder = getSectionMaterialOrder(section);
+  const currentIndex = materialOrder.indexOf(materialId);
+  if (currentIndex < 0 || currentIndex === materialOrder.length - 1) {
     return null;
   }
 
-  return MATERIAL_NAV_ORDER[currentIndex + 1] ?? null;
+  return materialOrder[currentIndex + 1] ?? null;
 }
 
 export function getMaterialTitle(

@@ -106,8 +106,10 @@ export function EditorialShell({
       return {
         prevHref: buildChapterHref(chapterId),
         prevLabel: "Chapter",
-        nextHref: sectionProgress?.unlocked ? buildMaterialHref(chapterId, section.id, "learn-1") : null,
-        nextLabel: "Begin Learn 1",
+        nextHref: sectionProgress?.unlocked
+          ? buildMaterialHref(chapterId, section.id, section.learnPages[0]?.id ?? "flashcards")
+          : null,
+        nextLabel: section.learnPages[0] ? `Begin ${section.learnPages[0].title}` : "Open Flashcards",
       };
     }
 
@@ -115,8 +117,8 @@ export function EditorialShell({
       return null;
     }
 
-    const previous = getPreviousMaterialId(materialId);
-    const next = getNextMaterialId(materialId);
+    const previous = getPreviousMaterialId(section, materialId);
+    const next = getNextMaterialId(section, materialId);
     const currentIndex = chapter?.sections.findIndex((item) => item.id === section.id) ?? -1;
     const nextSection = currentIndex >= 0 ? chapter?.sections[currentIndex + 1] ?? null : null;
 
@@ -124,8 +126,8 @@ export function EditorialShell({
       return {
         prevHref: previous ? buildMaterialHref(chapterId, section.id, previous) : buildSectionHref(chapterId, section.id),
         prevLabel: previous ? getMaterialTitle(section, previous) : "Section Hub",
-        nextHref: sectionProgress?.quizSubmitted ? buildMaterialHref(chapterId, section.id, "results") : null,
-        nextLabel: "Results",
+        nextHref: sectionProgress?.quizSubmitted ? buildMaterialHref(chapterId, section.id, "hard-test") : null,
+        nextLabel: "Hard Test",
         nextDisabledLabel: sectionProgress?.quizSubmitted ? undefined : "Submit Quiz to Continue",
       };
     }
@@ -174,7 +176,7 @@ export function EditorialShell({
               Section Navigation
             </div>
             <div className="mt-1 text-sm leading-6 text-[var(--text-secondary)]">
-              Move freely inside this section. Only the hard test stays locked until the quiz is passed.
+              Move freely inside this section. Only the hard test stays locked until the quiz is submitted.
             </div>
           </div>
           <div className="rounded-full bg-[var(--bg-secondary)] px-3 py-1 text-xs font-bold uppercase tracking-[0.08em] text-[var(--text-secondary)]">
@@ -259,7 +261,7 @@ export function EditorialShell({
   } else if (materialId === "quiz") {
     content = <QuizPage chapterId={chapterId} section={section} />;
   } else if (materialId === "results") {
-    content = <ResultsPage chapter={chapter} chapterId={chapterId} section={section} />;
+    content = <ResultsPage chapterId={chapterId} section={section} />;
   } else if (materialId === "hard-test") {
     content = <HardTestPage chapter={chapter} chapterId={chapterId} section={section} />;
   } else if (materialId?.startsWith("learn-")) {

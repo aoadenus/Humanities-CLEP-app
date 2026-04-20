@@ -29,7 +29,7 @@ export function ChapterOverview({
           </div>
           <h1 className="font-reading mt-3 text-3xl font-bold text-[var(--text-primary)]">{chapter.title}</h1>
           <p className="mt-4 max-w-2xl text-[18px] leading-8 text-[var(--text-secondary)]">
-            This chapter is still a placeholder. Chapter 1 is the active build right now.
+            This chapter is still in placeholder mode and does not have live section content yet.
           </p>
         </Card>
       </div>
@@ -50,15 +50,15 @@ export function ChapterOverview({
         </div>
         <h1 className="font-reading mt-3 text-4xl font-bold text-[var(--text-primary)]">{chapter.title}</h1>
         <p className="mt-4 max-w-3xl text-[18px] leading-8 text-[var(--text-secondary)]">
-          Pick a section and continue into the section hub. Section 1 starts unlocked, and the rest unlock in
-          sequence after each hard test is passed.
+          Pick any section and continue into the section hub. Once a chapter is live, all of its sections are open and
+          only the hard test stays gated inside each section.
         </p>
       </Card>
 
       <div className="space-y-4">
         {chapter.sections.map((section, index) => {
           const sectionProgress = chapterProgress?.sections[section.id] ?? null;
-          const unlocked = sectionProgress?.unlocked ?? index === 0;
+          const unlocked = sectionProgress?.unlocked ?? !chapter.locked;
           const ratio = getSectionProgressRatio(section, sectionProgress);
           const statusTone = !unlocked
             ? "locked"

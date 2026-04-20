@@ -25,6 +25,11 @@ function createSectionProgress(unlocked = false): EditorialSectionProgress {
   };
 }
 
+function isChapterAvailable(course: EditorialCourse, chapterIndex: number) {
+  const chapter = course.chapters[chapterIndex];
+  return Boolean(chapter && !chapter.locked && chapter.sections.length > 0);
+}
+
 export function createEmptyEditorialProgress(): EditorialProgress {
   return {
     currentRoute: "/",
@@ -39,19 +44,13 @@ export function ensureEditorialProgress(
   const next = progress ? structuredClone(progress) : createEmptyEditorialProgress();
 
   for (const [chapterIndex, chapter] of course.chapters.entries()) {
-    next.chapters[chapter.id] ??= {
-      unlocked: chapterIndex === 0,
-      sections: {},
-    };
+    const chapterUnlocked = isChapterAvailable(course, chapterIndex);
+    next.chapters[chapter.id] ??= { unlocked: chapterUnlocked, sections: {} };
+    next.chapters[chapter.id].unlocked = chapterUnlocked;
 
-    if (chapterIndex === 0) {
-      next.chapters[chapter.id].unlocked = true;
-    }
-
-    for (const [sectionIndex, section] of chapter.sections.entries()) {
-      next.chapters[chapter.id].sections[section.id] ??= createSectionProgress(
-        chapterIndex === 0 && sectionIndex === 0,
-      );
+    for (const section of chapter.sections) {
+      next.chapters[chapter.id].sections[section.id] ??= createSectionProgress(chapterUnlocked);
+      next.chapters[chapter.id].sections[section.id].unlocked = chapterUnlocked;
     }
   }
 
@@ -63,44 +62,16 @@ export function applyUnlockRules(
   course: EditorialCourse,
 ): EditorialProgress {
   const next = structuredClone(progress);
-  const chapter1 = course.chapters[0];
 
-  if (!chapter1) {
-    return next;
-  }
+  for (const [chapterIndex, chapter] of course.chapters.entries()) {
+    const chapterUnlocked = isChapterAvailable(course, chapterIndex);
+    next.chapters[chapter.id] ??= { unlocked: chapterUnlocked, sections: {} };
+    next.chapters[chapter.id].unlocked = chapterUnlocked;
 
-  next.chapters[chapter1.id] ??= {
-    unlocked: true,
-    sections: {},
-  };
-  next.chapters[chapter1.id].unlocked = true;
-
-  for (const [index, section] of chapter1.sections.entries()) {
-    next.chapters[chapter1.id].sections[section.id] ??= createSectionProgress(index === 0);
-    const current = next.chapters[chapter1.id].sections[section.id];
-
-    if (index === 0) {
-      current.unlocked = true;
-      continue;
+    for (const section of chapter.sections) {
+      next.chapters[chapter.id].sections[section.id] ??= createSectionProgress(chapterUnlocked);
+      next.chapters[chapter.id].sections[section.id].unlocked = chapterUnlocked;
     }
-
-    const previousSection = chapter1.sections[index - 1];
-    const previousProgress = next.chapters[chapter1.id].sections[previousSection.id];
-    current.unlocked = Boolean(previousProgress?.hardTestScore !== null && previousProgress.hardTestScore >= 8);
-  }
-
-  const chapter1Complete = chapter1.sections.every((section) => {
-    const sectionProgress = next.chapters[chapter1.id].sections[section.id];
-    return Boolean(sectionProgress?.hardTestScore !== null && sectionProgress.hardTestScore >= 8);
-  });
-
-  const chapter2 = course.chapters[1];
-  if (chapter2) {
-    next.chapters[chapter2.id] ??= {
-      unlocked: false,
-      sections: {},
-    };
-    next.chapters[chapter2.id].unlocked = chapter1Complete;
   }
 
   return next;
@@ -213,6 +184,7 @@ export function submitAssessment(
 ) {
   const next = structuredClone(progress);
   const sectionProgress = next.chapters[chapterId]?.sections[sectionId];
+  const section = course.chapters.find((chapter) => chapter.id === chapterId)?.sections.find((item) => item.id === sectionId);
   if (!sectionProgress) {
     return next;
   }
@@ -223,7 +195,7 @@ export function submitAssessment(
   } else {
     sectionProgress.hardTestSubmitted = true;
     sectionProgress.hardTestScore = score;
-    sectionProgress.completed = score >= 8;
+    sectionProgress.completed = Boolean(section && score >= section.hardTest.passThreshold);
   }
 
   return applyUnlockRules(next, course);
@@ -264,7 +236,7 @@ export function getSectionProgress(
 }
 
 export function isHardTestUnlocked(sectionProgress: EditorialSectionProgress | null) {
-  return Boolean(sectionProgress && sectionProgress.quizScore !== null && sectionProgress.quizScore >= 8);
+  return Boolean(sectionProgress?.quizSubmitted);
 }
 
 export function getMaterialStatus(
