@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 import { Breadcrumbs } from "@/components/editorial/Breadcrumbs";
@@ -15,6 +16,7 @@ import { SidebarNav } from "@/components/editorial/SidebarNav";
 import { StickyNav } from "@/components/editorial/StickyNav";
 import { VideosPage } from "@/components/editorial/VideosPage";
 import {
+  getMaterialStatus,
   getSectionProgress,
   isHardTestUnlocked,
   useEditorialProgress,
@@ -88,6 +90,16 @@ export function EditorialShell({
   }, [chapter, chapterId, materialId, pageType, section]);
 
   const stickyNav = useMemo(() => {
+    if (pageType === "chapter") {
+      return {
+        prevHref: "/" as string | null,
+        prevLabel: "Dashboard",
+        nextHref: null as string | null,
+        nextLabel: undefined as string | undefined,
+        nextDisabledLabel: undefined as string | undefined,
+      };
+    }
+
     if (!section) {
       return null;
     }
@@ -150,6 +162,66 @@ export function EditorialShell({
       nextLabel: next ? getMaterialTitle(section, next) : "Section Hub",
     };
   }, [chapter, chapterId, materialId, pageType, section, sectionProgress]);
+
+  const materialRail = useMemo(() => {
+    if (!section || !progress || pageType === "chapter") {
+      return null;
+    }
+
+    return (
+      <Card className="mb-6 p-4 md:p-5">
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div>
+            <div className="text-xs font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+              Section Navigation
+            </div>
+            <div className="mt-1 text-sm leading-6 text-[var(--text-secondary)]">
+              Move freely inside this section. Only the hard test stays locked until the quiz is passed.
+            </div>
+          </div>
+          <div className="rounded-full bg-[var(--bg-secondary)] px-3 py-1 text-xs font-bold uppercase tracking-[0.08em] text-[var(--text-secondary)]">
+            {section.title}
+          </div>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {section.materials.map((material) => {
+            const href = buildMaterialHref(chapterId, section.id, material.id);
+            const isCurrent =
+              material.id === "hub"
+                ? pageType === "section"
+                : pageType === "material" && material.id === materialId;
+            const status = getMaterialStatus(sectionProgress, material.id);
+            const locked = status === "locked";
+            const className = [
+              "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition-all",
+              isCurrent
+                ? "border-[var(--accent)] bg-[var(--highlight)] text-[var(--accent)]"
+                : "border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-secondary)] hover:-translate-y-[1px] hover:border-[var(--accent-light)] hover:text-[var(--text-primary)]",
+              locked ? "cursor-not-allowed opacity-55 hover:translate-y-0 hover:border-[var(--border)]" : "",
+            ]
+              .join(" ")
+              .trim();
+
+            const chip = (
+              <span className={className}>
+                <span>{material.emoji}</span>
+                <span>{material.title}</span>
+              </span>
+            );
+
+            return locked ? (
+              <span key={material.id}>{chip}</span>
+            ) : (
+              <Link href={href} key={material.id}>
+                {chip}
+              </Link>
+            );
+          })}
+        </div>
+      </Card>
+    );
+  }, [chapterId, materialId, pageType, progress, section, sectionProgress]);
 
   if (!chapter) {
     return (
@@ -232,17 +304,25 @@ export function EditorialShell({
       />
 
       <main className="min-w-0">
-        <div className="border-b border-[var(--border)] bg-[var(--bg-primary)] px-4 py-4 md:hidden">
-          <div className="flex items-center justify-between gap-3">
+        <div className="border-b border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 md:hidden">
+          <div className="flex items-center gap-2">
+            <Link
+              href="/"
+              aria-label="Dashboard"
+              className="flex items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--bg-card)] px-3 py-2 text-sm font-bold transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            >
+              🏠
+            </Link>
             <button className="button-secondary px-3 py-2 text-sm" onClick={() => setMobileOpen(true)} type="button">
               ☰ Menu
             </button>
-            <div className="truncate text-sm font-bold text-[var(--text-primary)]">{currentLabel}</div>
+            <div className="ml-auto truncate text-sm font-bold text-[var(--text-primary)]">{currentLabel}</div>
           </div>
         </div>
 
         <div className="mx-auto max-w-[980px] px-4 py-6 md:px-8 md:py-8">
           <Breadcrumbs items={breadcrumbItems} />
+          {materialRail}
           <div className="step-transition">{content}</div>
         </div>
 

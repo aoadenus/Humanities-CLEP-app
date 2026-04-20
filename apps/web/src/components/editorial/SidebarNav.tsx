@@ -108,6 +108,22 @@ export function SidebarNav({
         </button>
       </div>
 
+      <div>
+        <Link
+          href="/"
+          className={[
+            "flex items-center gap-3 rounded-xl border px-3 py-3 text-sm font-bold transition-all",
+            currentPath === "/"
+              ? "border-[var(--accent)] bg-[var(--bg-card)] text-[var(--accent)] shadow-sm"
+              : "border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)]",
+          ].join(" ")}
+          onClick={onClose}
+        >
+          <span className="text-base">🏠</span>
+          <span>Dashboard</span>
+        </Link>
+      </div>
+
       <Card className="surface-tint p-4">
         <div className="text-xs font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
           Course Map

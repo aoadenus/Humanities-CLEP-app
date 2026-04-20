@@ -3,7 +3,14 @@ import { notFound } from "next/navigation";
 import { EditorialShell } from "@/components/editorial/EditorialShell";
 import { getEditorialCourse } from "@/content/editorial-course";
 import { getSection } from "@/lib/editorial-navigation";
+import { getMaterialStaticParams } from "@/lib/editorial-static-params";
 import type { EditorialMaterialId } from "@/lib/types";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getMaterialStaticParams();
+}
 
 export default async function MaterialPage({
   params,

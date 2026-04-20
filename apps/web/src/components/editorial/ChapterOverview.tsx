@@ -19,29 +19,41 @@ export function ChapterOverview({
 
   if (chapter.locked && !chapterProgress?.unlocked) {
     return (
-      <Card className="p-8">
-        <div className="text-sm font-bold uppercase tracking-[0.08em] text-(--text-muted)">
-          🔒 Locked Chapter
+      <div className="space-y-4">
+        <div>
+          <Link href="/" className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
+            Back to Dashboard
+          </Link>
         </div>
-        <h1 className="font-reading mt-3 text-3xl font-bold text-(--text-primary)">{chapter.title}</h1>
-        <p className="mt-4 max-w-2xl text-[18px] leading-8 text-(--text-secondary)">
-          This chapter is still a placeholder. Chapter 1 is the active build right now.
-        </p>
-      </Card>
+        <Card className="p-8">
+          <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
+            Locked Chapter
+          </div>
+          <h1 className="font-reading mt-3 text-3xl font-bold text-[var(--text-primary)]">{chapter.title}</h1>
+          <p className="mt-4 max-w-2xl text-[18px] leading-8 text-[var(--text-secondary)]">
+            This chapter is still a placeholder. Chapter 1 is the active build right now.
+          </p>
+        </Card>
+      </div>
     );
   }
 
   return (
     <div className="space-y-6">
+      <div className="flex items-center gap-3">
+        <Link href="/" className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
+          Back to Dashboard
+        </Link>
+      </div>
+
       <Card className="surface-tint p-6 md:p-8">
-        <div className="text-sm font-bold uppercase tracking-[0.08em] text-(--text-muted)">
+        <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
           {chapter.emoji} Chapter Overview
         </div>
-        <h1 className="font-reading mt-3 text-4xl font-bold text-(--text-primary)">{chapter.title}</h1>
-        <p className="mt-4 max-w-3xl text-[18px] leading-8 text-(--text-secondary)">
-          Work through the six sections below as a sequential textbook track. Each section unlocks after the
-          previous section hard test is passed, and each unlocked section contains complete instructional
-          materials, references, and assessment sets designed for full-depth study.
+        <h1 className="font-reading mt-3 text-4xl font-bold text-[var(--text-primary)]">{chapter.title}</h1>
+        <p className="mt-4 max-w-3xl text-[18px] leading-8 text-[var(--text-secondary)]">
+          Pick a section and continue into the section hub. Section 1 starts unlocked, and the rest unlock in
+          sequence after each hard test is passed.
         </p>
       </Card>
 
@@ -64,21 +76,25 @@ export function ChapterOverview({
               : ratio > 0
                 ? "In progress"
                 : "Not started";
+          const sectionHref = buildSectionHref(chapter.id, section.id);
 
-          const cardBody = (
-            <Card className={`p-5 md:p-6 ${unlocked ? "transition-transform hover:-translate-y-1" : "opacity-70"}`}>
+          return (
+            <Card
+              key={section.id}
+              className={`p-5 md:p-6 ${unlocked ? "transition-transform hover:-translate-y-1" : "opacity-70"}`}
+            >
               <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
                 <div className="min-w-0">
-                  <div className="text-sm font-bold uppercase tracking-[0.08em] text-(--text-muted)">
+                  <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
                     Section {index + 1}
                   </div>
                   <div className="mt-3 flex items-start gap-3">
                     <span className="text-3xl">{section.emoji}</span>
                     <div className="min-w-0">
-                      <h2 className="font-reading text-2xl font-bold text-(--text-primary)">
+                      <h2 className="font-reading text-2xl font-bold text-[var(--text-primary)]">
                         {section.title}
                       </h2>
-                      <p className="mt-2 text-[17px] leading-7 text-(--text-secondary)">
+                      <p className="mt-2 text-[17px] leading-7 text-[var(--text-secondary)]">
                         {section.purpose}
                       </p>
                     </div>
@@ -89,21 +105,21 @@ export function ChapterOverview({
               </div>
 
               <div className="mt-5">
-                <div className="mb-2 flex items-center justify-between text-sm font-semibold text-(--text-secondary)">
+                <div className="mb-2 flex items-center justify-between text-sm font-semibold text-[var(--text-secondary)]">
                   <span>Section progress</span>
                   <span>{unlocked ? `${Math.round(ratio * 100)}%` : "Locked"}</span>
                 </div>
                 <ProgressBar value={unlocked ? ratio : 0} />
               </div>
-            </Card>
-          );
 
-          return unlocked ? (
-            <Link href={buildSectionHref(chapter.id, section.id)} key={section.id}>
-              {cardBody}
-            </Link>
-          ) : (
-            <div key={section.id}>{cardBody}</div>
+              {unlocked ? (
+                <div className="mt-5">
+                  <Link href={sectionHref} className="button-primary inline-flex items-center gap-2 px-5 py-2 text-sm">
+                    {sectionProgress?.completed ? "Review Section" : ratio > 0 ? "Continue to Section" : "Enter Section"}
+                  </Link>
+                </div>
+              ) : null}
+            </Card>
           );
         })}
       </div>

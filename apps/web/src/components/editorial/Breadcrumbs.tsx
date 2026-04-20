@@ -19,7 +19,7 @@ export function Breadcrumbs({
             ) : (
               <span className="text-[var(--text-primary)]">{item.label}</span>
             )}
-            {index < items.length - 1 ? <span className="text-[var(--text-muted)]">›</span> : null}
+            {index < items.length - 1 ? <span className="text-[var(--text-muted)]">{">"}</span> : null}
           </li>
         ))}
       </ol>

@@ -3,6 +3,13 @@ import { notFound } from "next/navigation";
 import { EditorialShell } from "@/components/editorial/EditorialShell";
 import { getEditorialCourse } from "@/content/editorial-course";
 import { getSection } from "@/lib/editorial-navigation";
+import { getSectionStaticParams } from "@/lib/editorial-static-params";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getSectionStaticParams();
+}
 
 export default async function SectionPage({
   params,
