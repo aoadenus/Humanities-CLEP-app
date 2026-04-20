@@ -93,9 +93,49 @@ const DIAGRAMS: Record<string, EditorialDiagramDefinition> = {
   },
 };
 
+const MEDIA_FALLBACKS: Record<string, { resources: Array<{ title: string; url: string }>; videos: Array<{ title: string; url: string }> }> = {
+  s1: {
+    resources: [
+      { title: "Smarthistory: Prehistoric Art Introduction", url: "https://smarthistory.org/prehistoric-art-an-introduction/" },
+      { title: "Britannica: Stonehenge", url: "https://www.britannica.com/topic/Stonehenge" },
+      { title: "British Museum Collection", url: "https://www.britishmuseum.org/collection" },
+    ],
+    videos: [
+      { title: "YouTube: Smarthistory Prehistoric Art", url: "https://www.youtube.com/results?search_query=smarthistory+prehistoric+art" },
+      { title: "YouTube: Neolithic Revolution Overview", url: "https://www.youtube.com/results?search_query=neolithic+revolution+overview" },
+    ],
+  },
+  s2: {
+    resources: [
+      { title: "Smarthistory: Ancient Mesopotamia", url: "https://smarthistory.org/tag/mesopotamia/" },
+      { title: "Smarthistory: Ancient Egypt", url: "https://smarthistory.org/tag/ancient-egypt/" },
+      { title: "Louvre: Code of Hammurabi", url: "https://www.louvre.fr/en/explore/the-palace/the-code-of-hammurabi" },
+    ],
+    videos: [
+      { title: "YouTube: Mesopotamia and Egypt Overview", url: "https://www.youtube.com/results?search_query=mesopotamia+and+egypt+overview" },
+      { title: "YouTube: Smarthistory Hammurabi", url: "https://www.youtube.com/results?search_query=smarthistory+hammurabi" },
+    ],
+  },
+  s3: {
+    resources: [
+      { title: "Smarthistory: Ancient China", url: "https://smarthistory.org/tag/china/" },
+      { title: "Smarthistory: South Asia", url: "https://smarthistory.org/tag/south-asia/" },
+      { title: "Smarthistory: Africa", url: "https://smarthistory.org/tag/africa/" },
+    ],
+    videos: [
+      { title: "YouTube: Oracle Bones and Shang China", url: "https://www.youtube.com/results?search_query=oracle+bones+shang+china" },
+      { title: "YouTube: Sanchi Stupa Overview", url: "https://www.youtube.com/results?search_query=sanchi+stupa+overview" },
+    ],
+  },
+  s6: {
+    resources: [],
+    videos: [],
+  },
+};
+
 let cachedCourse: EditorialCourse | null = null;
 
-function getSourcePath(sourceFile: string, sourceEnvVar?: string) {
+function getSourcePath(sourceFiles: readonly string[], sourceEnvVar?: string) {
   const envPath = sourceEnvVar ? process.env[sourceEnvVar] : "";
   const directEnvPath = envPath
     ? path.isAbsolute(envPath)
@@ -105,19 +145,23 @@ function getSourcePath(sourceFile: string, sourceEnvVar?: string) {
           envPath,
         )
     : "";
-  const directPath = path.resolve(
-    /* turbopackIgnore: true */ process.cwd(),
-    sourceFile,
-  );
-  const workspacePath = path.resolve(
-    /* turbopackIgnore: true */ process.cwd(),
-    "..",
-    "..",
-    sourceFile,
-  );
-  const candidates = [directEnvPath, directPath, workspacePath].filter(Boolean);
 
-  for (const candidate of candidates) {
+  const candidates = [directEnvPath, ...sourceFiles.flatMap((sourceFile) => [
+    path.resolve(
+      /* turbopackIgnore: true */ process.cwd(),
+      sourceFile,
+    ),
+    path.resolve(
+      /* turbopackIgnore: true */ process.cwd(),
+      "..",
+      "..",
+      sourceFile,
+    ),
+  ])].filter(Boolean);
+
+  const uniqueCandidates = [...new Set(candidates)];
+
+  for (const candidate of uniqueCandidates) {
     if (fs.existsSync(candidate)) {
       return candidate;
     }
@@ -126,13 +170,17 @@ function getSourcePath(sourceFile: string, sourceEnvVar?: string) {
   return null;
 }
 
-function getSourceText(sourceFile: string, sourceEnvVar?: string) {
-  const sourcePath = getSourcePath(sourceFile, sourceEnvVar);
-  if (!sourcePath) {
-    return null;
-  }
+function getSourceTexts(sourceFile: string, sourceEnvVar?: string, sourceFallbackFiles: readonly string[] = []) {
+  const primaryPath = getSourcePath([sourceFile], sourceEnvVar);
+  const fallbackPaths = sourceFallbackFiles
+    .map((fallbackFile) => getSourcePath([fallbackFile]))
+    .filter((value): value is string => Boolean(value));
 
-  return fs.readFileSync(sourcePath, "utf8").replace(/\r\n/g, "\n");
+  const candidatePaths = [...new Set([primaryPath, ...fallbackPaths].filter((value): value is string => Boolean(value)))];
+  return candidatePaths.map((sourcePath) => ({
+    sourcePath,
+    text: fs.readFileSync(sourcePath, "utf8").replace(/\r\n/g, "\n"),
+  }));
 }
 
 function cleanText(value: string) {
@@ -157,9 +205,20 @@ function findLastIndexOfAny(source: string, anchors: readonly string[]) {
   }, -1);
 }
 
+function findSectionStartIndex(source: string, meta: EditorialSectionMeta) {
+  if (meta.canonicalHeader) {
+    const headerIndex = source.indexOf(meta.canonicalHeader);
+    if (headerIndex >= 0) {
+      return headerIndex;
+    }
+  }
+
+  return findLastIndexOfAny(source, meta.anchors);
+}
+
 function getSectionSlices(source: string, sectionMeta: readonly EditorialSectionMeta[]) {
   const starts = sectionMeta.map((meta) => {
-    const index = findLastIndexOfAny(source, meta.anchors);
+    const index = findSectionStartIndex(source, meta);
     if (index < 0) {
       throw new Error(`Could not find marker for ${meta.id}.`);
     }
@@ -220,6 +279,44 @@ function extractNumberedBlockRaw(raw: string, number: number, nextNumbers: numbe
   return (endMatch && endMatch.index !== undefined ? remainder.slice(0, endMatch.index) : remainder).trim();
 }
 
+interface NumberedHeading {
+  title: string;
+  start: number;
+  contentStart: number;
+}
+
+function getNumberedHeadings(raw: string): NumberedHeading[] {
+  const headings: NumberedHeading[] = [];
+  const regex = /(?:^|\n)(\d+)\)\s+([^\n]*)\n/gi;
+
+  for (const match of raw.matchAll(regex)) {
+    if (match.index === undefined) {
+      continue;
+    }
+
+    headings.push({
+      title: match[2]?.trim() ?? "",
+      start: match.index + (match[0].startsWith("\n") ? 1 : 0),
+      contentStart: match.index + match[0].length,
+    });
+  }
+
+  return headings;
+}
+
+function extractHeadingBlocks(raw: string, titlePattern: RegExp) {
+  const headings = getNumberedHeadings(raw);
+  return headings
+    .map((heading, index) => {
+      const next = headings[index + 1];
+      return {
+        title: heading.title,
+        block: cleanText(raw.slice(heading.contentStart, next ? next.start : raw.length)),
+      };
+    })
+    .filter((entry) => titlePattern.test(entry.title));
+}
+
 function extractPurpose(raw: string) {
   const block =
     extractNumberedBlock(raw, 1, [2]) ||
@@ -270,6 +367,20 @@ function parseObjectives(raw: string, sectionId: string): EditorialObjective[] {
   for (const line of lines) {
     const trimmed = line.trim();
     if (!trimmed) {
+      continue;
+    }
+
+    const tabColumns = trimmed.split(/\t+/).map((part) => part.trim()).filter(Boolean);
+    const spacedColumns = tabColumns.length > 1
+      ? tabColumns
+      : trimmed.split(/\s{2,}/).map((part) => part.trim()).filter(Boolean);
+    const objectiveFromTable = spacedColumns[0]?.match(/^classical\.[\w.-]+$/i) ? {
+      id: normalizeObjectiveTag(spacedColumns[0], sectionId),
+      label: spacedColumns[1] ?? "",
+    } : null;
+
+    if (objectiveFromTable?.label) {
+      objectives.push(objectiveFromTable);
       continue;
     }
 
@@ -464,7 +575,7 @@ function parseAnswerEntries(block: string) {
       continue;
     }
 
-    const numbered = trimmed.match(/^\d+\.\s*([A-E])(?:\s*[-—]\s*(.*))?$/i);
+    const numbered = trimmed.match(/^\d+[.)]\s*([A-E])(?:\s*[-—]\s*(.*))?$/i);
     const plain = trimmed.match(/^([A-E])\s*[-—]\s*(.*)$/i);
     const match = numbered ?? plain;
 
@@ -498,70 +609,22 @@ function parseQuestionBlock(
 ) {
   const lines = block.split("\n");
   const questions: EditorialQuestion[] = [];
-  let index = 0;
+  let questionLines: string[] = [];
+  let options: string[] = [];
+  let tags: string[] = [];
+  let inlineAnswer = "";
 
-  while (index < lines.length) {
-    const currentLine = lines[index]?.trim() ?? "";
-    if (!currentLine) {
-      index += 1;
-      continue;
-    }
-
-    const questionStart = currentLine.match(/^\d+\.\s*(.+)$/);
-    if (!questionStart) {
-      index += 1;
-      continue;
-    }
-
-    const questionLines = [questionStart[1].trim()];
-    index += 1;
-
-    while (index < lines.length) {
-      const nextLine = lines[index]?.trim() ?? "";
-      if (!nextLine) {
-        index += 1;
-        break;
-      }
-      if (/^[A-E][.)]\s+/.test(nextLine)) {
-        break;
-      }
-      questionLines.push(nextLine);
-      index += 1;
-    }
-
-    const options: string[] = [];
-    while (index < lines.length) {
-      const optionLine = lines[index]?.trim() ?? "";
-      if (!/^[A-E][.)]\s+/.test(optionLine)) {
-        break;
-      }
-      options.push(optionLine.replace(/^[A-E][.)]\s+/, "").trim());
-      index += 1;
-    }
-
-    let tags: string[] = [];
-    while (index < lines.length) {
-      const tagLine = lines[index]?.trim() ?? "";
-      if (!tagLine) {
-        index += 1;
-        break;
-      }
-      if (/^(Objective|Tags?):/i.test(tagLine)) {
-        tags = tagLine
-          .replace(/^(Objective|Tags?):/i, "")
-          .split(",")
-          .map((tag) => normalizeObjectiveTag(tag.trim(), sectionId))
-          .filter(Boolean);
-      }
-      index += 1;
-    }
-
-    if (!options.length) {
-      continue;
+  const flushQuestion = () => {
+    if (!questionLines.length || options.length < 2) {
+      questionLines = [];
+      options = [];
+      tags = [];
+      inlineAnswer = "";
+      return;
     }
 
     const answerEntry = answers[questions.length];
-    const correctLetter = answerEntry?.answer ?? "A";
+    const correctLetter = (answerEntry?.answer ?? inlineAnswer ?? "A").toUpperCase();
     const correct = "ABCDE".indexOf(correctLetter);
 
     questions.push({
@@ -573,6 +636,67 @@ function parseQuestionBlock(
       objectiveTags: tags,
       reviewMaterialIds: [],
     });
+
+    questionLines = [];
+    options = [];
+    tags = [];
+    inlineAnswer = "";
+  };
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) {
+      if (options.length) {
+        flushQuestion();
+      }
+      continue;
+    }
+
+    if (/^(Objective|Tags?):/i.test(trimmed)) {
+      tags = trimmed
+        .replace(/^(Objective|Tags?):/i, "")
+        .split(",")
+        .map((tag) => normalizeObjectiveTag(tag.trim(), sectionId))
+        .filter(Boolean);
+      continue;
+    }
+
+    const inlineAnswerMatch = trimmed.match(/^Answer:\s*([A-E])\b/i);
+    if (inlineAnswerMatch) {
+      inlineAnswer = inlineAnswerMatch[1].toUpperCase();
+      continue;
+    }
+
+    const numberedQuestion = trimmed.match(/^\d+[.)]\s*(.+)$/);
+    if (numberedQuestion) {
+      if (options.length) {
+        flushQuestion();
+      } else {
+        questionLines = [];
+        tags = [];
+        inlineAnswer = "";
+      }
+
+      questionLines = [numberedQuestion[1].trim()];
+      continue;
+    }
+
+    const optionMatch = trimmed.match(/^[A-E][.)]\s+(.+)$/);
+    if (optionMatch) {
+      if (!questionLines.length) {
+        questionLines = [`Question ${questions.length + 1}`];
+      }
+      options.push(optionMatch[1].trim());
+      continue;
+    }
+
+    if (!options.length) {
+      questionLines.push(trimmed);
+    }
+  }
+
+  if (options.length) {
+    flushQuestion();
   }
 
   return questions;
@@ -629,34 +753,49 @@ function getReviewMaterials(sectionId: string, tags: string[]) {
 }
 
 function parseQuiz(raw: string, sectionId: string) {
-  const quizBlock =
-    raw.match(/(?:^|\n)(?:9|10|14)\)\s+(?:Practice Quiz|10-Question Section Quiz)(?:\s*\(10 Questions\))?\n([\s\S]*?)(?=(?:\n(?:10|11|15)\)\s+Answer Key))/i)?.[1] ??
-    "";
-  const answersBlock =
-    raw.match(/(?:^|\n)(?:10|11|15)\)\s+Answer Key(?: with (?:Full Teaching )?Explanations?)?\n([\s\S]*?)(?=(?:\n(?:11|12|16)\)\s+(?:10 Later Test Questions|Challenge Questions)))/i)?.[1] ??
-    "";
+  const quizBlocks = extractHeadingBlocks(
+    raw,
+    /^(Practice Quiz|10-Question Section Quiz|Section Quiz(?:\s*\(10 Questions\))?)$/i,
+  );
+  const answerBlocks = extractHeadingBlocks(
+    raw,
+    /^(Answer Key(?: with (?:Full Teaching )?Explanations?)?|Detailed Answer Key)$/i,
+  );
 
-  const questions: EditorialQuestion[] = parseQuestionBlock(
-    quizBlock,
-    parseAnswerEntries(answersBlock),
-    sectionId,
-  ).map((question) => ({
-      ...question,
-      reviewMaterialIds: getReviewMaterials(sectionId, question.objectiveTags),
-    }));
+  let bestQuestions: EditorialQuestion[] = [];
+  for (const quizBlock of quizBlocks) {
+    for (const answerBlock of answerBlocks.length ? answerBlocks : [{ title: "", block: "" }]) {
+      const candidate = parseQuestionBlock(
+        quizBlock.block,
+        parseAnswerEntries(answerBlock.block),
+        sectionId,
+      ).map((question) => ({
+        ...question,
+        reviewMaterialIds: getReviewMaterials(sectionId, question.objectiveTags),
+      }));
+
+      if (candidate.length > bestQuestions.length) {
+        bestQuestions = candidate;
+      }
+    }
+  }
 
   return {
-    questions: questions.slice(0, 10),
+    questions: bestQuestions.slice(0, 10),
     passThreshold: 8,
   };
 }
 
 function parseHardTest(raw: string, sectionId: string, quizQuestions: EditorialQuestion[]) {
-  const laterTestBlock =
-    raw.match(/(?:^|\n)(?:12|16)\)\s+(?:10 Later Test Questions|Challenge Questions(?:\s*\(10\))?)\n([\s\S]*?)(?=(?:\n(?:13|17)\)\s+Weakness Review Map))/i)?.[1] ??
-    "";
+  const testBlocks = extractHeadingBlocks(
+    raw,
+    /^(10 Later Test Questions|Challenge Questions(?:\s*\(10\))?|Hard Test(?:\s*\(10 Questions\))?)$/i,
+  );
+  const bestTestBlock = testBlocks.reduce((best, current) =>
+    current.block.length > best.length ? current.block : best,
+  "");
 
-  if (!/[A-E][.)]\s+/.test(laterTestBlock)) {
+  if (!/[A-E][.)]\s+/.test(bestTestBlock)) {
     return {
       questions: quizQuestions.map((question) => ({
         ...question,
@@ -666,11 +805,11 @@ function parseHardTest(raw: string, sectionId: string, quizQuestions: EditorialQ
     };
   }
 
-  const answers = [...laterTestBlock.matchAll(/Answer:\s*([A-E])/gi)].map((match) => ({
+  const answers = [...bestTestBlock.matchAll(/Answer:\s*([A-E])/gi)].map((match) => ({
     answer: match[1].toUpperCase(),
     explanation: "Use the related lesson page and flashcards to reinforce this harder concept.",
   }));
-  const strippedBlock = laterTestBlock.replace(/\nAnswer:\s*[A-E]\n?/gi, "\n");
+  const strippedBlock = bestTestBlock.replace(/\nAnswer:\s*[A-E]\n?/gi, "\n");
 
   const questions: EditorialQuestion[] = parseQuestionBlock(strippedBlock, answers, sectionId).map(
     (question, index) => ({
@@ -693,31 +832,98 @@ function youtubeEmbedUrl(url: string) {
   return match ? `https://www.youtube.com/embed/${match[1]}` : url;
 }
 
-function parseResourceSection(raw: string, headerRegex: RegExp, kind: "image" | "resource") {
-  const headerMatch = raw.match(headerRegex);
-  if (!headerMatch || headerMatch.index === undefined) {
-    return [] as EditorialResource[];
-  }
+function scoreHeadingBlockForSection(block: string, sectionId: string) {
+  const urlCount = (block.match(/https?:\/\//gi) ?? []).length;
+  const supportTagRegex = sectionId === "s6"
+    ? /classical\.(?:s6|rome)\./gi
+    : new RegExp(`classical\\.${sectionId}\\.`, "gi");
+  const supportTagCount = (block.match(supportTagRegex) ?? []).length;
+  const hintCount = (block.match(/\b(Link|Watch-for|Why|Supports|Linked)\b/gi) ?? []).length;
+  return urlCount * 20 + supportTagCount * 5 + hintCount;
+}
 
-  const remainder = raw.slice(headerMatch.index + headerMatch[0].length);
-  const untilNext = remainder.match(/(?=\n(?:1[3-9]|2[0-2])\)\s+)/m);
-  const block = cleanText(untilNext && untilNext.index !== undefined ? remainder.slice(0, untilNext.index) : remainder);
+function parseEntriesWithExplicitLinks(block: string) {
   const entries = block
     .split(/\n\s*\n/)
     .map((chunk) => chunk.trim())
-    .filter((chunk) => /Link:/i.test(chunk));
+    .filter((chunk) => /(Link|URL|Source):/i.test(chunk));
 
   return entries.map((entry, index) => {
     const lines = entry.split("\n").map((line) => line.trim()).filter(Boolean);
     const title = lines[0] ?? `Resource ${index + 1}`;
-    const linkLine = lines.find((line) => /^Link:/i.test(line)) ?? "";
+    const linkLine = lines.find((line) => /^(Link|URL|Source):/i.test(line)) ?? "";
     const descriptionLine =
       lines.find((line) => /^(Why it matters|Why useful|Look at|Watch-for|What to notice):/i.test(line)) ?? "";
 
     return {
+      title,
+      url: linkLine.replace(/^(Link|URL|Source):\s*/i, "").trim(),
+      description: descriptionLine.replace(/^(Why it matters|Why useful|Look at|Watch-for|What to notice):\s*/i, "").trim(),
+    };
+  });
+}
+
+function parseEntriesWithInlineUrls(block: string) {
+  const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
+  const entries: Array<{ title: string; url: string; description: string }> = [];
+
+  for (const line of lines) {
+    const urlMatch = line.match(/https?:\/\/\S+/i);
+    if (!urlMatch) {
+      continue;
+    }
+
+    const url = urlMatch[0].replace(/[).,;]+$/, "");
+    const title = line
+      .slice(0, urlMatch.index)
+      .replace(/^[-*]\s*/, "")
+      .replace(/[:\-–—]\s*$/, "")
+      .trim() || "Reference";
+
+    entries.push({
+      title,
+      url,
+      description: "",
+    });
+  }
+
+  return entries;
+}
+
+function parseResourceSection(raw: string, sectionId: string, headerRegex: RegExp, kind: "image" | "resource") {
+  const blocks = extractHeadingBlocks(raw, headerRegex);
+  const bestBlock = blocks.reduce((best, current) => {
+    const bestUrlCount = (best.match(/https?:\/\//gi) ?? []).length;
+    const currentUrlCount = (current.block.match(/https?:\/\//gi) ?? []).length;
+    if (currentUrlCount !== bestUrlCount) {
+      return currentUrlCount > bestUrlCount ? current.block : best;
+    }
+
+    return scoreHeadingBlockForSection(current.block, sectionId) > scoreHeadingBlockForSection(best, sectionId)
+      ? current.block
+      : best;
+  }, "");
+  const parsedEntries = [
+    ...parseEntriesWithExplicitLinks(bestBlock),
+    ...parseEntriesWithInlineUrls(bestBlock),
+  ];
+  const seenUrls = new Set<string>();
+
+  return parsedEntries
+    .filter((entry) => {
+      if (!entry.url || seenUrls.has(entry.url)) {
+        return false;
+      }
+      seenUrls.add(entry.url);
+      return true;
+    })
+    .map((entry, index) => {
+      const title = entry.title || `Resource ${index + 1}`;
+
+    return {
       id: `${kind}-${index + 1}`,
       title,
-      url: linkLine.replace(/^Link:\s*/i, "").trim(),
+      url: entry.url,
       source: title.includes("Smarthistory")
         ? "Smarthistory"
         : title.includes("British Museum")
@@ -725,43 +931,55 @@ function parseResourceSection(raw: string, headerRegex: RegExp, kind: "image" | 
           : title.includes("UNESCO")
             ? "UNESCO"
             : "Reference",
-      description: descriptionLine.replace(/^(Why it matters|Why useful|Look at|Watch-for|What to notice):\s*/i, "").trim(),
+      description: entry.description,
       kind,
     };
   });
 }
 
-function parseVideos(raw: string): EditorialVideo[] {
-  const headerMatch = raw.match(/(?:^|\n)(?:12|16)\)\s+Link Videos(?: to Embed)?\n/i);
-  if (!headerMatch || headerMatch.index === undefined) {
+function parseVideos(raw: string, sectionId: string): EditorialVideo[] {
+  const blocks = extractHeadingBlocks(raw, /^Link Videos(?: to Embed)?$/i);
+  const bestBlock = blocks.reduce((best, current) => {
+    const bestUrlCount = (best.match(/https?:\/\//gi) ?? []).length;
+    const currentUrlCount = (current.block.match(/https?:\/\//gi) ?? []).length;
+    if (currentUrlCount !== bestUrlCount) {
+      return currentUrlCount > bestUrlCount ? current.block : best;
+    }
+
+    return scoreHeadingBlockForSection(current.block, sectionId) > scoreHeadingBlockForSection(best, sectionId)
+      ? current.block
+      : best;
+  }, "");
+  if (!bestBlock) {
     return [];
   }
 
-  const remainder = raw.slice(headerMatch.index + headerMatch[0].length);
-  const untilNext = remainder.match(/(?=\n(?:1[3-9]|2[0-2])\)\s+)/m);
-  const block = cleanText(untilNext && untilNext.index !== undefined ? remainder.slice(0, untilNext.index) : remainder);
-  const entries = block
-    .split(/\n\s*\n/)
-    .map((chunk) => chunk.trim())
-    .filter((chunk) => /Link:/i.test(chunk));
+  const parsedEntries = [
+    ...parseEntriesWithExplicitLinks(bestBlock),
+    ...parseEntriesWithInlineUrls(bestBlock),
+  ];
+  const seenUrls = new Set<string>();
 
-  return entries.map((entry, index) => {
-    const lines = entry.split("\n").map((line) => line.trim()).filter(Boolean);
-    const title = lines[0] ?? `Video ${index + 1}`;
-    const linkLine = lines.find((line) => /^Link:/i.test(line)) ?? "";
-    const watchForLine = lines.find((line) => /^Watch-for:/i.test(line)) ?? "";
-    const url = linkLine.replace(/^Link:\s*/i, "").trim();
+  return parsedEntries
+    .filter((entry) => {
+      if (!entry.url || seenUrls.has(entry.url)) {
+        return false;
+      }
+      seenUrls.add(entry.url);
+      return true;
+    })
+    .map((entry, index) => {
+      const title = entry.title || `Video ${index + 1}`;
+      const watchFor = entry.description;
 
-    return {
-      id: `video-${index + 1}`,
-      title,
-      url,
-      embedUrl: youtubeEmbedUrl(url),
-      watchFor:
-        watchForLine.replace(/^Watch-for:\s*/i, "").trim() ||
-        "Watch for the main ideas and the terms that tie back to the lesson.",
-    };
-  });
+      return {
+        id: `video-${index + 1}`,
+        title,
+        url: entry.url,
+        embedUrl: youtubeEmbedUrl(entry.url),
+        watchFor: watchFor || "Watch for the main ideas and the terms that tie back to the lesson.",
+      };
+    });
 }
 
 function parseCheatSheet(raw: string) {
@@ -785,6 +1003,106 @@ function parseCheatSheet(raw: string) {
       .filter((line) => !/^(1-line|One-line|Summary|Mnemonic)/i.test(line))
       .slice(0, 7),
     mnemonics: parseMnemonics(raw).map((mnemonic) => `${mnemonic.label}: ${mnemonic.purpose}`),
+  };
+}
+
+function parseRawUrls(raw: string) {
+  const entries: Array<{ title: string; url: string }> = [];
+  const lines = raw.split("\n").map((line) => line.trim());
+
+  for (const line of lines) {
+    const urlMatch = line.match(/https?:\/\/\S+/i);
+    if (!urlMatch) {
+      continue;
+    }
+
+    const url = urlMatch[0].replace(/[).,;]+$/, "");
+    const title = line
+      .slice(0, urlMatch.index)
+      .replace(/^[-*]\s*/, "")
+      .replace(/[:\-–—]\s*$/, "")
+      .trim() || "Reference";
+
+    entries.push({ title, url });
+  }
+
+  return entries;
+}
+
+function ensureSectionMedia(
+  raw: string,
+  sectionId: string,
+  resources: EditorialResource[],
+  videos: EditorialVideo[],
+) {
+  const resultResources = [...resources];
+  const resultVideos = [...videos];
+  const seenResourceUrls = new Set(resultResources.map((item) => item.url));
+  const seenVideoUrls = new Set(resultVideos.map((item) => item.url));
+  const resourceKind = (sectionId === "s6" ? "resource" : "image") as EditorialResource["kind"];
+
+  for (const entry of parseRawUrls(raw)) {
+    const isVideo = /youtube\.com|youtu\.be/i.test(entry.url);
+    if (isVideo && !seenVideoUrls.has(entry.url) && resultVideos.length < 8) {
+      resultVideos.push({
+        id: `video-${resultVideos.length + 1}`,
+        title: entry.title,
+        url: entry.url,
+        embedUrl: youtubeEmbedUrl(entry.url),
+        watchFor: "Watch for how this example connects to section objectives.",
+      });
+      seenVideoUrls.add(entry.url);
+      continue;
+    }
+
+    if (!isVideo && !seenResourceUrls.has(entry.url) && resultResources.length < 12) {
+      resultResources.push({
+        id: `image-${resultResources.length + 1}`,
+        title: entry.title,
+        url: entry.url,
+        source: "Reference",
+        description: "",
+        kind: resourceKind,
+      });
+      seenResourceUrls.add(entry.url);
+    }
+  }
+
+  const fallback = MEDIA_FALLBACKS[sectionId];
+  if (fallback) {
+    for (const resource of fallback.resources) {
+      if (resultResources.length >= 6 || seenResourceUrls.has(resource.url)) {
+        continue;
+      }
+      resultResources.push({
+        id: `image-${resultResources.length + 1}`,
+        title: resource.title,
+        url: resource.url,
+        source: "Reference",
+        description: "",
+        kind: resourceKind,
+      });
+      seenResourceUrls.add(resource.url);
+    }
+
+    for (const video of fallback.videos) {
+      if (resultVideos.length >= 3 || seenVideoUrls.has(video.url)) {
+        continue;
+      }
+      resultVideos.push({
+        id: `video-${resultVideos.length + 1}`,
+        title: video.title,
+        url: video.url,
+        embedUrl: youtubeEmbedUrl(video.url),
+        watchFor: "Watch for how this support material reinforces key section concepts.",
+      });
+      seenVideoUrls.add(video.url);
+    }
+  }
+
+  return {
+    resources: resultResources,
+    videos: resultVideos,
   };
 }
 
@@ -897,15 +1215,30 @@ function buildLearnPages(
 }
 
 function buildSection(raw: string, sectionId: string, title: string, emoji: string): EditorialSection {
-  const resources = [
-    ...parseResourceSection(raw, /(?:^|\n)(?:15|11)\)\s+Link Images(?: That Help)?\n/i, "image"),
-    ...parseResourceSection(raw, /(?:^|\n)(?:15|11)\)\s+References?\n/i, "resource"),
+  const parsedResources = [
+    ...parseResourceSection(raw, sectionId, /^Link Images(?: That Help)?$/i, "image"),
+    ...parseResourceSection(raw, sectionId, /^References?$/i, "resource"),
   ];
-  const videos = parseVideos(raw);
+  const parsedVideos = parseVideos(raw, sectionId);
+  const { resources, videos } = ensureSectionMedia(raw, sectionId, parsedResources, parsedVideos);
   const mnemonics = parseMnemonics(raw);
   const objectives = parseObjectives(raw, sectionId);
   const quiz = parseQuiz(raw, sectionId);
   const hardTest = parseHardTest(raw, sectionId, quiz.questions);
+
+  if (process.env.NODE_ENV !== "production") {
+    const warnings: string[] = [];
+    if (!objectives.length) warnings.push("objectives");
+    if (!quiz.questions.length) warnings.push("quiz");
+    if (!hardTest.questions.length) warnings.push("hard-test");
+    if (!resources.length) warnings.push("resources");
+    if (!videos.length) warnings.push("videos");
+    if (!warnings.length) {
+      // no-op when section has expected payloads
+    } else {
+      console.warn(`[editorial-course] ${sectionId} has missing parsed blocks: ${warnings.join(", ")}`);
+    }
+  }
 
   return {
     id: sectionId,
@@ -939,8 +1272,8 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
     };
   }
 
-  const source = getSourceText(blueprint.sourceFile, blueprint.sourceEnvVar);
-  if (!source) {
+  const sourceTexts = getSourceTexts(blueprint.sourceFile, blueprint.sourceEnvVar, blueprint.sourceFallbackFiles ?? []);
+  if (!sourceTexts.length) {
     return {
       id: blueprint.id,
       title: blueprint.title,
@@ -952,9 +1285,26 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
   }
 
   try {
-    const sections = getSectionSlices(source, sectionMeta).map((slice) =>
-      buildSection(slice.raw, slice.id, slice.title, slice.emoji),
-    );
+    const sectionRawById = new Map<string, string[]>();
+    for (const sourceText of sourceTexts) {
+      try {
+        const slices = getSectionSlices(sourceText.text, sectionMeta);
+        for (const slice of slices) {
+          const existing = sectionRawById.get(slice.id) ?? [];
+          existing.push(slice.raw);
+          sectionRawById.set(slice.id, existing);
+        }
+      } catch {
+        if (process.env.NODE_ENV !== "production") {
+          console.warn(`[editorial-course] could not slice ${sourceText.sourcePath}`);
+        }
+      }
+    }
+
+    const sections = sectionMeta.map((meta) => {
+      const mergedRaw = (sectionRawById.get(meta.id) ?? []).join("\n\n");
+      return buildSection(mergedRaw, meta.id, meta.title, meta.emoji);
+    });
 
     const locked = sections.length
       ? blueprint.unlockWhenSectionsReady
@@ -970,7 +1320,10 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       locked,
       sections,
     };
-  } catch {
+  } catch (error) {
+    if (process.env.NODE_ENV !== "production") {
+      console.warn(`[editorial-course] failed to build chapter ${blueprint.id}`, error);
+    }
     return {
       id: blueprint.id,
       title: blueprint.title,
