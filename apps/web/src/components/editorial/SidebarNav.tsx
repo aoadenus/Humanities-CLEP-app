@@ -54,7 +54,7 @@ function NavItem({
         </div>
         {secondary ? <div className="mt-1 text-xs text-[var(--text-secondary)]">{secondary}</div> : null}
       </div>
-      <span className="ml-3 text-xs text-[var(--text-muted)]">{locked ? "🔒" : active ? "📍" : "→"}</span>
+      <span className="ml-3 text-xs text-[var(--text-muted)]">{locked ? "Locked" : active ? "Here" : "Open"}</span>
     </div>
   );
 
@@ -119,7 +119,7 @@ export function SidebarNav({
           ].join(" ")}
           onClick={onClose}
         >
-          <span className="text-base">🏠</span>
+          <span className="text-base">Home</span>
           <span>Dashboard</span>
         </Link>
       </div>
@@ -190,7 +190,7 @@ export function SidebarNav({
                   secondary={
                     unlocked
                       ? sectionProgress?.completed
-                        ? "✅ Complete"
+                        ? "Complete"
                         : `${Math.round(ratio * 100)}% explored`
                       : "Finish the previous hard test"
                   }
@@ -226,9 +226,9 @@ export function SidebarNav({
                   label={material.title}
                   secondary={
                     status === "complete"
-                      ? "✅ Complete"
+                      ? "Complete"
                       : status === "in_progress"
-                        ? "📚 In progress"
+                        ? "In progress"
                         : status === "locked"
                           ? "Locked"
                           : "Ready"

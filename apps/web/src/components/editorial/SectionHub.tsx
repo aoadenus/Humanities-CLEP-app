@@ -22,16 +22,13 @@ export function SectionHub({
     return (
       <div className="space-y-4">
         <div>
-          <Link
-            href={buildChapterHref(chapterId)}
-            className="button-secondary inline-flex items-center gap-2 py-2 px-4 text-sm"
-          >
-            ← Chapter Overview
+          <Link href={buildChapterHref(chapterId)} className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
+            Back to Chapter Overview
           </Link>
         </div>
         <Card className="p-8">
           <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
-            🔒 Section Locked
+            Section Locked
           </div>
           <h1 className="font-reading mt-3 text-3xl font-bold text-[var(--text-primary)]">{section.title}</h1>
           <p className="mt-4 text-[18px] leading-8 text-[var(--text-secondary)]">
@@ -47,11 +44,8 @@ export function SectionHub({
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
-        <Link
-          href={buildChapterHref(chapterId)}
-          className="button-secondary inline-flex items-center gap-2 py-2 px-4 text-sm"
-        >
-          ← Chapter Overview
+        <Link href={buildChapterHref(chapterId)} className="button-secondary inline-flex items-center gap-2 px-4 py-2 text-sm">
+          Back to Chapter Overview
         </Link>
       </div>
       <Card className="surface-tint p-6 md:p-8">
@@ -71,7 +65,7 @@ export function SectionHub({
 
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href={buildMaterialHref(chapterId, section.id, "learn-1")} className="button-primary inline-flex">
-            Begin Learn 1 →
+            Begin Learn 1
           </Link>
           <Link href={buildMaterialHref(chapterId, section.id, "flashcards")} className="button-secondary inline-flex">
             Open Flashcards
@@ -84,7 +78,7 @@ export function SectionHub({
 
       <Card className="p-6">
         <div className="mb-3 text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
-          🎯 Objectives
+          Objectives
         </div>
         <div className="flex flex-wrap gap-3">
           {section.objectives.map((objective) => (
@@ -100,7 +94,7 @@ export function SectionHub({
 
       <Card className="p-6">
         <div className="mb-2 text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
-          🧭 Materials
+          Materials
         </div>
         <p className="mb-5 text-[16px] leading-7 text-[var(--text-secondary)]">
           Use the section like a course module: move from the learn pages into flashcards, videos, quiz,
@@ -157,11 +151,7 @@ export function SectionHub({
             return locked ? (
               <div key={material.id}>{cardBody}</div>
             ) : (
-              <Link
-                href={buildMaterialHref(chapterId, section.id, material.id)}
-                key={material.id}
-                className="block"
-              >
+              <Link href={buildMaterialHref(chapterId, section.id, material.id)} key={material.id} className="block">
                 {cardBody}
               </Link>
             );

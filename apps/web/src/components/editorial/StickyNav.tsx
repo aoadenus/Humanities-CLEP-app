@@ -20,7 +20,7 @@ export function StickyNav({
       <div className="mx-auto flex w-full max-w-[980px] items-center justify-between gap-4 px-4 py-4 md:px-8">
         {prevHref ? (
           <Link href={prevHref} className="button-secondary inline-flex items-center">
-            ← {prevLabel ?? "Back"}
+            Back to {prevLabel ?? "Previous"}
           </Link>
         ) : (
           <div />
@@ -28,7 +28,7 @@ export function StickyNav({
 
         {nextHref ? (
           <Link href={nextHref} className="button-primary inline-flex items-center">
-            {nextLabel ?? "Next"} →
+            {nextLabel ?? "Next"}
           </Link>
         ) : nextDisabledLabel ? (
           <button className="button-primary" disabled type="button">

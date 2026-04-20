@@ -28,7 +28,7 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
           <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_280px] md:items-end">
             <div>
               <div className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-[var(--text-muted)]">
-                📚 Study Dashboard
+                Study Dashboard
               </div>
               <h1 className="font-reading text-4xl font-bold leading-tight text-[var(--text-primary)] md:text-5xl">
                 CLEP Humanities
@@ -41,7 +41,7 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
             <div className="space-y-3">
               {ready && progress?.currentRoute && progress.currentRoute !== "/" ? (
                 <Link href={progress.currentRoute} className="button-primary inline-flex w-full justify-center">
-                  Resume where you left off →
+                  Resume where you left off
                 </Link>
               ) : null}
               <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-4">
@@ -50,7 +50,7 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                   <div className="text-sm font-bold text-[var(--text-primary)]">Chapter 1 active</div>
                 </div>
                 <div className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">
-                  Chapters 2–6 are visible but locked. Complete each section's hard test to progress.
+                  Chapters 2-6 are visible but locked. Complete each section hard test to progress.
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                       className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-bold text-white"
                       style={{ background: chapter.color }}
                     >
-                      {unlocked ? "Open Chapter →" : "🔒 Coming Soon"}
+                      {unlocked ? "Open Chapter" : "Coming Soon"}
                     </div>
                   </div>
                 </div>

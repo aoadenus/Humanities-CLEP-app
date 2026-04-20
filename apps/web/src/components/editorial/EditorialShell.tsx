@@ -311,10 +311,10 @@ export function EditorialShell({
               aria-label="Dashboard"
               className="flex items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--bg-card)] px-3 py-2 text-sm font-bold transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
             >
-              🏠
+              Home
             </Link>
             <button className="button-secondary px-3 py-2 text-sm" onClick={() => setMobileOpen(true)} type="button">
-              ☰ Menu
+              Menu
             </button>
             <div className="ml-auto truncate text-sm font-bold text-[var(--text-primary)]">{currentLabel}</div>
           </div>
