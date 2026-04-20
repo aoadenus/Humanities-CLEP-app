@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
+    "check:content": "tsx scripts/check-content-contract.mts",
+    "release:check": "npm run typecheck && npm run check:content",
     "publish:content": "tsx scripts/publish-course.mts",
     "verify:hosted": "tsx scripts/verify-hosted-setup.mts"
   },

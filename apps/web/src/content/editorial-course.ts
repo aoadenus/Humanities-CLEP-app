@@ -135,8 +135,38 @@ const MEDIA_FALLBACKS: Record<string, { resources: Array<{ title: string; url: s
 
 let cachedCourse: EditorialCourse | null = null;
 
+function sanitizeForLog(value: string) {
+  return value.replace(/[\r\n\t]/g, " ").trim();
+}
+
+function normalizePathForComparison(value: string) {
+  return path.resolve(value).replace(/\\/g, "/").toLowerCase();
+}
+
+function isPathWithinRoots(candidate: string, roots: readonly string[]) {
+  const normalizedCandidate = normalizePathForComparison(candidate);
+  return roots.some((root) => {
+    const normalizedRoot = normalizePathForComparison(root);
+    return normalizedCandidate === normalizedRoot || normalizedCandidate.startsWith(`${normalizedRoot}/`);
+  });
+}
+
+function getWorkspaceRoots() {
+  return [
+    path.resolve(
+      /* turbopackIgnore: true */ process.cwd(),
+    ),
+    path.resolve(
+      /* turbopackIgnore: true */ process.cwd(),
+      "..",
+      "..",
+    ),
+  ] as const;
+}
+
 function getSourcePath(sourceFiles: readonly string[], sourceEnvVar?: string) {
-  const envPath = sourceEnvVar ? process.env[sourceEnvVar] : "";
+  const workspaceRoots = getWorkspaceRoots();
+  const envPath = sourceEnvVar ? (process.env[sourceEnvVar] ?? "") : "";
   const directEnvPath = envPath
     ? path.isAbsolute(envPath)
       ? envPath
@@ -145,6 +175,13 @@ function getSourcePath(sourceFiles: readonly string[], sourceEnvVar?: string) {
           envPath,
         )
     : "";
+
+  if (directEnvPath && !isPathWithinRoots(directEnvPath, workspaceRoots)) {
+    if (process.env.NODE_ENV !== "production") {
+      console.warn(`[editorial-course] ignored source override outside workspace: ${sanitizeForLog(envPath)}`);
+    }
+    return null;
+  }
 
   const candidates = [directEnvPath, ...sourceFiles.flatMap((sourceFile) => [
     path.resolve(
@@ -157,7 +194,9 @@ function getSourcePath(sourceFiles: readonly string[], sourceEnvVar?: string) {
       "..",
       sourceFile,
     ),
-  ])].filter(Boolean);
+  ])]
+    .filter(Boolean)
+    .filter((candidate): candidate is string => isPathWithinRoots(candidate, workspaceRoots));
 
   const uniqueCandidates = [...new Set(candidates)];
 
@@ -1296,7 +1335,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
         }
       } catch {
         if (process.env.NODE_ENV !== "production") {
-          console.warn(`[editorial-course] could not slice ${sourceText.sourcePath}`);
+          console.warn(`[editorial-course] could not slice source file ${sanitizeForLog(path.basename(sourceText.sourcePath))}`);
         }
       }
     }
@@ -1322,7 +1361,8 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
     };
   } catch (error) {
     if (process.env.NODE_ENV !== "production") {
-      console.warn(`[editorial-course] failed to build chapter ${blueprint.id}`, error);
+      const errorMessage = error instanceof Error ? sanitizeForLog(error.message) : "unknown error";
+      console.warn(`[editorial-course] failed to build chapter ${sanitizeForLog(blueprint.id)}: ${errorMessage}`);
     }
     return {
       id: blueprint.id,

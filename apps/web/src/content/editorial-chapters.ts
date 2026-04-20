@@ -97,8 +97,11 @@ export const EDITORIAL_CHAPTER_BLUEPRINTS: readonly EditorialChapterBlueprint[] 
     emoji: "🏛️",
     color: "var(--ch1-color)",
     locked: false,
-    sourceFile: "CHAPTER 1 SECTION 1-6 TEACHABLE.md",
-    sourceFallbackFiles: ["src/content/sources/CHAPTER 1 SECTION 1-6.txt"],
+    sourceFile: "src/content/sources/CHAPTER 1 SECTION 1-6.CANONICAL.txt",
+    sourceFallbackFiles: [
+      "CHAPTER 1 SECTION 1-6 TEACHABLE.md",
+      "src/content/sources/CHAPTER 1 SECTION 1-6.txt",
+    ],
     sourceEnvVar: "EDITORIAL_CH1_SOURCE_FILE",
     sectionMeta: CHAPTER_1_SECTION_META,
   },

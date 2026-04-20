@@ -7,6 +7,8 @@
     "start": "npm --prefix apps/web run start",
     "lint": "npm --prefix apps/web run lint",
     "typecheck": "npm --prefix apps/web run typecheck",
+    "check:content": "npm --prefix apps/web run check:content",
+    "release:check": "npm --prefix apps/web run release:check",
     "publish:content": "npm --prefix apps/web run publish:content",
     "verify:hosted": "npm --prefix apps/web run verify:hosted"
   }
