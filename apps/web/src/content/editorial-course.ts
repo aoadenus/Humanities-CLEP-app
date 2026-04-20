@@ -794,11 +794,11 @@ function getReviewMaterials(sectionId: string, tags: string[]) {
 function parseQuiz(raw: string, sectionId: string) {
   const quizBlocks = extractHeadingBlocks(
     raw,
-    /^(Practice Quiz|10-Question Section Quiz|Section Quiz(?:\s*\(10 Questions\))?)$/i,
+    /^(Practice Quiz|10-?Question(?:s)? Section Quiz|Section Quiz(?:\s*\(10 Questions\))?|10-QUESTION SECTION QUIZ)$/i,
   );
   const answerBlocks = extractHeadingBlocks(
     raw,
-    /^(Answer Key(?: with (?:Full Teaching )?Explanations?)?|Detailed Answer Key)$/i,
+    /^(Answer Key(?: with (?:Full Teaching )?Explanations?)?|Detailed Answer Key|ANSWER KEY WITH EXPLANATIONS)$/i,
   );
 
   let bestQuestions: EditorialQuestion[] = [];
@@ -828,7 +828,7 @@ function parseQuiz(raw: string, sectionId: string) {
 function parseHardTest(raw: string, sectionId: string, quizQuestions: EditorialQuestion[]) {
   const testBlocks = extractHeadingBlocks(
     raw,
-    /^(10 Later Test Questions|Challenge Questions(?:\s*\(10\))?|Hard Test(?:\s*\(10 Questions\))?)$/i,
+    /^(10 (?:LATER )?(?:Later )?Test Questions|Challenge Questions(?:\s*\(10\))?|Hard Test(?:\s*\(10 Questions\))?)$/i,
   );
   const bestTestBlock = testBlocks.reduce((best, current) =>
     current.block.length > best.length ? current.block : best,
@@ -869,6 +869,40 @@ function parseHardTest(raw: string, sectionId: string, quizQuestions: EditorialQ
 function youtubeEmbedUrl(url: string) {
   const match = url.match(/(?:v=|youtu\.be\/)([\w-]{6,})/);
   return match ? `https://www.youtube.com/embed/${match[1]}` : url;
+}
+
+function titleFromUrl(url: string) {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.replace(/^www\./i, "");
+    const pathPart = parsed.pathname.split("/").filter(Boolean).pop() ?? "";
+    const slug = decodeURIComponent(pathPart)
+      .replace(/[-_]+/g, " ")
+      .replace(/\.[a-z0-9]+$/i, "")
+      .trim();
+
+    if (slug) {
+      return `${host}: ${slug.charAt(0).toUpperCase()}${slug.slice(1)}`;
+    }
+
+    return host;
+  } catch {
+    return "Reference";
+  }
+}
+
+function sanitizeMediaTitle(title: string, url: string, fallbackPrefix: string, index: number) {
+  const cleaned = title
+    .replace(/^\[\d+\]\s*/g, "")
+    .replace(/^[-*]\s*/g, "")
+    .trim();
+
+  if (!cleaned || /^(Reference|Resource\s*\d+|Video\s*\d+)$/i.test(cleaned)) {
+    const fromUrl = titleFromUrl(url);
+    return fromUrl && fromUrl !== "Reference" ? fromUrl : `${fallbackPrefix} ${index + 1}`;
+  }
+
+  return cleaned;
 }
 
 function scoreHeadingBlockForSection(block: string, sectionId: string) {
@@ -913,11 +947,12 @@ function parseEntriesWithInlineUrls(block: string) {
     }
 
     const url = urlMatch[0].replace(/[).,;]+$/, "");
-    const title = line
+    const rawTitle = line
       .slice(0, urlMatch.index)
       .replace(/^[-*]\s*/, "")
       .replace(/[:\-–—]\s*$/, "")
-      .trim() || "Reference";
+      .trim();
+    const title = sanitizeMediaTitle(rawTitle, url, "Reference", entries.length);
 
     entries.push({
       title,
@@ -957,7 +992,7 @@ function parseResourceSection(raw: string, sectionId: string, headerRegex: RegEx
       return true;
     })
     .map((entry, index) => {
-      const title = entry.title || `Resource ${index + 1}`;
+      const title = sanitizeMediaTitle(entry.title, entry.url, "Resource", index);
 
     return {
       id: `${kind}-${index + 1}`,
@@ -1008,7 +1043,7 @@ function parseVideos(raw: string, sectionId: string): EditorialVideo[] {
       return true;
     })
     .map((entry, index) => {
-      const title = entry.title || `Video ${index + 1}`;
+      const title = sanitizeMediaTitle(entry.title, entry.url, "Video", index);
       const watchFor = entry.description;
 
       return {
@@ -1056,11 +1091,12 @@ function parseRawUrls(raw: string) {
     }
 
     const url = urlMatch[0].replace(/[).,;]+$/, "");
-    const title = line
+    const rawTitle = line
       .slice(0, urlMatch.index)
       .replace(/^[-*]\s*/, "")
       .replace(/[:\-–—]\s*$/, "")
-      .trim() || "Reference";
+      .trim();
+    const title = sanitizeMediaTitle(rawTitle, url, "Reference", entries.length);
 
     entries.push({ title, url });
   }
@@ -1165,26 +1201,195 @@ function buildCallout(text: string, index: number): EditorialCallout {
   };
 }
 
+interface TextbookH2Block {
+  heading: string;
+  body: string;
+  takeaways: string[];
+}
+
+interface SectionPagePlan {
+  title: string;
+  headingKeywords: string[];
+}
+
+const OUT_OF_PLACE_PARAGRAPH_PATTERNS = [
+  /^INVOKE THIS NOW:?/i,
+  /^THE STUDENT-VOICE RULES/i,
+  /^THE\s+\d+\s+MANDATORY CONSTRAINTS/i,
+  /^REQUIRED OUTPUT COMPONENTS/i,
+  /^No\s+"Teacher Talk"/i,
+  /^Role:\s+/i,
+  /^Mission:\s+/i,
+  /^Stopped thinking$/i,
+  /^Quick answer$/i,
+  /^Pasted text/i,
+  /^Document$/i,
+];
+
+const SECTION_PAGE_ARCHITECTURE: Record<string, SectionPagePlan[]> = {
+  s1: [
+    { title: "Meaning and Symbols", headingKeywords: ["humanities", "prehistory", "symbol", "paleolithic"] },
+    { title: "Settlement and Civilization", headingKeywords: ["neolithic", "agriculture", "civilization", "megalith"] },
+    { title: "Writing and Foundations", headingKeywords: ["writing", "mesopotamia", "egypt"] },
+    { title: "Classical Long Arc", headingKeywords: ["classical", "long development", "long arc"] },
+  ],
+  s2: [
+    { title: "River Civilizations", headingKeywords: ["river", "surplus", "city-state", "temple"] },
+    { title: "Mesopotamian Systems", headingKeywords: ["mesopotamia", "ziggurat", "hammurabi", "ur"] },
+    { title: "Egyptian Systems", headingKeywords: ["egypt", "pharaoh", "pyramid", "afterlife", "maat"] },
+    { title: "Power and Comparison", headingKeywords: ["compare", "contrast", "kingship", "divine", "state"] },
+  ],
+  s3: [
+    { title: "China Foundations", headingKeywords: ["china", "shang", "oracle", "confucian", "dao"] },
+    { title: "India Foundations", headingKeywords: ["india", "dharma", "gita", "stupa", "nataraja"] },
+    { title: "Africa Foundations", headingKeywords: ["africa", "nok", "ife", "zimbabwe"] },
+    { title: "Cross-Civilization Logic", headingKeywords: ["compare", "shared", "cross", "civilization"] },
+  ],
+  s4: [
+    { title: "Aegean Beginnings", headingKeywords: ["aegean", "cycladic", "trade", "island"] },
+    { title: "Minoan and Mycenaean", headingKeywords: ["minoan", "mycenaean", "knossos", "lion gate"] },
+    { title: "Myth and Memory", headingKeywords: ["homer", "iliad", "odyssey", "myth"] },
+    { title: "Toward the Polis", headingKeywords: ["polis", "sanctuary", "kouros", "athens"] },
+  ],
+  s5: [
+    { title: "Polis and Democracy", headingKeywords: ["polis", "citizenship", "democracy", "agora"] },
+    { title: "Architecture and Space", headingKeywords: ["acropolis", "parthenon", "order", "erechtheion"] },
+    { title: "Drama and Thought", headingKeywords: ["drama", "tragedy", "comedy", "plato", "aristotle", "socrates"] },
+    { title: "Classical Forms", headingKeywords: ["contrapposto", "doryphoros", "diskobolos", "sculpture"] },
+  ],
+  s6: [
+    { title: "Roman Identity", headingKeywords: ["rome", "roots", "identity", "pietas", "patronage"] },
+    { title: "Public Space and Power", headingKeywords: ["forum", "colosseum", "spectacle", "public"] },
+    { title: "Engineering and Architecture", headingKeywords: ["arch", "vault", "concrete", "pantheon"] },
+    { title: "Literature and Legacy", headingKeywords: ["aeneid", "virgil", "law", "legacy", "empire"] },
+  ],
+};
+
+function extractTextbookH2Blocks(textbook: string): TextbookH2Block[] {
+  const normalized = cleanText(textbook);
+  if (!normalized) {
+    return [];
+  }
+
+  const chunks = normalized.split(/(?=^H2\s+[-—–]\s+)/gim).filter(Boolean);
+  return chunks.map((chunk) => {
+    const headingMatch = chunk.match(/^H2\s+[-—–]\s+(.+)$/im);
+    const body = cleanText(chunk.replace(/^H2\s+[-—–]\s+.+$/im, ""));
+    const heading = headingMatch?.[1]?.trim() ?? inferFallbackHeadingFromBody(body);
+    const takeaways = parseTakeaways(chunk).flat();
+    return { heading, body, takeaways };
+  });
+}
+
+function isOutOfPlaceParagraph(paragraph: string) {
+  const trimmed = paragraph.trim();
+  return OUT_OF_PLACE_PARAGRAPH_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
+function sanitizeParagraphsForLearnFlow(paragraphs: string[]) {
+  return paragraphs
+    .map((paragraph) => cleanText(paragraph))
+    .filter(Boolean)
+    .filter((paragraph) => !isOutOfPlaceParagraph(paragraph));
+}
+
+function inferFallbackHeadingFromBody(body: string) {
+  const text = cleanText(body).toLowerCase();
+  const headingRules: Array<{ pattern: RegExp; heading: string }> = [
+    { pattern: /(humanities|symbolic|prehistory|paleolithic|neolithic)/, heading: "Meaning and Foundations" },
+    { pattern: /(agriculture|settlement|surplus|civilization|city-state)/, heading: "Social Organization and Systems" },
+    { pattern: /(writing|cuneiform|record|administration|law)/, heading: "Writing, Law, and Memory" },
+    { pattern: /(mesopotamia|egypt|pharaoh|ziggurat|pyramid)/, heading: "Civilizational Case Studies" },
+    { pattern: /(china|india|africa|confucian|dao|dharma|nok|ife)/, heading: "Regional Cultural Foundations" },
+    { pattern: /(myth|homer|iliad|odyssey|drama|tragedy|comedy)/, heading: "Narrative and Cultural Memory" },
+    { pattern: /(polis|democracy|agora|forum|citizen|public)/, heading: "Civic and Political Life" },
+    { pattern: /(architecture|sculpture|parthenon|pantheon|arch|vault|engineering)/, heading: "Art, Space, and Built Form" },
+    { pattern: /(rome|imperial|empire|augustus|aeneid)/, heading: "Roman Identity and Legacy" },
+  ];
+
+  const matchedRule = headingRules.find((rule) => rule.pattern.test(text));
+  return matchedRule?.heading ?? "Section Focus";
+}
+
+function splitSingleBlockAcrossPages(block: TextbookH2Block, pagePlan: SectionPagePlan[]) {
+  const paragraphs = sanitizeParagraphsForLearnFlow(paragraphize(block.body));
+  const groupedParagraphs = splitIntoGroups(paragraphs, pagePlan.length);
+  const groupedTakeaways = splitIntoGroups(block.takeaways, pagePlan.length);
+
+  return pagePlan.map((plan, index) => ({
+    title: plan.title,
+    blocks: [{
+      heading: `${plan.title} Focus`,
+      body: groupedParagraphs[index]?.join("\n\n") ?? "",
+      takeaways: groupedTakeaways[index] ?? [],
+    }],
+  }));
+}
+
+function buildSectionPageGroups(sectionId: string, textbookBlocks: TextbookH2Block[]) {
+  const pagePlan = SECTION_PAGE_ARCHITECTURE[sectionId] ?? [
+    { title: "Foundations", headingKeywords: [] },
+    { title: "Core Concepts", headingKeywords: [] },
+    { title: "Applications", headingKeywords: [] },
+    { title: "Synthesis", headingKeywords: [] },
+  ];
+
+  const pageGroups = pagePlan.map((plan) => ({
+    title: plan.title,
+    blocks: [] as TextbookH2Block[],
+  }));
+
+  if (textbookBlocks.length === 1) {
+    return splitSingleBlockAcrossPages(textbookBlocks[0], pagePlan);
+  }
+
+  for (const block of textbookBlocks) {
+    const normalizedHeading = block.heading.toLowerCase();
+    let bestIndex = -1;
+    let bestScore = -1;
+
+    pagePlan.forEach((plan, index) => {
+      const score = plan.headingKeywords.reduce((acc, keyword) =>
+        normalizedHeading.includes(keyword.toLowerCase()) ? acc + 1 : acc,
+      0);
+      if (score > bestScore) {
+        bestScore = score;
+        bestIndex = index;
+      }
+    });
+
+    if (bestIndex >= 0 && bestScore > 0) {
+      pageGroups[bestIndex]?.blocks.push(block);
+      continue;
+    }
+
+    const lightestPage = pageGroups.reduce((best, current, index, array) =>
+      current.blocks.length < (array[best]?.blocks.length ?? Number.MAX_SAFE_INTEGER) ? index : best,
+    0);
+    pageGroups[lightestPage]?.blocks.push(block);
+  }
+
+  return pageGroups;
+}
+
 function buildLearnPages(
   sectionId: string,
   raw: string,
   mnemonics: EditorialMnemonic[],
 ): EditorialLearnPage[] {
   const textbook = extractTextbook(raw);
-  const h2Blocks = cleanText(textbook).split(/(?=^H2\s+[-—–]\s+)/gim).filter(Boolean);
-  const groupedBlocks = splitIntoGroups(h2Blocks.length ? h2Blocks : paragraphize(textbook), 4);
-  const foundationalContext = extractFoundationalContext(raw);
-  const groupedBigIdeas = splitIntoGroups(parseBigIdeas(raw), 4);
-  const groupedTakeaways = splitIntoGroups(parseTakeaways(textbook), 4);
+  const textbookBlocks = extractTextbookH2Blocks(textbook);
+  const groupedBlocks = buildSectionPageGroups(sectionId, textbookBlocks);
+  const foundationalContext = sanitizeParagraphsForLearnFlow(extractFoundationalContext(raw));
+  const bigIdeas = parseBigIdeas(raw);
   const groupedMnemonics = splitIntoGroups(mnemonics, 4);
 
   return groupedBlocks.map((group, pageIndex) => {
     const blocks: EditorialLearnPage["blocks"] = [];
 
-    const firstHeading = group[0]?.match(/^H2\s+[-—–]\s+(.+)$/im);
     blocks.push({
       type: "heading",
-      text: firstHeading?.[1]?.trim() ?? `Learn ${pageIndex + 1}`,
+      text: group.title,
     });
 
     if (pageIndex === 0 && foundationalContext.length) {
@@ -1198,34 +1403,56 @@ function buildLearnPages(
       }
     }
 
-    for (const [ideaIndex, idea] of (groupedBigIdeas[pageIndex] ?? []).entries()) {
+    if (pageIndex === 0 && bigIdeas.length) {
       blocks.push({
-        type: "callout",
-        callout: buildCallout(`${idea.title}: ${idea.text}`, pageIndex + ideaIndex),
+        type: "heading",
+        text: "Big Ideas",
       });
-    }
 
-    for (const groupBlock of group) {
-      const cleanedBlock = cleanText(
-        groupBlock
-          .replace(/^H2\s+[-—–]\s+.+$/im, ""),
-      );
-
-      for (const paragraph of paragraphize(cleanedBlock)) {
-        blocks.push({ type: "paragraph", text: paragraph });
+      for (const [ideaIndex, idea] of bigIdeas.entries()) {
+        blocks.push({
+          type: "callout",
+          callout: buildCallout(`${idea.title}: ${idea.text}`, pageIndex + ideaIndex),
+        });
       }
     }
 
-    for (const [takeawayIndex, takeawayItems] of (groupedTakeaways[pageIndex] ?? []).entries()) {
-      if (!takeawayItems.length) {
+    for (const groupBlock of group.blocks) {
+      blocks.push({
+        type: "heading",
+        text: groupBlock.heading,
+      });
+
+      for (const paragraph of sanitizeParagraphsForLearnFlow(paragraphize(groupBlock.body))) {
+        const bigIdeaParagraph = paragraph.match(/^Big Idea\s+(\d+)\s*[-—:]\s*(.+)$/i);
+        if (bigIdeaParagraph) {
+          blocks.push({ type: "heading", text: `Big Idea ${bigIdeaParagraph[1]}` });
+          blocks.push({ type: "paragraph", text: bigIdeaParagraph[2].trim() });
+          continue;
+        }
+
+        const whatToNotice = paragraph.match(/^What you might not notice\s*[:—-]?\s*(.*)$/i);
+        if (whatToNotice) {
+          blocks.push({ type: "heading", text: "What You Might Not Notice" });
+          const detail = whatToNotice[1]?.trim();
+          if (detail) {
+            blocks.push({ type: "paragraph", text: detail });
+          }
+          continue;
+        }
+
+        blocks.push({ type: "paragraph", text: paragraph });
+      }
+
+      if (!groupBlock.takeaways.length) {
         continue;
       }
 
       blocks.push({
         type: "key-takeaways",
         takeaway: {
-          title: `What to Remember ${groupedTakeaways[pageIndex]!.length > 1 ? `(${takeawayIndex + 1})` : ""}`.trim(),
-          items: takeawayItems,
+          title: "What to Remember",
+          items: sanitizeParagraphsForLearnFlow(groupBlock.takeaways),
         },
       });
     }
@@ -1246,7 +1473,7 @@ function buildLearnPages(
 
     return {
       id: `learn-${pageIndex + 1}` as EditorialLearnPage["id"],
-      title: `Learn ${pageIndex + 1}`,
+      title: group.title,
       emoji: "📖",
       blocks,
     };
