@@ -1,4 +1,4 @@
-import mod from "../src/content/editorial-course.ts";
+import mod from "../src/content/editorial-course";
 
 const getCourse = mod.getEditorialCourse;
 if (typeof getCourse !== "function") {

@@ -1,4 +1,4 @@
-import editorialCourseModule from "../src/content/editorial-course.ts";
+import editorialCourseModule from "../src/content/editorial-course";
 
 type RenderIssue = {
   chapterId: string;
