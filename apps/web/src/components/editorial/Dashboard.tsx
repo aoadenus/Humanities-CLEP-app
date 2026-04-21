@@ -92,14 +92,20 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                             {chapterNotes[chapter.id] ?? "Study chapter"}
                           </p>
                           {chapter.notebookLmUrl ? (
-                            <a
-                              className="mt-2 inline-flex text-xs font-semibold text-(--accent) underline-offset-4 hover:underline"
-                              href={chapter.notebookLmUrl}
-                              rel="noreferrer"
-                              target="_blank"
-                            >
-                              Visit Chapter NotebookLM for additional content
-                            </a>
+                            <div className="mt-3 rounded-lg border border-[#C5D5F5] bg-[#EEF4FF] p-3">
+                              <div className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#3D5F96]">📓 NotebookLM</div>
+                              <p className="mt-1 text-xs leading-5 text-[#2B3D6B]">
+                                Stuck on a concept? Ask the AI trained on this chapter's material. Try asking it to explain a term, give examples, or quiz you. Enable <strong>Web Search</strong> for even more depth.
+                              </p>
+                              <a
+                                className="mt-2 inline-flex text-xs font-bold text-[#3D5F96] underline underline-offset-3 hover:text-[#1E3A6E]"
+                                href={chapter.notebookLmUrl}
+                                rel="noreferrer"
+                                target="_blank"
+                              >
+                                Open {chapter.title} NotebookLM →
+                              </a>
+                            </div>
                           ) : null}
                         </div>
                       </div>

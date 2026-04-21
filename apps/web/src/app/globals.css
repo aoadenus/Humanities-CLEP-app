@@ -468,6 +468,39 @@ button, input, textarea, select { font: inherit; }
   border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
+/* ── NotebookLM inline prompt ───────────────────────────── */
+.notebook-prompt {
+  background: linear-gradient(135deg, #EEF4FF 0%, #F5F0FF 100%);
+  border: 1px solid #C5D5F5;
+  border-left: 4px solid #3D5F96;
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+}
+
+.notebook-prompt-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3D5F96;
+  margin-bottom: 6px;
+}
+
+.notebook-prompt-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3D5F96;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-top: 8px;
+  transition: color 120ms;
+}
+
+.notebook-prompt-link:hover { color: #1E3A6E; }
+
 /* ── Score ring ─────────────────────────────────────────── */
 .score-ring {
   width: 96px;

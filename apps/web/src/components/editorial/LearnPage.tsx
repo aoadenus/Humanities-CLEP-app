@@ -71,9 +71,11 @@ function TableOfContents({
 export function LearnPage({
   section,
   page,
+  notebookLmUrl,
 }: {
   section: EditorialSection;
   page: EditorialLearnPage;
+  notebookLmUrl?: string;
 }) {
   const pageIndex = section.learnPages.findIndex((p) => p.id === page.id);
   const pageNumber = pageIndex + 1;
@@ -190,32 +192,52 @@ export function LearnPage({
           {filteredBlocks.map((block, index) => {
             if (block.type === "heading") {
               const id = `${slugify(block.text)}-${index}`;
+              const isH2 = block.level === 2;
+              // Count how many H2s have appeared so far (to stagger NLM prompts)
+              const h2CountSoFar = isH2
+                ? filteredBlocks.slice(0, index).filter((b) => b.type === "heading" && b.level === 2).length
+                : 0;
+              const showNlmPrompt = isH2 && notebookLmUrl && h2CountSoFar > 0 && h2CountSoFar % 2 === 0;
               return (
-                <Card key={`${block.type}-${index}`} className="p-6 md:p-7">
-                  {block.level === 3 ? (
-                    <h3
-                      id={id}
-                      ref={(el) => {
-                        if (el) headingRefs.current.set(id, el);
-                        else headingRefs.current.delete(id);
-                      }}
-                      className="learn-heading-h3 scroll-mt-24"
-                    >
-                      {block.text}
-                    </h3>
-                  ) : (
-                    <h2
-                      id={id}
-                      ref={(el) => {
-                        if (el) headingRefs.current.set(id, el);
-                        else headingRefs.current.delete(id);
-                      }}
-                      className="learn-heading-h2 scroll-mt-24"
-                    >
-                      {block.text}
-                    </h2>
+                <div key={`heading-group-${index}`}>
+                  {showNlmPrompt && (
+                    <div key={`nlm-prompt-${index}`} className="notebook-prompt">
+                      <div className="notebook-prompt-label">🤔 Don't understand something you just read?</div>
+                      <p className="text-sm leading-6 text-[#2B3D6B]">
+                        Ask NotebookLM — it's trained on this chapter's exact material. Type any concept, term, or question and it will explain it in plain language.
+                      </p>
+                      <p className="mt-1 text-xs text-[#4A6FAA]">💡 Tip: Enable <strong>Web Search</strong> inside NotebookLM for additional sources.</p>
+                      <a className="notebook-prompt-link" href={notebookLmUrl} rel="noreferrer" target="_blank">
+                        📓 Ask NotebookLM about this section →
+                      </a>
+                    </div>
                   )}
-                </Card>
+                  <Card className="p-6 md:p-7">
+                    {block.level === 3 ? (
+                      <h3
+                        id={id}
+                        ref={(el) => {
+                          if (el) headingRefs.current.set(id, el);
+                          else headingRefs.current.delete(id);
+                        }}
+                        className="learn-heading-h3 scroll-mt-24"
+                      >
+                        {block.text}
+                      </h3>
+                    ) : (
+                      <h2
+                        id={id}
+                        ref={(el) => {
+                          if (el) headingRefs.current.set(id, el);
+                          else headingRefs.current.delete(id);
+                        }}
+                        className="learn-heading-h2 scroll-mt-24"
+                      >
+                        {block.text}
+                      </h2>
+                    )}
+                  </Card>
+                </div>
               );
             }
 

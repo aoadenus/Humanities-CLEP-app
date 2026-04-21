@@ -267,7 +267,7 @@ export function EditorialShell({
   } else if (materialId?.startsWith("learn-")) {
     const page = section.learnPages.find((item) => item.id === materialId);
     content = page ? (
-      <LearnPage section={section} page={page} />
+      <LearnPage section={section} page={page} notebookLmUrl={chapter.notebookLmUrl} />
     ) : (
       <Card className="p-8">
         <h1 className="font-reading text-3xl font-bold text-[var(--text-primary)]">Material not found</h1>
@@ -323,21 +323,23 @@ export function EditorialShell({
         <div className="mx-auto max-w-[980px] px-4 py-6 md:px-8 md:py-8">
           <Breadcrumbs items={breadcrumbItems} />
           {chapter.notebookLmUrl && pageType !== "chapter" ? (
-            <Card className="mb-6 p-4 md:p-5">
-              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-                <div className="text-sm leading-6 text-(--text-secondary)">
-                  Need more context and examples? Visit this chapter's NotebookLM for additional content.
-                </div>
-                <a
-                  className="inline-flex text-sm font-semibold text-(--accent) underline-offset-4 hover:underline"
-                  href={chapter.notebookLmUrl}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Open Chapter NotebookLM
-                </a>
-              </div>
-            </Card>
+            <div className="notebook-prompt mb-6">
+              <div className="notebook-prompt-label">🔍 Stuck or want to go deeper?</div>
+              <p className="text-sm leading-6 text-[#2B3D6B]">
+                This chapter has a dedicated <strong>NotebookLM</strong> — an AI trained on the exact same source material you're reading. Use it to ask follow-up questions, get examples, or explore topics that aren't clicking yet.
+              </p>
+              <p className="mt-2 text-sm leading-6 text-[#2B3D6B]">
+                <strong>How to use it:</strong> Open the link below, then type your question in the chat. Try <em>"Explain [topic] in simpler terms"</em> or <em>"Give me a CLEP-style example of [concept]"</em>. You can also enable <strong>Web Search</strong> inside NotebookLM to get even more current information.
+              </p>
+              <a
+                className="notebook-prompt-link"
+                href={chapter.notebookLmUrl}
+                rel="noreferrer"
+                target="_blank"
+              >
+                📓 Open {chapter.title} NotebookLM →
+              </a>
+            </div>
           ) : null}
           {materialRail}
           <div className="step-transition">{content}</div>

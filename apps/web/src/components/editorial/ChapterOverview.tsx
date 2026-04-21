@@ -54,16 +54,32 @@ export function ChapterOverview({
           only the hard test stays gated inside each section.
         </p>
         {chapter.notebookLmUrl ? (
-          <p className="mt-4">
+          <div className="notebook-prompt mt-5">
+            <div className="notebook-prompt-label">📓 Chapter NotebookLM — AI Study Partner</div>
+            <p className="text-sm leading-6 text-[#2B3D6B]">
+              Each chapter has a dedicated NotebookLM — an AI assistant trained on the same source material in this course. Use it to go deeper on anything that isn't clicking.
+            </p>
+            <p className="mt-2 text-sm leading-6 text-[#2B3D6B]">
+              <strong>Suggested prompts to try:</strong>
+            </p>
+            <ul className="mt-1 space-y-1 pl-4 text-sm text-[#2B3D6B]">
+              <li>• <em>"Explain [term] like I've never studied humanities before"</em></li>
+              <li>• <em>"Give me a CLEP-style multiple choice question about [topic]"</em></li>
+              <li>• <em>"What are the three most important things to remember about [concept]?"</em></li>
+              <li>• <em>"How does [artwork/event] connect to [other topic]?"</em></li>
+            </ul>
+            <p className="mt-2 text-xs text-[#4A6FAA]">
+              💡 Tip: Inside NotebookLM, enable <strong>Web Search</strong> to pull in additional sources beyond the chapter material.
+            </p>
             <a
-              className="inline-flex text-sm font-semibold text-(--accent) underline-offset-4 hover:underline"
+              className="notebook-prompt-link"
               href={chapter.notebookLmUrl}
               rel="noreferrer"
               target="_blank"
             >
-              Visit this chapter's NotebookLM for additional content
+              Open {chapter.title} NotebookLM →
             </a>
-          </p>
+          </div>
         ) : null}
       </Card>
 
