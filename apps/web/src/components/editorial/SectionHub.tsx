@@ -56,6 +56,7 @@ export function SectionHub({
           Back to Chapter Overview
         </a>
       </div>
+
       <Card className="surface-tint p-6 md:p-8">
         <div className="text-sm font-bold uppercase tracking-[0.08em] text-[var(--text-muted)]">
           {section.emoji} Section Hub

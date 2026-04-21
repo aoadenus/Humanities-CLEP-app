@@ -7,6 +7,7 @@ import { ChapterOverview } from "@/components/editorial/ChapterOverview";
 import { FlashcardsPage } from "@/components/editorial/FlashcardsPage";
 import { HardTestPage } from "@/components/editorial/HardTestPage";
 import { LearnPage } from "@/components/editorial/LearnPage";
+import { NotebookLmCard } from "@/components/editorial/NotebookLmCard";
 import { QuizPage } from "@/components/editorial/QuizPage";
 import { ResultsPage } from "@/components/editorial/ResultsPage";
 import { SectionHub } from "@/components/editorial/SectionHub";
@@ -267,7 +268,7 @@ export function EditorialShell({
   } else if (materialId?.startsWith("learn-")) {
     const page = section.learnPages.find((item) => item.id === materialId);
     content = page ? (
-      <LearnPage section={section} page={page} notebookLmUrl={chapter.notebookLmUrl} />
+      <LearnPage chapter={chapter} section={section} page={page} />
     ) : (
       <Card className="p-8">
         <h1 className="font-reading text-3xl font-bold text-[var(--text-primary)]">Material not found</h1>
@@ -323,22 +324,8 @@ export function EditorialShell({
         <div className="mx-auto max-w-[980px] px-4 py-6 md:px-8 md:py-8">
           <Breadcrumbs items={breadcrumbItems} />
           {chapter.notebookLmUrl && pageType !== "chapter" ? (
-            <div className="notebook-prompt mb-6">
-              <div className="notebook-prompt-label">🔍 Stuck or want to go deeper?</div>
-              <p className="text-sm leading-6 text-[#2B3D6B]">
-                This chapter has a dedicated <strong>NotebookLM</strong> — an AI trained on the exact same source material you're reading. Use it to ask follow-up questions, get examples, or explore topics that aren't clicking yet.
-              </p>
-              <p className="mt-2 text-sm leading-6 text-[#2B3D6B]">
-                <strong>How to use it:</strong> Open the link below, then type your question in the chat. Try <em>"Explain [topic] in simpler terms"</em> or <em>"Give me a CLEP-style example of [concept]"</em>. You can also enable <strong>Web Search</strong> inside NotebookLM to get even more current information.
-              </p>
-              <a
-                className="notebook-prompt-link"
-                href={chapter.notebookLmUrl}
-                rel="noreferrer"
-                target="_blank"
-              >
-                📓 Open {chapter.title} NotebookLM →
-              </a>
+            <div className="mb-6">
+              <NotebookLmCard chapter={chapter} />
             </div>
           ) : null}
           {materialRail}

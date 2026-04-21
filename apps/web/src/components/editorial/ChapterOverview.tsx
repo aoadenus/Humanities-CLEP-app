@@ -1,6 +1,7 @@
 "use client";
 
 import { Card } from "@/components/editorial/Card";
+import { NotebookLmCard } from "@/components/editorial/NotebookLmCard";
 import { ProgressBar } from "@/components/editorial/ProgressBar";
 import { StatusBadge } from "@/components/editorial/StatusBadge";
 import { buildSectionHref, getSectionProgressRatio } from "@/lib/editorial-navigation";
@@ -54,31 +55,8 @@ export function ChapterOverview({
           only the hard test stays gated inside each section.
         </p>
         {chapter.notebookLmUrl ? (
-          <div className="notebook-prompt mt-5">
-            <div className="notebook-prompt-label">📓 Chapter NotebookLM — AI Study Partner</div>
-            <p className="text-sm leading-6 text-[#2B3D6B]">
-              Each chapter has a dedicated NotebookLM — an AI assistant trained on the same source material in this course. Use it to go deeper on anything that isn't clicking.
-            </p>
-            <p className="mt-2 text-sm leading-6 text-[#2B3D6B]">
-              <strong>Suggested prompts to try:</strong>
-            </p>
-            <ul className="mt-1 space-y-1 pl-4 text-sm text-[#2B3D6B]">
-              <li>• <em>"Explain [term] like I've never studied humanities before"</em></li>
-              <li>• <em>"Give me a CLEP-style multiple choice question about [topic]"</em></li>
-              <li>• <em>"What are the three most important things to remember about [concept]?"</em></li>
-              <li>• <em>"How does [artwork/event] connect to [other topic]?"</em></li>
-            </ul>
-            <p className="mt-2 text-xs text-[#4A6FAA]">
-              💡 Tip: Inside NotebookLM, enable <strong>Web Search</strong> to pull in additional sources beyond the chapter material.
-            </p>
-            <a
-              className="notebook-prompt-link"
-              href={chapter.notebookLmUrl}
-              rel="noreferrer"
-              target="_blank"
-            >
-              Open {chapter.title} NotebookLM →
-            </a>
+          <div className="mt-6">
+            <NotebookLmCard chapter={chapter} />
           </div>
         ) : null}
       </Card>

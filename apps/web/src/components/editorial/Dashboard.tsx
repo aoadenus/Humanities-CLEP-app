@@ -1,6 +1,7 @@
 "use client";
 
 import { Card } from "@/components/editorial/Card";
+import { NotebookLmCard } from "@/components/editorial/NotebookLmCard";
 import { ProgressBar } from "@/components/editorial/ProgressBar";
 import { StatusBadge } from "@/components/editorial/StatusBadge";
 import { useEditorialProgress } from "@/components/editorial/editorial-progress-provider";
@@ -69,8 +70,9 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                   ? "In progress"
                   : "Start";
 
-            const cardBody = (
+            return (
               <Card
+                key={chapter.id}
                 className={`h-full overflow-hidden p-0 ${unlocked ? "transition-transform hover:-translate-y-1" : "opacity-70"}`}
                 style={{
                   borderTop: `6px solid ${chapter.color}`,
@@ -91,28 +93,18 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                           <p className="mt-1 text-sm leading-6 text-[var(--text-secondary)]">
                             {chapterNotes[chapter.id] ?? "Study chapter"}
                           </p>
-                          {chapter.notebookLmUrl ? (
-                            <div className="mt-3 rounded-lg border border-[#C5D5F5] bg-[#EEF4FF] p-3">
-                              <div className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#3D5F96]">📓 NotebookLM</div>
-                              <p className="mt-1 text-xs leading-5 text-[#2B3D6B]">
-                                Stuck on a concept? Ask the AI trained on this chapter's material. Try asking it to explain a term, give examples, or quiz you. Enable <strong>Web Search</strong> for even more depth.
-                              </p>
-                              <a
-                                className="mt-2 inline-flex text-xs font-bold text-[#3D5F96] underline underline-offset-3 hover:text-[#1E3A6E]"
-                                href={chapter.notebookLmUrl}
-                                rel="noreferrer"
-                                target="_blank"
-                              >
-                                Open {chapter.title} NotebookLM →
-                              </a>
-                            </div>
-                          ) : null}
                         </div>
                       </div>
                     </div>
 
                     <StatusBadge label={statusLabel} tone={tone} />
                   </div>
+
+                  {chapter.notebookLmUrl ? (
+                    <div className="mt-4">
+                      <NotebookLmCard chapter={chapter} />
+                    </div>
+                  ) : null}
 
                   <div className="mt-6 space-y-3">
                     <div className="flex items-center justify-between text-sm font-semibold text-[var(--text-secondary)]">
@@ -123,23 +115,21 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                   </div>
 
                   <div className="mt-6 flex items-center gap-3">
-                    <div
-                      className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-bold text-white"
-                      style={{ background: chapter.color }}
-                    >
-                      {unlocked ? "Open Chapter" : "Coming Soon"}
-                    </div>
+                    {unlocked ? (
+                      <a href={buildChapterHref(chapter.id)} className="button-primary inline-flex items-center gap-2 px-4 py-2 text-sm">
+                        Open Chapter
+                      </a>
+                    ) : (
+                      <div
+                        className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-bold text-white"
+                        style={{ background: chapter.color }}
+                      >
+                        Coming Soon
+                      </div>
+                    )}
                   </div>
                 </div>
               </Card>
-            );
-
-            return unlocked ? (
-              <a href={buildChapterHref(chapter.id)} key={chapter.id}>
-                {cardBody}
-              </a>
-            ) : (
-              <div key={chapter.id}>{cardBody}</div>
             );
           })}
         </div>

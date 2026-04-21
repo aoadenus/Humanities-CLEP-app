@@ -71,7 +71,7 @@ body {
   margin: 0;
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans), "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -80,7 +80,7 @@ a { color: inherit; text-decoration: none; }
 
 button, input, textarea, select { font: inherit; }
 
-.font-reading { font-family: var(--font-reading), serif; }
+.font-reading { font-family: var(--font-reading), "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", serif; }
 
 /* ── Cards ─────────────────────────────────────────────── */
 .card {
@@ -365,14 +365,14 @@ button, input, textarea, select { font: inherit; }
 
 .learn-heading-h2,
 .learn-heading-h3 {
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans), "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   font-weight: 800;
   letter-spacing: 0.01em;
   text-wrap: balance;
 }
 
 .learn-heading-h1 {
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans), "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   font-size: clamp(2rem, 3.1vw, 3rem);
   line-height: 1.15;
   font-weight: 900;
@@ -414,7 +414,7 @@ button, input, textarea, select { font: inherit; }
 .textbook-content .textbook-paragraph:first-of-type .reading-body::first-letter {
   float: left;
   margin: 0.05em 0.16em 0 0;
-  font-family: var(--font-reading), serif;
+  font-family: var(--font-reading), "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", serif;
   font-size: 3.4em;
   line-height: 0.86;
   color: var(--accent);
@@ -468,38 +468,156 @@ button, input, textarea, select { font: inherit; }
   border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
-/* ── NotebookLM inline prompt ───────────────────────────── */
-.notebook-prompt {
-  background: linear-gradient(135deg, #EEF4FF 0%, #F5F0FF 100%);
-  border: 1px solid #C5D5F5;
-  border-left: 4px solid #3D5F96;
-  border-radius: var(--radius-md);
-  padding: 16px 20px;
+/* â”€â”€ NotebookLM card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.nlm-card {
+  background: linear-gradient(150deg, #FFFFFF 0%, #F4F0FF 100%);
+  border: 1px solid #D8D0F0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
 }
 
-.notebook-prompt-label {
+.nlm-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (min-width: 768px) {
+  .nlm-card-inner {
+    flex-direction: row;
+  }
+}
+
+.nlm-card-left {
+  flex: 1;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nlm-card-eyebrow {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #3D5F96;
-  margin-bottom: 6px;
+  color: #6B5A7E;
 }
 
-.notebook-prompt-link {
+.nlm-card-headline {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.55;
+  margin: 0;
+  max-width: 42ch;
+}
+
+.nlm-card-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
+  margin-top: 4px;
+  align-self: flex-start;
+  background: #6B5A7E;
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 10px 18px;
+  font-size: 13px;
   font-weight: 700;
-  color: #3D5F96;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  margin-top: 8px;
-  transition: color 120ms;
+  letter-spacing: 0.01em;
+  transition: background 140ms, transform 140ms, box-shadow 140ms;
+  box-shadow: 0 2px 8px rgba(107,90,126,0.22);
 }
 
-.notebook-prompt-link:hover { color: #1E3A6E; }
+.nlm-card-btn:hover {
+  background: #5A4A6B;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(107,90,126,0.30);
+}
+
+.nlm-card-right {
+  flex: 1;
+  padding: 20px 24px;
+  border-top: 1px solid #D8D0F0;
+  background: rgba(107,90,126,0.04);
+}
+
+@media (min-width: 768px) {
+  .nlm-card-right {
+    border-top: none;
+    border-left: 1px solid #D8D0F0;
+  }
+}
+
+.nlm-card-list-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9B8E82;
+  margin-bottom: 10px;
+}
+
+.nlm-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.nlm-card-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.nlm-card-section {
+  font-size: 12px;
+  font-weight: 700;
+  color: #5A4A6B;
+  line-height: 1.4;
+}
+
+.nlm-card-detail {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+/* â”€â”€ NotebookLM inline mid-read nudge â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.nlm-inline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #EEF4FF 0%, #F0EBFF 100%);
+  border: 1px solid #C8D8F8;
+  border-left: 3px solid #3D5F96;
+  border-radius: var(--radius-sm);
+  padding: 11px 16px;
+}
+
+.nlm-inline-icon { font-size: 20px; flex-shrink: 0; line-height: 1; }
+
+.nlm-inline-text { font-size: 13px; color: #2B3D6B; line-height: 1.5; flex: 1; }
+
+.nlm-inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #3D5F96;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 120ms;
+  flex-shrink: 0;
+}
+
+.nlm-inline-link:hover { color: #1E3A6E; }
 
 /* ── Score ring ─────────────────────────────────────────── */
 .score-ring {
@@ -511,7 +629,7 @@ button, input, textarea, select { font: inherit; }
   justify-content: center;
   font-size: 26px;
   font-weight: 800;
-  font-family: var(--font-reading), serif;
+  font-family: var(--font-reading), "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", serif;
   flex-shrink: 0;
 }
 

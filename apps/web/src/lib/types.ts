@@ -375,6 +375,12 @@ export interface EditorialSection {
   cheatSheet: EditorialCheatSheet;
 }
 
+export interface NotebookLmSource {
+  label: string;
+  kind: "audio" | "video" | "quiz" | "flashcards" | "slides" | "report" | "guide" | "infographic" | "bundle";
+  section?: string;
+}
+
 export interface EditorialChapter {
   id: string;
   title: string;
@@ -382,6 +388,7 @@ export interface EditorialChapter {
   color: string;
   locked: boolean;
   notebookLmUrl?: string;
+  notebookLmSources?: NotebookLmSource[];
   sections: EditorialSection[];
 }
 

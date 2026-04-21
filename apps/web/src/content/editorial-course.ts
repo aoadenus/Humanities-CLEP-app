@@ -649,14 +649,73 @@ function splitIntoGroups<T>(items: T[], groups: number) {
   return result;
 }
 
+function formatCanonicalWorksAsH2(block: string): string {
+  if (!block.trim()) return "";
+  const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
+  // The block-6 separator survives cleanText as literal ?\" (mojibake for em-dash)
+  const termLines = lines
+    .filter((l) => /\?\"|—|--|——/.test(l))
+    .map((l) => l.replace(/\s*(\?\"|—{1,2}|--)\s*/g, " — ").trim())
+    .filter(Boolean);
+  if (!termLines.length) return "";
+  return "\nH2 — Key People, Works, and Terms\n\n" + termLines.join("\n") + "\n";
+}
+
+function formatReferencesAsH2(block: string): string {
+  if (!block.trim()) return "";
+  const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
+  if (!lines.length) return "";
+  return "\nH2 — References and Further Study\n\n" + lines.join("\n") + "\n";
+}
+
+function formatCheatSheetAsH2(block: string): string {
+  if (!block.trim()) return "";
+  const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
+  const summaryLine = lines.find((l) => /^1-line:/i.test(l))?.replace(/^1-line:\s*/i, "").trim() ?? "";
+  const highlights = lines.filter((l) => /^[-•*]/.test(l)).map((l) => l.replace(/^[-•*]\s*/, ""));
+  if (!highlights.length && !summaryLine) return "";
+  const parts = summaryLine ? [summaryLine, ...highlights] : highlights;
+  return "\nH2 — Fast Review Checklist\n\n" + parts.join("\n") + "\n";
+}
+
+function formatMnemonicsAsH2(block: string): string {
+  if (!block.trim()) return "";
+  const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
+  if (!lines.length) return "";
+  return "\nH2 — Memory Aids\n\n" + lines.join("\n") + "\n";
+}
+
+function stripAddOnScaffolding(text: string): string {
+  return text
+    .replace(/^\s*##\s*Add-On\s*\d+(?:\.\d+)?\s*$/gim, "")
+    .replace(/^\s*\*\*Belongs in:\*\*.*$/gim, "")
+    .replace(/^\s*\*\*Why this add-on is needed:\*\*.*$/gim, "")
+    .replace(/^\s*###\s*Supplemental Add-On\s*[—–-]\s*/gim, "H2 — ")
+    .replace(/^\s*---\s*$/gim, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 function extractTextbook(raw: string) {
-  const candidates = [
+  const core = [
     extractNumberedBlock(raw, 5, [6, 7]),
     extractNumberedBlock(raw, 5, [10]),
     extractNumberedBlock(raw, 5, [8]),
-  ];
+  ].find(Boolean) ?? "";
 
-  return cleanText(candidates.find(Boolean) ?? "");
+  const wordsBlock = extractNumberedBlock(raw, 6, [7, 8]);
+  const referencesBlock = extractNumberedBlock(raw, 16, [17, 18]);
+  const mnemonicsBlock = extractNumberedBlock(raw, 17, [18, 19]);
+  const cheatBlock = extractNumberedBlock(raw, 18, [19, 20]);
+
+  const appendix = [
+    formatCanonicalWorksAsH2(wordsBlock),
+    formatReferencesAsH2(referencesBlock),
+    formatMnemonicsAsH2(mnemonicsBlock),
+    formatCheatSheetAsH2(cheatBlock),
+  ].filter(Boolean).join("\n");
+
+  return cleanText(stripAddOnScaffolding(core + appendix));
 }
 
 function extractTextbookRaw(raw: string) {
@@ -1408,73 +1467,109 @@ const SECTION_PAGE_ARCHITECTURE: Record<string, SectionPagePlan[]> = {
     { title: "Meaning and Symbols", headingKeywords: ["humanities", "prehistory", "symbol", "paleolithic"] },
     { title: "Settlement and Civilization", headingKeywords: ["neolithic", "agriculture", "civilization", "megalith"] },
     { title: "Writing and Foundations", headingKeywords: ["writing", "mesopotamia", "egypt"] },
-    { title: "Classical Long Arc", headingKeywords: ["classical", "long development", "long arc"] },
+    { title: "Review and Reference", headingKeywords: ["classical", "long development", "long arc", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch1.s2": [
     { title: "River Civilizations", headingKeywords: ["river", "surplus", "city-state", "temple"] },
     { title: "Mesopotamian Systems", headingKeywords: ["mesopotamia", "ziggurat", "hammurabi", "ur"] },
     { title: "Egyptian Systems", headingKeywords: ["egypt", "pharaoh", "pyramid", "afterlife", "maat"] },
-    { title: "Power and Comparison", headingKeywords: ["compare", "contrast", "kingship", "divine", "state"] },
+    { title: "Review and Reference", headingKeywords: ["compare", "contrast", "kingship", "divine", "state", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch1.s3": [
     { title: "China Foundations", headingKeywords: ["china", "shang", "oracle", "confucian", "dao"] },
     { title: "India Foundations", headingKeywords: ["india", "dharma", "gita", "stupa", "nataraja"] },
     { title: "Africa Foundations", headingKeywords: ["africa", "nok", "ife", "zimbabwe"] },
-    { title: "Cross-Civilization Logic", headingKeywords: ["compare", "shared", "cross", "civilization"] },
+    { title: "Review and Reference", headingKeywords: ["compare", "shared", "cross", "civilization", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch1.s4": [
     { title: "Aegean Beginnings", headingKeywords: ["aegean", "cycladic", "trade", "island"] },
     { title: "Minoan and Mycenaean", headingKeywords: ["minoan", "mycenaean", "knossos", "lion gate"] },
     { title: "Myth and Memory", headingKeywords: ["homer", "iliad", "odyssey", "myth"] },
-    { title: "Toward the Polis", headingKeywords: ["polis", "sanctuary", "kouros", "athens"] },
+    { title: "Review and Reference", headingKeywords: ["polis", "sanctuary", "kouros", "athens", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch1.s5": [
     { title: "Polis and Democracy", headingKeywords: ["polis", "citizenship", "democracy", "agora"] },
     { title: "Architecture and Space", headingKeywords: ["acropolis", "parthenon", "order", "erechtheion"] },
     { title: "Drama and Thought", headingKeywords: ["drama", "tragedy", "comedy", "plato", "aristotle", "socrates"] },
-    { title: "Classical Forms", headingKeywords: ["contrapposto", "doryphoros", "diskobolos", "sculpture"] },
+    { title: "Review and Reference", headingKeywords: ["contrapposto", "doryphoros", "diskobolos", "sculpture", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch1.s6": [
     { title: "Roman Identity", headingKeywords: ["rome", "roots", "identity", "pietas", "patronage"] },
     { title: "Public Space and Power", headingKeywords: ["forum", "colosseum", "spectacle", "public"] },
     { title: "Engineering and Architecture", headingKeywords: ["arch", "vault", "concrete", "pantheon"] },
-    { title: "Literature and Legacy", headingKeywords: ["aeneid", "virgil", "law", "legacy", "empire"] },
+    { title: "Review and Reference", headingKeywords: ["aeneid", "virgil", "law", "legacy", "empire", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch2.s1": [
     { title: "Rome Transforms", headingKeywords: ["late rome", "roman setting", "roman world"] },
     { title: "Jewish Foundations", headingKeywords: ["judaism", "jewish", "scripture", "emergence", "christianity"] },
     { title: "Public Christianity", headingKeywords: ["constantine", "public christianity", "basilica"] },
-    { title: "Art and Thought", headingKeywords: ["iconography", "symbol", "augustine", "boethius", "christian mind"] },
+    { title: "Review and Reference", headingKeywords: ["iconography", "symbol", "augustine", "boethius", "christian mind", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch2.s2": [
     { title: "Eastern Capital", headingKeywords: ["constantinople", "eastern roman", "byzantine empire"] },
     { title: "Imperial Vision", headingKeywords: ["justinian", "theodora", "ravenna", "san vitale", "imperial"] },
     { title: "Hagia Sophia", headingKeywords: ["hagia sophia", "pendentive", "dome", "structure", "light"] },
-    { title: "Images and Conflict", headingKeywords: ["mosaic", "icon", "iconoclasm", "sacred image"] },
+    { title: "Review and Reference", headingKeywords: ["mosaic", "icon", "iconoclasm", "sacred image", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch2.s3": [
     { title: "Foundations of Islam", headingKeywords: ["muhammad", "revelation", "birth of islam", "hijra"] },
     { title: "Qur'an and Word", headingKeywords: ["qur'an", "quran", "arabic", "prestige of writing"] },
     { title: "Sacred Space", headingKeywords: ["mosque", "mihrab", "minbar", "dome of the rock", "córdoba", "cordoba"] },
-    { title: "Learning and Culture", headingKeywords: ["al-andalus", "islamic spain", "scholarship", "literary culture"] },
+    { title: "Review and Reference", headingKeywords: ["al-andalus", "islamic spain", "scholarship", "literary culture", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch2.s4": [
     { title: "Feudal Order", headingKeywords: ["lord", "vassal", "feudal", "medieval society"] },
     { title: "Monastic Life", headingKeywords: ["monastery", "scriptorium", "memory", "carolingian"] },
     { title: "Manuscripts and Epic", headingKeywords: ["manuscript", "medieval book", "heroic", "kells", "beowulf", "roland"] },
-    { title: "Pilgrimage and Castle", headingKeywords: ["pilgrimage", "relic", "romanesque", "saint-sernin", "castle", "courtly", "bayeux"] },
+    { title: "Review and Reference", headingKeywords: ["pilgrimage", "relic", "romanesque", "saint-sernin", "castle", "courtly", "bayeux", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch2.s5": [
     { title: "Birth of Gothic", headingKeywords: ["saint-denis", "suger", "birth of gothic"] },
     { title: "Gothic Structure", headingKeywords: ["pointed arch", "rib vault", "flying buttress"] },
     { title: "Cathedrals", headingKeywords: ["chartres", "sculpture", "stained glass", "cathedral", "urban"] },
-    { title: "Thought and Universities", headingKeywords: ["university", "scholasticism", "aquinas", "thomas"] },
+    { title: "Review and Reference", headingKeywords: ["university", "scholasticism", "aquinas", "thomas", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
   "ch2.s6": [
     { title: "Italian Cities", headingKeywords: ["siena", "florence", "urban turn"] },
     { title: "Dante and Giotto", headingKeywords: ["dante", "vernacular", "giotto", "sacred narrative", "moral"] },
     { title: "Plague and Fragility", headingKeywords: ["black death", "plague", "fragility"] },
-    { title: "Global Medieval", headingKeywords: ["china", "japan", "africa", "americas", "before 1400", "global"] },
+    { title: "Review and Reference", headingKeywords: ["china", "japan", "africa", "americas", "before 1400", "global", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
+  ],
+  "ch3.s1": [
+    { title: "Florence and the Medieval Transition", headingKeywords: ["medieval", "transition", "city-state", "guild", "economic", "black death", "plague", "pressure cooker"] },
+    { title: "Humanism and Classical Recovery", headingKeywords: ["humanism", "humanist", "petrarch", "boccaccio", "dante", "vernacular", "classical", "neoplatonism", "platonic"] },
+    { title: "Patronage and the Medici", headingKeywords: ["medici", "cosimo", "lorenzo", "patronage", "soft power", "golden age", "workshop"] },
+    { title: "Review and Reference", headingKeywords: ["brunelleschi", "masaccio", "donatello", "alberti", "perspective", "chiaroscuro", "contrapposto", "fresco", "dome", "gates", "david", "holy trinity", "vocabulary", "skeleton key", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
+  ],
+  "ch3.s2": [
+    { title: "From Florence to Rome and Venice", headingKeywords: ["early renaissance", "high renaissance", "transition", "mature", "rome", "papal", "julius"] },
+    { title: "Leonardo, Michelangelo, Raphael", headingKeywords: ["leonardo", "michelangelo", "raphael", "sfumato", "sistine", "school of athens", "mona lisa", "last supper", "pieta"] },
+    { title: "Architecture and Bramante", headingKeywords: ["bramante", "tempietto", "central plan", "st. peter", "architecture"] },
+    { title: "Review and Reference", headingKeywords: ["venice", "venetian", "bellini", "giorgione", "titian", "color", "atmosphere", "colorito", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
+  ],
+  "ch3.s3": [
+    { title: "What Northern Means", headingKeywords: ["northern", "low countries", "german", "flanders", "different", "merchant"] },
+    { title: "Oil Painting and Symbolism", headingKeywords: ["oil", "van eyck", "van der weyden", "arnolfini", "ghent", "domestic", "symbolic", "texture", "detail"] },
+    { title: "Bosch, Dürer, and Print", headingKeywords: ["bosch", "durer", "garden", "knight", "printmaking", "engraving", "circulation"] },
+    { title: "Review and Reference", headingKeywords: ["erasmus", "more", "holbein", "bruegel", "christian humanism", "praise of folly", "utopia", "ambassadors", "religion", "opposites", "restart", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
+  ],
+  "ch3.s4": [
+    { title: "What the Reformation Is", headingKeywords: ["reformation", "authority", "break", "rupture", "indulgence", "ground up"] },
+    { title: "Luther, Calvin, and Reform", headingKeywords: ["luther", "calvin", "ninety-five", "theses", "vernacular", "bible", "german", "chorale"] },
+    { title: "Images, Music, and Media", headingKeywords: ["cranach", "iconoclasm", "pamphlet", "music", "propaganda", "print", "media"] },
+    { title: "Review and Reference", headingKeywords: ["henry", "england", "anglican", "book of common prayer", "tudor", "causal chain", "timeline", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
+  ],
+  "ch3.s5": [
+    { title: "Counter-Reformation Origins", headingKeywords: ["counter-reformation", "council of trent", "trent", "catholic", "response", "jesuit"] },
+    { title: "Mannerism", headingKeywords: ["mannerism", "mannerist", "elongation", "pontormo", "bronzino", "parmigianino"] },
+    { title: "Baroque Beginnings", headingKeywords: ["baroque", "caravaggio", "drama", "emotion", "light"] },
+    { title: "Review and Reference", headingKeywords: ["sacred", "church", "architecture", "il gesu", "vignola", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
+  ],
+  "ch3.s6": [
+    { title: "Encounter and Expansion", headingKeywords: ["encounter", "expansion", "new world", "columbus", "exploration", "global"] },
+    { title: "Tudor England", headingKeywords: ["tudor", "england", "henry", "elizabeth", "shakespeare", "holbein", "court"] },
+    { title: "Literature and Drama", headingKeywords: ["shakespeare", "drama", "theater", "globe", "sonnet", "literature"] },
+    { title: "Review and Reference", headingKeywords: ["legacy", "synthesis", "montaigne", "cervantes", "essay", "don quixote", "key people", "works", "terms", "memory aids", "fast review", "checklist"] },
   ],
 };
 
@@ -1869,6 +1964,16 @@ function buildSection(raw: string, chapterId: string, sectionId: string, title: 
   };
 }
 
+function getNotebookLmFields(blueprint: EditorialChapterBlueprint) {
+  return {
+    notebookLmUrl: blueprint.notebookLmUrl,
+    notebookLmIntro: blueprint.notebookLmIntro,
+    notebookLmSources: blueprint.notebookLmSources ? blueprint.notebookLmSources.map((source) => ({ ...source })) : undefined,
+    notebookLmReminders: blueprint.notebookLmReminders ? blueprint.notebookLmReminders.map((reminder) => ({ ...reminder })) : undefined,
+    notebookLmPrompts: blueprint.notebookLmPrompts ? blueprint.notebookLmPrompts.map((prompt) => ({ ...prompt })) : undefined,
+  };
+}
+
 function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): EditorialChapter {
   const sectionMeta = blueprint.sectionMeta ?? [];
 
@@ -1879,7 +1984,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       emoji: blueprint.emoji,
       color: blueprint.color,
       locked: blueprint.locked,
-      notebookLmUrl: blueprint.notebookLmUrl,
+      ...getNotebookLmFields(blueprint),
       sections: [],
     };
   }
@@ -1892,7 +1997,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       emoji: blueprint.emoji,
       color: blueprint.color,
       locked: true,
-      notebookLmUrl: blueprint.notebookLmUrl,
+      ...getNotebookLmFields(blueprint),
       sections: [],
     };
   }
@@ -1931,7 +2036,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       emoji: blueprint.emoji,
       color: blueprint.color,
       locked,
-      notebookLmUrl: blueprint.notebookLmUrl,
+      ...getNotebookLmFields(blueprint),
       sections,
     };
   } catch (error) {
@@ -1945,7 +2050,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       emoji: blueprint.emoji,
       color: blueprint.color,
       locked: true,
-      notebookLmUrl: blueprint.notebookLmUrl,
+      ...getNotebookLmFields(blueprint),
       sections: [],
     };
   }
