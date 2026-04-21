@@ -1,4 +1,4 @@
-## Section 1 (Canonical)
+﻿## Section 1 (Canonical)
 
 1) Section Relevance and Stakes
 This section matters because the Middle Ages do not begin with castles, knights, or Gothic cathedrals. They begin with a deep cultural reordering of the Roman world: old imperial institutions weaken, Judaism remains a living religious and intellectual tradition, Christianity grows from persecuted movement to dominant faith, and art, ritual, and philosophy are redirected toward salvation, sacred history, and the life of the Church. If a student does not understand this transition, the rest of medieval culture will feel random. Once this foundation is clear, later medieval architecture, theology, monasticism, and political conflict start to make sense as parts of one long civilizational shift.
@@ -6,37 +6,37 @@ This section matters because the Middle Ages do not begin with castles, knights,
 On the CLEP Humanities exam, this section is tested through recognition of early Christian symbols, basilica churches, Constantine, the rise of Christian iconography, Augustine and Boethius, and the general movement from classical naturalism toward more symbolic spiritual art. The test may ask for identification of a work such as the Sarcophagus of Junius Bassus, recognition of the basilica plan, or comparison between Roman civic forms and Christian reuse of those forms. It may also test broad understanding: how Judaism shaped Christianity, how the Roman Empire changed under Constantine, and why early Christian thinkers mattered to the medieval worldview.
 
 2) Big Ideas
-Big Idea 1 — Rome Becomes Christian
+Big Idea 1 â€” Rome Becomes Christian
 
 The early medieval world begins inside the Roman world, not after it. Christianity first spread through Roman roads, Roman cities, Roman law, and Roman patterns of communication. That means medieval Europe inherits both the religious energy of Christianity and the administrative habits of Rome. The result is not a clean break, but a transformation in which older imperial structures are reused for new spiritual purposes.
 
 Students often think Rome simply "fell" and medieval culture appeared out of nowhere. The correction is that many medieval institutions grew out of Roman foundations, even when they changed those foundations radically. Churches reused Roman buildings, bishops inherited urban influence, and Christian thinkers wrote in the language and intellectual traditions of the ancient world.
 
-Big Idea 2 — Judaism Is Foundational, Not Background
+Big Idea 2 â€” Judaism Is Foundational, Not Background
 
 Christianity emerges from Judaism, so Judaism is not just side context to the Middle Ages. The Hebrew scriptures, ideas of covenant, prophecy, law, messiah, and monotheism all shape Christian belief and art. Early Christians read their story through Jewish texts, and medieval Europe inherited that habit. This is why biblical themes dominate early Christian imagery and interpretation.
 
 Students often think Judaism disappears once Christianity rises. The correction is that Judaism remains a living tradition, while Christianity develops in conversation with it. CLEP questions can test the Jewish roots of Christianity, especially when asking about scripture, theology, or the iconography of Old Testament scenes in Christian art.
 
-Big Idea 3 — Christian Art Teaches Before It Decorates
+Big Idea 3 â€” Christian Art Teaches Before It Decorates
 
 Early Christian art is not mainly about visual realism or luxury. It is about instruction, memory, identity, and hope in eternal life. Images of Christ, apostles, Jonah, Daniel, the Good Shepherd, or the chi-rho sign taught believers how to read history as sacred history. Art functioned as visual theology.
 
 Students often think early Christian art is crude because it looks less naturalistic than classical art. The correction is that its priorities changed. Artists often preferred symbolic clarity, narrative compression, and spiritual emphasis over the classical celebration of the body and the illusion of physical space.
 
-Big Idea 4 — Constantine Changes the Scale of Christianity
+Big Idea 4 â€” Constantine Changes the Scale of Christianity
 
 Constantine does not invent Christianity, but he changes its political position. When imperial support and legal toleration arrive, Christianity can build larger public spaces, shape law, and move from hidden gatherings to visible institutions. That shift changes architecture, patronage, ritual, and power. A religion of house churches and martyr memory becomes a religion of basilicas, councils, and bishops.
 
 Students often think Constantine made Christianity instantly uniform and universally dominant. The correction is that the process was gradual and contested. But his support matters enormously because it moves Christianity from a vulnerable minority faith to a public force in Roman life.
 
-Big Idea 5 — The Basilica Is A Reused Roman Form
+Big Idea 5 â€” The Basilica Is A Reused Roman Form
 
 The early church did not invent its main public building from nothing. It adapted the Roman basilica, a civic hall used for law and administration, because that form could hold large gatherings and processions. Christians reshaped its meaning by orienting it toward worship, the altar, and sacred ritual. This is a classic humanities pattern: continuity of form with change of purpose.
 
 Students often think church architecture begins as something entirely separate from Roman culture. The correction is that medieval Christianity repeatedly reuses ancient forms while changing their meaning. The basilica is one of the best early examples of that transformation.
 
-Big Idea 6 — Augustine And Boethius Shape Medieval Thought
+Big Idea 6 â€” Augustine And Boethius Shape Medieval Thought
 
 Two major late antique thinkers help carry the ancient world into the medieval world. Augustine gives Christianity a powerful inward, moral, and historical philosophy centered on grace, sin, and divine order. Boethius helps transmit classical philosophy into the medieval centuries, especially through reflection on fortune, wisdom, and the relationship between earthly instability and higher truth. Both become part of the intellectual DNA of medieval Europe.
 
@@ -64,7 +64,7 @@ medieval.s1.augustine_boethius	Explain why Augustine and Boethius are foundation
 medieval.s1.junius_bassus	Identify the Sarcophagus of Junius Bassus and explain why it matters for early Christian art.
 
 5) Textbook Content
-H1 — Late Rome, Judaism, and Christianity
+H1 â€” Late Rome, Judaism, and Christianity
 
 Key Takeaways Box
 - The medieval world begins inside the late Roman world.
@@ -72,7 +72,7 @@ Key Takeaways Box
 - Early Christian art is symbolic, didactic, and salvation-centered.
 - Constantine changes Christianity's public role but does not invent the religion.
 
-H2 — The Late Roman Setting
+H2 â€” The Late Roman Setting
 
 The Roman Empire created the world in which Christianity first grew. It offered roads, cities, common languages, administrative networks, and legal order. Those systems made the movement of ideas much easier than it would have been in a fragmented landscape. When Christian communities sent letters, traveled, argued, worshiped, or spread doctrine, they did so inside Roman infrastructure.
 
@@ -88,7 +88,7 @@ Key Takeaways Box
 - Medieval Europe inherits Roman structures even while changing their meaning.
 - Historical transition is usually transformation, not instant replacement.
 
-H2 — Judaism And The Emergence Of Christianity
+H2 â€” Judaism And The Emergence Of Christianity
 
 Christianity begins as a movement within the Jewish world. Its scriptures, moral language, concept of covenant, and understanding of one God all come out of Judaism. Jesus, his followers, and the earliest communities lived inside Jewish religious history. This is why Christian interpretation of the Hebrew Bible becomes so central to medieval art and theology.
 
@@ -106,7 +106,7 @@ As Christianity spread to Gentile communities, it slowly became a distinct relig
 
 For CLEP study, the key point is not to memorize an abstract timeline only. It is to see that Christianity's roots are Jewish, and that early Christian thought, symbolism, and sacred art make much less sense if that background is ignored.
 
-H3 — Scripture, Symbol, And Continuity
+H3 â€” Scripture, Symbol, And Continuity
 
 Because early Christians inherited Jewish scripture, they also inherited symbolic patterns. The lamb, the shepherd, the deliverer, the prophet, and the suffering righteous figure all become meaningful across both traditions. This is why early Christian art often compresses many scriptural episodes into one visual program. The goal is to show continuity in God's plan.
 
@@ -118,7 +118,7 @@ Key Takeaways Box
 - Early Christian visual culture depends on ideas of continuity and fulfillment.
 - Jewish background is essential, not optional context.
 
-H2 — Constantine, Public Christianity, And The Basilica
+H2 â€” Constantine, Public Christianity, And The Basilica
 
 [See: Sarcophagus of Junius Bassus | https://smarthistory.org/sarcophagus-of-junius-bassus/]
 
@@ -140,7 +140,7 @@ When Christians adapted the basilica, they changed its meaning. The nave became 
 
 Constantine also changes the scale of patronage. With imperial support, Christian buildings become more monumental, bishops gain social authority, and doctrinal disputes become matters of public consequence. Christianity is no longer only a persecuted minority faith; it becomes a visible institution.
 
-H3 — Why The Basilica Matters
+H3 â€” Why The Basilica Matters
 
 The basilica matters on exams because it is both an architectural term and a cultural symbol. Students should recognize that the early Christian basilica is not a temple form, and that its long rectangular layout suits group worship better than a small shrine-like cella.
 
@@ -152,7 +152,7 @@ Key Takeaways Box
 - Early church architecture shows continuity of form and change of function.
 - Public Christianity changes ritual scale, patronage, and authority.
 
-H2 — Early Christian Iconography And The Language Of Images
+H2 â€” Early Christian Iconography And The Language Of Images
 
 [See: Basilica of Santa Sabina, Rome | https://smarthistory.org/santa-sabina/]
 
@@ -174,7 +174,7 @@ Key Takeaways Box
 - Early Christian art values sacred meaning over classical illusionism.
 - Less naturalism does not mean less intelligence or importance.
 
-H2 — Augustine, Boethius, And The Christian Mind
+H2 â€” Augustine, Boethius, And The Christian Mind
 
 Augustine of Hippo is one of the great architects of the Christian medieval mind. In Confessions, he turns inward and examines memory, desire, sin, and grace with unusual depth. In The City of God, he argues that earthly political orders are temporary and unstable compared with divine order. Those ideas become central to medieval thinking about history, morality, and salvation.
 
@@ -209,7 +209,7 @@ CLEP Elimination Trick
 - If the clue is dome over square, choose pendentive over buttress/column distractors.
 - If the clue is vast Roman interior span, prioritize arch-concrete-vault logic.
 
-H2 — Supplemental Integration: Early Christian Space and Image Logic
+H2 â€” Early Christian Space and Image Logic
 1. The Basilica Pivot: From Law Courts to Sacred Space
 The Christian adoption of the Roman basilica is a decisive architectural pivot from civic administration to liturgical procession. Nave, apse, transept, and narthex reframe a legal hall into a cruciform sacred route. This shows how early Christianity repurposed Roman gravitas to establish institutional legitimacy.
 
@@ -223,54 +223,54 @@ Early Christian catacomb imagery used coded symbols such as the Good Shepherd, o
 Roman verism and Greek idealism both give way in early Christian practice to symbolic emphasis on the soul and salvation history over bodily perfection.
 
 6) Canonical Works and Terms
-Late Antiquity — The transitional era in which the classical Roman world gradually became the early medieval Christian world.
-Judaism — The monotheistic religious tradition foundational to Christianity and essential to the biblical world of the Middle Ages.
-Christianity — The faith centered on Jesus Christ that moved from persecuted sect to dominant religion of the Roman Empire.
-Evangelists — The authors traditionally associated with the four Gospels: Matthew, Mark, Luke, and John.
-Constantine — The Roman emperor whose support transformed Christianity's public status.
-Edict of Milan — The proclamation in 313 that granted toleration to Christianity in the Roman Empire.
-Basilica — A Roman civic hall adapted by Christians into the standard early church form.
-Nave — The central long space of a church where the congregation gathers.
-Apse — The semi-circular end of a basilica that became the focal point of liturgical ritual.
-Iconography — The study and interpretation of symbols and subject matter in art.
-Chi-rho — An early Christian symbol formed from the first Greek letters of "Christ."
-Good Shepherd — An early image of Christ as protector and guide, often adapted from older classical models.
-Catacombs — Underground burial spaces in Rome associated with early Christian burial and imagery.
-Sarcophagus of Junius Bassus — A major early Christian marble sarcophagus from 359 C.E. that combines biblical scenes with classical sculptural framing.
-Martyr — A person killed for religious faith, especially important in early Christian memory.
-Nicene Creed — A doctrinal statement produced by the Council of Nicaea to define orthodox Christian belief.
-Augustine of Hippo — Early Christian theologian and philosopher, author of Confessions and The City of God.
-Boethius — Late antique thinker whose Consolation of Philosophy helped transmit classical thought to the Middle Ages.
-Salvation history — The understanding that biblical events form a single divine plan for human redemption.
-Symbolic art — Art that emphasizes theological meaning and sacred message over naturalistic description.
+Late Antiquity â€” The transitional era in which the classical Roman world gradually became the early medieval Christian world.
+Judaism â€” The monotheistic religious tradition foundational to Christianity and essential to the biblical world of the Middle Ages.
+Christianity â€” The faith centered on Jesus Christ that moved from persecuted sect to dominant religion of the Roman Empire.
+Evangelists â€” The authors traditionally associated with the four Gospels: Matthew, Mark, Luke, and John.
+Constantine â€” The Roman emperor whose support transformed Christianity's public status.
+Edict of Milan â€” The proclamation in 313 that granted toleration to Christianity in the Roman Empire.
+Basilica â€” A Roman civic hall adapted by Christians into the standard early church form.
+Nave â€” The central long space of a church where the congregation gathers.
+Apse â€” The semi-circular end of a basilica that became the focal point of liturgical ritual.
+Iconography â€” The study and interpretation of symbols and subject matter in art.
+Chi-rho â€” An early Christian symbol formed from the first Greek letters of "Christ."
+Good Shepherd â€” An early image of Christ as protector and guide, often adapted from older classical models.
+Catacombs â€” Underground burial spaces in Rome associated with early Christian burial and imagery.
+Sarcophagus of Junius Bassus â€” A major early Christian marble sarcophagus from 359 C.E. that combines biblical scenes with classical sculptural framing.
+Martyr â€” A person killed for religious faith, especially important in early Christian memory.
+Nicene Creed â€” A doctrinal statement produced by the Council of Nicaea to define orthodox Christian belief.
+Augustine of Hippo â€” Early Christian theologian and philosopher, author of Confessions and The City of God.
+Boethius â€” Late antique thinker whose Consolation of Philosophy helped transmit classical thought to the Middle Ages.
+Salvation history â€” The understanding that biblical events form a single divine plan for human redemption.
+Symbolic art â€” Art that emphasizes theological meaning and sacred message over naturalistic description.
 
 7) Primary Source Excerpts
 "Our heart is restless until it rests in You."
-— Augustine, Confessions
+â€” Augustine, Confessions
 
 Why it matters: This line captures Augustine's inward spiritual method and the medieval habit of seeing human desire as ultimately directed toward God.
 
 "That all may be one."
-— Gospel of John 17:21
+â€” Gospel of John 17:21
 
 Why it matters: This short biblical phrase expresses the early Christian concern with unity, a major issue in doctrine, ritual, and church identity.
 
 "Of one substance with the Father."
-— Nicene Creed
+â€” Nicene Creed
 
 Why it matters: This phrase shows that theology was not vague sentiment; it was defined carefully and publicly, and doctrinal language mattered in the early church.
 
 8) Timeline Anchors
-c. 30 C.E. — Crucifixion of Jesus and beginning of the Christian movement
-c. 50–60 C.E. — Letters of Paul circulate among early Christian communities
-70 C.E. — Destruction of the Second Temple in Jerusalem by the Romans
-c. 150–300 C.E. — Growth of Christian communities across the Roman Empire
-313 C.E. — Edict of Milan grants toleration to Christianity
-325 C.E. — Council of Nicaea defines core doctrine
-359 C.E. — Sarcophagus of Junius Bassus created
-354–430 C.E. — Life of Augustine of Hippo
-c. 380 C.E. — Christianity becomes the dominant imperial religion
-c. 524 C.E. — Death of Boethius
+c. 30 C.E. â€” Crucifixion of Jesus and beginning of the Christian movement
+c. 50â€“60 C.E. â€” Letters of Paul circulate among early Christian communities
+70 C.E. â€” Destruction of the Second Temple in Jerusalem by the Romans
+c. 150â€“300 C.E. â€” Growth of Christian communities across the Roman Empire
+313 C.E. â€” Edict of Milan grants toleration to Christianity
+325 C.E. â€” Council of Nicaea defines core doctrine
+359 C.E. â€” Sarcophagus of Junius Bassus created
+354â€“430 C.E. â€” Life of Augustine of Hippo
+c. 380 C.E. â€” Christianity becomes the dominant imperial religion
+c. 524 C.E. â€” Death of Boethius
 
 9) Exam Hot Zones
 Trap: Early Christian art should be judged by classical realism. Correction: Early Christian art often favors symbolic clarity and salvation themes over naturalistic illusion.
@@ -441,15 +441,15 @@ A. Bayeux Tapestry
 B. Sarcophagus of Junius Bassus
 C. Chartres Cathedral
 D. Arena Chapel
-E. Great Mosque of Córdoba
+E. Great Mosque of CÃ³rdoba
 Answer: B
 
 3. Which pairing is most accurate?
-A. Augustine — Gothic engineering
-B. Boethius — crusading epic
-C. Constantine — Christian public patronage
-D. Junius Bassus — Islamic calligraphy
-E. Nicene Creed — feudal law
+A. Augustine â€” Gothic engineering
+B. Boethius â€” crusading epic
+C. Constantine â€” Christian public patronage
+D. Junius Bassus â€” Islamic calligraphy
+E. Nicene Creed â€” feudal law
 Answer: C
 
 4. Why do early Christian artists often place Old and New Testament scenes together?
@@ -539,19 +539,19 @@ Link: https://www.youtube.com/watch?v=DIWKOIHxi3U
 Watch-for: Focus on the move from hidden worship to public architecture and on the role of symbols in Christian visual culture.
 
 16) References
-Sayre, The Humanities: Culture, Continuity & Change, Book 2 — Main medieval narrative spine used for Chapter 2 foundations.
+Sayre, The Humanities: Culture, Continuity & Change, Book 2 â€” Main medieval narrative spine used for Chapter 2 foundations.
 Link: https://archive.org/details/isbn_9780136009924
 Why useful: This source provides the broad chapter structure and humanities framing behind the medieval sequence.
 
-Smarthistory: Sarcophagus of Junius Bassus — Essay and artwork explanation.
+Smarthistory: Sarcophagus of Junius Bassus â€” Essay and artwork explanation.
 Link: https://smarthistory.org/sarcophagus-of-junius-bassus/
 Why useful: It is one of the best free explanations of why this monument matters for early Christian art.
 
-Smarthistory: Basilica of Santa Sabina — Early church architecture essay.
+Smarthistory: Basilica of Santa Sabina â€” Early church architecture essay.
 Link: https://smarthistory.org/santa-sabina/
 Why useful: It helps students recognize basilica planning and the Christian reuse of Roman space.
 
-Smarthistory: Early Christian period overview — Curated early Christian works.
+Smarthistory: Early Christian period overview â€” Curated early Christian works.
 Link: https://smarthistory.org/period-culture-style/medieval/early-christian/
 Why useful: It is useful for rapid image recognition and comparing several works from the same period.
 
@@ -596,37 +596,37 @@ Byzantium matters because it preserves, transforms, and extends the Roman world 
 On the CLEP Humanities exam, this section is tested through recognition of Constantinople, Justinian and Theodora, Hagia Sophia, pendentives, mosaics, icons, iconoclasm, and Ravenna. Students may be asked to identify a Byzantine work from its shimmering gold ground, frontal figures, and sacred solemnity. They may also be asked to explain how Byzantine art differs from classical naturalism, how architecture creates spiritual effect, or why images became politically and theologically controversial.
 
 2) Big Ideas
-Big Idea 1 — Byzantium Is Rome Continued And Changed
+Big Idea 1 â€” Byzantium Is Rome Continued And Changed
 
 The Byzantine Empire is the eastern Roman Empire, not a completely separate civilization invented from nothing. Its emperors saw themselves as Roman rulers, its capital inherited imperial ambitions, and its law, court ritual, and administrative power all grew from Roman precedent. Yet Christianity, Greek language, eastern geography, and long imperial survival changed that inheritance in distinctive ways.
 
 Students often think Byzantium is simply "the eastern church" and stop there. The correction is that Byzantium is a full political, artistic, and intellectual civilization. It is Roman in inheritance, Christian in identity, and distinct in style.
 
-Big Idea 2 — Constantinople Is A New Imperial Center
+Big Idea 2 â€” Constantinople Is A New Imperial Center
 
 When imperial power shifts eastward, geography changes history. Constantinople stands at a crossroads between Europe and Asia and becomes a capital of trade, military defense, and religious authority. Its buildings, ceremonies, and urban identity express a continuing claim to universal empire. The city is both strategic and symbolic.
 
 Students often think Constantinople matters only because it was "the capital of Byzantium." The correction is that the city itself is a humanities object: it organizes power, ceremony, sacred memory, and imperial vision. Understanding the city helps explain Byzantine art and architecture.
 
-Big Idea 3 — Hagia Sophia Makes Theology Architectural
+Big Idea 3 â€” Hagia Sophia Makes Theology Architectural
 
 Hagia Sophia is not just an impressive building. It is a statement about divine wisdom, imperial power, and the possibility of creating sacred awe through structure, light, and surface. Its massive dome, supported by pendentives, seems to float over the worship space. Architecture becomes a theological argument.
 
-Students often reduce Hagia Sophia to one vocabulary word: dome. The correction is that the building's importance lies in how many things happen at once—engineering, ritual, light, imperial patronage, and the visual language of heaven made present on earth.
+Students often reduce Hagia Sophia to one vocabulary word: dome. The correction is that the building's importance lies in how many things happen at onceâ€”engineering, ritual, light, imperial patronage, and the visual language of heaven made present on earth.
 
-Big Idea 4 — Byzantine Mosaics Teach Presence, Not Illusion
+Big Idea 4 â€” Byzantine Mosaics Teach Presence, Not Illusion
 
 Byzantine mosaics are not trying to create ordinary physical space in the same way as much classical painting. Their gold grounds, frontal figures, and luminous surfaces produce an image world that feels sacred, suspended, and hieratic. These works are designed to draw the viewer into contemplation, not to simulate casual everyday seeing.
 
 Students often think Byzantine mosaics are flat because artists forgot realism. The correction is that they chose a different visual priority. Spiritual authority, symbolic order, and sacred presence matter more than classical illusion.
 
-Big Idea 5 — Icons Are Images With Power
+Big Idea 5 â€” Icons Are Images With Power
 
 In Byzantine Christianity, icons are not merely decorative illustrations. They are treated as vehicles of devotion, teaching, memory, and sacred mediation. That is why debates about icons become so intense. If an image participates in religious life so deeply, arguments over whether it is permitted become arguments about theology, incarnation, authority, and politics.
 
 Students often think iconoclasm is just "people destroying art." The correction is that iconoclasm is a struggle over the legitimacy of religious images and the relationship between matter and the divine. The controversy is about belief, not only taste.
 
-Big Idea 6 — Ravenna Shows Empire In Image Form
+Big Idea 6 â€” Ravenna Shows Empire In Image Form
 
 Ravenna preserves some of the clearest surviving Byzantine mosaics in the West, especially the Justinian and Theodora panels at San Vitale. These mosaics show how Byzantine art can join politics and religion in one visual field. Imperial authority appears as sacred authority. The emperor and empress are not shown as ordinary individuals but as ceremonial presences.
 
@@ -651,10 +651,10 @@ medieval.s2.pendentive_structure	Define pendentive and explain why it matters st
 medieval.s2.ravenna_mosaics	Recognize the San Vitale mosaics and explain their political-religious meaning.
 medieval.s2.byzantine_style	Describe major features of Byzantine visual style.
 medieval.s2.icons_iconoclasm	Explain what icons are and why iconoclasm mattered.
-medieval.s2.deesis_theotokos	Identify major Byzantine image types such as Theotokos and Deësis.
+medieval.s2.deesis_theotokos	Identify major Byzantine image types such as Theotokos and DeÃ«sis.
 
 5) Textbook Content
-H1 — Byzantium
+H1 â€” Byzantium
 
 Key Takeaways Box
 - Byzantium continues Roman imperial culture in the East.
@@ -662,7 +662,7 @@ Key Takeaways Box
 - Hagia Sophia joins engineering, theology, and spectacle.
 - Byzantine images emphasize sacred presence and hierarchy.
 
-H2 — Constantinople And The Eastern Roman Empire
+H2 â€” Constantinople And The Eastern Roman Empire
 
 [See: Hagia Sophia, Istanbul | https://smarthistory.org/hagia-sophia-istanbul/]
 
@@ -680,7 +680,7 @@ Key Takeaways Box
 - Urban space helps perform imperial ideology.
 - The city itself is a major humanities object.
 
-H2 — Justinian, Theodora, And The Imperial Vision
+H2 â€” Justinian, Theodora, And The Imperial Vision
 
 [See: San Vitale and the Justinian and Theodora Mosaics | https://smarthistory.org/san-vitale/]
 
@@ -692,7 +692,7 @@ The mosaics at San Vitale in Ravenna make this especially clear. Justinian and T
 
 For CLEP purposes, students should connect Justinian with Hagia Sophia, legal centralization, and imperial Christian order. They should connect Theodora with Byzantine ceremony, co-rule symbolism, and the San Vitale mosaic tradition. These are not random names; they anchor the political imagination of Byzantium.
 
-H3 — Ravenna As A Visual Archive
+H3 â€” Ravenna As A Visual Archive
 
 Ravenna matters because it preserves mosaic programs that allow modern viewers to study Byzantine political theology almost directly. The San Vitale mosaics show rulers in stylized space, facing the viewer, backed by gold, and positioned in relation to clergy and liturgical vessels. This is art that stages power.
 
@@ -704,7 +704,7 @@ Key Takeaways Box
 - Byzantine rulers are represented ceremonially, not casually.
 - Ravenna preserves some of the most important Byzantine mosaics.
 
-H2 — Hagia Sophia And The Power Of Structure
+H2 â€” Hagia Sophia And The Power Of Structure
 
 [See: Theotokos mosaic, Hagia Sophia | https://smarthistory.org/theotokos-mosaic-hagia-sophia-istanbul/]
 
@@ -724,7 +724,7 @@ Byzantine architecture uses this effect to communicate theology. The building's 
 
 Students often memorize Hagia Sophia as "big dome, Byzantine church" and stop there. That is too shallow. The real lesson is that engineering and meaning work together. Hagia Sophia teaches how a building can solve a structural problem and simultaneously create a spiritual argument.
 
-H3 — Light, Marble, And The Sense Of The Divine
+H3 â€” Light, Marble, And The Sense Of The Divine
 
 The building's interior historically combined polished marble revetments, glittering mosaics, and changing natural light. These surfaces blurred the boundary between structure and decoration. Light turned matter into radiance, and the result was an environment designed to overwhelm ordinary perception.
 
@@ -736,7 +736,7 @@ Key Takeaways Box
 - Byzantine architecture uses light and surface to create awe.
 - Structure and theology reinforce one another.
 
-H2 — Mosaics, Icons, And The Byzantine Image World
+H2 â€” Mosaics, Icons, And The Byzantine Image World
 
 Byzantine mosaics are among the clearest examples of how visual culture can prioritize sacred presence over physical illusion. Gold backgrounds remove figures from ordinary worldly setting. Frontal poses, solemn faces, and carefully arranged hierarchies emphasize authority and holiness. The image does not invite casual looking; it invites reverence.
 
@@ -744,17 +744,17 @@ Icons extend this logic in a more intimate format. A Byzantine icon is typically
 
 Beginners need one more step here. When a believer kisses or prays before an icon, the act is not directed to paint as a rival god. The icon functions as a devotional point of contact: reverence passes through the image toward the holy prototype represented. That is why the worship-versus-veneration distinction mattered so intensely in Byzantine debates.
 
-Specific image types matter for recognition. Theotokos refers to Mary as "God-bearer," a title that reinforces Christ's divinity and Mary's special role. Deësis refers to an image of Christ flanked by Mary and John the Baptist in intercession. These are not just labels to memorize. They organize how Byzantine Christians looked, prayed, and thought.
+Specific image types matter for recognition. Theotokos refers to Mary as "God-bearer," a title that reinforces Christ's divinity and Mary's special role. DeÃ«sis refers to an image of Christ flanked by Mary and John the Baptist in intercession. These are not just labels to memorize. They organize how Byzantine Christians looked, prayed, and thought.
 
 Byzantine images often feel formally controlled because they belong to a culture that values theological precision. Repetition of types is not laziness. It is a way of preserving orthodoxy and spiritual meaning. When students recognize this, Byzantine art stops looking repetitive and starts looking disciplined.
 
 Key Takeaways Box
 - Byzantine mosaics emphasize sacred authority rather than ordinary space.
 - Icons are devotional images with theological significance.
-- Theotokos and Deësis are major Byzantine image types.
+- Theotokos and DeÃ«sis are major Byzantine image types.
 - Repetition in Byzantine art often protects sacred meaning.
 
-H2 — Iconoclasm And The Problem Of Sacred Images
+H2 â€” Iconoclasm And The Problem Of Sacred Images
 
 The Iconoclastic Controversy shows that images mattered so much in Byzantium that they could divide the empire. Iconoclasts opposed religious images or opposed their devotional use, fearing idolatry or theological error. Iconophiles defended icons by arguing that the Incarnation made depiction possible and that honor shown to the image passed to the prototype.
 
@@ -776,7 +776,7 @@ Key Takeaways Box
 - Defenders of icons connect images to the Incarnation.
 - Byzantine image theory is one of the most important topics in medieval art.
 
-H2 — Supplemental Integration: Byzantine Structure and Light
+H2 â€” Byzantine Structure and Light
 II. The Pendentive Revolution: Suspended Heaven
 Byzantine engineers solved dome-on-square loading through pendentives, enabling the luminous interior of Hagia Sophia. This is both a structural and theological innovation.
 
@@ -790,54 +790,54 @@ Tesserae are glass or stone cubes, often including gold leaf, set at varied angl
 Theodora's San Vitale mosaic demonstrates Byzantine theocratic image politics through frontal hierarchy, gold background, and ceremonial symbolism.
 
 6) Canonical Works and Terms
-Byzantine Empire — The eastern continuation of the Roman Empire centered at Constantinople and shaped by Christianity.
-Constantinople — The capital of the Byzantine Empire and a major center of trade, court ritual, and sacred power.
-Justinian — Byzantine emperor associated with law, imperial ambition, and the building of Hagia Sophia.
-Theodora — Byzantine empress represented in the mosaics of San Vitale as a powerful ceremonial ruler.
-Hagia Sophia — Monumental church in Constantinople famous for its dome, pendentives, and spiritual interior.
-Pendentive — A curved triangular architectural form that allows a round dome to rest over a square base.
-Ravenna — Italian city preserving important early Byzantine mosaics such as those at San Vitale.
-San Vitale — Church in Ravenna known for the mosaics of Justinian and Theodora.
-Mosaic — Image made from small pieces of colored glass, stone, or other materials called tesserae.
-Tesserae — Small pieces used to create a mosaic surface.
-Icon — A sacred image used devotionally in Byzantine Christianity.
-Iconoclasm — Opposition to sacred images or their devotional use in Byzantium.
-Iconophile — A defender of icons and their veneration.
-Theotokos — Title for Mary meaning "God-bearer," central in Byzantine image tradition.
-Deësis — A Byzantine image type showing Christ flanked by Mary and John the Baptist in intercession.
-Hieratic style — A formal, solemn style emphasizing authority and sacred status.
-Gold ground — A gold background used in mosaics and icons to suggest sacred space rather than ordinary earthly setting.
-Apse mosaic — A mosaic placed in the semi-circular end of a church, often of major theological importance.
-Sacred presence — The sense that an image or building mediates divine reality.
-Byzantine rite — The liturgical tradition of eastern Christianity shaped by Byzantine practice.
+Byzantine Empire â€” The eastern continuation of the Roman Empire centered at Constantinople and shaped by Christianity.
+Constantinople â€” The capital of the Byzantine Empire and a major center of trade, court ritual, and sacred power.
+Justinian â€” Byzantine emperor associated with law, imperial ambition, and the building of Hagia Sophia.
+Theodora â€” Byzantine empress represented in the mosaics of San Vitale as a powerful ceremonial ruler.
+Hagia Sophia â€” Monumental church in Constantinople famous for its dome, pendentives, and spiritual interior.
+Pendentive â€” A curved triangular architectural form that allows a round dome to rest over a square base.
+Ravenna â€” Italian city preserving important early Byzantine mosaics such as those at San Vitale.
+San Vitale â€” Church in Ravenna known for the mosaics of Justinian and Theodora.
+Mosaic â€” Image made from small pieces of colored glass, stone, or other materials called tesserae.
+Tesserae â€” Small pieces used to create a mosaic surface.
+Icon â€” A sacred image used devotionally in Byzantine Christianity.
+Iconoclasm â€” Opposition to sacred images or their devotional use in Byzantium.
+Iconophile â€” A defender of icons and their veneration.
+Theotokos â€” Title for Mary meaning "God-bearer," central in Byzantine image tradition.
+DeÃ«sis â€” A Byzantine image type showing Christ flanked by Mary and John the Baptist in intercession.
+Hieratic style â€” A formal, solemn style emphasizing authority and sacred status.
+Gold ground â€” A gold background used in mosaics and icons to suggest sacred space rather than ordinary earthly setting.
+Apse mosaic â€” A mosaic placed in the semi-circular end of a church, often of major theological importance.
+Sacred presence â€” The sense that an image or building mediates divine reality.
+Byzantine rite â€” The liturgical tradition of eastern Christianity shaped by Byzantine practice.
 
 7) Primary Source Excerpts
 "It is not illuminated from without by the sun, but from within by the radiance of marble."
-— Procopius, on Hagia Sophia
+â€” Procopius, on Hagia Sophia
 
 Why it matters: This line captures how Byzantine architecture aims to create interior sacred brilliance rather than ordinary everyday space.
 
 "The honor rendered to the image passes to the prototype."
-— John of Damascus
+â€” John of Damascus
 
 Why it matters: This is one of the clearest statements of the theological defense of icons during the icon controversy.
 
 "Solomon, I have surpassed thee."
-— Traditional phrase attributed to Justinian at Hagia Sophia
+â€” Traditional phrase attributed to Justinian at Hagia Sophia
 
 Why it matters: Whether quoted as legend or memory, this line shows how Hagia Sophia was understood as a building of imperial and sacred triumph.
 
 8) Timeline Anchors
-330 C.E. — Constantinople refounded as imperial capital
-527–565 C.E. — Reign of Justinian
-532 C.E. — Nika Revolt in Constantinople
-532–537 C.E. — Construction of Hagia Sophia
-540s C.E. — Justinian and Theodora mosaics at San Vitale, Ravenna
-726 C.E. — Beginning of first major phase of Byzantine iconoclasm
-787 C.E. — Second Council of Nicaea supports veneration of icons
-843 C.E. — Restoration of icons in Byzantium
-867 C.E. — Theotokos mosaic installed in Hagia Sophia
-c. 1261 C.E. — Deësis mosaic in Hagia Sophia marks later Byzantine naturalism
+330 C.E. â€” Constantinople refounded as imperial capital
+527â€“565 C.E. â€” Reign of Justinian
+532 C.E. â€” Nika Revolt in Constantinople
+532â€“537 C.E. â€” Construction of Hagia Sophia
+540s C.E. â€” Justinian and Theodora mosaics at San Vitale, Ravenna
+726 C.E. â€” Beginning of first major phase of Byzantine iconoclasm
+787 C.E. â€” Second Council of Nicaea supports veneration of icons
+843 C.E. â€” Restoration of icons in Byzantium
+867 C.E. â€” Theotokos mosaic installed in Hagia Sophia
+c. 1261 C.E. â€” DeÃ«sis mosaic in Hagia Sophia marks later Byzantine naturalism
 
 9) Exam Hot Zones
 Trap: Byzantium was no longer Roman. Correction: Byzantium saw itself as the continuation of the Roman Empire, though transformed by Christianity and eastern culture.
@@ -896,7 +896,7 @@ C. the First Crusade
 D. the Black Death
 E. Gothic universities
 
-8. A Deësis image usually shows
+8. A DeÃ«sis image usually shows
 A. Christ with Mary and John the Baptist
 B. David with Goliath
 C. Adam and Eve in Paradise
@@ -925,7 +925,7 @@ E. ignores architecture completely
 5. A - Iconoclasm is the controversy over sacred images and their use in devotion. It is a theological and political struggle, not just a dislike of art.
 6. B - Byzantine mosaics often use gold backgrounds, frontal poses, and solemn hierarchy to create sacred presence. Their purpose differs from ordinary naturalistic scene-making.
 7. B - Justinian is strongly associated with imperial law and the building program that includes Hagia Sophia. He is one of the key rulers of Byzantium.
-8. A - A Deësis image places Christ at the center with Mary and John the Baptist as intercessors. It is a major Byzantine image type.
+8. A - A DeÃ«sis image places Christ at the center with Mary and John the Baptist as intercessors. It is a major Byzantine image type.
 9. B - Tesserae are the small pieces of colored glass or stone used in mosaic work. The term is fundamental to understanding Byzantine surface technique.
 10. C - Byzantine art changes visual priorities rather than simply declining. It emphasizes theological clarity, sacred authority, and spiritual presence over classical illusion.
 
@@ -956,8 +956,8 @@ Back: Iconoclasm is the rejection or destruction of sacred images, or opposition
 Front: What does Theotokos mean?
 Back: Theotokos means "God-bearer" and refers to Mary. The title emphasizes Christ's divinity and Mary's special role in salvation history.
 
-Front: What is a Deësis?
-Back: A Deësis is an image of Christ flanked by Mary and John the Baptist. It expresses intercession and sacred hierarchy.
+Front: What is a DeÃ«sis?
+Back: A DeÃ«sis is an image of Christ flanked by Mary and John the Baptist. It expresses intercession and sacred hierarchy.
 
 Front: Why do Byzantine mosaics use gold backgrounds?
 Back: Gold backgrounds remove figures from ordinary earthly space and help create a sense of sacred radiance and timeless authority.
@@ -1004,15 +1004,15 @@ E. It rejects all connection to Roman building.
 Answer: B
 
 2. Which pairing is most accurate?
-A. Justinian — Bayeux Tapestry
-B. Theodora — Arena Chapel
-C. San Vitale — imperial mosaic program
-D. Iconoclasm — courtly love
-E. Theotokos — feudal oath
+A. Justinian â€” Bayeux Tapestry
+B. Theodora â€” Arena Chapel
+C. San Vitale â€” imperial mosaic program
+D. Iconoclasm â€” courtly love
+E. Theotokos â€” feudal oath
 Answer: C
 
 3. If an exam question asks which Byzantine term refers to Mary as "God-bearer," the best answer is
-A. Deësis
+A. DeÃ«sis
 B. Theotokos
 C. Pendentive
 D. Tessera
@@ -1054,7 +1054,7 @@ Answer: B
 8. A gold-background mosaic of Christ flanked by Mary and John the Baptist is most likely a
 A. tympanum
 B. reliquary
-C. Deësis
+C. DeÃ«sis
 D. chanson de geste
 E. psalter
 Answer: C
@@ -1106,19 +1106,19 @@ Link: https://www.youtube.com/watch?v=EmQ1TdoT-zE
 Watch-for: Focus on why this mosaic matters after iconoclasm and how theology shapes image-making.
 
 16) References
-Sayre, The Humanities: Culture, Continuity & Change, Book 2 — Medieval chapter spine for Byzantium.
+Sayre, The Humanities: Culture, Continuity & Change, Book 2 â€” Medieval chapter spine for Byzantium.
 Link: https://archive.org/details/isbn_9780136009924
 Why useful: It provides the chapter sequence and integrated humanities framework behind the Byzantine section.
 
-Smarthistory: Hagia Sophia, Istanbul — Main artwork essay.
+Smarthistory: Hagia Sophia, Istanbul â€” Main artwork essay.
 Link: https://smarthistory.org/hagia-sophia-istanbul/
 Why useful: It connects engineering, ritual, architecture, and historical transformation in one place.
 
-Smarthistory: San Vitale and the Justinian and Theodora Mosaics — Major Byzantine mosaic essay.
+Smarthistory: San Vitale and the Justinian and Theodora Mosaics â€” Major Byzantine mosaic essay.
 Link: https://smarthistory.org/san-vitale/
 Why useful: It is one of the best free resources for reading Byzantine imperial mosaics.
 
-Smarthistory: Theotokos mosaic, Hagia Sophia, Istanbul — Major icon-image explanation.
+Smarthistory: Theotokos mosaic, Hagia Sophia, Istanbul â€” Major icon-image explanation.
 Link: https://smarthistory.org/theotokos-mosaic-hagia-sophia-istanbul/
 Why useful: It helps students connect icon theory, history, and visual recognition.
 
@@ -1158,40 +1158,40 @@ Mnemonic: DOME-LIGHT
 1) Section Relevance and Stakes
 This section matters because Islam is one of the central civilizations of the medieval world, not a side note to European history. A new religious community emerges in Arabia, develops scripture, law, ritual practice, and artistic traditions, and then spreads across a vast geographic zone linking the Middle East, North Africa, Spain, and parts of Asia. Medieval culture cannot be understood honestly if the Islamic world is treated as an "extra." Its architecture, scholarship, poetry, and visual language are part of the main story.
 
-On the CLEP Humanities exam, this section is tested through recognition of Muhammad, the Qur'an, the Five Pillars, mosque architecture, calligraphy, the Dome of the Rock, the Great Mosque of Córdoba, and the broad artistic logic of the Islamic world. Students may need to recognize why many Islamic works emphasize language, geometry, and vegetal ornament rather than figural sacred imagery. They may also need to explain how Islamic civilization contributed to learning, urban culture, and cross-cultural exchange in the medieval period.
+On the CLEP Humanities exam, this section is tested through recognition of Muhammad, the Qur'an, the Five Pillars, mosque architecture, calligraphy, the Dome of the Rock, the Great Mosque of CÃ³rdoba, and the broad artistic logic of the Islamic world. Students may need to recognize why many Islamic works emphasize language, geometry, and vegetal ornament rather than figural sacred imagery. They may also need to explain how Islamic civilization contributed to learning, urban culture, and cross-cultural exchange in the medieval period.
 
 2) Big Ideas
-Big Idea 1 — Islam Begins As Religion And Community Together
+Big Idea 1 â€” Islam Begins As Religion And Community Together
 
 Islam begins with revelation, but it immediately takes social form. Belief, law, prayer, charity, fasting, and community organization are bound together from the start. This means that Islamic civilization cannot be reduced to abstract doctrine only. Religious practice shapes urban form, political leadership, education, and daily life.
 
 Students often think Islam is just a set of beliefs comparable to a list on a study sheet. The correction is that Islam organizes worship, law, time, space, and community. Religion and civilization are tightly linked.
 
-Big Idea 2 — The Qur'an Shapes Language And Art
+Big Idea 2 â€” The Qur'an Shapes Language And Art
 
 The Qur'an is not only a sacred text; it is the central linguistic and spiritual authority of Islamic civilization. Because the revelation is received in Arabic, language itself becomes a privileged artistic medium. Calligraphy, inscription, recitation, and book arts become especially important. Writing is not decorative afterthought. It is a major carrier of sacred presence and cultural prestige.
 
 Students often think Islamic art avoids figural imagery simply because artists "did not know how" to depict people. The correction is that the status of divine revelation and concerns about sacred representation elevate script, geometry, and ornament in distinctive ways.
 
-Big Idea 3 — Mosques Organize Sacred Space
+Big Idea 3 â€” Mosques Organize Sacred Space
 
 A mosque is not just a building where prayers happen. It orders bodies, direction, and communal ritual. The qibla wall, mihrab, minbar, courtyard, and sometimes minaret all help shape the experience of congregational worship. Mosque architecture is therefore functional, symbolic, and regional at the same time.
 
 Students often think all mosques look the same. The correction is that mosque architecture varies widely by region and period, even while preserving certain shared ritual features. That variation is part of what makes Islamic architecture a good humanities topic.
 
-Big Idea 4 — Early Islamic Architecture Adapts Earlier Traditions
+Big Idea 4 â€” Early Islamic Architecture Adapts Earlier Traditions
 
-Islamic builders did not begin with a blank slate. They inherited Roman, Byzantine, Persian, and local building traditions and adapted them for new religious and political purposes. The Dome of the Rock and the Great Mosque of Córdoba are especially important examples of this process. The result is innovation through transformation, not isolation.
+Islamic builders did not begin with a blank slate. They inherited Roman, Byzantine, Persian, and local building traditions and adapted them for new religious and political purposes. The Dome of the Rock and the Great Mosque of CÃ³rdoba are especially important examples of this process. The result is innovation through transformation, not isolation.
 
 Students often think early Islamic architecture is disconnected from the civilizations around it. The correction is that Islamic art and architecture are highly responsive to existing forms while still developing a distinct visual language.
 
-Big Idea 5 — Islamic Civilization Is Intellectually Expansive
+Big Idea 5 â€” Islamic Civilization Is Intellectually Expansive
 
-The medieval Islamic world was a major center of scholarship, trade, medicine, philosophy, and literary production. Cities such as Baghdad, Córdoba, and others became places where knowledge circulated widely. This matters because the humanities are not only about buildings and images. They are also about texts, poetry, interpretation, and the movement of ideas.
+The medieval Islamic world was a major center of scholarship, trade, medicine, philosophy, and literary production. Cities such as Baghdad, CÃ³rdoba, and others became places where knowledge circulated widely. This matters because the humanities are not only about buildings and images. They are also about texts, poetry, interpretation, and the movement of ideas.
 
 Students often think medieval learning belonged only to Christian monasteries or later universities. The correction is that Islamic civilization was one of the great intellectual engines of the medieval world.
 
-Big Idea 6 — The Islamic World Is Diverse
+Big Idea 6 â€” The Islamic World Is Diverse
 
 Islamic civilization stretches across many lands and peoples. Arab, Persian, Berber, African, Iberian, Turkish, and other traditions all participate in different ways. The Islamic world is united by major religious practices and textual authority, but it is not culturally uniform. Diversity inside a shared civilization is one of its defining features.
 
@@ -1214,12 +1214,12 @@ medieval.s3.quran_and_language	Explain why the Qur'an gives special status to Ar
 medieval.s3.five_pillars	Describe the Five Pillars and their role in Muslim communal life.
 medieval.s3.mosque_features	Identify key features of mosque architecture and explain their functions.
 medieval.s3.dome_of_rock	Identify the Dome of the Rock and explain why it is important in early Islamic art.
-medieval.s3.cordoba_mosque	Recognize the Great Mosque of Córdoba and explain what it reveals about Islamic Spain.
+medieval.s3.cordoba_mosque	Recognize the Great Mosque of CÃ³rdoba and explain what it reveals about Islamic Spain.
 medieval.s3.islamic_art_logic	Describe major features of Islamic visual culture, especially calligraphy and ornament.
 medieval.s3.learning_exchange	Explain how the Islamic world became a major center of medieval scholarship and exchange.
 
 5) Textbook Content
-H1 — Rise and Spread of Islam
+H1 â€” Rise and Spread of Islam
 
 Key Takeaways Box
 - Islam is a major medieval civilization, not a side topic.
@@ -1227,7 +1227,7 @@ Key Takeaways Box
 - Mosque architecture organizes communal worship in space.
 - Islamic civilization joins religion, art, learning, and exchange.
 
-H2 — Muhammad, Revelation, And The Birth Of Islam
+H2 â€” Muhammad, Revelation, And The Birth Of Islam
 
 [See: The Dome of the Rock | https://smarthistory.org/the-dome-of-the-rock-qubbat-al-sakhra/]
 
@@ -1245,7 +1245,7 @@ Key Takeaways Box
 - The Hijra marks a turning point in Islamic communal history.
 - Religion and social organization are linked from the beginning.
 
-H2 — The Qur'an, Arabic, And The Prestige Of Writing
+H2 â€” The Qur'an, Arabic, And The Prestige Of Writing
 
 The Qur'an occupies the highest place in Islamic civilization because it is understood as the word of God revealed in Arabic. This gives language unusual artistic and spiritual prestige. The sound of recitation matters, the written form matters, and the preservation of the text matters. Calligraphy therefore becomes far more than handwriting. It becomes a major art form.
 
@@ -1257,7 +1257,7 @@ Writing in Islamic civilization also becomes intellectually expansive. Copies of
 
 For CLEP study, students should be able to explain why calligraphy matters in Islamic art. The answer is not just "because it looks nice." The deeper answer is that script carries religious authority, beauty, and identity at the same time.
 
-H3 — Ornament And Meaning
+H3 â€” Ornament And Meaning
 
 Geometric and vegetal designs are often repeated in Islamic art because repetition can suggest order, abundance, and the beauty of creation without relying on one central figural image. The effect is contemplative and expansive. Pattern turns surface into rhythm.
 
@@ -1269,7 +1269,7 @@ Key Takeaways Box
 - Ornament in Islamic art often carries spiritual and intellectual weight.
 - Sacred and secular settings may treat figural imagery differently.
 
-H2 — Mosque Architecture And Sacred Direction
+H2 â€” Mosque Architecture And Sacred Direction
 
 [See: Mosque architecture, an introduction | https://smarthistory.org/introduction-to-mosque-architecture/]
 
@@ -1287,27 +1287,27 @@ Key Takeaways Box
 - Islamic architecture varies by region and period.
 - Shared purpose matters more than one fixed visual formula.
 
-H2 — The Dome Of The Rock And The Great Mosque Of Córdoba
+H2 â€” The Dome Of The Rock And The Great Mosque Of CÃ³rdoba
 
-[See: The Great Mosque of Córdoba | https://smarthistory.org/the-great-mosque-of-cordoba/]
+[See: The Great Mosque of CÃ³rdoba | https://smarthistory.org/the-great-mosque-of-cordoba/]
 
 The Dome of the Rock is one of the earliest great monuments of Islamic architecture. It is not a congregational mosque in the ordinary sense but a shrine built around a sacred site in Jerusalem. Its centralized form, rich decoration, and inscriptions make it both politically and religiously powerful. It shows how early Islamic patrons could adopt and transform earlier Byzantine building traditions for Islamic purposes.
 
-The Great Mosque of Córdoba is another indispensable monument. Begun in Islamic Spain, it became one of the major architectural statements of the western Islamic world. Its hypostyle hall, horseshoe arches, repeated columns, and layered history make it ideal for studying Islamic architecture in relation to conquest, expansion, and cross-cultural contact.
+The Great Mosque of CÃ³rdoba is another indispensable monument. Begun in Islamic Spain, it became one of the major architectural statements of the western Islamic world. Its hypostyle hall, horseshoe arches, repeated columns, and layered history make it ideal for studying Islamic architecture in relation to conquest, expansion, and cross-cultural contact.
 
-Together, these two buildings show that early Islamic architecture is innovative through adaptation. The Dome of the Rock engages the sacred prestige of Jerusalem and the language of monumental shrines. Córdoba adapts and multiplies arch forms into a visually rhythmic space of prayer. Both works are recognizably Islamic, but they are not identical, which is exactly the point.
+Together, these two buildings show that early Islamic architecture is innovative through adaptation. The Dome of the Rock engages the sacred prestige of Jerusalem and the language of monumental shrines. CÃ³rdoba adapts and multiplies arch forms into a visually rhythmic space of prayer. Both works are recognizably Islamic, but they are not identical, which is exactly the point.
 
 Students should learn these buildings not as isolated masterpieces only, but as evidence that the Islamic world was wide, ambitious, and aesthetically sophisticated from an early period. These works help anchor exam recognition.
 
 Key Takeaways Box
 - The Dome of the Rock is an early monumental Islamic shrine.
-- The Great Mosque of Córdoba is a major work of western Islamic architecture.
+- The Great Mosque of CÃ³rdoba is a major work of western Islamic architecture.
 - Early Islamic buildings often adapt earlier regional forms.
 - Islamic architecture is diverse while still sharing core religious commitments.
 
-H2 — Islamic Spain, Scholarship, And Literary Culture
+H2 â€” Islamic Spain, Scholarship, And Literary Culture
 
-The Islamic world is not only an architectural civilization. It is also a civilization of scholarship, commentary, poetry, and urban learning. In cities such as Córdoba, intellectual life flourished. Texts were copied, interpreted, and transmitted. The medieval movement of science, philosophy, and mathematics is impossible to explain fully without the Islamic world.
+The Islamic world is not only an architectural civilization. It is also a civilization of scholarship, commentary, poetry, and urban learning. In cities such as CÃ³rdoba, intellectual life flourished. Texts were copied, interpreted, and transmitted. The medieval movement of science, philosophy, and mathematics is impossible to explain fully without the Islamic world.
 
 This is one reason the study of Islam belongs at the center of a humanities chapter. The medieval Islamic world preserves, comments on, and expands many streams of knowledge. It is a contact zone linking Greek, Persian, Indian, Arab, and later Latin traditions in dynamic ways. Knowledge moves across boundaries.
 
@@ -1321,64 +1321,64 @@ Key Takeaways Box
 - Poetry and mysticism are major parts of Islamic civilization.
 - The humanities of Islam include text, ritual, architecture, and intellectual transmission.
 
-H2 — Supplemental Integration: Translation and Knowledge Networks
+H2 â€” Translation and Knowledge Networks
 III. The House of Wisdom: Islam as Librarian of the World
 The Abbasid translation movement in Baghdad preserved and expanded classical knowledge, transmitted Aristotle and mathematics, and shaped later Latin scholastic development.
 
 6) Canonical Works and Terms
-Muhammad — The Prophet of Islam through whom Muslims understand the Qur'an to have been revealed.
-Qur'an — The sacred text of Islam, revered as the word of God revealed in Arabic.
-Hadith — Reports of the sayings and actions of Muhammad important for Islamic tradition and law.
-Hijra — Muhammad's migration from Mecca to Medina, marking the beginning of the Islamic calendar.
-Five Pillars — Core practices of Islam: profession of faith, prayer, almsgiving, fasting, and pilgrimage.
-Shahada — The declaration of faith in one God and Muhammad as His messenger.
-Salah — Ritual prayer performed by Muslims at prescribed times.
-Zakat — Almsgiving or charitable obligation in Islam.
-Sawm — Fasting during Ramadan.
-Hajj — Pilgrimage to Mecca.
-Mosque — A building for Muslim communal worship.
-Qibla — The direction Muslims face in prayer, toward Mecca.
-Mihrab — A niche in a mosque indicating the qibla direction.
-Minbar — A pulpit in a mosque used for preaching.
-Minaret — A tower associated with the call to prayer.
-Calligraphy — The artistic practice of beautiful writing, especially important in Islamic art.
-Arabesque — Flowing vegetal ornament common in Islamic decorative arts.
-Geometry — Ordered patterning often central to Islamic visual design.
-Dome of the Rock — Early Islamic shrine in Jerusalem, a major monument of Islamic architecture.
-Great Mosque of Córdoba — Major mosque in Islamic Spain known for its arches and hypostyle hall.
-Hypostyle hall — A hall filled with columns, common in many early mosques.
-Al-Andalus — Muslim-ruled parts of the Iberian Peninsula.
-Sufism — Islamic mystical tradition emphasizing inward devotion and love of God.
-Rumi — Major Islamic poet associated with mystical literature.
-Aniconism — Caution or restraint regarding figural imagery in certain sacred contexts.
+Muhammad â€” The Prophet of Islam through whom Muslims understand the Qur'an to have been revealed.
+Qur'an â€” The sacred text of Islam, revered as the word of God revealed in Arabic.
+Hadith â€” Reports of the sayings and actions of Muhammad important for Islamic tradition and law.
+Hijra â€” Muhammad's migration from Mecca to Medina, marking the beginning of the Islamic calendar.
+Five Pillars â€” Core practices of Islam: profession of faith, prayer, almsgiving, fasting, and pilgrimage.
+Shahada â€” The declaration of faith in one God and Muhammad as His messenger.
+Salah â€” Ritual prayer performed by Muslims at prescribed times.
+Zakat â€” Almsgiving or charitable obligation in Islam.
+Sawm â€” Fasting during Ramadan.
+Hajj â€” Pilgrimage to Mecca.
+Mosque â€” A building for Muslim communal worship.
+Qibla â€” The direction Muslims face in prayer, toward Mecca.
+Mihrab â€” A niche in a mosque indicating the qibla direction.
+Minbar â€” A pulpit in a mosque used for preaching.
+Minaret â€” A tower associated with the call to prayer.
+Calligraphy â€” The artistic practice of beautiful writing, especially important in Islamic art.
+Arabesque â€” Flowing vegetal ornament common in Islamic decorative arts.
+Geometry â€” Ordered patterning often central to Islamic visual design.
+Dome of the Rock â€” Early Islamic shrine in Jerusalem, a major monument of Islamic architecture.
+Great Mosque of CÃ³rdoba â€” Major mosque in Islamic Spain known for its arches and hypostyle hall.
+Hypostyle hall â€” A hall filled with columns, common in many early mosques.
+Al-Andalus â€” Muslim-ruled parts of the Iberian Peninsula.
+Sufism â€” Islamic mystical tradition emphasizing inward devotion and love of God.
+Rumi â€” Major Islamic poet associated with mystical literature.
+Aniconism â€” Caution or restraint regarding figural imagery in certain sacred contexts.
 
 7) Primary Source Excerpts
 "Read in the name of your Lord."
-— Qur'an 96:1
+â€” Qur'an 96:1
 
 Why it matters: This famous opening command ties revelation, language, and sacred knowledge together from the beginning of Islam.
 
 "Wherever you turn, there is the face of God."
-— Qur'an 2:115
+â€” Qur'an 2:115
 
 Why it matters: This line captures the theological richness of Islamic sacred language and reminds students that direction, worship, and divine presence are central themes.
 
 "The ink of the scholar is more sacred than the blood of the martyr."
-— Traditional Islamic saying
+â€” Traditional Islamic saying
 
 Why it matters: Even when treated proverbially, this statement reflects the high prestige of learning and textual culture in Islamic civilization.
 
 8) Timeline Anchors
-c. 570 C.E. — Birth of Muhammad
-610 C.E. — Beginning of Muhammad's revelations
-622 C.E. — Hijra from Mecca to Medina
-632 C.E. — Death of Muhammad
-661–750 C.E. — Umayyad Caliphate
-685–692 C.E. — Construction of the Dome of the Rock
-711 C.E. — Muslim forces enter the Iberian Peninsula
-750–1258 C.E. — Abbasid Caliphate
-786 C.E. — Construction begins on the Great Mosque of Córdoba
-c. 1200–1273 C.E. — Life of Rumi
+c. 570 C.E. â€” Birth of Muhammad
+610 C.E. â€” Beginning of Muhammad's revelations
+622 C.E. â€” Hijra from Mecca to Medina
+632 C.E. â€” Death of Muhammad
+661â€“750 C.E. â€” Umayyad Caliphate
+685â€“692 C.E. â€” Construction of the Dome of the Rock
+711 C.E. â€” Muslim forces enter the Iberian Peninsula
+750â€“1258 C.E. â€” Abbasid Caliphate
+786 C.E. â€” Construction begins on the Great Mosque of CÃ³rdoba
+c. 1200â€“1273 C.E. â€” Life of Rumi
 
 9) Exam Hot Zones
 Trap: Islamic civilization is only a religious topic. Correction: It is also a major artistic, literary, urban, and intellectual civilization.
@@ -1400,7 +1400,7 @@ A. the fall of Constantinople
 B. Muhammad's migration from Mecca to Medina
 C. the destruction of Baghdad
 D. the First Crusade
-E. the building of Córdoba Cathedral
+E. the building of CÃ³rdoba Cathedral
 
 3. Which mosque feature indicates the direction of Mecca?
 A. Tympanum
@@ -1423,7 +1423,7 @@ C. all Muslims rejected books
 D. architecture disappeared
 E. only poetry mattered
 
-6. The Great Mosque of Córdoba is located in
+6. The Great Mosque of CÃ³rdoba is located in
 A. Egypt
 B. Syria
 C. Spain
@@ -1464,7 +1464,7 @@ E. It ended before Islam developed.
 3. C - The mihrab is the niche that indicates the qibla, or direction of Mecca. This makes it one of the key terms for identifying mosque interiors.
 4. A - The Dome of the Rock is one of the earliest monumental statements of Islamic architecture. It is central for recognizing early Islamic artistic ambition and sacred symbolism.
 5. B - Because the Qur'an is revealed in Arabic, writing and recitation gain unusual prestige. This helps explain the prominence of calligraphy in Islamic art.
-6. C - The Great Mosque of Córdoba is in Spain and is one of the most important monuments of the western Islamic world. It is a frequent survey-art anchor.
+6. C - The Great Mosque of CÃ³rdoba is in Spain and is one of the most important monuments of the western Islamic world. It is a frequent survey-art anchor.
 7. A - The shahada is the profession of faith and one of the Five Pillars. It names the core confession of Islam.
 8. B - A hypostyle hall is a large space supported by many columns. It is common in early mosque architecture.
 9. B - In sacred settings, Islamic art often emphasizes calligraphy, geometry, and vegetal ornament. This reflects theological and aesthetic priorities.
@@ -1494,7 +1494,7 @@ Back: A mihrab is the niche that marks the direction of Mecca in a mosque. It is
 Front: What is the Dome of the Rock?
 Back: It is a major early Islamic shrine in Jerusalem. It is one of the earliest and most important monuments of Islamic architecture.
 
-Front: What is the Great Mosque of Córdoba?
+Front: What is the Great Mosque of CÃ³rdoba?
 Back: It is a major mosque in Islamic Spain known for its arches, columns, and historical layering. It is a key monument of western Islamic culture.
 
 Front: Why does calligraphy matter in Islam?
@@ -1563,7 +1563,7 @@ Answer: A
 4. Which monument is most strongly associated with Islamic Spain?
 A. Hagia Sophia
 B. San Vitale
-C. Great Mosque of Córdoba
+C. Great Mosque of CÃ³rdoba
 D. Arena Chapel
 E. Saint-Sernin
 Answer: C
@@ -1577,11 +1577,11 @@ E. Medieval science existed only in monasteries.
 Answer: B
 
 6. Which pair belongs together?
-A. Pendentive — Hagia Sophia
-B. Mihrab — mosque prayer direction
-C. Flying buttress — Dome of the Rock
-D. Tympanum — Qur'anic calligraphy
-E. Nave — qibla wall
+A. Pendentive â€” Hagia Sophia
+B. Mihrab â€” mosque prayer direction
+C. Flying buttress â€” Dome of the Rock
+D. Tympanum â€” Qur'anic calligraphy
+E. Nave â€” qibla wall
 Answer: B
 
 7. What does the Hijra mark most clearly?
@@ -1621,7 +1621,7 @@ The Dome of the Rock (Qubbat al-Sakhra)
 Link: https://smarthistory.org/the-dome-of-the-rock-qubbat-al-sakhra/
 Why it matters: This is a core monument for understanding early Islamic architecture, sacred space, and adaptation of earlier building traditions.
 
-The Great Mosque of Córdoba
+The Great Mosque of CÃ³rdoba
 Link: https://smarthistory.org/the-great-mosque-of-cordoba/
 Why it matters: This page helps students recognize hypostyle form, rhythmic arches, and the importance of Islamic Spain.
 
@@ -1647,19 +1647,19 @@ Link: https://www.youtube.com/watch?v=8nx6Cm1DdW0
 Watch-for: Focus on the connection between sacred language, calligraphy, and visual beauty in Islamic art.
 
 16) References
-Sayre, The Humanities: Culture, Continuity & Change, Book 2 — Medieval Islamic chapter spine.
+Sayre, The Humanities: Culture, Continuity & Change, Book 2 â€” Medieval Islamic chapter spine.
 Link: https://archive.org/details/isbn_9780136009924
 Why useful: It provides the integrated humanities context for Islam within the medieval world.
 
-Smarthistory: The Dome of the Rock — Early Islamic monument essay.
+Smarthistory: The Dome of the Rock â€” Early Islamic monument essay.
 Link: https://smarthistory.org/the-dome-of-the-rock-qubbat-al-sakhra/
 Why useful: It is one of the clearest free resources for the architectural and political meaning of the building.
 
-Smarthistory: The Great Mosque of Córdoba — Major western Islamic monument essay.
+Smarthistory: The Great Mosque of CÃ³rdoba â€” Major western Islamic monument essay.
 Link: https://smarthistory.org/the-great-mosque-of-cordoba/
 Why useful: It is ideal for recognition practice and for understanding Islamic Spain.
 
-Smarthistory: Mosque architecture, an introduction — General architectural overview.
+Smarthistory: Mosque architecture, an introduction â€” General architectural overview.
 Link: https://smarthistory.org/introduction-to-mosque-architecture/
 Why useful: It helps students build core vocabulary that applies across multiple Islamic buildings.
 
@@ -1689,7 +1689,7 @@ Highlights:
 - The Five Pillars shape communal Muslim life.
 - Mosque architecture is organized around prayer and direction.
 - The Dome of the Rock is a major early Islamic monument.
-- The Great Mosque of Córdoba anchors Islamic Spain.
+- The Great Mosque of CÃ³rdoba anchors Islamic Spain.
 - Islamic civilization is a major center of medieval learning and exchange.
 Mnemonic: QURAN
 
@@ -1701,37 +1701,37 @@ This merged section matters because it explains how western medieval Europe orga
 On the CLEP Humanities exam, this material is often tested through recognition of terms such as feudalism, vassal, monastery, illuminated manuscript, Carolingian minuscule, pilgrimage, reliquary, Romanesque, barrel vault, tympanum, Bayeux Tapestry, Book of Kells, Beowulf, Song of Roland, and Saint-Sernin. Questions may ask students to distinguish Romanesque from Gothic, identify the role of monasteries in preserving learning, or connect literature such as Beowulf and the Song of Roland to the social ideals of heroic loyalty and Christianized warfare.
 
 2) Big Ideas
-Big Idea 1 — Medieval Europe Rebuilds Through Local Bonds
+Big Idea 1 â€” Medieval Europe Rebuilds Through Local Bonds
 
 After the western Roman world fragmented, power became more local and personal. Lords, vassals, land, service, and military obligation formed a network that historians call feudalism. Although the term can oversimplify, it helps explain why protection, loyalty, and landholding became so central to medieval society. Politics was not abstract; it was rooted in concrete personal relationships.
 
 Students often think feudalism was a neat, uniform system with one fixed chart. The correction is that it varied by region and time. But the broad pattern of personal obligation tied to land and protection is still essential for understanding medieval society.
 
-Big Idea 2 — Monasteries Preserve And Produce Culture
+Big Idea 2 â€” Monasteries Preserve And Produce Culture
 
 Monasteries did more than shelter pious individuals. They organized prayer, copied books, educated clerics, managed land, shaped music, and preserved texts. In a world where literacy was limited, monasteries became major centers of memory. They did not merely save culture from collapse; they also made new culture.
 
 Students often think monks only prayed in isolation. The correction is that monasteries were also economic, educational, artistic, and intellectual institutions. They are central to the survival and shaping of medieval Christian civilization.
 
-Big Idea 3 — Manuscripts Carry Prestige And Power
+Big Idea 3 â€” Manuscripts Carry Prestige And Power
 
 Books in the early Middle Ages were precious objects made by hand. Illuminated manuscripts such as the Book of Kells were not just containers of text. They were also sacred visual objects. Script, ornament, and image transformed reading into devotion. A manuscript could communicate holiness through its physical beauty as well as through its words.
 
 Students often think manuscripts matter only because "books were rare." The correction is that manuscripts also matter as works of art and as signs of institutional prestige. The page itself becomes a field of theology, status, and craftsmanship.
 
-Big Idea 4 — Pilgrimage And Relics Reshape Space
+Big Idea 4 â€” Pilgrimage And Relics Reshape Space
 
 Pilgrimage gives medieval Christianity a geography of movement. Holy sites, relics, saints, and travel routes create networks that reshape architecture and devotion. Romanesque churches were often designed to manage large flows of pilgrims. Sacred space is therefore practical as well as symbolic. Architecture must accommodate desire, traffic, ritual, and spectacle.
 
 Students often think pilgrimage is just private travel to holy places. The correction is that pilgrimage changes economies, roads, shrines, church design, and the prestige of cities. It becomes a public culture, not a private hobby.
 
-Big Idea 5 — Romanesque Style Is Heavy, Rhythmic, And Didactic
+Big Idea 5 â€” Romanesque Style Is Heavy, Rhythmic, And Didactic
 
 Romanesque churches often use thick walls, rounded arches, sturdy piers, and barrel or groin vaults. Their sculptural programs, especially on portals and tympana, teach doctrine visually. Romanesque art does not reach upward with Gothic lightness. It anchors the viewer in mass, stone, and warning. The style is architectural, theological, and narrative at once.
 
 Students often think Romanesque is simply a "before Gothic" style. The correction is that Romanesque has its own logic: pilgrimage planning, fortress-like mass, sculptural teaching, and strong rhythmic interiors.
 
-Big Idea 6 — Heroic And Courtly Literature Teach Social Ideals
+Big Idea 6 â€” Heroic And Courtly Literature Teach Social Ideals
 
 The medieval West uses literature to model values. Beowulf presents a heroic world of lordship, courage, and reputation. The Song of Roland turns loyalty, warfare, and Christian identity into epic memory. Troubadour lyric and courtly literature later reshape ideals around aristocratic love and refinement. Literature is one of the main places medieval society tells itself what honorable behavior looks like.
 
@@ -1759,7 +1759,7 @@ medieval.s4.bayeux_tapestry	Recognize the Bayeux Tapestry and explain what it re
 medieval.s4.courtly_culture	Describe how troubadour poetry and courtly literature reshape aristocratic ideals.
 
 5) Textbook Content
-H1 — Fiefdom, Monastery, and Romanesque World
+H1 â€” Fiefdom, Monastery, and Romanesque World
 
 Key Takeaways Box
 - Local bonds and landholding shape medieval western society.
@@ -1767,7 +1767,7 @@ Key Takeaways Box
 - Pilgrimage and relics reshape sacred geography and architecture.
 - Romanesque style uses heavy stone forms and didactic sculpture.
 
-H2 — Lords, Vassals, And The Structure Of Medieval Society
+H2 â€” Lords, Vassals, And The Structure Of Medieval Society
 
 [See: Pilgrimage routes and the cult of the relic | https://smarthistory.org/pilgrimage-routes-and-the-cult-of-the-relic/]
 
@@ -1785,7 +1785,7 @@ Key Takeaways Box
 - Social ideals are reinforced through art and literature.
 - Feudal order is a cultural system, not only a political system.
 
-H2 — Monasteries, Scriptoria, And The Work Of Memory
+H2 â€” Monasteries, Scriptoria, And The Work Of Memory
 
 Monasteries became some of the most important institutions of the early medieval West. Under rules such as the Rule of Saint Benedict, monks organized their days around prayer, work, study, and discipline. But monastic life was not only inward. Monasteries owned land, interacted with wider society, trained clerics, and built durable centers of cultural authority.
 
@@ -1795,7 +1795,7 @@ Monasteries also shaped music and ritual. Chant, liturgy, and the ordering of sa
 
 The key point for students is that monasteries are cultural engines. They conserve, teach, beautify, and regulate. Without monasteries, much of medieval literacy and art would look very different.
 
-H3 — Carolingian Reform And Writing
+H3 â€” Carolingian Reform And Writing
 
 Under Charlemagne and the Carolingian world, literacy reform gained new force. Carolingian minuscule made writing clearer and more legible, helping texts circulate with greater consistency. This is a reminder that script style can have civilizational importance.
 
@@ -1807,7 +1807,7 @@ Key Takeaways Box
 - Monastic life joins prayer with intellectual labor.
 - Carolingian minuscule shows that writing style can shape culture.
 
-H2 — Manuscripts, Heroic Memory, And The Medieval Book
+H2 â€” Manuscripts, Heroic Memory, And The Medieval Book
 
 [See: The astonishing Book of Kells | https://smarthistory.org/the-astonishing-book-of-kells/]
 
@@ -1825,7 +1825,7 @@ Key Takeaways Box
 - Beowulf and Roland preserve heroic and social ideals.
 - Medieval memory survives through both manuscript and epic tradition.
 
-H2 — Pilgrimage, Relics, And Romanesque Space
+H2 â€” Pilgrimage, Relics, And Romanesque Space
 
 [See: Basilica of Saint-Sernin | https://smarthistory.org/saint-sernin/]
 
@@ -1839,7 +1839,7 @@ Romanesque architecture grows in this context. The style favors rounded arches, 
 
 Portal sculpture and tympana add a strong didactic function. At entrances, sculpted Last Judgments, saints, and biblical scenes instruct worshippers visually. Romanesque churches teach before one even enters them. Their stone programs are public theology.
 
-H3 — Saint-Sernin And The Pilgrimage Church
+H3 â€” Saint-Sernin And The Pilgrimage Church
 
 The Basilica of Saint-Sernin at Toulouse is one of the clearest pilgrimage churches for study. Its plan helps students see how Romanesque architecture served practical circulation and sacred access at once.
 
@@ -1851,7 +1851,7 @@ Key Takeaways Box
 - Rounded arches, heavy masonry, and vaulting are major Romanesque traits.
 - Portal sculpture teaches doctrine visually in public space.
 
-H2 — Conquest, Castles, And Courtly Culture
+H2 â€” Conquest, Castles, And Courtly Culture
 
 [See: The Bayeux Tapestry | https://smarthistory.org/the-bayeux-tapestry/]
 
@@ -1869,7 +1869,7 @@ Key Takeaways Box
 - Troubadour and courtly literature refine aristocratic ideals.
 - Romanesque culture includes devotion, warfare, and performance.
 
-H2 — Supplemental Integration: Feudal, Monastic, and Devotional Systems
+H2 â€” Feudal, Monastic, and Devotional Systems
 1. The Feudal Contract: Social Symphony of Survival
 Feudal structures organized mutual obligation through fief, vassalage, homage, and manor economy.
 
@@ -1898,58 +1898,58 @@ Monophonic chant gives way to polyphonic layering in Notre Dame practice, mirror
 Relic devotion drove pilgrimage architecture, liturgical movement, and artisanal metalwork in medieval sacred economies.
 
 6) Canonical Works and Terms
-Feudalism — The broad pattern of medieval social and political relationships organized around land, service, and personal allegiance.
-Vassal — A person bound by loyalty and service to a lord in return for protection or land.
-Fief — Land or rights granted in exchange for service.
-Manorialism — The economic system centered on landed estates and dependent agricultural labor.
-Monastery — A religious community organized around rule, prayer, work, and discipline.
-Rule of Saint Benedict — A foundational monastic rule emphasizing prayer, obedience, and ordered communal life.
-Scriptorium — A place in a monastery or other center where manuscripts were copied.
-Illuminated manuscript — A hand-copied book decorated with painted initials, ornament, and imagery.
-Book of Kells — A major illuminated Gospel manuscript celebrated for its intricacy and sacred page design.
-Carolingian minuscule — A clear script style promoted in the Carolingian period to improve legibility and transmission.
-Beowulf — Old English heroic epic centered on courage, lordship, fame, and mortality.
-Song of Roland — French epic poem celebrating loyalty, warfare, and Christianized heroic identity.
-Chanson de geste — A medieval French epic poem about heroic deeds.
-Pilgrimage — Sacred travel to holy sites, shrines, or relics.
-Relic — Physical remains or associated objects of a saint venerated for sacred power.
-Reliquary — A container made to hold and display relics.
-Romanesque — A medieval style marked by rounded arches, heavy masonry, and monumentality.
-Barrel vault — An elongated rounded vault shaped like a half cylinder.
-Groin vault — A vault formed by the intersection of two barrel vaults.
-Tympanum — The sculptural area above a doorway, often used for doctrinal imagery.
-Bayeux Tapestry — Narrative embroidery commemorating the Norman Conquest of England.
-Troubadour — Poet-musician associated with aristocratic courts and courtly lyric.
-Courtly love — A literary code of refined, often idealized aristocratic love.
-Saint-Sernin — Romanesque basilica in Toulouse, strongly associated with pilgrimage church design.
+Feudalism â€” The broad pattern of medieval social and political relationships organized around land, service, and personal allegiance.
+Vassal â€” A person bound by loyalty and service to a lord in return for protection or land.
+Fief â€” Land or rights granted in exchange for service.
+Manorialism â€” The economic system centered on landed estates and dependent agricultural labor.
+Monastery â€” A religious community organized around rule, prayer, work, and discipline.
+Rule of Saint Benedict â€” A foundational monastic rule emphasizing prayer, obedience, and ordered communal life.
+Scriptorium â€” A place in a monastery or other center where manuscripts were copied.
+Illuminated manuscript â€” A hand-copied book decorated with painted initials, ornament, and imagery.
+Book of Kells â€” A major illuminated Gospel manuscript celebrated for its intricacy and sacred page design.
+Carolingian minuscule â€” A clear script style promoted in the Carolingian period to improve legibility and transmission.
+Beowulf â€” Old English heroic epic centered on courage, lordship, fame, and mortality.
+Song of Roland â€” French epic poem celebrating loyalty, warfare, and Christianized heroic identity.
+Chanson de geste â€” A medieval French epic poem about heroic deeds.
+Pilgrimage â€” Sacred travel to holy sites, shrines, or relics.
+Relic â€” Physical remains or associated objects of a saint venerated for sacred power.
+Reliquary â€” A container made to hold and display relics.
+Romanesque â€” A medieval style marked by rounded arches, heavy masonry, and monumentality.
+Barrel vault â€” An elongated rounded vault shaped like a half cylinder.
+Groin vault â€” A vault formed by the intersection of two barrel vaults.
+Tympanum â€” The sculptural area above a doorway, often used for doctrinal imagery.
+Bayeux Tapestry â€” Narrative embroidery commemorating the Norman Conquest of England.
+Troubadour â€” Poet-musician associated with aristocratic courts and courtly lyric.
+Courtly love â€” A literary code of refined, often idealized aristocratic love.
+Saint-Sernin â€” Romanesque basilica in Toulouse, strongly associated with pilgrimage church design.
 
 7) Primary Source Excerpts
 "Listen carefully, my son, to the master's instructions."
-— Rule of Saint Benedict
+â€” Rule of Saint Benedict
 
 Why it matters: This line captures the disciplined educational and spiritual world of the monastery, a major institution of medieval culture.
 
 "Listen! We have heard of the glory of the Spear-Danes."
-— Opening of Beowulf
+â€” Opening of Beowulf
 
 Why it matters: This famous beginning announces the heroic memory culture of the early medieval world, where story and fame preserve communal identity.
 
 "Pagans are wrong and Christians are right."
-— The Song of Roland
+â€” The Song of Roland
 
 Why it matters: This stark line shows how epic literature can simplify conflict into moral and religious identity, shaping medieval ideals of loyalty and warfare.
 
 8) Timeline Anchors
-c. 529 C.E. — Traditional date associated with the Rule of Saint Benedict
-c. 700–800 C.E. — Growth of monastic manuscript culture in the British Isles
-c. 800 C.E. — Book of Kells created
-768–814 C.E. — Reign of Charlemagne
-1066 C.E. — Norman Conquest of England
-c. 1070 C.E. — Bayeux Tapestry created
-11th century — Major pilgrimage routes to Santiago de Compostela flourish
-c. 1080–1120 C.E. — Basilica of Saint-Sernin developed as a major Romanesque pilgrimage church
-1095 C.E. — First Crusade launched
-12th century — Troubadour and courtly lyric culture expand in aristocratic courts
+c. 529 C.E. â€” Traditional date associated with the Rule of Saint Benedict
+c. 700â€“800 C.E. â€” Growth of monastic manuscript culture in the British Isles
+c. 800 C.E. â€” Book of Kells created
+768â€“814 C.E. â€” Reign of Charlemagne
+1066 C.E. â€” Norman Conquest of England
+c. 1070 C.E. â€” Bayeux Tapestry created
+11th century â€” Major pilgrimage routes to Santiago de Compostela flourish
+c. 1080â€“1120 C.E. â€” Basilica of Saint-Sernin developed as a major Romanesque pilgrimage church
+1095 C.E. â€” First Crusade launched
+12th century â€” Troubadour and courtly lyric culture expand in aristocratic courts
 
 9) Exam Hot Zones
 Trap: Feudalism was a perfectly uniform system across Europe. Correction: It varied widely, though land, service, and personal allegiance remained central.
@@ -2124,11 +2124,11 @@ E. Gothic naturalism
 Answer: C
 
 3. Which pairing is most accurate?
-A. Bayeux Tapestry — Norman Conquest
-B. Beowulf — scholastic theology
-C. Tympanum — qibla niche
-D. Saint-Sernin — Byzantine mosaic
-E. Troubadour — monastic rule
+A. Bayeux Tapestry â€” Norman Conquest
+B. Beowulf â€” scholastic theology
+C. Tympanum â€” qibla niche
+D. Saint-Sernin â€” Byzantine mosaic
+E. Troubadour â€” monastic rule
 Answer: A
 
 4. Why did Romanesque pilgrimage churches often include ambulatories and radiating chapels?
@@ -2183,7 +2183,7 @@ Answer: B
 A. Book of Kells
 B. Bayeux Tapestry
 C. Hagia Sophia
-D. Great Mosque of Córdoba
+D. Great Mosque of CÃ³rdoba
 E. Arena Chapel
 Answer: B
 
@@ -2218,19 +2218,19 @@ Link: https://www.youtube.com/watch?v=vWC1g8NSkDM
 Watch-for: Focus on how the embroidery tells a conquest story and how narrative sequence works across the long textile.
 
 16) References
-Sayre, The Humanities: Culture, Continuity & Change, Book 2 — Main spine for early medieval western Europe and Romanesque culture.
+Sayre, The Humanities: Culture, Continuity & Change, Book 2 â€” Main spine for early medieval western Europe and Romanesque culture.
 Link: https://archive.org/details/isbn_9780136009924
 Why useful: It gives the integrated chapter framework joining monasteries, epics, pilgrimage, and architecture.
 
-Smarthistory: The astonishing Book of Kells — Illuminated manuscript essay.
+Smarthistory: The astonishing Book of Kells â€” Illuminated manuscript essay.
 Link: https://smarthistory.org/the-astonishing-book-of-kells/
 Why useful: It is one of the best free explanations of manuscript art and sacred page design.
 
-Smarthistory: The Bayeux Tapestry — Narrative textile essay.
+Smarthistory: The Bayeux Tapestry â€” Narrative textile essay.
 Link: https://smarthistory.org/the-bayeux-tapestry/
 Why useful: It helps students practice conquest narrative, textile art, and medieval political meaning.
 
-Smarthistory: Basilica of Saint-Sernin — Romanesque pilgrimage church essay.
+Smarthistory: Basilica of Saint-Sernin â€” Romanesque pilgrimage church essay.
 Link: https://smarthistory.org/saint-sernin/
 Why useful: It is excellent for learning Romanesque architecture in relation to pilgrimage and relics.
 
@@ -2279,7 +2279,7 @@ This section matters because the Gothic age is one of the clearest moments when 
 On the CLEP Humanities exam, this section is often tested through recognition of Saint-Denis, Chartres, stained glass, rib vaults, pointed arches, flying buttresses, rose windows, cathedral sculpture, scholasticism, and Thomas Aquinas. The test may ask students to distinguish Gothic from Romanesque, to identify how the Gothic style creates height and lightness, or to connect medieval cathedral culture with urban life, university learning, and efforts to reconcile faith and reason.
 
 2) Big Ideas
-Big Idea 1 — Gothic Begins With A New Use Of Light
+Big Idea 1 â€” Gothic Begins With A New Use Of Light
 
 Gothic architecture is often described through structure, but light is just as important as stone. Abbot Suger's work at Saint-Denis helped promote the idea that light itself could elevate the mind toward the divine. Stained glass, tall windows, and opened walls therefore matter theologically, not just decoratively. Gothic space is meant to feel more luminous and expansive than Romanesque space.
 
@@ -2287,31 +2287,31 @@ A beginner should imagine the bodily contrast. In heavier Romanesque interiors, 
 
 Students often think Gothic means only "very tall church." The correction is that height serves a spiritual and visual purpose. Gothic architecture aims to create radiance, not just scale.
 
-Big Idea 2 — Structure Makes Spiritual Effect Possible
+Big Idea 2 â€” Structure Makes Spiritual Effect Possible
 
 The pointed arch, rib vault, and flying buttress are not random technical details to memorize. Together they redirect and manage weight in ways that allow greater height, larger windows, and more flexible wall systems. Gothic architecture therefore shows how engineering can transform religious experience. Structure is the hidden logic behind the visible effect.
 
 Students often treat Gothic vocabulary as isolated terms on flashcards. The correction is that these terms work together. The exam may test one term, but the real understanding lies in how the whole structural system functions.
 
-Big Idea 3 — The Cathedral Is A Civic And Sacred Center
+Big Idea 3 â€” The Cathedral Is A Civic And Sacred Center
 
-Gothic cathedrals belong to towns and cities as much as to bishops and clergy. They gather labor, money, prestige, craftsmanship, devotion, and public identity. Their façades and windows teach, but they also proclaim the ambitions of a community. The cathedral is therefore both a sacred house and a civic monument.
+Gothic cathedrals belong to towns and cities as much as to bishops and clergy. They gather labor, money, prestige, craftsmanship, devotion, and public identity. Their faÃ§ades and windows teach, but they also proclaim the ambitions of a community. The cathedral is therefore both a sacred house and a civic monument.
 
 Students often imagine cathedral building as a purely clerical project. The correction is that it also reflects urban economy, artisan skill, and communal pride. Gothic culture is deeply tied to growing city life.
 
-Big Idea 4 — Gothic Sculpture And Glass Teach The Faith
+Big Idea 4 â€” Gothic Sculpture And Glass Teach The Faith
 
 Portal sculpture, jamb figures, rose windows, and stained-glass programs communicate doctrine, story, kingship, saints, and salvation history in visual form. Gothic art is often more animated and naturalistic than earlier Romanesque work, but its purpose is still didactic as well as devotional. It teaches by image and environment.
 
 Students often think stained glass is only decorative color. The correction is that stained glass is one of the central teaching media of Gothic culture. It turns light into narrative and theology.
 
-Big Idea 5 — Scholasticism Gives Gothic Culture An Intellectual Style
+Big Idea 5 â€” Scholasticism Gives Gothic Culture An Intellectual Style
 
 The Gothic age is also the age of schools and universities. Thinkers such as Thomas Aquinas try to organize knowledge with extraordinary rigor, asking how reason and revelation fit together. This intellectual method, often called scholasticism, parallels Gothic architecture in its concern with structure, ordering, and synthesis. Medieval culture is not anti-intellectual here; it is system-building.
 
 Students often think the medieval university world is separate from the cathedral world. The correction is that both belong to a culture devoted to organizing truth, whether through stone, argument, or liturgy.
 
-Big Idea 6 — Gothic Is More Than One Building
+Big Idea 6 â€” Gothic Is More Than One Building
 
 Chartres is the great anchor, but Gothic is a broad cultural field. Saint-Denis, Salisbury, Reims, Amiens, and other sites show local variation. English Gothic, French Gothic, sculpture, manuscript production, and devotional imagery all contribute to the style's range. Gothic is a flexible medieval language, not one frozen formula.
 
@@ -2333,13 +2333,13 @@ medieval.s5.st_denis	Explain why Saint-Denis is associated with the birth of Got
 medieval.s5.gothic_structure	Identify the pointed arch, rib vault, and flying buttress and explain how they work together.
 medieval.s5.chartres_recognition	Recognize Chartres Cathedral and explain why it is a key Gothic monument.
 medieval.s5.stained_glass	Explain the theological and instructional role of stained glass in Gothic culture.
-medieval.s5.gothic_sculpture	Describe how Gothic portal sculpture and façade programs teach sacred history.
+medieval.s5.gothic_sculpture	Describe how Gothic portal sculpture and faÃ§ade programs teach sacred history.
 medieval.s5.cathedral_city	Explain how Gothic cathedrals express both sacred and civic identity.
 medieval.s5.scholasticism	Explain what scholasticism is and why it matters in the Gothic age.
 medieval.s5.aquinas	Identify Thomas Aquinas as a major thinker associated with medieval university culture.
 
 5) Textbook Content
-H1 — Gothic Age
+H1 â€” Gothic Age
 
 Key Takeaways Box
 - Gothic architecture transforms stone, light, and height into theology.
@@ -2347,7 +2347,7 @@ Key Takeaways Box
 - Cathedrals are civic as well as sacred monuments.
 - Scholastic thought belongs to the same culture of order and synthesis.
 
-H2 — Saint-Denis And The Birth Of Gothic
+H2 â€” Saint-Denis And The Birth Of Gothic
 
 [See: Birth of the Gothic: Abbot Suger and the ambulatory at St. Denis | https://smarthistory.org/birth-of-the-gothic-abbot-suger-and-the-ambulatory-at-st-denis/]
 
@@ -2365,7 +2365,7 @@ Key Takeaways Box
 - Gothic style begins with both structural and theological goals.
 - Sacred experience is designed, not left accidental.
 
-H2 — Pointed Arches, Rib Vaults, And Flying Buttresses
+H2 â€” Pointed Arches, Rib Vaults, And Flying Buttresses
 
 The pointed arch is one of the most recognizable Gothic features, but its importance is practical as well as visual. Because it can direct weight differently than a rounded arch, it contributes to greater flexibility in height and span. Rib vaults then organize the ceiling into a more articulated structural framework. The ribs concentrate loads more clearly than the continuous mass of a barrel vault.
 
@@ -2381,7 +2381,7 @@ This is why Gothic architecture must be studied as a system. The pointed arch, r
 
 Students should imagine these terms not as vocabulary fragments but as problem-solving tools. Gothic builders wanted height, light, visibility, and grandeur. Structural innovation gave them a way to pursue those goals without collapsing the building.
 
-H3 — Why Structural Terms Matter On Exams
+H3 â€” Why Structural Terms Matter On Exams
 
 CLEP-style questions often ask students to identify one feature in isolation. But students perform better when they see the bigger logic. A flying buttress is not just "an outside support." It is part of the whole strategy that allows the cathedral interior to become lighter and more open.
 
@@ -2393,7 +2393,7 @@ Key Takeaways Box
 - The goal is height, light, and stability.
 - Function helps students remember form.
 
-H2 — Chartres, Sculpture, And Stained Glass
+H2 â€” Chartres, Sculpture, And Stained Glass
 
 [See: Cathedral of Notre Dame, Chartres | https://smarthistory.org/cathedral-of-notre-dame-de-chartres-part-1-of-3/]
 
@@ -2403,7 +2403,7 @@ The stained glass at Chartres is especially important because it transforms sunl
 
 In teaching terms, these windows operate as a visual pedagogy for mixed-literacy audiences. Instead of treating glass as ornament only, read it as a public theological medium: image cycles, donor panels, and symbolic color together build a "glazed Bible" effect in which doctrine, story, and civic participation are fused.
 
-The sculptural programs at portals and façades matter for similar reasons. Gothic jamb figures and portal reliefs become more elongated, expressive, and integrated with architecture than many Romanesque predecessors. They guide the eye, teach sacred history, and announce the seriousness of entry into holy space.
+The sculptural programs at portals and faÃ§ades matter for similar reasons. Gothic jamb figures and portal reliefs become more elongated, expressive, and integrated with architecture than many Romanesque predecessors. They guide the eye, teach sacred history, and announce the seriousness of entry into holy space.
 
 Students should remember that Gothic art is not inside the church only. The exterior itself teaches. The medieval cathedral speaks before one enters it, and continues speaking through windows, sculpture, plan, and vertical aspiration.
 
@@ -2413,7 +2413,7 @@ Key Takeaways Box
 - Gothic sculpture is integrated with architecture and doctrine.
 - Cathedral exteriors are part of the teaching program.
 
-H2 — Cathedral Building And Urban Life
+H2 â€” Cathedral Building And Urban Life
 
 A Gothic cathedral is one of the clearest signs of a medieval city's resources and ambitions. Such projects required money, guild labor, planning, materials, and time. They were not private creations of one patron alone. They drew in masons, glassmakers, sculptors, clergy, donors, and townspeople. The building process itself became part of civic identity.
 
@@ -2429,7 +2429,7 @@ Key Takeaways Box
 - Cathedrals dominate medieval city identity.
 - Architecture records social ambition as well as theology.
 
-H2 — Universities, Scholasticism, And Thomas Aquinas
+H2 â€” Universities, Scholasticism, And Thomas Aquinas
 
 The Gothic age is also the age of schools and universities, where knowledge is debated, classified, and systematized. Scholasticism names a method of disciplined argument that seeks to reconcile authorities, define terms carefully, and organize truth. This intellectual style belongs to the same broad medieval drive toward ordered synthesis that can also be seen in architecture.
 
@@ -2453,7 +2453,7 @@ Key Takeaways Box
 - Thomas Aquinas is a key thinker of this tradition.
 - Medieval culture is both visual and intellectual in its search for coherence.
 
-H2 — Supplemental Integration: Gothic Structure, Literature, and Scholastic Method
+H2 â€” Gothic Structure, Literature, and Scholastic Method
 2. Troubadour Song: Birth of Romantic Language
 Troubadour and trobairitz lyric traditions formalized courtly love, vernacular poetics, and secular interiority.
 
@@ -2485,54 +2485,54 @@ III. Flying Buttress: The Exoskeleton of God
 Externalized structural thrust management enabled unprecedented wall perforation and stained-glass expansion in Gothic cathedrals.
 
 6) Canonical Works and Terms
-Gothic — Medieval style associated with structural innovation, large windows, and new uses of light.
-Saint-Denis — Abbey church associated with the beginnings of Gothic architecture.
-Abbot Suger — Patron linked to the early Gothic use of light and rebuilt Saint-Denis.
-Pointed arch — Arch shape central to Gothic structure and flexibility.
-Rib vault — Vault whose weight is organized by projecting stone ribs.
-Flying buttress — Exterior support system that helps transfer thrust outward from the walls.
-Clerestory — Upper zone of windows that brings light into the interior.
-Rose window — Large circular stained-glass window often featured on Gothic façades.
-Tracery — Decorative stone framework supporting window glass.
-Chartres Cathedral — Major French Gothic cathedral famous for architecture, sculpture, and stained glass.
-Jamb figures — Sculpted figures attached to the sides of portals.
-Portal sculpture — Sculptural program around a church entrance used for teaching and symbolism.
-Stained glass — Colored glass imagery used as a major teaching and devotional medium in Gothic churches.
-Saint-Denis ambulatory — Early Gothic architectural space associated with Suger's rebuilding program.
-Salisbury Cathedral — Important example of English Gothic architecture.
-Scholasticism — Medieval method of disciplined reasoning and reconciliation of authorities.
-Thomas Aquinas — Major scholastic thinker who works to reconcile faith and reason.
-Cathedral school — Educational institution associated with major churches and the growth of learning.
-University — Medieval center of advanced study, argument, and textual authority.
-Verticality — The visual emphasis on height and upward movement in Gothic design.
+Gothic â€” Medieval style associated with structural innovation, large windows, and new uses of light.
+Saint-Denis â€” Abbey church associated with the beginnings of Gothic architecture.
+Abbot Suger â€” Patron linked to the early Gothic use of light and rebuilt Saint-Denis.
+Pointed arch â€” Arch shape central to Gothic structure and flexibility.
+Rib vault â€” Vault whose weight is organized by projecting stone ribs.
+Flying buttress â€” Exterior support system that helps transfer thrust outward from the walls.
+Clerestory â€” Upper zone of windows that brings light into the interior.
+Rose window â€” Large circular stained-glass window often featured on Gothic faÃ§ades.
+Tracery â€” Decorative stone framework supporting window glass.
+Chartres Cathedral â€” Major French Gothic cathedral famous for architecture, sculpture, and stained glass.
+Jamb figures â€” Sculpted figures attached to the sides of portals.
+Portal sculpture â€” Sculptural program around a church entrance used for teaching and symbolism.
+Stained glass â€” Colored glass imagery used as a major teaching and devotional medium in Gothic churches.
+Saint-Denis ambulatory â€” Early Gothic architectural space associated with Suger's rebuilding program.
+Salisbury Cathedral â€” Important example of English Gothic architecture.
+Scholasticism â€” Medieval method of disciplined reasoning and reconciliation of authorities.
+Thomas Aquinas â€” Major scholastic thinker who works to reconcile faith and reason.
+Cathedral school â€” Educational institution associated with major churches and the growth of learning.
+University â€” Medieval center of advanced study, argument, and textual authority.
+Verticality â€” The visual emphasis on height and upward movement in Gothic design.
 
 7) Primary Source Excerpts
 "The dull mind rises to truth through that which is material."
-— Abbot Suger
+â€” Abbot Suger
 
 Why it matters: This line captures the Gothic confidence that visible beauty and light can elevate the soul toward divine understanding.
 
 "Grace does not destroy nature, but perfects it."
-— Thomas Aquinas
+â€” Thomas Aquinas
 
 Why it matters: This phrase captures the scholastic effort to integrate faith and reason rather than oppose them.
 
 "Now we see through a glass, darkly."
-— 1 Corinthians 13:12
+â€” 1 Corinthians 13:12
 
 Why it matters: This biblical phrase helps explain why stained glass and mediated vision carried such symbolic force in medieval Christian culture.
 
 8) Timeline Anchors
-c. 1140–1144 C.E. — Suger's rebuilding work at Saint-Denis
-Mid-12th century — Gothic style begins in France
-c. 1145–1155 C.E. — Early construction at Chartres
-1194–1220 C.E. — Major rebuilding campaign at Chartres Cathedral
-Early 13th century — High Gothic develops in France
-1220 C.E. — Construction of Salisbury Cathedral begins
-13th century — Medieval universities expand
-1225–1274 C.E. — Life of Thomas Aquinas
-13th century — Major flowering of stained-glass programs in French cathedrals
-Late Middle Ages — Gothic forms continue in regional variations across Europe
+c. 1140â€“1144 C.E. â€” Suger's rebuilding work at Saint-Denis
+Mid-12th century â€” Gothic style begins in France
+c. 1145â€“1155 C.E. â€” Early construction at Chartres
+1194â€“1220 C.E. â€” Major rebuilding campaign at Chartres Cathedral
+Early 13th century â€” High Gothic develops in France
+1220 C.E. â€” Construction of Salisbury Cathedral begins
+13th century â€” Medieval universities expand
+1225â€“1274 C.E. â€” Life of Thomas Aquinas
+13th century â€” Major flowering of stained-glass programs in French cathedrals
+Late Middle Ages â€” Gothic forms continue in regional variations across Europe
 
 9) Exam Hot Zones
 Trap: Gothic means only "very tall church." Correction: Gothic is a structural and theological system centered on light, height, and opened wall surfaces.
@@ -2547,7 +2547,7 @@ A. Hagia Sophia
 B. Saint-Denis
 C. Saint-Sernin
 D. San Vitale
-E. Great Mosque of Córdoba
+E. Great Mosque of CÃ³rdoba
 
 2. Which feature most directly helps Gothic walls open for larger windows?
 A. Barrel vault
@@ -2564,11 +2564,11 @@ D. concrete dome
 E. bronze equestrian statue
 
 4. Which pair belongs together?
-A. Aquinas — scholasticism
-B. Suger — Roman law
-C. Beowulf — pointed arch
-D. Mihrab — Gothic portal
-E. Justinian — Chartres
+A. Aquinas â€” scholasticism
+B. Suger â€” Roman law
+C. Beowulf â€” pointed arch
+D. Mihrab â€” Gothic portal
+E. Justinian â€” Chartres
 
 5. A rib vault is
 A. a devotional book cover
@@ -2619,7 +2619,7 @@ E. Transept crossing vault
 4. A - Thomas Aquinas is one of the great scholastic thinkers of the medieval university world. The other pairings mismatch figures and topics from different sections.
 5. C - A rib vault uses projecting ribs to organize structural support. This is one of the key technical features of Gothic architecture.
 6. B - Gothic architecture uses pointed arches, rib vaults, and flying buttresses to create greater height and larger windows. This structural system gives the style its distinctive lightness.
-7. A - A rose window is a large circular stained-glass window, often placed prominently on a façade or transept. It is a major Gothic recognition feature.
+7. A - A rose window is a large circular stained-glass window, often placed prominently on a faÃ§ade or transept. It is a major Gothic recognition feature.
 8. B - Scholasticism is a disciplined method of organizing arguments, reconciling authorities, and clarifying theological and philosophical questions. It is central to high medieval learning.
 9. C - Gothic cathedrals were sacred spaces but also powerful civic monuments built through urban labor, wealth, and communal ambition. They belong to city life as much as to clerical life.
 10. B - The clerestory is the upper level of windows that brings in light high above the nave. It is especially important in Gothic interiors.
@@ -2709,7 +2709,7 @@ Answer: B
 3. Which site is most associated with Abbot Suger?
 A. Ravenna
 B. Saint-Denis
-C. Córdoba
+C. CÃ³rdoba
 D. Padua
 E. Kells
 Answer: B
@@ -2739,11 +2739,11 @@ E. Manorialism
 Answer: B
 
 7. Which pair is most accurate?
-A. Thomas Aquinas — faith and reason
-B. Abbot Suger — Qur'anic recitation
-C. Chartres — Carolingian minuscule
-D. Rose window — reliquary box
-E. Clerestory — feudal oath
+A. Thomas Aquinas â€” faith and reason
+B. Abbot Suger â€” Qur'anic recitation
+C. Chartres â€” Carolingian minuscule
+D. Rose window â€” reliquary box
+E. Clerestory â€” feudal oath
 Answer: A
 
 8. Gothic cathedrals are best described as
@@ -2801,19 +2801,19 @@ Link: https://www.youtube.com/watch?v=H4zXQrBeJU8
 Watch-for: Focus on how English Gothic differs in emphasis while still using the core Gothic structural language.
 
 16) References
-Sayre, The Humanities: Culture, Continuity & Change, Book 2 — Main chapter spine for Gothic art, learning, and cathedral culture.
+Sayre, The Humanities: Culture, Continuity & Change, Book 2 â€” Main chapter spine for Gothic art, learning, and cathedral culture.
 Link: https://archive.org/details/isbn_9780136009924
 Why useful: It joins architecture, theology, and university culture within one integrated medieval framework.
 
-Smarthistory: Birth of the Gothic — Saint-Denis essay.
+Smarthistory: Birth of the Gothic â€” Saint-Denis essay.
 Link: https://smarthistory.org/birth-of-the-gothic-abbot-suger-and-the-ambulatory-at-st-denis/
 Why useful: It is essential for understanding why Gothic begins with a new theology of light.
 
-Smarthistory: Chartres Cathedral — Major Gothic monument essay.
+Smarthistory: Chartres Cathedral â€” Major Gothic monument essay.
 Link: https://smarthistory.org/cathedral-of-notre-dame-de-chartres-part-1-of-3/
 Why useful: It helps students anchor many Gothic features in one unforgettable site.
 
-Smarthistory: Gothic architecture, an introduction — Vocabulary and style overview.
+Smarthistory: Gothic architecture, an introduction â€” Vocabulary and style overview.
 Link: https://smarthistory.org/gothic-architecture-an-introduction/
 Why useful: It is useful for quick review, comparison, and structural terminology.
 
@@ -2858,37 +2858,37 @@ This merged section matters because the later Middle Ages do not end simply with
 On the CLEP Humanities exam, this section is tested through recognition of Dante, Giotto, late medieval Italian city culture, the Black Death, Boccaccio, Petrarch, and selected non-European medieval anchors such as Song landscape painting, Heian court writing, Great Zimbabwe, and the Popol Vuh or other major cultural examples before 1400. The exam is unlikely to reward an encyclopedic dump of names here. It is more likely to reward accurate recognition, comparison, and understanding of why late medieval Italy looks transitional and why the medieval world was culturally broader than western Europe alone.
 
 2) Big Ideas
-Big Idea 1 — Italian City Life Changes Medieval Culture
+Big Idea 1 â€” Italian City Life Changes Medieval Culture
 
 Siena and Florence matter because urban wealth, guild organization, trade, and civic pride reshape how art is made and displayed. Churches, town halls, confraternities, and mercantile elites all become major patrons. Medieval culture grows more visibly urban and public. The city becomes a laboratory for artistic and literary change.
 
 Students often think medieval Italy before the Renaissance is just "not yet Renaissance." The correction is that late medieval cities already generate new energies of realism, citizenship, vernacular writing, and public image-making that matter in their own right.
 
-Big Idea 2 — Vernacular Literature Expands Cultural Reach
+Big Idea 2 â€” Vernacular Literature Expands Cultural Reach
 
 Writers such as Dante, Boccaccio, and Petrarch matter partly because they write in forms and languages that broaden cultural participation and memory. Dante turns poetry into a moral and cosmic journey. Boccaccio responds to plague and storytelling culture. Petrarch deepens introspective and literary self-consciousness. Together they show a late medieval world rich in language, not merely waiting for humanism to appear.
 
 Students often treat these authors as simply "renaissance-adjacent." The correction is that they are late medieval figures whose work grows out of medieval theology, courtly traditions, urban life, and religious imagination.
 
-Big Idea 3 — Giotto Changes How Sacred Narrative Feels
+Big Idea 3 â€” Giotto Changes How Sacred Narrative Feels
 
 Giotto's frescoes do not yet abandon medieval religious subject matter, but they make space, emotion, and human interaction feel more immediate. Figures appear heavier, more believable, and more responsive to one another. This is why Giotto is so often treated as a threshold figure. He remains medieval in subject and devotion, yet he changes the emotional and visual temperature of painting.
 
 Students often think Giotto is simply "the first Renaissance artist." The correction is that he belongs to a late medieval context and should be read as a transitional figure rather than as a sudden break from the past.
 
-Big Idea 4 — Crisis Can Accelerate Cultural Change
+Big Idea 4 â€” Crisis Can Accelerate Cultural Change
 
 The Black Death is a demographic catastrophe, but it is also a cultural turning point. It intensifies reflection on mortality, fortune, social instability, and moral disorder. Literature, devotion, and art all register its pressure. The crisis helps destabilize assumptions and sharpen awareness of the human condition.
 
 Students often think plague history belongs only to social history, not the humanities. The correction is that catastrophe reshapes storytelling, spirituality, patronage, imagery, and the emotional atmosphere of culture.
 
-Big Idea 5 — Medieval Culture Is Global
+Big Idea 5 â€” Medieval Culture Is Global
 
 The medieval centuries include major developments across China, Japan, Africa, Mesoamerica, and South America. Song landscape painting, Heian court writing, Japanese court aesthetics, Great Zimbabwe, and the Popol Vuh are not distractions from "real" medieval culture. They show that the period contains multiple centers of artistic and literary production. A humanities course should widen the map.
 
 Students often think the medieval world equals Europe only. The correction is that medievality is global in time even when forms differ regionally. Comparison is essential.
 
-Big Idea 6 — Late Medieval Europe And Global Medieval Worlds Can Be Compared Carefully
+Big Idea 6 â€” Late Medieval Europe And Global Medieval Worlds Can Be Compared Carefully
 
 Comparison is most useful when it is precise. Late medieval Italy can be compared with Song China in attention to visual order, with Heian Japan in the prestige of elite literature, or with Great Zimbabwe in the relation between power and monumental space. The goal is not to flatten differences but to practice seeing how different societies solve similar humanities problems: memory, prestige, sacredness, and representation.
 
@@ -2916,7 +2916,7 @@ medieval.s6.great_zimbabwe	Identify Great Zimbabwe and explain why it matters fo
 medieval.s6.global_comparison	Compare late medieval Europe with selected global medieval cultures without flattening their differences.
 
 5) Textbook Content
-H1 — Siena, Florence, and Global Medieval Worlds
+H1 â€” Siena, Florence, and Global Medieval Worlds
 
 Key Takeaways Box
 - Late medieval Italy is urban, literary, and artistically transitional.
@@ -2924,7 +2924,7 @@ Key Takeaways Box
 - The Black Death intensifies cultural reflection and instability.
 - The medieval world includes major non-European traditions before 1400.
 
-H2 — Siena, Florence, And The Urban Turn
+H2 â€” Siena, Florence, And The Urban Turn
 
 [See: Giotto, Arena Chapel | https://smarthistory.org/giotto-arena-scrovegni-chapel/]
 
@@ -2942,7 +2942,7 @@ Key Takeaways Box
 - Public and sacred art overlap in late medieval Italian cities.
 - Urban life is a major force behind cultural transition.
 
-H2 — Dante, Vernacular Literature, And The Moral Imagination
+H2 â€” Dante, Vernacular Literature, And The Moral Imagination
 
 Dante is one of the great writers of the late Middle Ages because he combines medieval theology, classical learning, courtly love, and vernacular poetry in an extraordinary synthesis. The Divine Comedy is not just a travel story through Hell, Purgatory, and Paradise. It is a vast moral map of reality. It teaches judgment, order, memory, desire, and salvation.
 
@@ -2952,7 +2952,7 @@ Boccaccio and Petrarch continue this movement in different ways. Boccaccio's Dec
 
 Students should avoid treating these writers as mere stepping-stones. They are major late medieval authors whose works help us see how language, morality, and memory were changing before the full Renaissance.
 
-H3 — Why Vernacular Matters
+H3 â€” Why Vernacular Matters
 
 When authors write in a spoken literary language instead of Latin alone, they change who can imagine themselves inside literature. This does not make texts easy, but it shifts cultural possibility. Vernacular prestige is one of the important storylines of late medieval Europe.
 
@@ -2964,7 +2964,7 @@ Key Takeaways Box
 - Boccaccio and Petrarch deepen late medieval literary change.
 - These authors belong to the medieval world even as they point beyond it.
 
-H2 — Giotto And The Emotional Weight Of Sacred Narrative
+H2 â€” Giotto And The Emotional Weight Of Sacred Narrative
 
 Giotto is one of the most important painters in late medieval Italy because he changes how stories feel. In the Arena Chapel frescoes, bodies occupy space with greater weight, gestures carry emotional force, and scenes unfold with stronger narrative coherence. This makes sacred history feel immediate rather than remote.
 
@@ -2986,7 +2986,7 @@ Key Takeaways Box
 - He is transitional, not simply outside the medieval world.
 - The Arena Chapel is a core recognition monument.
 
-H2 — The Black Death And The Problem Of Human Fragility
+H2 â€” The Black Death And The Problem Of Human Fragility
 
 The Black Death shattered assumptions about security, health, and continuity across Europe. Its demographic scale was catastrophic, but its cultural effect was also profound. People confronted death more directly, questioned stability more sharply, and reimagined the fragility of earthly life. This changed the emotional climate of the late Middle Ages.
 
@@ -3010,7 +3010,7 @@ Key Takeaways Box
 - Late medieval culture grows more conscious of fragility and mortality.
 - Crisis helps explain the emotional atmosphere of the later period.
 
-H2 — China, Japan, Africa, And The Americas Before 1400
+H2 â€” China, Japan, Africa, And The Americas Before 1400
 
 [See: Song Dynasty Landscape Painting | https://smarthistory.org/tag/song-dynasty/]
 
@@ -3035,7 +3035,7 @@ Key Takeaways Box
 - Heian and later Japanese literary culture expands the period's literary map.
 - Great Zimbabwe is a major medieval African architectural site.
 
-H2 — Supplemental Integration: Late Medieval Transition and Global Connectivity
+H2 â€” Late Medieval Transition and Global Connectivity
 8. Black Death: The Scythe That Changed Art
 Pandemic trauma altered visual and literary tone, intensified memento mori culture, and contributed to social-economic shifts feeding Renaissance human focus.
 
@@ -3055,55 +3055,55 @@ Song China, Heian Japan, Mali/Timbuktu, Great Zimbabwe, and Mesoamerican traditi
 Transregional exchange moved paper, mathematical ideas, religious thought, motifs, and literary forms across Afro-Eurasian circuits.
 
 6) Canonical Works and Terms
-Siena — Important late medieval Italian city associated with civic art and elegant Gothic painting.
-Florence — Major late medieval Italian city shaped by guilds, trade, finance, and artistic innovation.
-Guild — Organized association of workers or merchants regulating trade, standards, and social status.
-Vernacular — The local spoken language used for literary writing instead of Latin.
-Dante Alighieri — Late medieval Italian poet, author of the Divine Comedy.
-Divine Comedy — Dante's epic journey through Hell, Purgatory, and Paradise.
-Boccaccio — Italian author of the Decameron, linked to plague-era storytelling.
-Petrarch — Late medieval Italian writer associated with introspection and literary self-consciousness.
-Giotto — Late medieval Italian painter whose frescoes transform emotional and spatial realism.
-Arena Chapel — Chapel in Padua decorated with Giotto's fresco cycle.
-Late Gothic — A late medieval style in Italy and elsewhere marked by refinement, elegance, and transitional qualities.
-Black Death — The devastating plague of the mid-14th century that reshaped European society and culture.
-Song dynasty — Chinese dynasty associated with monumental landscape painting and major cultural development.
-Guo Xi — Song painter known for the landscape Early Spring.
-Early Spring — Major Song landscape painting by Guo Xi.
-Heian period — Japanese courtly period known for literary refinement and aesthetic sensitivity.
-Murasaki Shikibu — Japanese court writer associated with refined literary culture.
-Sei Shonagon — Japanese writer known for The Pillow Book and court observation.
-Great Zimbabwe — Major medieval stone complex in southern Africa.
-Popol Vuh — Major mythic text associated with Maya cultural memory.
-Comparative humanities — The practice of studying different cultures through careful comparison of form, value, and representation.
+Siena â€” Important late medieval Italian city associated with civic art and elegant Gothic painting.
+Florence â€” Major late medieval Italian city shaped by guilds, trade, finance, and artistic innovation.
+Guild â€” Organized association of workers or merchants regulating trade, standards, and social status.
+Vernacular â€” The local spoken language used for literary writing instead of Latin.
+Dante Alighieri â€” Late medieval Italian poet, author of the Divine Comedy.
+Divine Comedy â€” Dante's epic journey through Hell, Purgatory, and Paradise.
+Boccaccio â€” Italian author of the Decameron, linked to plague-era storytelling.
+Petrarch â€” Late medieval Italian writer associated with introspection and literary self-consciousness.
+Giotto â€” Late medieval Italian painter whose frescoes transform emotional and spatial realism.
+Arena Chapel â€” Chapel in Padua decorated with Giotto's fresco cycle.
+Late Gothic â€” A late medieval style in Italy and elsewhere marked by refinement, elegance, and transitional qualities.
+Black Death â€” The devastating plague of the mid-14th century that reshaped European society and culture.
+Song dynasty â€” Chinese dynasty associated with monumental landscape painting and major cultural development.
+Guo Xi â€” Song painter known for the landscape Early Spring.
+Early Spring â€” Major Song landscape painting by Guo Xi.
+Heian period â€” Japanese courtly period known for literary refinement and aesthetic sensitivity.
+Murasaki Shikibu â€” Japanese court writer associated with refined literary culture.
+Sei Shonagon â€” Japanese writer known for The Pillow Book and court observation.
+Great Zimbabwe â€” Major medieval stone complex in southern Africa.
+Popol Vuh â€” Major mythic text associated with Maya cultural memory.
+Comparative humanities â€” The practice of studying different cultures through careful comparison of form, value, and representation.
 
 7) Primary Source Excerpts
 "In the middle of the journey of our life I found myself in a dark wood."
-— Dante, Divine Comedy
+â€” Dante, Divine Comedy
 
 Why it matters: This opening line makes personal crisis into a universal moral journey and shows why Dante became such a foundational literary figure.
 
 "The plague had put an end to the authority of every law."
-— Boccaccio, Decameron
+â€” Boccaccio, Decameron
 
 Why it matters: This line captures how catastrophe disrupted social order and helps explain why late medieval literature becomes so alert to instability.
 
 "Hateful things: a visitor who talks on and on when you want them to leave."
-— Sei Shonagon, The Pillow Book
+â€” Sei Shonagon, The Pillow Book
 
 Why it matters: This sharp courtly observation reminds students that medieval literary sophistication was not confined to Europe.
 
 8) Timeline Anchors
-1072 C.E. — Guo Xi completes Early Spring
-c. 1090 C.E. — Approximate death of Guo Xi
-1265–1321 C.E. — Life of Dante Alighieri
-c. 1305 C.E. — Giotto paints the Arena Chapel frescoes
-1284–1344 C.E. — Life of Simone Martini
-1304–1374 C.E. — Life of Petrarch
-1313–1375 C.E. — Life of Boccaccio
-1347–1351 C.E. — Black Death devastates Europe
-11th–15th centuries — Great Zimbabwe flourishes
-Before 1400 — Major courtly and literary traditions continue in Japan and major cultural traditions continue across the Americas
+1072 C.E. â€” Guo Xi completes Early Spring
+c. 1090 C.E. â€” Approximate death of Guo Xi
+1265â€“1321 C.E. â€” Life of Dante Alighieri
+c. 1305 C.E. â€” Giotto paints the Arena Chapel frescoes
+1284â€“1344 C.E. â€” Life of Simone Martini
+1304â€“1374 C.E. â€” Life of Petrarch
+1313â€“1375 C.E. â€” Life of Boccaccio
+1347â€“1351 C.E. â€” Black Death devastates Europe
+11thâ€“15th centuries â€” Great Zimbabwe flourishes
+Before 1400 â€” Major courtly and literary traditions continue in Japan and major cultural traditions continue across the Americas
 
 9) Exam Hot Zones
 Trap: Late medieval Italy is already fully Renaissance. Correction: It is transitional and still deeply rooted in medieval institutions, subjects, and styles.
@@ -3302,11 +3302,11 @@ E. is a Japanese shrine
 Answer: C
 
 6. Which pair belongs together?
-A. Sei Shonagon — The Pillow Book
-B. Guo Xi — The Divine Comedy
-C. Dante — Great Zimbabwe
-D. Giotto — Qur'anic calligraphy
-E. Petrarch — Bayeux Tapestry
+A. Sei Shonagon â€” The Pillow Book
+B. Guo Xi â€” The Divine Comedy
+C. Dante â€” Great Zimbabwe
+D. Giotto â€” Qur'anic calligraphy
+E. Petrarch â€” Bayeux Tapestry
 Answer: A
 
 7. Why does vernacular writing matter?
@@ -3350,7 +3350,7 @@ Florence in the Late Gothic period, an introduction
 Link: https://smarthistory.org/florence-in-the-late-gothic-period-an-introduction/
 Why it matters: This page is useful for understanding urban patronage, Italo-Byzantine inheritance, and the late medieval setting before the Renaissance.
 
-Simone Martini, Maestà
+Simone Martini, MaestÃ 
 Link: https://smarthistory.org/simone-martini-maesta/
 Why it matters: This helps students recognize late medieval Siena and compare elegance, courtliness, and civic devotion with Giotto's more solid figures.
 
@@ -3367,7 +3367,7 @@ Giotto, Arena Chapel, part 1 (of 4)
 Link: https://www.youtube.com/watch?v=ZPJ9g-GPa2s
 Watch-for: Focus on how Giotto makes sacred narrative feel more immediate through gesture, weight, and emotional clarity.
 
-Queen of Heaven: Simone Martini, Maestà
+Queen of Heaven: Simone Martini, MaestÃ 
 Link: https://www.youtube.com/watch?v=JJ_UzZ3txf0
 Watch-for: Watch for how Sienese elegance, civic meaning, and Marian authority come together in one public image.
 
@@ -3376,19 +3376,19 @@ Link: https://www.youtube.com/watch?v=ON6CQqBvxNc
 Watch-for: Focus on why Great Zimbabwe matters as a medieval African monument and how it challenges narrow maps of the period.
 
 16) References
-Sayre, The Humanities: Culture, Continuity & Change, Book 2 — Main late medieval and global medieval chapter spine.
+Sayre, The Humanities: Culture, Continuity & Change, Book 2 â€” Main late medieval and global medieval chapter spine.
 Link: https://archive.org/details/isbn_9780136009924
 Why useful: It provides the chapter structure joining Siena and Florence with broader global medieval cultures.
 
-Smarthistory: Giotto, Arena Chapel — Major late medieval Italian painting essay.
+Smarthistory: Giotto, Arena Chapel â€” Major late medieval Italian painting essay.
 Link: https://smarthistory.org/giotto-arena-scrovegni-chapel-part-1-of-4/
 Why useful: It is ideal for understanding Giotto's role in the late medieval transition.
 
-Smarthistory: Florence in the Late Gothic period — Urban and stylistic introduction.
+Smarthistory: Florence in the Late Gothic period â€” Urban and stylistic introduction.
 Link: https://smarthistory.org/florence-in-the-late-gothic-period-an-introduction/
 Why useful: It helps place late medieval Italian art in its civic and economic context.
 
-Smarthistory: Great Zimbabwe — Medieval African architectural site essay.
+Smarthistory: Great Zimbabwe â€” Medieval African architectural site essay.
 Link: https://smarthistory.org/great-zimbabwe/
 Why useful: It gives the chapter a strong, accurate non-European medieval anchor.
 
