@@ -1,6 +1,6 @@
-import mod from "../src/lib/editorial-static-params.ts";
+import { getMaterialStaticParams } from "../src/lib/editorial-static-params";
 
-const params = mod.getMaterialStaticParams();
+const params = getMaterialStaticParams();
 const ch3 = params.filter((x) => x.chapterId === "ch3");
 const ch1 = params.filter((x) => x.chapterId === "ch1");
 const ch2 = params.filter((x) => x.chapterId === "ch2");
