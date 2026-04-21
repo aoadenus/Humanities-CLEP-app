@@ -91,6 +91,16 @@ export function Dashboard({ course }: { course: EditorialCourse }) {
                           <p className="mt-1 text-sm leading-6 text-[var(--text-secondary)]">
                             {chapterNotes[chapter.id] ?? "Study chapter"}
                           </p>
+                          {chapter.notebookLmUrl ? (
+                            <a
+                              className="mt-2 inline-flex text-xs font-semibold text-(--accent) underline-offset-4 hover:underline"
+                              href={chapter.notebookLmUrl}
+                              rel="noreferrer"
+                              target="_blank"
+                            >
+                              Visit Chapter NotebookLM for additional content
+                            </a>
+                          ) : null}
                         </div>
                       </div>
                     </div>

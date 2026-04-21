@@ -221,6 +221,13 @@ CLEP Elimination Trick
 - If the clue is writing plus grain/tax/law, eliminate literary-only distractors and choose cuneiform logic.
 - If the clue is giant stepped mud-brick temple, choose ziggurat, not pyramid.
 
+H2 — Supplemental Integration: Foundations and Symbolic Transition
+I. The Neolithic Revolution and the Birth of Monumentality
+The transition from the Paleolithic (Old Stone Age) to the Neolithic (New Stone Age) was not merely a change in tools, but a total reimagining of the human relationship with the earth. For millennia, nomadic hunter-gatherers lived in a state of immediate return, but the Agricultural Revolution introduced the concept of delayed return through the domestication of plants and animals. This shift allowed for sedentism, the practice of living in one place for long periods, which necessitated the creation of permanent structures. As food surpluses grew, so did the specialized labor required to move massive stones, leading to the rise of megalithic architecture, or structures made of large stones without mortar. Stonehenge in England serves as the ultimate example of a post-and-lintel system, where vertical stones (posts) support a horizontal stone (lintel) across the top. Similarly, Gobekli Tepe in modern-day Turkey challenges our timeline of civilization by showing that ritual and monumental building actually predated settled farming.
+
+III. The Great Mother and the Shift to Patriarchal Deities
+One of the most profound transitions in early humanities history is the movement from Great Mother fertility symbolism to patriarchal sky and storm deities. In Paleolithic and early Neolithic culture, many Venus figurines emphasize fertility and life-force. As land ownership, stored surplus, and defensive conflict became central, symbolic emphasis shifted toward gods of war, kingship, and cosmic order.
+
 6) Canonical Works and Terms
 Humanities — The study of how human beings create meaning through art, language, belief, ritual, and cultural form.
 Prehistory — The period before written records, but not before culture.
@@ -832,6 +839,13 @@ Key Takeaways Box
 - The Step Pyramid and Giza pyramids are architectural statements, not only tombs.
 - Akhenaten shows that Egyptian tradition includes conflict and reform.
 - The Rosetta Stone links ancient writing to modern historical access.
+
+H2 — Supplemental Integration: Epic and Theocratic Distinctions
+I. The Epic Human: From Gilgamesh to Odysseus
+The epic is a foundational vehicle of meaning-making in ancient civilizations. The Epic of Gilgamesh introduces a hero who confronts mortality directly, while the Odyssey emphasizes return, identity, and practical intelligence.
+
+II. Divine Order: Theocratic Distinctions in Mesopotamia and Egypt
+In the fertile valleys of the Tigris, Euphrates, and Nile, the first organized civilizations transformed spiritual belief into systems of theocracy. In Mesopotamia, kings were often seen as representatives of the gods in a harsh and unstable environment; ziggurats in mud-brick reflected this fragility. In Egypt, predictable Nile cycles supported a worldview of continuity in which the pharaoh could be treated as divine.
 
 6) Canonical Works and Terms
 Uruk — One of the earliest major Mesopotamian cities and a key site in the story of writing and kingship.
@@ -1468,6 +1482,10 @@ Key Takeaways Box
 - Comparison works best when it preserves difference and connection together.
 - This section broadens Chapter 1 beyond a Greece-and-Rome tunnel.
 
+H2 — Supplemental Integration: Global Philosophical Bridges
+III. The Philosophical Bridge of Eastern and Global Art
+Beyond the Mediterranean, classical-era cultures developed equally sophisticated systems of thought and form. In India, dharma and karma informed sacred architecture such as the stupa, where circumambulation made spiritual doctrine bodily. In China, imperial power and philosophical traditions such as Confucianism and Daoism shaped visual and political culture.
+
 6) Canonical Works and Terms
 Shang dynasty — Early Chinese dynasty associated with oracle bones and ritual kingship.
 Oracle bones — Inscribed turtle shells or bones used in Shang divination.
@@ -2090,6 +2108,31 @@ Key Takeaways Box
 - Greek artists adapt older influences into new human-centered forms.
 - Early Athens develops institutions that move toward broader civic life.
 - This section is the bridge from Bronze Age memory to classical culture.
+
+H2 — Supplemental Integration: Aegean to Archaic Deepening
+I. The Purple People: Phoenicians as Mediterranean Connective Tissue
+The Phoenicians built influence through trade, shipping, and communication rather than territorial empire. Their alphabet dramatically simplified writing and spread literacy across commercial networks.
+
+IV. The Stylistic Evolution of the Aegean and Early Greece
+Before Classical Greek perfection, the Aegean world moved through Cycladic abstraction, Minoan naturalism, and Mycenaean militarized monumentality.
+
+I. The Dark Age and the Phoenix of Homeric Memory
+After the Bronze Age Collapse, Greece entered a long period of reduced complexity in which writing disappeared. Oral tradition preserved heroic memory until alphabetic writing returned.
+
+IV. The Tear-Stained Verse: The Lyric Voice of Sappho
+Sappho represents the interior voice of Archaic Greece. While Homeric epic emphasizes collective warfare and heroic lineage, lyric poetry emphasizes individual feeling.
+
+II. The Oracle and the Omphalos: The Sacred Power of Delphi
+Delphi served as a Panhellenic sacred center where political and personal decisions were interpreted through the oracle of Apollo.
+
+1. Kouros vs Kore: The Rigid Birth of Greek Form
+Kouros and Kore statues are foundational to recognizing early Greek figural style.
+
+2. Black-Figure vs Red-Figure Technical Shift
+Greek pottery evolves from black-figure incision toward red-figure brush detail, enabling richer anatomy and movement.
+
+I. The Cleisthenic Shift: The Birth of Political Meaning
+Cleisthenes reorganized Athenian civic structure by deme and helped establish institutions such as the boule.
 
 6) Canonical Works and Terms
 Cycladic figurines — Marble island figures that show early Aegean abstraction.
@@ -2720,6 +2763,25 @@ Key Takeaways Box
 - Hellenistic culture expands Greek forms into a larger world.
 - Hellenistic art often intensifies movement, drama, and emotion.
 
+H2 — Supplemental Integration: Architectural and Philosophical Precision
+I. The Sacred Rock: The Acropolis and its Architectural Program
+The Acropolis was a unified political-religious statement after Persian destruction.
+
+II. The Order of the Columns: Mathematical Language of Architecture
+Doric, Ionic, and Corinthian orders are not merely decorative; they encode proportion, hierarchy, and philosophical assumptions about symmetry and order.
+
+I. The Parthenon: The Illusion of Perfection
+The Parthenon includes optical refinements such as entasis, stylobate curvature, and slight column inclination to correct visual distortion.
+
+III. The Shadow of the Philosopher: Legacies of Plato and Aristotle
+Plato and Aristotle define an enduring methodological split between transcendent idealism and empirical analysis.
+
+III. The Hellenistic Pathos: Evolution of Emotion in Sculpture
+High Classical ethos gives way to Hellenistic pathos after Alexander. Works such as Laocoon and Dying Gaul foreground suffering and movement.
+
+2. The Great Stupa and the Pantheon: A Tale of Two Domes
+Roman and Indian dome traditions express different priorities: Roman interiorized spatial mastery versus Buddhist circumambulatory ritual mass.
+
 6) Canonical Works and Terms
 Pericles — Athenian statesman associated with the city's high classical building program and civic leadership.
 Acropolis — The sacred and monumental hilltop complex in Athens.
@@ -3327,6 +3389,22 @@ Key Takeaways Box
 - Seneca offers practical moral reflection shaped by Stoic thought.
 - Roman satire exposes the strain and contradiction of urban empire.
 - Rome's later literature keeps public life under critical examination.
+
+H2 — Supplemental Integration: Roman Civic, Moral, and Spatial Systems
+IV. Civitas and Gravitas: Roman Moral and Civic Identity
+Roman public culture prioritized duty, authority, and institutional continuity.
+
+V. From Idealism to Pathos: Greek Achievement and Roman Materiality
+Greek human form idealization and Roman engineering pragmatism represent complementary classical trajectories.
+
+II. Stoic vs Epicurean Dialectic: Roman Philosophy in Practice
+Stoicism emphasizes duty and self-command; Epicureanism emphasizes fear reduction and moderated pleasure.
+
+3. The Ara Pacis: The Visual Language of Peace
+The Ara Pacis synthesizes Roman political theology through processional imagery, dynastic continuity, and abundance symbolism.
+
+4. The Pantheon: The Geometry of the Divine
+The Pantheon demonstrates Roman mastery of concrete and spatial mathematics through rotunda, coffered dome, and oculus.
 
 6) Canonical Works and Terms
 Etruscans — Pre-Roman Italian culture that influences early Roman religion and political symbols.

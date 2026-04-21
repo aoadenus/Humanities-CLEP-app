@@ -322,6 +322,23 @@ export function EditorialShell({
 
         <div className="mx-auto max-w-[980px] px-4 py-6 md:px-8 md:py-8">
           <Breadcrumbs items={breadcrumbItems} />
+          {chapter.notebookLmUrl && pageType !== "chapter" ? (
+            <Card className="mb-6 p-4 md:p-5">
+              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                <div className="text-sm leading-6 text-(--text-secondary)">
+                  Need more context and examples? Visit this chapter's NotebookLM for additional content.
+                </div>
+                <a
+                  className="inline-flex text-sm font-semibold text-(--accent) underline-offset-4 hover:underline"
+                  href={chapter.notebookLmUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Open Chapter NotebookLM
+                </a>
+              </div>
+            </Card>
+          ) : null}
           {materialRail}
           <div className="step-transition">{content}</div>
         </div>

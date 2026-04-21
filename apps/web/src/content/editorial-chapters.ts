@@ -13,6 +13,7 @@ export interface EditorialChapterBlueprint {
   color: string;
   locked: boolean;
   unlockWhenSectionsReady?: boolean;
+  notebookLmUrl?: string;
   sourceFile?: string;
   sourceFallbackFiles?: string[];
   sourceEnvVar?: string;
@@ -187,6 +188,7 @@ export const EDITORIAL_CHAPTER_BLUEPRINTS: readonly EditorialChapterBlueprint[] 
     emoji: "🏛️",
     color: "var(--ch1-color)",
     locked: false,
+    notebookLmUrl: "https://notebooklm.google.com/notebook/b67bef6c-bd32-4971-8bfb-531e20135a2e",
     sourceFile: "src/content/sources/CHAPTER 1 SECTION 1-6.CANONICAL.txt",
     sourceFallbackFiles: [
       "CHAPTER 1 SECTION 1-6 TEACHABLE.md",
@@ -202,6 +204,7 @@ export const EDITORIAL_CHAPTER_BLUEPRINTS: readonly EditorialChapterBlueprint[] 
     color: "var(--ch2-color)",
     locked: false,
     unlockWhenSectionsReady: true,
+    notebookLmUrl: "https://notebooklm.google.com/notebook/56f021fe-263e-4b5c-a8d9-3a4f0321dd5e",
     sourceFile: "src/content/sources/CHAPTER 2 SECTION 1-6.CANONICAL.txt",
     sourceEnvVar: "EDITORIAL_CH2_SOURCE_FILE",
     sectionMeta: CHAPTER_2_SECTION_META,
@@ -213,7 +216,8 @@ export const EDITORIAL_CHAPTER_BLUEPRINTS: readonly EditorialChapterBlueprint[] 
     color: "var(--ch3-color)",
     locked: false,
     unlockWhenSectionsReady: true,
-    sourceFile: "src/content/sources/CHAPTER 3 SECTION 1-6.CANONICAL.txt",
+    notebookLmUrl: "https://notebooklm.google.com/notebook/29e80e21-9c43-4ef8-b55c-2c1ef5521a20",
+    sourceFile: "src/content/sources/ch3 Section 1-6 (Canonical).md",
     sourceEnvVar: "EDITORIAL_CH3_SOURCE_FILE",
     sectionMeta: CHAPTER_3_SECTION_META,
   },

@@ -11,7 +11,7 @@ function fail(message: string): never {
 const CHAPTERS_TO_CHECK: Array<{ id: string; sourceFile: string }> = [
   { id: "ch1", sourceFile: "src/content/sources/CHAPTER 1 SECTION 1-6.CANONICAL.txt" },
   { id: "ch2", sourceFile: "src/content/sources/CHAPTER 2 SECTION 1-6.CANONICAL.txt" },
-  { id: "ch3", sourceFile: "src/content/sources/CHAPTER 3 SECTION 1-6.CANONICAL.txt" },
+  { id: "ch3", sourceFile: "src/content/sources/ch3 Section 1-6 (Canonical).md" },
 ];
 
 const CANONICAL_SECTION_HEADERS = [

@@ -281,6 +281,17 @@ function getWorkspaceRoots() {
     ),
     path.resolve(
       /* turbopackIgnore: true */ process.cwd(),
+      "apps",
+      "web",
+    ),
+    path.resolve(
+      /* turbopackIgnore: true */ process.cwd(),
+      "..",
+      "apps",
+      "web",
+    ),
+    path.resolve(
+      /* turbopackIgnore: true */ process.cwd(),
       "..",
       "..",
     ),
@@ -313,6 +324,19 @@ function getSourcePath(sourceFiles: readonly string[], sourceEnvVar?: string) {
     ),
     path.resolve(
       /* turbopackIgnore: true */ process.cwd(),
+      "apps",
+      "web",
+      sourceFile,
+    ),
+    path.resolve(
+      /* turbopackIgnore: true */ process.cwd(),
+      "..",
+      "apps",
+      "web",
+      sourceFile,
+    ),
+    path.resolve(
+      /* turbopackIgnore: true */ process.cwd(),
       "..",
       "..",
       sourceFile,
@@ -341,12 +365,26 @@ function getSourceTexts(sourceFile: string, sourceEnvVar?: string, sourceFallbac
   const candidatePaths = [...new Set([primaryPath, ...fallbackPaths].filter((value): value is string => Boolean(value)))];
   return candidatePaths.map((sourcePath) => ({
     sourcePath,
-    text: fs.readFileSync(sourcePath, "utf8").replace(/\r\n/g, "\n"),
+    text: fs.readFileSync(sourcePath, "utf8").replace(/^\uFEFF/, "").replace(/\r\n/g, "\n"),
   }));
 }
 
 function cleanText(value: string) {
   return value
+    // Normalize common mojibake sequences from mixed Windows-1252/UTF-8 pastes.
+    .replace(/ΓÇö/g, "—")
+    .replace(/ΓÇô/g, "–")
+    .replace(/ΓÇ£/g, "\u201c")
+    .replace(/ΓÇ¥/g, "\u201d")
+    .replace(/ΓÇÖ/g, "\u2019")
+    .replace(/ΓåÆ/g, "→")
+    .replace(/â€”/g, "—")
+    .replace(/â€“/g, "–")
+    .replace(/â€˜/g, "\u2018")
+    .replace(/â€™/g, "\u2019")
+    .replace(/â€œ/g, "\u201c")
+    .replace(/â€\x9d|â€�/g, "\u201d")
+    .replace(/â†’/g, "→")
     .replace(/\u00a0/g, " ")
     .replace(/[ \t]+\n/g, "\n")
     .replace(/\n{3,}/g, "\n\n")
@@ -701,15 +739,25 @@ function parseFlashcards(raw: string, sectionId: string): EditorialFlashcard[] {
   let pendingFront = "";
 
   for (const line of lines) {
-    const trimmed = line.trim();
-    if (/^Core 10$/i.test(trimmed)) {
+    const trimmed = cleanText(line);
+    if (/^Core\b/i.test(trimmed)) {
       deck = "core";
-      continue;
     }
-    if (/^Extra 10$/i.test(trimmed)) {
+    if (/^Extra\b/i.test(trimmed)) {
       deck = "extra";
+    }
+
+    const inlineCard = trimmed.match(/^(Core|Extra)\s+\d+\.\s+(.+?)\s+(?:→|[-:])\s+(.+)$/i);
+    if (inlineCard) {
+      cards.push({
+        id: `${sectionId}-${deck}-${cards.length + 1}`,
+        front: inlineCard[2].trim(),
+        back: inlineCard[3].trim(),
+        deck: /^Extra/i.test(inlineCard[1]) ? "extra" : "core",
+      });
       continue;
     }
+
     if (/^Front:/i.test(trimmed)) {
       pendingFront = trimmed.replace(/^Front:\s*/i, "").trim();
       continue;
@@ -845,12 +893,12 @@ function parseQuestionBlock(
       continue;
     }
 
-    const optionMatch = trimmed.match(/^[A-E][.)]\s+(.+)$/);
+    const optionMatch = trimmed.match(/^(?:\(([A-E])\)|([A-E])[.)])\s+(.+)$/i);
     if (optionMatch) {
       if (!questionLines.length) {
         questionLines = [`Question ${questions.length + 1}`];
       }
-      options.push(optionMatch[1].trim());
+      options.push(optionMatch[3].trim());
       continue;
     }
 
@@ -1831,6 +1879,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       emoji: blueprint.emoji,
       color: blueprint.color,
       locked: blueprint.locked,
+      notebookLmUrl: blueprint.notebookLmUrl,
       sections: [],
     };
   }
@@ -1843,6 +1892,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       emoji: blueprint.emoji,
       color: blueprint.color,
       locked: true,
+      notebookLmUrl: blueprint.notebookLmUrl,
       sections: [],
     };
   }
@@ -1881,6 +1931,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       emoji: blueprint.emoji,
       color: blueprint.color,
       locked,
+      notebookLmUrl: blueprint.notebookLmUrl,
       sections,
     };
   } catch (error) {
@@ -1894,6 +1945,7 @@ function buildChapterFromBlueprint(blueprint: EditorialChapterBlueprint): Editor
       emoji: blueprint.emoji,
       color: blueprint.color,
       locked: true,
+      notebookLmUrl: blueprint.notebookLmUrl,
       sections: [],
     };
   }

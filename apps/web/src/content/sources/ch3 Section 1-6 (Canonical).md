@@ -1,4 +1,4 @@
-## Section 1 (Canonical)
+﻿## Section 1 (Canonical)
 
 1) Section Relevance and Stakes
 This section matters because Chapter 3 cannot simply drop you into Florence and Early Renaissance Humanism as if the topic explains itself. A learner needs to know what came before, what changed, where the new developments happened, why the shift took place, and how the new section solves a historical problem left open by the previous one. In this case, the section grows out of the late medieval world of Gothic culture, urban growth, civic rivalry, plague-era disruption, and fourteenth-century transition, and it must teach the student how Renaissance and humanism works in a concrete place: Florence, Tuscany, central Italy.
@@ -8,43 +8,43 @@ For CLEP purposes, this section is high value because the Humanities exam reward
 The section's central claim is this: Florence became the first durable center of Renaissance culture because commercial wealth, civic rivalry, classical recovery, and patronage converged there in a way that reshaped education, politics, and art. That claim must stay visible all the way through the lesson, the CLEP keys, the quiz logic, and the flashcards.
 
 2) Big Ideas
-Big Idea 1 — Transitions create renaissances, not miracles
+Big Idea 1 ΓÇö Transitions create renaissances, not miracles
 
 The Renaissance begins as a transition out of the late medieval world, not as a magical restart. Florence matters because it sits at the intersection of commerce, politics, memory, and competition. A city with money, literacy, and civic ambition can turn admiration for antiquity into a public program.
 
 Students often think the Middle Ages simply end and the Renaissance simply begins. The real story is overlap: medieval institutions survive while new habits of study, patronage, and visual problem-solving gather force.
 
-Big Idea 2 — Humanism is an educational movement
+Big Idea 2 ΓÇö Humanism is an educational movement
 
 Humanism in this section means disciplined study of classical language, rhetoric, history, poetry, and moral philosophy. It trains people for public speech, ethical judgment, and civic life, which is why it belongs to schools, chanceries, and courts as much as to libraries.
 
 Students often hear 'humanism' and think it means general kindness or secularism. In Renaissance Florence it first means a curriculum and a way of forming the educated person.
 
-Big Idea 3 — Florence is a place, not a slogan
+Big Idea 3 ΓÇö Florence is a place, not a slogan
 
 Florence is a Tuscan city-state in central Italy, shaped by banking, guilds, trade, and intense civic rivalry. Those conditions matter because artists and scholars need concentrated wealth and public competition to thrive.
 
 Students often accept 'Florence started the Renaissance' without asking where Florence is or why it mattered. Without geography and institutions, the claim is empty.
 
-Big Idea 4 — Patronage changes production
+Big Idea 4 ΓÇö Patronage changes production
 
 Art in Florence develops through commissions, workshops, guild rules, and elite sponsorship. Patronage does not merely fund beauty; it directs scale, subject matter, prestige, and technical ambition.
 
 Students often think patrons simply 'liked art.' On CLEP, patronage is a structural clue for how cultural change becomes visible.
 
-Big Idea 5 — Perspective is an intellectual breakthrough
+Big Idea 5 ΓÇö Perspective is an intellectual breakthrough
 
 Linear perspective is not just a trick for making paintings realistic. It organizes space mathematically and implies that the visible world can be studied, measured, and ordered.
 
 Students often reduce perspective to 'things look 3D now.' The deeper point is that pictorial space becomes rational, stable, and knowable.
 
-Big Idea 6 — Classical recovery fuels innovation
+Big Idea 6 ΓÇö Classical recovery fuels innovation
 
 Florentine artists and scholars do not copy antiquity passively. They recover forms, texts, and ideals from the classical past and then adapt them to contemporary civic and religious life.
 
 Students often imagine revival means nostalgia. In practice, classical recovery becomes a toolkit for making something new.
-### Supplemental Add-On — What came before Florence, and why Florence did not appear out of nowhere
-Before you can understand Florence, you have to understand the world that came before it. Europe in the later Middle Ages was not a blank space waiting for “the Renaissance” to happen. It was a world of churches, guilds, merchant routes, city walls, town governments, cathedrals, universities, monasteries, and recurring crisis. The plague, political violence, and economic change did not destroy this world completely, but they shook it hard. Old institutions still existed, yet new kinds of urban wealth and new kinds of ambition were becoming more visible.
+### Supplemental Add-On ΓÇö What came before Florence, and why Florence did not appear out of nowhere
+Before you can understand Florence, you have to understand the world that came before it. Europe in the later Middle Ages was not a blank space waiting for ΓÇ£the RenaissanceΓÇ¥ to happen. It was a world of churches, guilds, merchant routes, city walls, town governments, cathedrals, universities, monasteries, and recurring crisis. The plague, political violence, and economic change did not destroy this world completely, but they shook it hard. Old institutions still existed, yet new kinds of urban wealth and new kinds of ambition were becoming more visible.
 
 That matters because Florence did not rise in a vacuum. It rose inside a network of Italian cities that had grown rich from trade, finance, and manufacturing. In the medieval period, many people still thought in terms of inherited hierarchy and sacred order. But in these urban centers, more people were starting to ask practical questions: Who governs the city? Who pays for public works? How can wealth become prestige? How can a family make itself unforgettable? Those questions help explain why art, architecture, scholarship, and politics become so tightly connected in Florence.
 
@@ -55,11 +55,11 @@ A student should imagine Florence not as a peaceful museum city but as a living,
 - A likely CLEP trap is to imagine the Renaissance as a complete break from the Middle Ages.
 - Better exam wording: the Renaissance **grew out of** late medieval urban conditions.
 # Add-On 1.2
-**Belongs in:** Section 1 → Block 5) Textbook Content → Insert after `H2 — Where this happens and why place matters`  
+**Belongs in:** Section 1 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Where this happens and why place matters`  
 **Why this add-on is needed:**  
-Students may not know where Florence, Tuscany, or “central Italy” are, or why city-states matter.
+Students may not know where Florence, Tuscany, or ΓÇ£central ItalyΓÇ¥ are, or why city-states matter.
 
-### Supplemental Add-On — Where Florence is, what Tuscany is, and what a city-state means
+### Supplemental Add-On ΓÇö Where Florence is, what Tuscany is, and what a city-state means
 Florence is a city in **Tuscany**, a region in **central Italy**. Today students may think of Italy as one nation, but in the fourteenth and fifteenth centuries the Italian peninsula was politically fragmented. It was made up of **city-states**, kingdoms, papal territories, republics, and rival centers of power. A **city-state** is a city that acts like an independent political unit: it governs itself, controls surrounding territory, defends its interests, taxes people, makes alliances, and competes with neighbors.
 
 Why does that matter? Because when power is concentrated in a city rather than spread evenly across a large unified kingdom, the city itself becomes a stage. Public buildings, churches, sculptures, frescoes, plazas, and civic rituals all become tools of identity. In a city-state, culture is not just decoration. It is part of politics. Florence, Venice, Milan, Siena, and Rome all develop strong visual identities partly because urban power needs visible forms.
@@ -74,14 +74,14 @@ Tuscany matters because it places Florence inside a network of productive land, 
 ---
 
 ## Add-On 1.3
-**Belongs in:** Section 1 → Block 5) Textbook Content → Insert after `H2 — Defining the core term`  
+**Belongs in:** Section 1 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Defining the core term`  
 **Why this add-on is needed:**  
-Students often hear “Renaissance” and “humanism” without a clear definition.
+Students often hear ΓÇ£RenaissanceΓÇ¥ and ΓÇ£humanismΓÇ¥ without a clear definition.
 
-### Supplemental Add-On — What “Renaissance” and “humanism” really mean
-The word **Renaissance** comes from a French term meaning “rebirth,” but in humanities study it does **not** mean that Europe was dead and suddenly came back to life. That is too dramatic and too simplistic. In this chapter, **Renaissance** means a period in which educated people, artists, patrons, and political elites deliberately recovered and reworked ideas, texts, and forms from the classical past — especially Greece and Rome — and used them to rethink education, public life, and the arts.
+### Supplemental Add-On ΓÇö What ΓÇ£RenaissanceΓÇ¥ and ΓÇ£humanismΓÇ¥ really mean
+The word **Renaissance** comes from a French term meaning ΓÇ£rebirth,ΓÇ¥ but in humanities study it does **not** mean that Europe was dead and suddenly came back to life. That is too dramatic and too simplistic. In this chapter, **Renaissance** means a period in which educated people, artists, patrons, and political elites deliberately recovered and reworked ideas, texts, and forms from the classical past ΓÇö especially Greece and Rome ΓÇö and used them to rethink education, public life, and the arts.
 
-The word **humanism** is even more easily misunderstood. It does not mean “being humane,” “believing in people,” or “rejecting religion.” In the Renaissance, **humanism** means a scholarly and educational movement centered on classical texts and the **studia humanitatis**: grammar, rhetoric, history, poetry, and moral philosophy. The point was to train an educated person who could read carefully, write persuasively, judge ethically, and participate in civic life. Humanism is about the formation of the mind and character through language and history.
+The word **humanism** is even more easily misunderstood. It does not mean ΓÇ£being humane,ΓÇ¥ ΓÇ£believing in people,ΓÇ¥ or ΓÇ£rejecting religion.ΓÇ¥ In the Renaissance, **humanism** means a scholarly and educational movement centered on classical texts and the **studia humanitatis**: grammar, rhetoric, history, poetry, and moral philosophy. The point was to train an educated person who could read carefully, write persuasively, judge ethically, and participate in civic life. Humanism is about the formation of the mind and character through language and history.
 
 When you put those ideas together, early Renaissance Florence begins to make more sense. The Renaissance is the wider cultural shift. Humanism is one of the main intellectual engines inside that shift.
 
@@ -93,73 +93,73 @@ When you put those ideas together, early Renaissance Florence begins to make mor
 ---
 
 ## Add-On 1.4
-**Belongs in:** Section 1 → Block 5) Textbook Content → Insert after `H3 — Petrarch as evidence`  
+**Belongs in:** Section 1 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Petrarch as evidence`  
 **Why this add-on is needed:**  
 The canonical paragraph names Petrarch but does not fully ground him for a beginner.
 
-### Supplemental Add-On — Petrarch from the ground up
-**Francesco Petrarch (1304–1374)** was an Italian scholar and poet often called the “father of humanism.” That title does not mean he invented intelligence or poetry. It means he became one of the most influential early figures in turning classical reading into a new cultural program. He studied Latin authors closely, admired Roman antiquity, and believed that the texts of the ancient world could help shape morally and intellectually serious people in the present.
+### Supplemental Add-On ΓÇö Petrarch from the ground up
+**Francesco Petrarch (1304ΓÇô1374)** was an Italian scholar and poet often called the ΓÇ£father of humanism.ΓÇ¥ That title does not mean he invented intelligence or poetry. It means he became one of the most influential early figures in turning classical reading into a new cultural program. He studied Latin authors closely, admired Roman antiquity, and believed that the texts of the ancient world could help shape morally and intellectually serious people in the present.
 
-Petrarch mattered because he helped change the way educated people related to the past. In the medieval world, classical texts were still known, but Petrarch approached them with a more personal and energetic sense of recovery. He did not want antiquity simply preserved; he wanted it re-entered, studied, imitated, and used. He also mattered because he wrote in both Latin and Italian. That helps students see that Renaissance culture did not develop only in a scholar’s study. It also entered literature and public memory.
+Petrarch mattered because he helped change the way educated people related to the past. In the medieval world, classical texts were still known, but Petrarch approached them with a more personal and energetic sense of recovery. He did not want antiquity simply preserved; he wanted it re-entered, studied, imitated, and used. He also mattered because he wrote in both Latin and Italian. That helps students see that Renaissance culture did not develop only in a scholarΓÇÖs study. It also entered literature and public memory.
 
 For CLEP purposes, Petrarch is important less because students must memorize every detail of his life and more because he is a major clue for **early humanism**, **classical revival**, and the transition out of medieval culture.
 
 **CLEP Keys**
-- **Petrarch (1304–1374)** = early humanism, classical revival
+- **Petrarch (1304ΓÇô1374)** = early humanism, classical revival
 - Associated idea: admiration for ancient Rome and the moral/intellectual power of classical texts
-- Exam use: “Which figure is most associated with early humanism?” or “Which movement does Petrarch help signal?”
+- Exam use: ΓÇ£Which figure is most associated with early humanism?ΓÇ¥ or ΓÇ£Which movement does Petrarch help signal?ΓÇ¥
 
 ---
 
 ## Add-On 1.5
-**Belongs in:** Section 1 → Block 5) Textbook Content → Insert after `H3 — Boccaccio as evidence`  
+**Belongs in:** Section 1 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Boccaccio as evidence`  
 **Why this add-on is needed:**  
 Boccaccio is often named quickly without enough explanation.
 
-### Supplemental Add-On — Why Boccaccio matters
-**Giovanni Boccaccio (1313–1375)** was an Italian writer and humanist closely linked to the literary world of early Renaissance Italy. He is especially famous for the **Decameron**, a collection of stories told by young people who flee plague-stricken Florence. That setting matters because it captures a real historical pressure point: the Black Death changed demographic patterns, social feeling, and cultural consciousness across Europe.
+### Supplemental Add-On ΓÇö Why Boccaccio matters
+**Giovanni Boccaccio (1313ΓÇô1375)** was an Italian writer and humanist closely linked to the literary world of early Renaissance Italy. He is especially famous for the **Decameron**, a collection of stories told by young people who flee plague-stricken Florence. That setting matters because it captures a real historical pressure point: the Black Death changed demographic patterns, social feeling, and cultural consciousness across Europe.
 
 Why is Boccaccio relevant in this section? Because he helps students see that the Renaissance is not only visual and architectural. It is literary too. Boccaccio shows how urban life, storytelling, wit, realism, and close attention to human behavior become culturally important. In simple terms, if Petrarch helps define the scholarly side of humanism, Boccaccio helps demonstrate the literary and social side.
 
 **CLEP Keys**
-- **Boccaccio (1313–1375)** = Italian writer tied to early Renaissance literature
+- **Boccaccio (1313ΓÇô1375)** = Italian writer tied to early Renaissance literature
 - **Decameron** = plague setting, storytelling, human behavior
 - Exam use: literary anchor for early Italian Renaissance culture
 
 ---
 
 ## Add-On 1.6
-**Belongs in:** Section 1 → Block 5) Textbook Content → Insert after `H3 — Cosimo de' Medici as evidence` and `H3 — Lorenzo de' Medici as evidence`  
+**Belongs in:** Section 1 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Cosimo de' Medici as evidence` and `H3 ΓÇö Lorenzo de' Medici as evidence`  
 **Why this add-on is needed:**  
 Students need the Medici explained as a family power structure, not just a name.
 
-### Supplemental Add-On — Who the Medici were and why patronage matters
-The **Medici** were a powerful Florentine family deeply connected to banking, politics, and patronage. When students hear “Medici patronage,” they should not picture a casual rich family buying art for fun. They should picture a family using wealth to shape public life, build influence, support learning, and attach its name to cultural greatness.
+### Supplemental Add-On ΓÇö Who the Medici were and why patronage matters
+The **Medici** were a powerful Florentine family deeply connected to banking, politics, and patronage. When students hear ΓÇ£Medici patronage,ΓÇ¥ they should not picture a casual rich family buying art for fun. They should picture a family using wealth to shape public life, build influence, support learning, and attach its name to cultural greatness.
 
-**Cosimo de' Medici (1389–1464)** helped consolidate the family’s influence in Florence. He supported scholars and artists, and his role matters because he shows how money and learning can work together in city politics. **Lorenzo de' Medici (1449–1492)**, often called Lorenzo the Magnificent, became an even stronger symbol of the union between wealth, politics, literature, and artistic sponsorship. Under Lorenzo, Florence’s cultural prestige grew dramatically.
+**Cosimo de' Medici (1389ΓÇô1464)** helped consolidate the familyΓÇÖs influence in Florence. He supported scholars and artists, and his role matters because he shows how money and learning can work together in city politics. **Lorenzo de' Medici (1449ΓÇô1492)**, often called Lorenzo the Magnificent, became an even stronger symbol of the union between wealth, politics, literature, and artistic sponsorship. Under Lorenzo, FlorenceΓÇÖs cultural prestige grew dramatically.
 
-Patronage matters because cultural production is expensive. Buildings, altarpieces, sculptures, manuscripts, libraries, and workshops all require labor, materials, time, and protection. Patrons do not just “support art.” They influence what gets made, for whom, at what scale, and with what public meaning.
+Patronage matters because cultural production is expensive. Buildings, altarpieces, sculptures, manuscripts, libraries, and workshops all require labor, materials, time, and protection. Patrons do not just ΓÇ£support art.ΓÇ¥ They influence what gets made, for whom, at what scale, and with what public meaning.
 
 **CLEP Keys**
 - **Medici** = bankers, political influence, patronage
-- **Cosimo** and **Lorenzo** = Florence’s cultural power brokers
+- **Cosimo** and **Lorenzo** = FlorenceΓÇÖs cultural power brokers
 - Exam use: patronage is a major clue for why Renaissance art flourished
 
 ---
 
 ## Add-On 1.7
-**Belongs in:** Section 1 → Block 5) Textbook Content → Insert after `H2 — Major works and visual/literary clues`  
+**Belongs in:** Section 1 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Major works and visual/literary clues`  
 **Why this add-on is needed:**  
 Students need the works broken down one by one.
 
-### Supplemental Add-On — Work-by-work recognition guide for Section 1
-**Florence Cathedral dome**: Designed by **Filippo Brunelleschi (1377–1446)**, this dome matters because it solves a major engineering problem and becomes a visible symbol of Florentine ingenuity. Students should connect it to architecture, mathematics, civic pride, and Renaissance confidence.
+### Supplemental Add-On ΓÇö Work-by-work recognition guide for Section 1
+**Florence Cathedral dome**: Designed by **Filippo Brunelleschi (1377ΓÇô1446)**, this dome matters because it solves a major engineering problem and becomes a visible symbol of Florentine ingenuity. Students should connect it to architecture, mathematics, civic pride, and Renaissance confidence.
 
-**Gates of Paradise**: The nickname for Lorenzo Ghiberti’s bronze doors for the Florence Baptistery. These doors matter because they display narrative relief, technical skill, and growing interest in classical form and spatial order.
+**Gates of Paradise**: The nickname for Lorenzo GhibertiΓÇÖs bronze doors for the Florence Baptistery. These doors matter because they display narrative relief, technical skill, and growing interest in classical form and spatial order.
 
-**Holy Trinity**: A fresco by **Masaccio (1401–1428)**. This work is high-yield because it demonstrates **linear perspective**, making it one of the classic exam anchors for mathematically organized space in early Renaissance painting.
+**Holy Trinity**: A fresco by **Masaccio (1401ΓÇô1428)**. This work is high-yield because it demonstrates **linear perspective**, making it one of the classic exam anchors for mathematically organized space in early Renaissance painting.
 
-**David (Donatello)**: Donatello’s bronze David is important because it marks a renewed interest in freestanding classical-style sculpture and the independent human body.
+**David (Donatello)**: DonatelloΓÇÖs bronze David is important because it marks a renewed interest in freestanding classical-style sculpture and the independent human body.
 
 **The Tribute Money**: Another Masaccio landmark, useful for studying realistic figures, coherent space, and narrative unity.
 
@@ -172,11 +172,11 @@ Students need the works broken down one by one.
 ---
 
 ## Add-On 1.8
-**Belongs in:** Section 1 → Block 6) Canonical Works and Terms → Insert after `Key Terms`  
+**Belongs in:** Section 1 ΓåÆ Block 6) Canonical Works and Terms ΓåÆ Insert after `Key Terms`  
 **Why this add-on is needed:**  
 Some key vocabulary still needs beginner-level explanation.
 
-### Supplemental Add-On — Beginner-friendly vocabulary layer
+### Supplemental Add-On ΓÇö Beginner-friendly vocabulary layer
 - **Rhetoric**: the art of speaking or writing effectively and persuasively  
 - **Moral philosophy**: thinking about right and wrong, good character, and how people should live  
 - **Volumetric**: giving a figure a sense of weight and three-dimensional body  
@@ -216,16 +216,16 @@ renaissance.s1.early_renaissance_artistic_change	Recognize the early Renaissance
 renaissance.s1.florence_as_first_center	Explain why Florence becomes the first durable Renaissance center.
 
 5) Textbook Content
-H1 — Entering Florence and Early Renaissance Humanism
+H1 ΓÇö Entering Florence and Early Renaissance Humanism
 This section cannot begin inside its own topic. It must first pay its transition debt. What came before this section was the late medieval world of Gothic culture, urban growth, civic rivalry, plague-era disruption, and fourteenth-century transition. That matters because students are not satisfied by a sentence such as 'Florence and Early Renaissance Humanism happened next.' They need a causal bridge. In Chapter 3, the real question is How does a late medieval Italian city become the first durable center of a new cultural program built on classical recovery, civic ambition, and artistic problem-solving?
 
 CLEP Keys
-- Period clue: ca. 1300–1495
+- Period clue: ca. 1300ΓÇô1495
 - Place clue: Florence, Tuscany, central Italy
 - Core term: Renaissance and humanism
 - What CLEP is likely testing here: names, works, terms, style clues, and the transition from the previous section.
 
-H2 — Where this happens and why place matters
+H2 ΓÇö Where this happens and why place matters
 Florence, Tuscany, central Italy is not just a backdrop. On CLEP, place is often the fastest way to organize evidence. When students know where an event, artwork, school, or intellectual movement is happening, they can sort it by patronage, politics, media, and style. This is why the section states its place early rather than hiding it in a side note. The location helps explain why particular people matter, why certain materials or institutions dominate, and why the works of the period look or sound the way they do.
 
 CLEP Keys
@@ -233,7 +233,7 @@ CLEP Keys
 - Recognition strategy: attach each major figure to a place as well as to a work.
 - Fast exam clue: if the geography changes, the style logic often changes too.
 
-H2 — Defining the core term
+H2 ΓÇö Defining the core term
 The term 'Renaissance and humanism' must be taught before it is used. In this section, the term does not function as a slogan. It is the label for a precise cultural shift with identifiable institutions, forms, and habits of thought. Students who define the term loosely will struggle on style-recognition and comparison questions. Students who define it concretely can sort questions under time pressure.
 
 CLEP Keys
@@ -241,26 +241,26 @@ CLEP Keys
 - Be able to say what it is and what it is not.
 - Tie the term to at least two people, two works, and one style marker.
 
-H2 — The historical tension
+H2 ΓÇö The historical tension
 The central problem of this section is: How does a late medieval Italian city become the first durable center of a new cultural program built on classical recovery, civic ambition, and artistic problem-solving? A good humanities section does not merely list artifacts. It shows why those artifacts exist. The people and works in this section are evidence that a larger change is underway. Once students can state the section's problem clearly, the names stop feeling random and begin to function as proof.
 
 CLEP Keys
 - If you can name the tension, you can answer compare/contrast questions faster.
 - Many exam items ask indirectly: what shift does this description point to?
 
-H3 — Petrarch as evidence
+H3 ΓÇö Petrarch as evidence
 Petrarch matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Petrarch should be tied directly to the shift in Renaissance and humanism and to one or more of the section's recognition anchors: Florence Cathedral dome, Gates of Paradise, Holy Trinity.
 
-H3 — Boccaccio as evidence
+H3 ΓÇö Boccaccio as evidence
 Boccaccio matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Boccaccio should be tied directly to the shift in Renaissance and humanism and to one or more of the section's recognition anchors: Florence Cathedral dome, Gates of Paradise, Holy Trinity.
 
-H3 — Cosimo de' Medici as evidence
+H3 ΓÇö Cosimo de' Medici as evidence
 Cosimo de' Medici matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Cosimo de' Medici should be tied directly to the shift in Renaissance and humanism and to one or more of the section's recognition anchors: Florence Cathedral dome, Gates of Paradise, Holy Trinity.
 
-H3 — Lorenzo de' Medici as evidence
+H3 ΓÇö Lorenzo de' Medici as evidence
 Lorenzo de' Medici matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Lorenzo de' Medici should be tied directly to the shift in Renaissance and humanism and to one or more of the section's recognition anchors: Florence Cathedral dome, Gates of Paradise, Holy Trinity.
 
-H2 — Major works and visual/literary clues
+H2 ΓÇö Major works and visual/literary clues
 The works attached to this section must be learned as recognition systems, not as isolated museum labels. Florence Cathedral dome, Gates of Paradise, Holy Trinity, David (Donatello), The Tribute Money are high-yield because they can be used to test medium, style, patronage, theme, period, and creator. The right study move is to learn each work as a cluster: title, creator, place, style clue, and why CLEP would care.
 
 CLEP Keys
@@ -268,7 +268,7 @@ CLEP Keys
 - Style clues to know: Renaissance, humanism, civic humanism, patronage, linear perspective
 - Typical question frame: Which work, artist, or movement best matches this description?
 
-H2 — Why this section leads to the next one
+H2 ΓÇö Why this section leads to the next one
 By the end of the section, the learner should be able to say why the next section becomes necessary. The chapter cannot feel stitched together; it must feel argued. This section resolves its own question and then raises the next one that Chapter 3 must answer. That is why the closing move of this section should naturally point forward rather than merely stop.
 
 CLEP Keys
@@ -277,45 +277,45 @@ CLEP Keys
 
 6) Canonical Works and Terms
 Key Terms
-- **Renaissance** — historically specific recovery and reworking of classical learning, forms, and ideals in early modern Europe.
-- **humanism** — scholarly and educational movement centered on classical texts, rhetoric, history, poetry, and moral philosophy.
-- **civic humanism** — application of humanist education to public and civic life.
-- **patronage** — financial and political sponsorship of cultural production.
-- **linear perspective** — mathematical system for organizing pictorial space from a fixed viewpoint.
-- **proportion** — harmonious relation of parts to whole in visual design.
-- **classical revival** — renewed study and adaptation of Greco-Roman models.
-- **city-state** — independent political unit centered on a city and its territory.
-- **fresco** — painting executed on wet plaster.
-- **naturalism** — representation that aims at convincing lifelike form.
+- **Renaissance** ΓÇö historically specific recovery and reworking of classical learning, forms, and ideals in early modern Europe.
+- **humanism** ΓÇö scholarly and educational movement centered on classical texts, rhetoric, history, poetry, and moral philosophy.
+- **civic humanism** ΓÇö application of humanist education to public and civic life.
+- **patronage** ΓÇö financial and political sponsorship of cultural production.
+- **linear perspective** ΓÇö mathematical system for organizing pictorial space from a fixed viewpoint.
+- **proportion** ΓÇö harmonious relation of parts to whole in visual design.
+- **classical revival** ΓÇö renewed study and adaptation of Greco-Roman models.
+- **city-state** ΓÇö independent political unit centered on a city and its territory.
+- **fresco** ΓÇö painting executed on wet plaster.
+- **naturalism** ΓÇö representation that aims at convincing lifelike form.
 
 Key People, Works, and Artifacts
-- **Petrarch** — core CLEP anchor for this section.
-- **Boccaccio** — core CLEP anchor for this section.
-- **Cosimo de' Medici** — core CLEP anchor for this section.
-- **Lorenzo de' Medici** — core CLEP anchor for this section.
-- **Brunelleschi** — core CLEP anchor for this section.
-- **Donatello** — core CLEP anchor for this section.
-- **Masaccio** — core CLEP anchor for this section.
-- **Leon Battista Alberti** — core CLEP anchor for this section.
-- **Florence Cathedral dome** — major recognition work/text associated with this section.
-- **Gates of Paradise** — major recognition work/text associated with this section.
-- **Holy Trinity** — major recognition work/text associated with this section.
-- **David (Donatello)** — major recognition work/text associated with this section.
-- **The Tribute Money** — major recognition work/text associated with this section.
-- **On Painting** — major recognition work/text associated with this section.
+- **Petrarch** ΓÇö core CLEP anchor for this section.
+- **Boccaccio** ΓÇö core CLEP anchor for this section.
+- **Cosimo de' Medici** ΓÇö core CLEP anchor for this section.
+- **Lorenzo de' Medici** ΓÇö core CLEP anchor for this section.
+- **Brunelleschi** ΓÇö core CLEP anchor for this section.
+- **Donatello** ΓÇö core CLEP anchor for this section.
+- **Masaccio** ΓÇö core CLEP anchor for this section.
+- **Leon Battista Alberti** ΓÇö core CLEP anchor for this section.
+- **Florence Cathedral dome** ΓÇö major recognition work/text associated with this section.
+- **Gates of Paradise** ΓÇö major recognition work/text associated with this section.
+- **Holy Trinity** ΓÇö major recognition work/text associated with this section.
+- **David (Donatello)** ΓÇö major recognition work/text associated with this section.
+- **The Tribute Money** ΓÇö major recognition work/text associated with this section.
+- **On Painting** ΓÇö major recognition work/text associated with this section.
 
 7) Primary Source Excerpts
-- **Petrarch** — 'I myself am one of those whom antiquity has recalled.'
-- **Leon Battista Alberti** — 'Painting is the intersection of the visual pyramid.'
-- **Masaccio / visual logic note** — Single-point perspective organizes sacred space into measurable depth.
+- **Petrarch** ΓÇö 'I myself am one of those whom antiquity has recalled.'
+- **Leon Battista Alberti** ΓÇö 'Painting is the intersection of the visual pyramid.'
+- **Masaccio / visual logic note** ΓÇö Single-point perspective organizes sacred space into measurable depth.
 
 8) Timeline Anchors
-- 1348 — Black Death reshapes Italian urban life and labor patterns
-- c. 1350–1375 — Petrarch and Boccaccio consolidate early humanist literary prestige
-- 1401 — Florence Baptistery doors competition signals new artistic ambition
-- 1420s — Brunelleschi develops the dome and linear perspective experiments
-- 1420s–1440s — Donatello and Masaccio redefine sculpture and painting
-- 1469–1492 — Lorenzo de' Medici presides over the city's cultural peak
+- 1348 ΓÇö Black Death reshapes Italian urban life and labor patterns
+- c. 1350ΓÇô1375 ΓÇö Petrarch and Boccaccio consolidate early humanist literary prestige
+- 1401 ΓÇö Florence Baptistery doors competition signals new artistic ambition
+- 1420s ΓÇö Brunelleschi develops the dome and linear perspective experiments
+- 1420sΓÇô1440s ΓÇö Donatello and Masaccio redefine sculpture and painting
+- 1469ΓÇô1492 ΓÇö Lorenzo de' Medici presides over the city's cultural peak
 
 9) Exam Hot Zones
 - Florence as a city-state in Tuscany
@@ -376,11 +376,11 @@ Key People, Works, and Artifacts
 (E) ending patronage
 
 8. Which pairing best matches person and contribution?
-(A) Petrarch — stained-glass design
-(B) Brunelleschi — dome engineering
-(C) Donatello — sonnet sequence
-(D) Masaccio — printing press
-(E) Alberti — iconoclasm
+(A) Petrarch ΓÇö stained-glass design
+(B) Brunelleschi ΓÇö dome engineering
+(C) Donatello ΓÇö sonnet sequence
+(D) Masaccio ΓÇö printing press
+(E) Alberti ΓÇö iconoclasm
 
 9. The most accurate bridge from the medieval world to Florence is that
 (A) Florence had no medieval roots
@@ -397,47 +397,47 @@ Key People, Works, and Artifacts
 (E) Mannerist elongation
 
 11) Answer Key with Explanations
-1. B — The correct answer is B. Florence best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+1. B ΓÇö The correct answer is B. Florence best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-2. B — The correct answer is B. study of classical rhetoric and moral philosophy best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+2. B ΓÇö The correct answer is B. study of classical rhetoric and moral philosophy best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-3. B — The correct answer is B. linear perspective best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+3. B ΓÇö The correct answer is B. linear perspective best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-4. C — The correct answer is C. Florentine patrons and political power brokers best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+4. C ΓÇö The correct answer is C. Florentine patrons and political power brokers best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-5. C — The correct answer is C. illusionistic space and volumetric figures best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+5. C ΓÇö The correct answer is C. illusionistic space and volumetric figures best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-6. B — The correct answer is B. a single city functioning as an independent political unit best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+6. B ΓÇö The correct answer is B. a single city functioning as an independent political unit best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-7. B — The correct answer is B. recovering classical forms and adapting them to present needs best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+7. B ΓÇö The correct answer is B. recovering classical forms and adapting them to present needs best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-8. B — The correct answer is B. Brunelleschi — dome engineering best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+8. B ΓÇö The correct answer is B. Brunelleschi ΓÇö dome engineering best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-9. B — The correct answer is B. late medieval urban wealth and rivalry created the conditions for Renaissance change best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+9. B ΓÇö The correct answer is B. late medieval urban wealth and rivalry created the conditions for Renaissance change best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-10. B — The correct answer is B. single-point perspective and civic patronage best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+10. B ΓÇö The correct answer is B. single-point perspective and civic patronage best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
 12) Flashcards
-Core 1. Renaissance → identify its section function, period clue, and one exam association.
-Core 2. humanism → identify its section function, period clue, and one exam association.
-Core 3. civic humanism → identify its section function, period clue, and one exam association.
-Core 4. patronage → identify its section function, period clue, and one exam association.
-Core 5. linear perspective → identify its section function, period clue, and one exam association.
-Core 6. Petrarch → identify its section function, period clue, and one exam association.
-Core 7. Boccaccio → identify its section function, period clue, and one exam association.
-Core 8. Cosimo de' Medici → identify its section function, period clue, and one exam association.
-Core 9. Florence Cathedral dome → identify its section function, period clue, and one exam association.
-Core 10. Gates of Paradise → identify its section function, period clue, and one exam association.
-Extra 1. proportion → define it, place it, and contrast it with one near-confuser.
-Extra 2. classical revival → define it, place it, and contrast it with one near-confuser.
-Extra 3. city-state → define it, place it, and contrast it with one near-confuser.
-Extra 4. fresco → define it, place it, and contrast it with one near-confuser.
-Extra 5. naturalism → define it, place it, and contrast it with one near-confuser.
-Extra 6. Lorenzo de' Medici → define it, place it, and contrast it with one near-confuser.
-Extra 7. Brunelleschi → define it, place it, and contrast it with one near-confuser.
-Extra 8. Donatello → define it, place it, and contrast it with one near-confuser.
-Extra 9. Holy Trinity → define it, place it, and contrast it with one near-confuser.
-Extra 10. David (Donatello) → define it, place it, and contrast it with one near-confuser.
+Core 1. Renaissance ΓåÆ identify its section function, period clue, and one exam association.
+Core 2. humanism ΓåÆ identify its section function, period clue, and one exam association.
+Core 3. civic humanism ΓåÆ identify its section function, period clue, and one exam association.
+Core 4. patronage ΓåÆ identify its section function, period clue, and one exam association.
+Core 5. linear perspective ΓåÆ identify its section function, period clue, and one exam association.
+Core 6. Petrarch ΓåÆ identify its section function, period clue, and one exam association.
+Core 7. Boccaccio ΓåÆ identify its section function, period clue, and one exam association.
+Core 8. Cosimo de' Medici ΓåÆ identify its section function, period clue, and one exam association.
+Core 9. Florence Cathedral dome ΓåÆ identify its section function, period clue, and one exam association.
+Core 10. Gates of Paradise ΓåÆ identify its section function, period clue, and one exam association.
+Extra 1. proportion ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 2. classical revival ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 3. city-state ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 4. fresco ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 5. naturalism ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 6. Lorenzo de' Medici ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 7. Brunelleschi ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 8. Donatello ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 9. Holy Trinity ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 10. David (Donatello) ΓåÆ define it, place it, and contrast it with one near-confuser.
 
 13) 10 Later Test Questions
 1. Explain why the phrase 'Florence started the Renaissance' is incomplete unless geography, patronage, and late medieval transition are all explained.
@@ -452,19 +452,19 @@ Extra 10. David (Donatello) → define it, place it, and contrast it with one ne
 10. What would a student miss if Florence were taught without Petrarch and humanism?
 
 14) Link Images That Help
-- Florence on a map — Locate Tuscany, central Italy, and the city-state setting that makes the opening argument intelligible. Link: https://en.wikipedia.org/wiki/Florence
-- Florence Cathedral and dome — Use this to see how engineering ambition and civic identity become visible together. Link: https://en.wikipedia.org/wiki/Florence_Cathedral
-- Brunelleschi's dome — Focus on scale, geometry, and why this became a defining emblem of Florence. Link: https://en.wikipedia.org/wiki/Brunelleschi%27s_dome
-- Masaccio, Holy Trinity — Look for single-point perspective and the new rational ordering of sacred space. Link: https://en.wikipedia.org/wiki/Holy_Trinity_(Masaccio)
-- Masaccio, Tribute Money — Use this to study volumetric bodies, narrative clarity, and perspective in action. Link: https://en.wikipedia.org/wiki/The_Tribute_Money
-- Donatello, David — Study revived classical body language and civic meaning in sculpture. Link: https://en.wikipedia.org/wiki/David_(Donatello)
-- Ghiberti, Gates of Paradise — Useful for competition, relief space, and the prestige of Florentine commissions. Link: https://en.wikipedia.org/wiki/Gates_of_Paradise
-- Medici family context — Use this page to connect patronage to power and civic image-making. Link: https://en.wikipedia.org/wiki/House_of_Medici
+- Florence on a map ΓÇö Locate Tuscany, central Italy, and the city-state setting that makes the opening argument intelligible. Link: https://en.wikipedia.org/wiki/Florence
+- Florence Cathedral and dome ΓÇö Use this to see how engineering ambition and civic identity become visible together. Link: https://en.wikipedia.org/wiki/Florence_Cathedral
+- Brunelleschi's dome ΓÇö Focus on scale, geometry, and why this became a defining emblem of Florence. Link: https://en.wikipedia.org/wiki/Brunelleschi%27s_dome
+- Masaccio, Holy Trinity ΓÇö Look for single-point perspective and the new rational ordering of sacred space. Link: https://en.wikipedia.org/wiki/Holy_Trinity_(Masaccio)
+- Masaccio, Tribute Money ΓÇö Use this to study volumetric bodies, narrative clarity, and perspective in action. Link: https://en.wikipedia.org/wiki/The_Tribute_Money
+- Donatello, David ΓÇö Study revived classical body language and civic meaning in sculpture. Link: https://en.wikipedia.org/wiki/David_(Donatello)
+- Ghiberti, Gates of Paradise ΓÇö Useful for competition, relief space, and the prestige of Florentine commissions. Link: https://en.wikipedia.org/wiki/Gates_of_Paradise
+- Medici family context ΓÇö Use this page to connect patronage to power and civic image-making. Link: https://en.wikipedia.org/wiki/House_of_Medici
 
 15) Link Videos to Embed
-- Smarthistory search — Florence Cathedral dome — Watch-for: Watch for how engineering, civic prestige, and classical confidence converge. Link: https://www.youtube.com/results?search_query=Smarthistory+Brunelleschi+Florence+Cathedral+dome
-- Smarthistory search — Masaccio Holy Trinity — Watch-for: Watch for single-point perspective and the new logic of pictorial space. Link: https://www.youtube.com/results?search_query=Smarthistory+Masaccio+Holy+Trinity
-- Smarthistory search — Donatello David — Watch-for: Watch for revived classical form, civic meaning, and sculptural naturalism. Link: https://www.youtube.com/results?search_query=Smarthistory+Donatello+David
+- Smarthistory search ΓÇö Florence Cathedral dome ΓÇö Watch-for: Watch for how engineering, civic prestige, and classical confidence converge. Link: https://www.youtube.com/results?search_query=Smarthistory+Brunelleschi+Florence+Cathedral+dome
+- Smarthistory search ΓÇö Masaccio Holy Trinity ΓÇö Watch-for: Watch for single-point perspective and the new logic of pictorial space. Link: https://www.youtube.com/results?search_query=Smarthistory+Masaccio+Holy+Trinity
+- Smarthistory search ΓÇö Donatello David ΓÇö Watch-for: Watch for revived classical form, civic meaning, and sculptural naturalism. Link: https://www.youtube.com/results?search_query=Smarthistory+Donatello+David
 
 16) References
 - Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, Chapter 17.
@@ -497,49 +497,49 @@ For CLEP purposes, this section is high value because the Humanities exam reward
 The section's central claim is this: The High Renaissance is the phase in which Renaissance methods become fully mature, monumental, and regionally differentiated, above all in papal Rome and mercantile Venice. That claim must stay visible all the way through the lesson, the CLEP keys, the quiz logic, and the flashcards.
 
 2) Big Ideas
-Big Idea 1 — Maturity changes scale
+Big Idea 1 ΓÇö Maturity changes scale
 
 The High Renaissance is not simply 'more Renaissance.' It is the stage in which visual problems solved earlier become fully authoritative, large-scale, and culturally central. Rome and Venice show how maturity can take different forms within the same broad movement.
 
 Students often memorize famous names without seeing the shift from experiment to confidence. What changes is not only quality but scale, prestige, and ambition.
 
-Big Idea 2 — Rome turns art into papal power
+Big Idea 2 ΓÇö Rome turns art into papal power
 
 In Rome, the papacy uses art and architecture to project universality, doctrinal legitimacy, and dynastic grandeur. This is why Bramante, Raphael, and Michelangelo matter in relation to Saint Peter's and Julius II, not only as isolated geniuses.
 
 Students often treat Rome as just another Italian city. On CLEP, papal patronage is the clue that explains why works there become monumental and symbolic.
 
-Big Idea 3 — Venice creates a different ideal
+Big Idea 3 ΓÇö Venice creates a different ideal
 
 Venice is a maritime republic shaped by trade, water, ceremony, and a different visual environment. Venetian painters privilege color, atmosphere, sensual surface, and tonal transitions in ways that distinguish them from the sculptural force of Rome.
 
 Students often flatten all Italian Renaissance art into one style. The exam may reward students who can separate Venetian color and mood from Roman monumentality.
 
-Big Idea 4 — Leonardo, Michelangelo, Raphael are not interchangeable
+Big Idea 4 ΓÇö Leonardo, Michelangelo, Raphael are not interchangeable
 
 Leonardo explores perception, softness, and psychological complexity; Michelangelo pushes force, anatomy, and spiritual tension; Raphael embodies compositional harmony and ideal clarity. Their fame matters because each models a distinct High Renaissance solution.
 
 Students often know the names but not the visual logic attached to each one. CLEP recognition improves when the student can connect each artist to a signature formal habit.
 
-Big Idea 5 — Architecture becomes ideological
+Big Idea 5 ΓÇö Architecture becomes ideological
 
 Central-plan buildings, classical orders, and monumental church design are not merely aesthetic choices. They express order, authority, continuity with antiquity, and confidence in geometry as a bearer of truth.
 
 Students often leave architecture to the side because it seems harder than painting. That is a mistake: architecture supplies some of the clearest period clues on CLEP.
 
-Big Idea 6 — Regional difference is part of the story
+Big Idea 6 ΓÇö Regional difference is part of the story
 
 The High Renaissance does not mean uniformity. Rome and Venice become coequal case studies precisely because they reveal how one movement can sustain distinct local priorities.
 
 Students often imagine that mature periods become more standardized. In reality, maturity can sharpen local style.
 
 ## Add-On 2.1
-**Belongs in:** Section 2 → Block 5) Textbook Content → Insert after `H1 — Entering High Renaissance Rome and Venice`  
+**Belongs in:** Section 2 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H1 ΓÇö Entering High Renaissance Rome and Venice`  
 **Why this add-on is needed:**  
 Students need a cleaner distinction between early and High Renaissance.
 
-### Supplemental Add-On — What changes between the early and High Renaissance
-The **early Renaissance** is a period of experimentation and problem-solving. Artists and architects are figuring out how to use perspective, proportion, and classical models in convincing new ways. The **High Renaissance** is what happens when many of those experiments become more mature, more confident, and more monumental. In plain language, the early Renaissance asks, “Can this be done?” The High Renaissance says, “Now we know how to do it at the highest level.”
+### Supplemental Add-On ΓÇö What changes between the early and High Renaissance
+The **early Renaissance** is a period of experimentation and problem-solving. Artists and architects are figuring out how to use perspective, proportion, and classical models in convincing new ways. The **High Renaissance** is what happens when many of those experiments become more mature, more confident, and more monumental. In plain language, the early Renaissance asks, ΓÇ£Can this be done?ΓÇ¥ The High Renaissance says, ΓÇ£Now we know how to do it at the highest level.ΓÇ¥
 
 That is why the section moves beyond Florence. Florence develops the toolkit, but **Rome** and **Venice** become places where that toolkit reaches mature power in different ways. Rome does it through papal patronage and large-scale ambition. Venice does it through color, atmosphere, and a distinct urban culture shaped by trade and water.
 
@@ -551,14 +551,14 @@ That is why the section moves beyond Florence. Florence develops the toolkit, bu
 ---
 
 ## Add-On 2.2
-**Belongs in:** Section 2 → Block 5) Textbook Content → Insert after `H2 — Where this happens and why place matters`  
+**Belongs in:** Section 2 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Where this happens and why place matters`  
 **Why this add-on is needed:**  
 Rome and Venice need clearer social and geographic definition.
 
-### Supplemental Add-On — Why Rome and Venice are not the same kind of place
+### Supplemental Add-On ΓÇö Why Rome and Venice are not the same kind of place
 **Rome** was the center of the papacy, so it carried enormous religious and political prestige. When the pope sponsored building and art, the projects were not only beautiful; they were statements about authority. This is why Roman High Renaissance art often feels grand, organized, and monumental.
 
-**Venice**, by contrast, was a maritime republic built on trade, diplomacy, and commercial wealth. It was not the seat of the pope. Its identity was shaped by seafaring, mercantile success, and a visual culture especially sensitive to light, color, texture, and atmosphere. Venice’s environment mattered too: water, haze, luxury goods, and cosmopolitan contact all affected artistic experience.
+**Venice**, by contrast, was a maritime republic built on trade, diplomacy, and commercial wealth. It was not the seat of the pope. Its identity was shaped by seafaring, mercantile success, and a visual culture especially sensitive to light, color, texture, and atmosphere. VeniceΓÇÖs environment mattered too: water, haze, luxury goods, and cosmopolitan contact all affected artistic experience.
 
 **CLEP Keys**
 - **Rome** = papal center, religious prestige, monumentality
@@ -568,79 +568,79 @@ Rome and Venice need clearer social and geographic definition.
 ---
 
 ## Add-On 2.3
-**Belongs in:** Section 2 → Block 5) Textbook Content → Insert after `H3 — Leonardo da Vinci as evidence`  
+**Belongs in:** Section 2 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Leonardo da Vinci as evidence`  
 **Why this add-on is needed:**  
 Leonardo needs biographical grounding and clearer function.
 
-### Supplemental Add-On — Leonardo from the ground up
-**Leonardo da Vinci (1452–1519)** was an Italian artist, inventor, investigator, and notebook writer whose work symbolizes the High Renaissance fascination with observation, anatomy, proportion, and mental control. He is not famous only because the Mona Lisa is famous. He matters because he embodies the belief that art is connected to careful study of the visible world.
+### Supplemental Add-On ΓÇö Leonardo from the ground up
+**Leonardo da Vinci (1452ΓÇô1519)** was an Italian artist, inventor, investigator, and notebook writer whose work symbolizes the High Renaissance fascination with observation, anatomy, proportion, and mental control. He is not famous only because the Mona Lisa is famous. He matters because he embodies the belief that art is connected to careful study of the visible world.
 
 His **Mona Lisa** is often used on exams as a clue for **sfumato**, the soft blending of tones and edges. His **Last Supper** is a major anchor for composition, psychological grouping, and sacred narrative. Leonardo helps students see that the High Renaissance is not just decorative beauty. It is disciplined visual intelligence.
 
 **CLEP Keys**
-- **Leonardo (1452–1519)** = sfumato, observation, psychological subtlety
+- **Leonardo (1452ΓÇô1519)** = sfumato, observation, psychological subtlety
 - **Mona Lisa**, **Last Supper**
-- Exam use: “Which artist is associated with sfumato?” or “Which work reflects High Renaissance compositional balance?”
+- Exam use: ΓÇ£Which artist is associated with sfumato?ΓÇ¥ or ΓÇ£Which work reflects High Renaissance compositional balance?ΓÇ¥
 
 ---
 
 ## Add-On 2.4
-**Belongs in:** Section 2 → Block 5) Textbook Content → Insert after `H3 — Michelangelo as evidence`  
+**Belongs in:** Section 2 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Michelangelo as evidence`  
 **Why this add-on is needed:**  
 Michelangelo needs stronger artistic identity and work distinction.
 
-### Supplemental Add-On — Michelangelo from the ground up
-**Michelangelo Buonarroti (1475–1564)** was a sculptor, painter, architect, and poet whose work often combines idealized anatomy, monumental scale, and emotional intensity. Students should not reduce Michelangelo to a single work. He matters because he shows what High Renaissance ambition looks like at full scale.
+### Supplemental Add-On ΓÇö Michelangelo from the ground up
+**Michelangelo Buonarroti (1475ΓÇô1564)** was a sculptor, painter, architect, and poet whose work often combines idealized anatomy, monumental scale, and emotional intensity. Students should not reduce Michelangelo to a single work. He matters because he shows what High Renaissance ambition looks like at full scale.
 
-His **Pietà** is important for sculpture and religious tenderness. His **David** is a towering statement of heroic human form. His work on the **Sistine Chapel ceiling** is one of the best-known visual markers of High Renaissance Rome. Later in life, he also became crucial in the architectural history of **St. Peter’s Basilica**.
+His **Piet├á** is important for sculpture and religious tenderness. His **David** is a towering statement of heroic human form. His work on the **Sistine Chapel ceiling** is one of the best-known visual markers of High Renaissance Rome. Later in life, he also became crucial in the architectural history of **St. PeterΓÇÖs Basilica**.
 
 **CLEP Keys**
-- **Michelangelo (1475–1564)** = heroic anatomy, monumentality
-- **Pietà**, **David**, **Sistine Chapel**
+- **Michelangelo (1475ΓÇô1564)** = heroic anatomy, monumentality
+- **Piet├á**, **David**, **Sistine Chapel**
 - Exam use: separate Michelangelo from Leonardo and Raphael by medium, energy, and bodily power
 
 ---
 
 ## Add-On 2.5
-**Belongs in:** Section 2 → Block 5) Textbook Content → Insert after `H3 — Raphael as evidence` and `H3 — Bramante as evidence`  
+**Belongs in:** Section 2 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Raphael as evidence` and `H3 ΓÇö Bramante as evidence`  
 **Why this add-on is needed:**  
 Raphael and Bramante are often underexplained for beginners.
 
-### Supplemental Add-On — Raphael and Bramante in plain language
-**Raphael (1483–1520)** is often the clearest exam clue for High Renaissance harmony and balance. His **School of Athens** is a classic anchor because it combines classical philosophy, ideal space, and formal order. When students see a calm, balanced, classically organized composition, Raphael should be in their mental shortlist.
+### Supplemental Add-On ΓÇö Raphael and Bramante in plain language
+**Raphael (1483ΓÇô1520)** is often the clearest exam clue for High Renaissance harmony and balance. His **School of Athens** is a classic anchor because it combines classical philosophy, ideal space, and formal order. When students see a calm, balanced, classically organized composition, Raphael should be in their mental shortlist.
 
-**Donato Bramante (1444–1514)** matters especially for architecture. He is tied to the **Tempietto** and to the early design history of **St. Peter’s Basilica**. Bramante helps students understand that the High Renaissance is architectural as well as pictorial. A key term here is **central plan**, which means a building organized around a central geometric core rather than stretched out like a long basilica.
+**Donato Bramante (1444ΓÇô1514)** matters especially for architecture. He is tied to the **Tempietto** and to the early design history of **St. PeterΓÇÖs Basilica**. Bramante helps students understand that the High Renaissance is architectural as well as pictorial. A key term here is **central plan**, which means a building organized around a central geometric core rather than stretched out like a long basilica.
 
 **CLEP Keys**
 - **Raphael** = balance, clarity, **School of Athens**
-- **Bramante** = architecture, **Tempietto**, **St. Peter’s**, **central plan**
+- **Bramante** = architecture, **Tempietto**, **St. PeterΓÇÖs**, **central plan**
 - Exam use: High Renaissance architecture and ideal order
 
 ---
 
 ## Add-On 2.6
-**Belongs in:** Section 2 → Block 5) Textbook Content → Insert after `H2 — Major works and visual/literary clues`  
+**Belongs in:** Section 2 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Major works and visual/literary clues`  
 **Why this add-on is needed:**  
 The section needs a Venice-specific supplement, since the H3 paragraphs focus mostly on Rome.
 
-### Supplemental Add-On — Venice: Bellini, Giorgione, and Titian
-To understand why Venice belongs in this section title, students need more than the phrase “color and atmosphere.” **Giovanni Bellini (c. 1430–1516)** helped shape the Venetian tradition with luminous color and calm sacred images. **Giorgione (c. 1477/78–1510)** became associated with poetic ambiguity and atmospheric softness. **Titian (c. 1488/90–1576)** carried Venetian painting to an extraordinary level of richness, sensuality, and color-based power.
+### Supplemental Add-On ΓÇö Venice: Bellini, Giorgione, and Titian
+To understand why Venice belongs in this section title, students need more than the phrase ΓÇ£color and atmosphere.ΓÇ¥ **Giovanni Bellini (c. 1430ΓÇô1516)** helped shape the Venetian tradition with luminous color and calm sacred images. **Giorgione (c. 1477/78ΓÇô1510)** became associated with poetic ambiguity and atmospheric softness. **Titian (c. 1488/90ΓÇô1576)** carried Venetian painting to an extraordinary level of richness, sensuality, and color-based power.
 
 Venetian painters often feel different from Roman artists because they rely more heavily on color transitions, light, texture, and mood. Students do not need to exaggerate this difference, but they do need to recognize it. On CLEP, Venice often appears as the color-rich counterpart to more structurally monumental Roman High Renaissance work.
 
 **CLEP Keys**
 - **Bellini / Giorgione / Titian** = Venetian color tradition
 - Venice clue = atmosphere, painterly richness, color
-- Exam use: “Which school is most associated with color and atmosphere?”
+- Exam use: ΓÇ£Which school is most associated with color and atmosphere?ΓÇ¥
 
 ---
 
 ## Add-On 2.7
-**Belongs in:** Section 2 → Block 6) Canonical Works and Terms → Insert after `Key Terms`  
+**Belongs in:** Section 2 ΓåÆ Block 6) Canonical Works and Terms ΓåÆ Insert after `Key Terms`  
 **Why this add-on is needed:**  
 Several terms need simpler definition.
 
-### Supplemental Add-On — Beginner-friendly vocabulary layer
+### Supplemental Add-On ΓÇö Beginner-friendly vocabulary layer
 - **Monumentality**: a sense of greatness, size, power, or commanding scale  
 - **Idealization**: making a figure or form look more perfect than ordinary life  
 - **Sfumato**: smoky, soft blending without harsh outlines  
@@ -678,16 +678,16 @@ renaissance.s2.venetian_color_and_atmosphere	Recognize Venetian color and atmosp
 renaissance.s2.italian_high_renaissance_comparison	Compare Rome and Venice as related but different mature Renaissance models.
 
 5) Textbook Content
-H1 — Entering High Renaissance Rome and Venice
+H1 ΓÇö Entering High Renaissance Rome and Venice
 This section cannot begin inside its own topic. It must first pay its transition debt. What came before this section was the early Renaissance toolkit forged in Florence. That matters because students are not satisfied by a sentence such as 'High Renaissance Rome and Venice happened next.' They need a causal bridge. In Chapter 3, the real question is What happens when Renaissance experiment becomes mature cultural authority, and why does that authority not look identical in every Italian center?
 
 CLEP Keys
-- Period clue: ca. 1495–1527
+- Period clue: ca. 1495ΓÇô1527
 - Place clue: Rome and Venice, Italy
 - Core term: High Renaissance
 - What CLEP is likely testing here: names, works, terms, style clues, and the transition from the previous section.
 
-H2 — Where this happens and why place matters
+H2 ΓÇö Where this happens and why place matters
 Rome and Venice, Italy is not just a backdrop. On CLEP, place is often the fastest way to organize evidence. When students know where an event, artwork, school, or intellectual movement is happening, they can sort it by patronage, politics, media, and style. This is why the section states its place early rather than hiding it in a side note. The location helps explain why particular people matter, why certain materials or institutions dominate, and why the works of the period look or sound the way they do.
 
 CLEP Keys
@@ -695,7 +695,7 @@ CLEP Keys
 - Recognition strategy: attach each major figure to a place as well as to a work.
 - Fast exam clue: if the geography changes, the style logic often changes too.
 
-H2 — Defining the core term
+H2 ΓÇö Defining the core term
 The term 'High Renaissance' must be taught before it is used. In this section, the term does not function as a slogan. It is the label for a precise cultural shift with identifiable institutions, forms, and habits of thought. Students who define the term loosely will struggle on style-recognition and comparison questions. Students who define it concretely can sort questions under time pressure.
 
 CLEP Keys
@@ -703,26 +703,26 @@ CLEP Keys
 - Be able to say what it is and what it is not.
 - Tie the term to at least two people, two works, and one style marker.
 
-H2 — The historical tension
+H2 ΓÇö The historical tension
 The central problem of this section is: What happens when Renaissance experiment becomes mature cultural authority, and why does that authority not look identical in every Italian center? A good humanities section does not merely list artifacts. It shows why those artifacts exist. The people and works in this section are evidence that a larger change is underway. Once students can state the section's problem clearly, the names stop feeling random and begin to function as proof.
 
 CLEP Keys
 - If you can name the tension, you can answer compare/contrast questions faster.
 - Many exam items ask indirectly: what shift does this description point to?
 
-H3 — Leonardo da Vinci as evidence
+H3 ΓÇö Leonardo da Vinci as evidence
 Leonardo da Vinci matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Leonardo da Vinci should be tied directly to the shift in High Renaissance and to one or more of the section's recognition anchors: Mona Lisa, The Last Supper, Pieta.
 
-H3 — Michelangelo as evidence
+H3 ΓÇö Michelangelo as evidence
 Michelangelo matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Michelangelo should be tied directly to the shift in High Renaissance and to one or more of the section's recognition anchors: Mona Lisa, The Last Supper, Pieta.
 
-H3 — Raphael as evidence
+H3 ΓÇö Raphael as evidence
 Raphael matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Raphael should be tied directly to the shift in High Renaissance and to one or more of the section's recognition anchors: Mona Lisa, The Last Supper, Pieta.
 
-H3 — Bramante as evidence
+H3 ΓÇö Bramante as evidence
 Bramante matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Bramante should be tied directly to the shift in High Renaissance and to one or more of the section's recognition anchors: Mona Lisa, The Last Supper, Pieta.
 
-H2 — Major works and visual/literary clues
+H2 ΓÇö Major works and visual/literary clues
 The works attached to this section must be learned as recognition systems, not as isolated museum labels. Mona Lisa, The Last Supper, Pieta, David, Sistine Chapel ceiling are high-yield because they can be used to test medium, style, patronage, theme, period, and creator. The right study move is to learn each work as a cluster: title, creator, place, style clue, and why CLEP would care.
 
 CLEP Keys
@@ -730,7 +730,7 @@ CLEP Keys
 - Style clues to know: High Renaissance, monumentality, harmony, idealization, sfumato
 - Typical question frame: Which work, artist, or movement best matches this description?
 
-H2 — Why this section leads to the next one
+H2 ΓÇö Why this section leads to the next one
 By the end of the section, the learner should be able to say why the next section becomes necessary. The chapter cannot feel stitched together; it must feel argued. This section resolves its own question and then raises the next one that Chapter 3 must answer. That is why the closing move of this section should naturally point forward rather than merely stop.
 
 CLEP Keys
@@ -739,49 +739,49 @@ CLEP Keys
 
 6) Canonical Works and Terms
 Key Terms
-- **High Renaissance** — mature phase of the Italian Renaissance marked by harmony, monumentality, and confident synthesis.
-- **monumentality** — large scale and commanding visual force that suggest authority or grandeur.
-- **harmony** — coherent balance among visual parts.
-- **idealization** — selective improvement of form toward an ideal standard.
-- **sfumato** — soft transitions in tone and contour, especially associated with Leonardo.
-- **central plan** — building plan organized around a central axis or geometric core.
-- **papal patronage** — artistic sponsorship by the pope or papal court.
-- **colorito** — Venetian emphasis on color and tonal richness.
-- **atmosphere** — painterly handling that creates air, mood, and sensory softness.
-- **Venetian school** — artists associated with Venice and its color-centered visual culture.
+- **High Renaissance** ΓÇö mature phase of the Italian Renaissance marked by harmony, monumentality, and confident synthesis.
+- **monumentality** ΓÇö large scale and commanding visual force that suggest authority or grandeur.
+- **harmony** ΓÇö coherent balance among visual parts.
+- **idealization** ΓÇö selective improvement of form toward an ideal standard.
+- **sfumato** ΓÇö soft transitions in tone and contour, especially associated with Leonardo.
+- **central plan** ΓÇö building plan organized around a central axis or geometric core.
+- **papal patronage** ΓÇö artistic sponsorship by the pope or papal court.
+- **colorito** ΓÇö Venetian emphasis on color and tonal richness.
+- **atmosphere** ΓÇö painterly handling that creates air, mood, and sensory softness.
+- **Venetian school** ΓÇö artists associated with Venice and its color-centered visual culture.
 
 Key People, Works, and Artifacts
-- **Leonardo da Vinci** — core CLEP anchor for this section.
-- **Michelangelo** — core CLEP anchor for this section.
-- **Raphael** — core CLEP anchor for this section.
-- **Bramante** — core CLEP anchor for this section.
-- **Giovanni Bellini** — core CLEP anchor for this section.
-- **Giorgione** — core CLEP anchor for this section.
-- **Titian** — core CLEP anchor for this section.
-- **Pope Julius II** — core CLEP anchor for this section.
-- **Mona Lisa** — major recognition work/text associated with this section.
-- **The Last Supper** — major recognition work/text associated with this section.
-- **Pieta** — major recognition work/text associated with this section.
-- **David** — major recognition work/text associated with this section.
-- **Sistine Chapel ceiling** — major recognition work/text associated with this section.
-- **School of Athens** — major recognition work/text associated with this section.
-- **Tempietto** — major recognition work/text associated with this section.
-- **St. Peter's Basilica** — major recognition work/text associated with this section.
-- **Pastoral Concert** — major recognition work/text associated with this section.
-- **Assumption of the Virgin** — major recognition work/text associated with this section.
+- **Leonardo da Vinci** ΓÇö core CLEP anchor for this section.
+- **Michelangelo** ΓÇö core CLEP anchor for this section.
+- **Raphael** ΓÇö core CLEP anchor for this section.
+- **Bramante** ΓÇö core CLEP anchor for this section.
+- **Giovanni Bellini** ΓÇö core CLEP anchor for this section.
+- **Giorgione** ΓÇö core CLEP anchor for this section.
+- **Titian** ΓÇö core CLEP anchor for this section.
+- **Pope Julius II** ΓÇö core CLEP anchor for this section.
+- **Mona Lisa** ΓÇö major recognition work/text associated with this section.
+- **The Last Supper** ΓÇö major recognition work/text associated with this section.
+- **Pieta** ΓÇö major recognition work/text associated with this section.
+- **David** ΓÇö major recognition work/text associated with this section.
+- **Sistine Chapel ceiling** ΓÇö major recognition work/text associated with this section.
+- **School of Athens** ΓÇö major recognition work/text associated with this section.
+- **Tempietto** ΓÇö major recognition work/text associated with this section.
+- **St. Peter's Basilica** ΓÇö major recognition work/text associated with this section.
+- **Pastoral Concert** ΓÇö major recognition work/text associated with this section.
+- **Assumption of the Virgin** ΓÇö major recognition work/text associated with this section.
 
 7) Primary Source Excerpts
-- **Leonardo** — 'Painting is a thing of the mind.'
-- **Michelangelo** — 'I saw the angel in the marble and carved until I set him free.'
-- **Vasari on Raphael** — 'He possessed the rarest grace and sweetness.'
+- **Leonardo** ΓÇö 'Painting is a thing of the mind.'
+- **Michelangelo** ΓÇö 'I saw the angel in the marble and carved until I set him free.'
+- **Vasari on Raphael** ΓÇö 'He possessed the rarest grace and sweetness.'
 
 8) Timeline Anchors
-- 1490s — Leonardo's mature works define new ideals of observation and psychological subtlety
-- 1502 — Bramante builds the Tempietto
-- 1503–1513 — Julius II commissions major Roman projects
-- 1508–1512 — Michelangelo paints the Sistine Chapel ceiling
-- 1509–1511 — Raphael paints the School of Athens
-- 1510s–1520s — Titian consolidates Venetian dominance
+- 1490s ΓÇö Leonardo's mature works define new ideals of observation and psychological subtlety
+- 1502 ΓÇö Bramante builds the Tempietto
+- 1503ΓÇô1513 ΓÇö Julius II commissions major Roman projects
+- 1508ΓÇô1512 ΓÇö Michelangelo paints the Sistine Chapel ceiling
+- 1509ΓÇô1511 ΓÇö Raphael paints the School of Athens
+- 1510sΓÇô1520s ΓÇö Titian consolidates Venetian dominance
 
 9) Exam Hot Zones
 - High Renaissance definition
@@ -863,47 +863,47 @@ Key People, Works, and Artifacts
 (E) Mannerist elongation
 
 11) Answer Key with Explanations
-1. B — The correct answer is B. mature Renaissance harmony and monumentality best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+1. B ΓÇö The correct answer is B. mature Renaissance harmony and monumentality best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-2. C — The correct answer is C. Rome best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+2. C ΓÇö The correct answer is C. Rome best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-3. D — The correct answer is D. Michelangelo best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+3. D ΓÇö The correct answer is D. Michelangelo best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-4. B — The correct answer is B. Leonardo best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+4. B ΓÇö The correct answer is B. Leonardo best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-5. B — The correct answer is B. School of Athens best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+5. B ΓÇö The correct answer is B. School of Athens best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-6. B — The correct answer is B. color and atmospheric richness best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+6. B ΓÇö The correct answer is B. color and atmospheric richness best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-7. A — The correct answer is A. central-plan classical architecture best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+7. A ΓÇö The correct answer is A. central-plan classical architecture best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-8. B — The correct answer is B. Titian and color-rich painting best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+8. B ΓÇö The correct answer is B. Titian and color-rich painting best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-9. B — The correct answer is B. represent mature but distinct High Renaissance models best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+9. B ΓÇö The correct answer is B. represent mature but distinct High Renaissance models best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-10. A — The correct answer is A. papal commission and monumental harmony best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+10. A ΓÇö The correct answer is A. papal commission and monumental harmony best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
 12) Flashcards
-Core 1. High Renaissance → identify its section function, period clue, and one exam association.
-Core 2. monumentality → identify its section function, period clue, and one exam association.
-Core 3. harmony → identify its section function, period clue, and one exam association.
-Core 4. idealization → identify its section function, period clue, and one exam association.
-Core 5. sfumato → identify its section function, period clue, and one exam association.
-Core 6. Leonardo da Vinci → identify its section function, period clue, and one exam association.
-Core 7. Michelangelo → identify its section function, period clue, and one exam association.
-Core 8. Raphael → identify its section function, period clue, and one exam association.
-Core 9. Mona Lisa → identify its section function, period clue, and one exam association.
-Core 10. The Last Supper → identify its section function, period clue, and one exam association.
-Extra 1. central plan → define it, place it, and contrast it with one near-confuser.
-Extra 2. papal patronage → define it, place it, and contrast it with one near-confuser.
-Extra 3. colorito → define it, place it, and contrast it with one near-confuser.
-Extra 4. atmosphere → define it, place it, and contrast it with one near-confuser.
-Extra 5. Venetian school → define it, place it, and contrast it with one near-confuser.
-Extra 6. Bramante → define it, place it, and contrast it with one near-confuser.
-Extra 7. Giovanni Bellini → define it, place it, and contrast it with one near-confuser.
-Extra 8. Giorgione → define it, place it, and contrast it with one near-confuser.
-Extra 9. Pieta → define it, place it, and contrast it with one near-confuser.
-Extra 10. David → define it, place it, and contrast it with one near-confuser.
+Core 1. High Renaissance ΓåÆ identify its section function, period clue, and one exam association.
+Core 2. monumentality ΓåÆ identify its section function, period clue, and one exam association.
+Core 3. harmony ΓåÆ identify its section function, period clue, and one exam association.
+Core 4. idealization ΓåÆ identify its section function, period clue, and one exam association.
+Core 5. sfumato ΓåÆ identify its section function, period clue, and one exam association.
+Core 6. Leonardo da Vinci ΓåÆ identify its section function, period clue, and one exam association.
+Core 7. Michelangelo ΓåÆ identify its section function, period clue, and one exam association.
+Core 8. Raphael ΓåÆ identify its section function, period clue, and one exam association.
+Core 9. Mona Lisa ΓåÆ identify its section function, period clue, and one exam association.
+Core 10. The Last Supper ΓåÆ identify its section function, period clue, and one exam association.
+Extra 1. central plan ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 2. papal patronage ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 3. colorito ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 4. atmosphere ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 5. Venetian school ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 6. Bramante ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 7. Giovanni Bellini ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 8. Giorgione ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 9. Pieta ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 10. David ΓåÆ define it, place it, and contrast it with one near-confuser.
 
 13) 10 Later Test Questions
 1. Why is 'High Renaissance' more than a label for famous names?
@@ -918,22 +918,22 @@ Extra 10. David → define it, place it, and contrast it with one near-confuser.
 10. Why should architecture be treated as central evidence in this section?
 
 14) Link Images That Help
-- St. Peter's Basilica — See how papal ambition becomes architecture. Link: https://en.wikipedia.org/wiki/St._Peter%27s_Basilica
-- Tempietto — Use this to recognize central-plan classicism. Link: https://en.wikipedia.org/wiki/San_Pietro_in_Montorio#Tempietto
-- School of Athens — Look for balance, philosophical authority, and High Renaissance harmony. Link: https://en.wikipedia.org/wiki/The_School_of_Athens
-- Sistine Chapel ceiling — Focus on monumentality, anatomy, and narrative scale. Link: https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling
-- Mona Lisa — Study sfumato and psychological subtlety. Link: https://en.wikipedia.org/wiki/Mona_Lisa
-- The Last Supper — Use this for perspective, grouped emotion, and narrative design. Link: https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)
-- Titian overview — Useful for color, atmosphere, and Venetian identity. Link: https://en.wikipedia.org/wiki/Titian
-- Venice map/context — See why maritime geography changes cultural life. Link: https://en.wikipedia.org/wiki/Venice
+- St. Peter's Basilica ΓÇö See how papal ambition becomes architecture. Link: https://en.wikipedia.org/wiki/St._Peter%27s_Basilica
+- Tempietto ΓÇö Use this to recognize central-plan classicism. Link: https://en.wikipedia.org/wiki/San_Pietro_in_Montorio#Tempietto
+- School of Athens ΓÇö Look for balance, philosophical authority, and High Renaissance harmony. Link: https://en.wikipedia.org/wiki/The_School_of_Athens
+- Sistine Chapel ceiling ΓÇö Focus on monumentality, anatomy, and narrative scale. Link: https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling
+- Mona Lisa ΓÇö Study sfumato and psychological subtlety. Link: https://en.wikipedia.org/wiki/Mona_Lisa
+- The Last Supper ΓÇö Use this for perspective, grouped emotion, and narrative design. Link: https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)
+- Titian overview ΓÇö Useful for color, atmosphere, and Venetian identity. Link: https://en.wikipedia.org/wiki/Titian
+- Venice map/context ΓÇö See why maritime geography changes cultural life. Link: https://en.wikipedia.org/wiki/Venice
 
 15) Link Videos to Embed
-- Smarthistory search — School of Athens — Watch-for: Watch for compositional balance, philosophical setting, and High Renaissance clarity. Link: https://www.youtube.com/results?search_query=Smarthistory+School+of+Athens
-- Smarthistory search — Sistine Chapel ceiling — Watch-for: Watch for monumentality, anatomy, and prophetic drama. Link: https://www.youtube.com/results?search_query=Smarthistory+Sistine+Chapel+ceiling
-- Smarthistory search — Titian / Venetian painting — Watch-for: Watch for color, atmosphere, and why Venice is not simply Rome-by-water. Link: https://www.youtube.com/results?search_query=Smarthistory+Titian+Venetian+painting
+- Smarthistory search ΓÇö School of Athens ΓÇö Watch-for: Watch for compositional balance, philosophical setting, and High Renaissance clarity. Link: https://www.youtube.com/results?search_query=Smarthistory+School+of+Athens
+- Smarthistory search ΓÇö Sistine Chapel ceiling ΓÇö Watch-for: Watch for monumentality, anatomy, and prophetic drama. Link: https://www.youtube.com/results?search_query=Smarthistory+Sistine+Chapel+ceiling
+- Smarthistory search ΓÇö Titian / Venetian painting ΓÇö Watch-for: Watch for color, atmosphere, and why Venice is not simply Rome-by-water. Link: https://www.youtube.com/results?search_query=Smarthistory+Titian+Venetian+painting
 
 16) References
-- Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, Chapters 18–19.
+- Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, Chapters 18ΓÇô19.
 - Fiero, The Humanistic Tradition, Volume II, Book 3 / related Renaissance and Reformation chapters, used as reinforcement.
 - College Board, CLEP Humanities exam overview and fact sheet: approximately 140 questions in 90 minutes; 50% literature / 50% arts; 50/30/20 skill weighting; Medieval and Renaissance content fairly balanced with other periods.
 
@@ -963,51 +963,51 @@ For CLEP purposes, this section is high value because the Humanities exam reward
 The section's central claim is this: The Northern Renaissance is a genuine Renaissance, but one reshaped by different media, devotional habits, literacy patterns, and social structures. That claim must stay visible all the way through the lesson, the CLEP keys, the quiz logic, and the flashcards.
 
 2) Big Ideas
-Big Idea 1 — Renaissance travels and changes
+Big Idea 1 ΓÇö Renaissance travels and changes
 
 When Renaissance habits move north, they do not stay identical to Italian models. Northern artists and writers inherit classical recovery but combine it with local devotional practice, mercantile culture, and a more microscopic visual attention.
 
 Students often think northward spread means imitation. The correction is transformation: same broad movement, different social and media conditions.
 
-Big Idea 2 — Oil paint matters structurally
+Big Idea 2 ΓÇö Oil paint matters structurally
 
 Oil enables glazes, depth of color, reflective surfaces, and an extraordinary precision of texture. It supports not just prettier pictures but different ways of loading ordinary objects with meaning.
 
 Students often reduce oil painting to technical trivia. On CLEP, oil is a major recognition clue tied to Northern art.
 
-Big Idea 3 — Household worlds become meaningful worlds
+Big Idea 3 ΓÇö Household worlds become meaningful worlds
 
 Northern art often treats interiors, portraits, and ordinary objects as sites of moral and symbolic density. Domestic space is not merely background; it is the stage on which piety, status, marriage, and worldly aspiration are negotiated.
 
 Students often imagine religious art must always be monumental or church-bound. Northern painting proves that devotion can inhabit interiors and objects.
 
-Big Idea 4 — Print remakes circulation
+Big Idea 4 ΓÇö Print remakes circulation
 
 Printmaking allows images and arguments to move faster and farther than unique handmade objects alone could travel. It turns scholarship, satire, reform, and visual literacy into broader social forces.
 
 Students often treat print as a side note before the Reformation. It is better understood as one of the engines that makes later rupture possible.
 
-Big Idea 5 — Christian humanism is not secular escape
+Big Idea 5 ΓÇö Christian humanism is not secular escape
 
 Thinkers such as Erasmus and More use classical learning to critique moral failures and improve Christian life. They want reform through education, philology, and ethical seriousness.
 
 Students often hear humanism and assume religion is disappearing. In the North, humanism often deepens criticism from within Christian culture.
 
-Big Idea 6 — Northern difference improves exam recognition
+Big Idea 6 ΓÇö Northern difference improves exam recognition
 
 The Northern Renaissance is one of the best comparison zones for CLEP because it trains distinctions: oil versus fresco logic, symbolic interior versus idealized monumentality, Christian humanism versus Italian civic humanism.
 
 Students often memorize separate facts but do not compare. Comparison is what makes recognition fast.
 
 ## Add-On 3.1
-**Belongs in:** Section 3 → Block 5) Textbook Content → Insert after `H1 — Entering Northern Renaissance`  
+**Belongs in:** Section 3 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H1 ΓÇö Entering Northern Renaissance`  
 **Why this add-on is needed:**  
-Students need a clearer explanation of what “north” means and why the North is different.
+Students need a clearer explanation of what ΓÇ£northΓÇ¥ means and why the North is different.
 
-### Supplemental Add-On — What “Northern” means here
-When this section says **Northern Renaissance**, it does not mean “north of Italy” in a vague direction-only sense. It refers mainly to regions such as the **Low Countries** (roughly modern Belgium and the Netherlands), the **German lands**, and parts of France and England. These areas had different social structures, different devotional habits, different relationships to commerce, and different patterns of literacy than Italian city-states.
+### Supplemental Add-On ΓÇö What ΓÇ£NorthernΓÇ¥ means here
+When this section says **Northern Renaissance**, it does not mean ΓÇ£north of ItalyΓÇ¥ in a vague direction-only sense. It refers mainly to regions such as the **Low Countries** (roughly modern Belgium and the Netherlands), the **German lands**, and parts of France and England. These areas had different social structures, different devotional habits, different relationships to commerce, and different patterns of literacy than Italian city-states.
 
-That matters because Renaissance ideas change when they move. In Italy, students often learn to look for classical architecture, perspectival order, and monumental public form. In the North, students more often encounter interior scenes, dense symbolism, new oil techniques, moral intensity, and later strong print culture. The North is not “less Renaissance.” It is differently Renaissance.
+That matters because Renaissance ideas change when they move. In Italy, students often learn to look for classical architecture, perspectival order, and monumental public form. In the North, students more often encounter interior scenes, dense symbolism, new oil techniques, moral intensity, and later strong print culture. The North is not ΓÇ£less Renaissance.ΓÇ¥ It is differently Renaissance.
 
 **CLEP Keys**
 - **Northern Renaissance** = Low Countries, German lands, related northern regions
@@ -1016,11 +1016,11 @@ That matters because Renaissance ideas change when they move. In Italy, students
 ---
 
 ## Add-On 3.2
-**Belongs in:** Section 3 → Block 5) Textbook Content → Insert after `H2 — Defining the core term`  
+**Belongs in:** Section 3 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Defining the core term`  
 **Why this add-on is needed:**  
 Christian humanism needs explicit treatment.
 
-### Supplemental Add-On — What Christian humanism means
+### Supplemental Add-On ΓÇö What Christian humanism means
 **Christian humanism** combines humanist scholarship with Christian reform-minded seriousness. In simple terms, these thinkers valued classical learning, language study, and careful reading, but they often wanted those tools to improve Christian life rather than replace it. That is why figures like **Erasmus** matter: they represent literacy, criticism, moral seriousness, and reform without being reducible to a later Protestant identity.
 
 This is important for CLEP because students often confuse:
@@ -1038,14 +1038,14 @@ These are related, but not identical. Christian humanism sits in a transitional 
 ---
 
 ## Add-On 3.3
-**Belongs in:** Section 3 → Block 5) Textbook Content → Insert after `H3 — Jan van Eyck as evidence` and `H3 — Rogier van der Weyden as evidence`  
+**Belongs in:** Section 3 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Jan van Eyck as evidence` and `H3 ΓÇö Rogier van der Weyden as evidence`  
 **Why this add-on is needed:**  
 These painters need work-specific explanation.
 
-### Supplemental Add-On — Van Eyck and van der Weyden
-**Jan van Eyck (c. 1390–1441)** is one of the most important names in Northern painting. He is strongly associated with the refined use of **oil painting**, which allowed for subtle surfaces, brilliant detail, and carefully observed textures. His **Arnolfini Portrait** is high-yield for CLEP because it lets students talk about domestic space, symbolic objects, and Northern realism. His role in the **Ghent Altarpiece** also helps anchor monumental religious painting in the North.
+### Supplemental Add-On ΓÇö Van Eyck and van der Weyden
+**Jan van Eyck (c. 1390ΓÇô1441)** is one of the most important names in Northern painting. He is strongly associated with the refined use of **oil painting**, which allowed for subtle surfaces, brilliant detail, and carefully observed textures. His **Arnolfini Portrait** is high-yield for CLEP because it lets students talk about domestic space, symbolic objects, and Northern realism. His role in the **Ghent Altarpiece** also helps anchor monumental religious painting in the North.
 
-**Rogier van der Weyden (c. 1399/1400–1464)** is often associated with emotional religious intensity. If van Eyck is a clue for exquisite detail and surface realism, van der Weyden becomes a clue for dramatic religious feeling and devotional immediacy.
+**Rogier van der Weyden (c. 1399/1400ΓÇô1464)** is often associated with emotional religious intensity. If van Eyck is a clue for exquisite detail and surface realism, van der Weyden becomes a clue for dramatic religious feeling and devotional immediacy.
 
 **CLEP Keys**
 - **Van Eyck** = oil painting, surface detail, **Arnolfini Portrait**
@@ -1055,34 +1055,34 @@ These painters need work-specific explanation.
 ---
 
 ## Add-On 3.4
-**Belongs in:** Section 3 → Block 5) Textbook Content → Insert after `H3 — Hieronymus Bosch as evidence` and `H3 — Albrecht Durer as evidence`  
+**Belongs in:** Section 3 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Hieronymus Bosch as evidence` and `H3 ΓÇö Albrecht Durer as evidence`  
 **Why this add-on is needed:**  
-Bosch and Dürer are commonly mentioned without enough style explanation.
+Bosch and D├╝rer are commonly mentioned without enough style explanation.
 
-### Supplemental Add-On — Bosch and Dürer from the ground up
-**Hieronymus Bosch (c. 1450–1516)** is important because his work often feels strange, dreamlike, morally charged, and visually crowded. Students should not memorize Bosch as “weird painter.” They should understand that his symbolic imagination reflects intense concern with sin, temptation, judgment, and human folly. The **Garden of Earthly Delights** is one of the most memorable CLEP-style recognition works precisely because it looks unlike calm Italian balance.
+### Supplemental Add-On ΓÇö Bosch and D├╝rer from the ground up
+**Hieronymus Bosch (c. 1450ΓÇô1516)** is important because his work often feels strange, dreamlike, morally charged, and visually crowded. Students should not memorize Bosch as ΓÇ£weird painter.ΓÇ¥ They should understand that his symbolic imagination reflects intense concern with sin, temptation, judgment, and human folly. The **Garden of Earthly Delights** is one of the most memorable CLEP-style recognition works precisely because it looks unlike calm Italian balance.
 
-**Albrecht Dürer (1471–1528)** matters because he connects Northern detail to broader European circulation through **printmaking**. Prints can travel more easily than altarpieces or frescoes. That makes Dürer essential for understanding how images and ideas move. Works like **Knight, Death, and the Devil** are strong CLEP anchors because they combine symbolic content with technical print skill.
+**Albrecht D├╝rer (1471ΓÇô1528)** matters because he connects Northern detail to broader European circulation through **printmaking**. Prints can travel more easily than altarpieces or frescoes. That makes D├╝rer essential for understanding how images and ideas move. Works like **Knight, Death, and the Devil** are strong CLEP anchors because they combine symbolic content with technical print skill.
 
 **CLEP Keys**
 - **Bosch** = visionary moral imagery, symbolic overload
-- **Dürer** = printmaking, engraving, circulation of ideas
+- **D├╝rer** = printmaking, engraving, circulation of ideas
 - Exam use: identify Northern works by detail, symbolism, and print culture
 
 ---
 
 ## Add-On 3.5
-**Belongs in:** Section 3 → Block 5) Textbook Content → Insert after `H2 — Major works and visual/literary clues`  
+**Belongs in:** Section 3 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Major works and visual/literary clues`  
 **Why this add-on is needed:**  
 Erasmus, More, Holbein, and Bruegel need stronger support as non-painter anchors.
 
-### Supplemental Add-On — The broader Northern field
-**Erasmus (c. 1466–1536)** is a core literary/intellectual anchor for Christian humanism. His **Praise of Folly** matters because it combines wit, criticism, and reform-minded scholarship.  
-**Thomas More (1478–1535)** matters because **Utopia** lets students see how Northern Renaissance culture uses literature to test social and political ideas.  
-**Hans Holbein the Younger (c. 1497–1543)** is a major portrait painter, especially useful for royal and intellectual culture.  
-**Pieter Bruegel the Elder (c. 1525–1569)** matters for peasant scenes, moral observation, and a broader social imagination.
+### Supplemental Add-On ΓÇö The broader Northern field
+**Erasmus (c. 1466ΓÇô1536)** is a core literary/intellectual anchor for Christian humanism. His **Praise of Folly** matters because it combines wit, criticism, and reform-minded scholarship.  
+**Thomas More (1478ΓÇô1535)** matters because **Utopia** lets students see how Northern Renaissance culture uses literature to test social and political ideas.  
+**Hans Holbein the Younger (c. 1497ΓÇô1543)** is a major portrait painter, especially useful for royal and intellectual culture.  
+**Pieter Bruegel the Elder (c. 1525ΓÇô1569)** matters for peasant scenes, moral observation, and a broader social imagination.
 
-These figures keep Section 3 from shrinking into “oil painting only.” The Northern Renaissance is also literary, social, and intellectual.
+These figures keep Section 3 from shrinking into ΓÇ£oil painting only.ΓÇ¥ The Northern Renaissance is also literary, social, and intellectual.
 
 **CLEP Keys**
 - **Erasmus** = **Praise of Folly**
@@ -1093,11 +1093,11 @@ These figures keep Section 3 from shrinking into “oil painting only.” The No
 ---
 
 ## Add-On 3.6
-**Belongs in:** Section 3 → Block 6) Canonical Works and Terms → Insert after `Key Terms`  
+**Belongs in:** Section 3 ΓåÆ Block 6) Canonical Works and Terms ΓåÆ Insert after `Key Terms`  
 **Why this add-on is needed:**  
 Some terms need plainer language.
 
-### Supplemental Add-On — Beginner-friendly vocabulary layer
+### Supplemental Add-On ΓÇö Beginner-friendly vocabulary layer
 - **Glaze**: a thin transparent layer of paint placed over another layer  
 - **Engraving**: cutting lines into metal so an image can be printed  
 - **Altarpiece**: artwork placed behind or above an altar  
@@ -1133,16 +1133,16 @@ renaissance.s3.northern_key_artists_and_works	Identify major Northern Renaissanc
 renaissance.s3.northern_renaissance_as_transformation	Explain why the Northern Renaissance is not a copy of Italy.
 
 5) Textbook Content
-H1 — Entering Northern Renaissance
+H1 ΓÇö Entering Northern Renaissance
 This section cannot begin inside its own topic. It must first pay its transition debt. What came before this section was the mature Italian Renaissance in Rome and Venice. That matters because students are not satisfied by a sentence such as 'Northern Renaissance happened next.' They need a causal bridge. In Chapter 3, the real question is How does Renaissance culture change when it enters societies shaped by merchant households, Christian moral seriousness, urban interiors, and print culture?
 
 CLEP Keys
-- Period clue: ca. 1450–1600
+- Period clue: ca. 1450ΓÇô1600
 - Place clue: Low Countries, German lands, France, England
 - Core term: Northern Renaissance and Christian humanism
 - What CLEP is likely testing here: names, works, terms, style clues, and the transition from the previous section.
 
-H2 — Where this happens and why place matters
+H2 ΓÇö Where this happens and why place matters
 Low Countries, German lands, France, England is not just a backdrop. On CLEP, place is often the fastest way to organize evidence. When students know where an event, artwork, school, or intellectual movement is happening, they can sort it by patronage, politics, media, and style. This is why the section states its place early rather than hiding it in a side note. The location helps explain why particular people matter, why certain materials or institutions dominate, and why the works of the period look or sound the way they do.
 
 CLEP Keys
@@ -1150,7 +1150,7 @@ CLEP Keys
 - Recognition strategy: attach each major figure to a place as well as to a work.
 - Fast exam clue: if the geography changes, the style logic often changes too.
 
-H2 — Defining the core term
+H2 ΓÇö Defining the core term
 The term 'Northern Renaissance and Christian humanism' must be taught before it is used. In this section, the term does not function as a slogan. It is the label for a precise cultural shift with identifiable institutions, forms, and habits of thought. Students who define the term loosely will struggle on style-recognition and comparison questions. Students who define it concretely can sort questions under time pressure.
 
 CLEP Keys
@@ -1158,26 +1158,26 @@ CLEP Keys
 - Be able to say what it is and what it is not.
 - Tie the term to at least two people, two works, and one style marker.
 
-H2 — The historical tension
+H2 ΓÇö The historical tension
 The central problem of this section is: How does Renaissance culture change when it enters societies shaped by merchant households, Christian moral seriousness, urban interiors, and print culture? A good humanities section does not merely list artifacts. It shows why those artifacts exist. The people and works in this section are evidence that a larger change is underway. Once students can state the section's problem clearly, the names stop feeling random and begin to function as proof.
 
 CLEP Keys
 - If you can name the tension, you can answer compare/contrast questions faster.
 - Many exam items ask indirectly: what shift does this description point to?
 
-H3 — Jan van Eyck as evidence
+H3 ΓÇö Jan van Eyck as evidence
 Jan van Eyck matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Jan van Eyck should be tied directly to the shift in Northern Renaissance and Christian humanism and to one or more of the section's recognition anchors: Arnolfini Portrait, Ghent Altarpiece, Garden of Earthly Delights.
 
-H3 — Rogier van der Weyden as evidence
+H3 ΓÇö Rogier van der Weyden as evidence
 Rogier van der Weyden matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Rogier van der Weyden should be tied directly to the shift in Northern Renaissance and Christian humanism and to one or more of the section's recognition anchors: Arnolfini Portrait, Ghent Altarpiece, Garden of Earthly Delights.
 
-H3 — Hieronymus Bosch as evidence
+H3 ΓÇö Hieronymus Bosch as evidence
 Hieronymus Bosch matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Hieronymus Bosch should be tied directly to the shift in Northern Renaissance and Christian humanism and to one or more of the section's recognition anchors: Arnolfini Portrait, Ghent Altarpiece, Garden of Earthly Delights.
 
-H3 — Albrecht Durer as evidence
+H3 ΓÇö Albrecht Durer as evidence
 Albrecht Durer matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Albrecht Durer should be tied directly to the shift in Northern Renaissance and Christian humanism and to one or more of the section's recognition anchors: Arnolfini Portrait, Ghent Altarpiece, Garden of Earthly Delights.
 
-H2 — Major works and visual/literary clues
+H2 ΓÇö Major works and visual/literary clues
 The works attached to this section must be learned as recognition systems, not as isolated museum labels. Arnolfini Portrait, Ghent Altarpiece, Garden of Earthly Delights, Knight, Death, and the Devil, The Ambassadors are high-yield because they can be used to test medium, style, patronage, theme, period, and creator. The right study move is to learn each work as a cluster: title, creator, place, style clue, and why CLEP would care.
 
 CLEP Keys
@@ -1185,7 +1185,7 @@ CLEP Keys
 - Style clues to know: Northern Renaissance, Christian humanism, oil painting, printmaking, engraving
 - Typical question frame: Which work, artist, or movement best matches this description?
 
-H2 — Why this section leads to the next one
+H2 ΓÇö Why this section leads to the next one
 By the end of the section, the learner should be able to say why the next section becomes necessary. The chapter cannot feel stitched together; it must feel argued. This section resolves its own question and then raises the next one that Chapter 3 must answer. That is why the closing move of this section should naturally point forward rather than merely stop.
 
 CLEP Keys
@@ -1194,46 +1194,46 @@ CLEP Keys
 
 6) Canonical Works and Terms
 Key Terms
-- **Northern Renaissance** — Renaissance developments in northern Europe shaped by local devotional, social, and media conditions.
-- **Christian humanism** — humanist scholarship used to reform or deepen Christian culture.
-- **oil painting** — painting technique using oil-based binders that allow glazes and subtle tonal effects.
-- **printmaking** — production of reproducible images from engraved, etched, or woodcut surfaces.
-- **engraving** — printmaking process using incised lines cut into metal.
-- **symbolism** — use of objects or images to carry meanings beyond literal appearance.
-- **devotional realism** — realistic depiction used to intensify religious presence and meaning.
-- **merchant patronage** — support of art by commercial elites rather than primarily by courts or churches.
-- **domestic interior** — household setting made meaningful in painting.
-- **triptych** — three-paneled artwork, often used for altarpieces.
+- **Northern Renaissance** ΓÇö Renaissance developments in northern Europe shaped by local devotional, social, and media conditions.
+- **Christian humanism** ΓÇö humanist scholarship used to reform or deepen Christian culture.
+- **oil painting** ΓÇö painting technique using oil-based binders that allow glazes and subtle tonal effects.
+- **printmaking** ΓÇö production of reproducible images from engraved, etched, or woodcut surfaces.
+- **engraving** ΓÇö printmaking process using incised lines cut into metal.
+- **symbolism** ΓÇö use of objects or images to carry meanings beyond literal appearance.
+- **devotional realism** ΓÇö realistic depiction used to intensify religious presence and meaning.
+- **merchant patronage** ΓÇö support of art by commercial elites rather than primarily by courts or churches.
+- **domestic interior** ΓÇö household setting made meaningful in painting.
+- **triptych** ΓÇö three-paneled artwork, often used for altarpieces.
 
 Key People, Works, and Artifacts
-- **Jan van Eyck** — core CLEP anchor for this section.
-- **Rogier van der Weyden** — core CLEP anchor for this section.
-- **Hieronymus Bosch** — core CLEP anchor for this section.
-- **Albrecht Durer** — core CLEP anchor for this section.
-- **Hans Holbein the Younger** — core CLEP anchor for this section.
-- **Pieter Bruegel the Elder** — core CLEP anchor for this section.
-- **Erasmus** — core CLEP anchor for this section.
-- **Thomas More** — core CLEP anchor for this section.
-- **Arnolfini Portrait** — major recognition work/text associated with this section.
-- **Ghent Altarpiece** — major recognition work/text associated with this section.
-- **Garden of Earthly Delights** — major recognition work/text associated with this section.
-- **Knight, Death, and the Devil** — major recognition work/text associated with this section.
-- **The Ambassadors** — major recognition work/text associated with this section.
-- **Praise of Folly** — major recognition work/text associated with this section.
-- **Utopia** — major recognition work/text associated with this section.
+- **Jan van Eyck** ΓÇö core CLEP anchor for this section.
+- **Rogier van der Weyden** ΓÇö core CLEP anchor for this section.
+- **Hieronymus Bosch** ΓÇö core CLEP anchor for this section.
+- **Albrecht Durer** ΓÇö core CLEP anchor for this section.
+- **Hans Holbein the Younger** ΓÇö core CLEP anchor for this section.
+- **Pieter Bruegel the Elder** ΓÇö core CLEP anchor for this section.
+- **Erasmus** ΓÇö core CLEP anchor for this section.
+- **Thomas More** ΓÇö core CLEP anchor for this section.
+- **Arnolfini Portrait** ΓÇö major recognition work/text associated with this section.
+- **Ghent Altarpiece** ΓÇö major recognition work/text associated with this section.
+- **Garden of Earthly Delights** ΓÇö major recognition work/text associated with this section.
+- **Knight, Death, and the Devil** ΓÇö major recognition work/text associated with this section.
+- **The Ambassadors** ΓÇö major recognition work/text associated with this section.
+- **Praise of Folly** ΓÇö major recognition work/text associated with this section.
+- **Utopia** ΓÇö major recognition work/text associated with this section.
 
 7) Primary Source Excerpts
-- **Erasmus** — 'When I get a little money I buy books.'
-- **Thomas More** — 'Where there is private property, there is much injustice.'
-- **Durer** — 'Art is embedded in nature; he who can draw her out possesses her.'
+- **Erasmus** ΓÇö 'When I get a little money I buy books.'
+- **Thomas More** ΓÇö 'Where there is private property, there is much injustice.'
+- **Durer** ΓÇö 'Art is embedded in nature; he who can draw her out possesses her.'
 
 8) Timeline Anchors
-- 1432 — Ghent Altarpiece intensifies Northern painting's prestige
-- 1434 — Arnolfini Portrait becomes a landmark of interior symbolism
-- late 1400s — Bosch develops visionary moral imagery
-- 1490s–1520s — Durer spreads Northern print and theory across Europe
-- 1511 — Erasmus publishes Praise of Folly
-- 1516 — More publishes Utopia
+- 1432 ΓÇö Ghent Altarpiece intensifies Northern painting's prestige
+- 1434 ΓÇö Arnolfini Portrait becomes a landmark of interior symbolism
+- late 1400s ΓÇö Bosch develops visionary moral imagery
+- 1490sΓÇô1520s ΓÇö Durer spreads Northern print and theory across Europe
+- 1511 ΓÇö Erasmus publishes Praise of Folly
+- 1516 ΓÇö More publishes Utopia
 
 9) Exam Hot Zones
 - oil painting as Northern clue
@@ -1315,47 +1315,47 @@ Key People, Works, and Artifacts
 (E) a Baroque movement
 
 11) Answer Key with Explanations
-1. C — The correct answer is C. oil painting best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+1. C ΓÇö The correct answer is C. oil painting best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-2. B — The correct answer is B. Arnolfini Portrait best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+2. B ΓÇö The correct answer is B. Arnolfini Portrait best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-3. A — The correct answer is A. Erasmus and More best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+3. A ΓÇö The correct answer is A. Erasmus and More best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-4. B — The correct answer is B. allowed wider circulation of images and ideas best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+4. B ΓÇö The correct answer is B. allowed wider circulation of images and ideas best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-5. B — The correct answer is B. Durer best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+5. B ΓÇö The correct answer is B. Durer best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-6. C — The correct answer is C. symbolically loaded interior detail best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+6. C ΓÇö The correct answer is C. symbolically loaded interior detail best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-7. B — The correct answer is B. moralized, visionary, symbolic imagery best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+7. B ΓÇö The correct answer is B. moralized, visionary, symbolic imagery best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-8. B — The correct answer is B. Thomas More best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+8. B ΓÇö The correct answer is B. Thomas More best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-9. B — The correct answer is B. domestic space, texture, and symbolic objects best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+9. B ΓÇö The correct answer is B. domestic space, texture, and symbolic objects best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-10. B — The correct answer is B. a transformed Renaissance shaped by local media and devotion best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+10. B ΓÇö The correct answer is B. a transformed Renaissance shaped by local media and devotion best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
 12) Flashcards
-Core 1. Northern Renaissance → identify its section function, period clue, and one exam association.
-Core 2. Christian humanism → identify its section function, period clue, and one exam association.
-Core 3. oil painting → identify its section function, period clue, and one exam association.
-Core 4. printmaking → identify its section function, period clue, and one exam association.
-Core 5. engraving → identify its section function, period clue, and one exam association.
-Core 6. Jan van Eyck → identify its section function, period clue, and one exam association.
-Core 7. Rogier van der Weyden → identify its section function, period clue, and one exam association.
-Core 8. Hieronymus Bosch → identify its section function, period clue, and one exam association.
-Core 9. Arnolfini Portrait → identify its section function, period clue, and one exam association.
-Core 10. Ghent Altarpiece → identify its section function, period clue, and one exam association.
-Extra 1. symbolism → define it, place it, and contrast it with one near-confuser.
-Extra 2. devotional realism → define it, place it, and contrast it with one near-confuser.
-Extra 3. merchant patronage → define it, place it, and contrast it with one near-confuser.
-Extra 4. domestic interior → define it, place it, and contrast it with one near-confuser.
-Extra 5. triptych → define it, place it, and contrast it with one near-confuser.
-Extra 6. Albrecht Durer → define it, place it, and contrast it with one near-confuser.
-Extra 7. Hans Holbein the Younger → define it, place it, and contrast it with one near-confuser.
-Extra 8. Pieter Bruegel the Elder → define it, place it, and contrast it with one near-confuser.
-Extra 9. Garden of Earthly Delights → define it, place it, and contrast it with one near-confuser.
-Extra 10. Knight, Death, and the Devil → define it, place it, and contrast it with one near-confuser.
+Core 1. Northern Renaissance ΓåÆ identify its section function, period clue, and one exam association.
+Core 2. Christian humanism ΓåÆ identify its section function, period clue, and one exam association.
+Core 3. oil painting ΓåÆ identify its section function, period clue, and one exam association.
+Core 4. printmaking ΓåÆ identify its section function, period clue, and one exam association.
+Core 5. engraving ΓåÆ identify its section function, period clue, and one exam association.
+Core 6. Jan van Eyck ΓåÆ identify its section function, period clue, and one exam association.
+Core 7. Rogier van der Weyden ΓåÆ identify its section function, period clue, and one exam association.
+Core 8. Hieronymus Bosch ΓåÆ identify its section function, period clue, and one exam association.
+Core 9. Arnolfini Portrait ΓåÆ identify its section function, period clue, and one exam association.
+Core 10. Ghent Altarpiece ΓåÆ identify its section function, period clue, and one exam association.
+Extra 1. symbolism ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 2. devotional realism ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 3. merchant patronage ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 4. domestic interior ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 5. triptych ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 6. Albrecht Durer ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 7. Hans Holbein the Younger ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 8. Pieter Bruegel the Elder ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 9. Garden of Earthly Delights ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 10. Knight, Death, and the Devil ΓåÆ define it, place it, and contrast it with one near-confuser.
 
 13) 10 Later Test Questions
 1. Why is 'more detail' an inadequate definition of the Northern Renaissance?
@@ -1370,19 +1370,19 @@ Extra 10. Knight, Death, and the Devil → define it, place it, and contrast it 
 10. Why should a CLEP student care about media history in this section?
 
 14) Link Images That Help
-- Arnolfini Portrait — Study domestic symbolism, oil detail, and merchant culture. Link: https://en.wikipedia.org/wiki/Arnolfini_Portrait
-- Ghent Altarpiece — Useful for Northern devotional scale and detail. Link: https://en.wikipedia.org/wiki/Ghent_Altarpiece
-- Garden of Earthly Delights — Watch symbolic density and moralized imagery. Link: https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights
-- The Ambassadors — Look for objects, symbolism, and Northern portrait intelligence. Link: https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)
-- Knight, Death, and the Devil — Use this to identify Durer's printmaking world. Link: https://en.wikipedia.org/wiki/Knight,_Death_and_the_Devil
-- Albrecht Durer overview — Tie prints, theory, and Northern circulation together. Link: https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer
-- Erasmus overview — Use for Christian humanism context. Link: https://en.wikipedia.org/wiki/Erasmus
-- Thomas More overview — Useful for Utopia and reform-minded humanism. Link: https://en.wikipedia.org/wiki/Thomas_More
+- Arnolfini Portrait ΓÇö Study domestic symbolism, oil detail, and merchant culture. Link: https://en.wikipedia.org/wiki/Arnolfini_Portrait
+- Ghent Altarpiece ΓÇö Useful for Northern devotional scale and detail. Link: https://en.wikipedia.org/wiki/Ghent_Altarpiece
+- Garden of Earthly Delights ΓÇö Watch symbolic density and moralized imagery. Link: https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights
+- The Ambassadors ΓÇö Look for objects, symbolism, and Northern portrait intelligence. Link: https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)
+- Knight, Death, and the Devil ΓÇö Use this to identify Durer's printmaking world. Link: https://en.wikipedia.org/wiki/Knight,_Death_and_the_Devil
+- Albrecht Durer overview ΓÇö Tie prints, theory, and Northern circulation together. Link: https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer
+- Erasmus overview ΓÇö Use for Christian humanism context. Link: https://en.wikipedia.org/wiki/Erasmus
+- Thomas More overview ΓÇö Useful for Utopia and reform-minded humanism. Link: https://en.wikipedia.org/wiki/Thomas_More
 
 15) Link Videos to Embed
-- Smarthistory search — Arnolfini Portrait — Watch-for: Watch for domestic symbolism, texture, and oil technique. Link: https://www.youtube.com/results?search_query=Smarthistory+Arnolfini+Portrait
-- Smarthistory search — Durer printmaking — Watch-for: Watch for line, reproducibility, and why print changes cultural circulation. Link: https://www.youtube.com/results?search_query=Smarthistory+Durer+printmaking
-- Smarthistory search — Northern Renaissance overview — Watch-for: Watch for how local devotion and media change the Italian model. Link: https://www.youtube.com/results?search_query=Smarthistory+Northern+Renaissance+overview
+- Smarthistory search ΓÇö Arnolfini Portrait ΓÇö Watch-for: Watch for domestic symbolism, texture, and oil technique. Link: https://www.youtube.com/results?search_query=Smarthistory+Arnolfini+Portrait
+- Smarthistory search ΓÇö Durer printmaking ΓÇö Watch-for: Watch for line, reproducibility, and why print changes cultural circulation. Link: https://www.youtube.com/results?search_query=Smarthistory+Durer+printmaking
+- Smarthistory search ΓÇö Northern Renaissance overview ΓÇö Watch-for: Watch for how local devotion and media change the Italian model. Link: https://www.youtube.com/results?search_query=Smarthistory+Northern+Renaissance+overview
 
 16) References
 - Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, Chapter 20.
@@ -1415,49 +1415,49 @@ For CLEP purposes, this section is high value because the Humanities exam reward
 The section's central claim is this: The Reformation is a humanities event as well as a religious event because it reshapes authority, media, language, music, sacred image culture, and public persuasion. That claim must stay visible all the way through the lesson, the CLEP keys, the quiz logic, and the flashcards.
 
 2) Big Ideas
-Big Idea 1 — Authority becomes the issue
+Big Idea 1 ΓÇö Authority becomes the issue
 
 The Reformation is not merely anger at corruption. It is a dispute over who interprets truth, how salvation is understood, and what role institution, scripture, clergy, and sacraments should play.
 
 Students often oversimplify the Reformation into a complaint about indulgences. That starting point matters, but authority is the deeper issue.
 
-Big Idea 2 — Print makes reform scalable
+Big Idea 2 ΓÇö Print makes reform scalable
 
 Without print, reform would spread more slowly and less consistently. Pamphlets, translations, songs, and reproducible images turn arguments into public culture.
 
 Students often treat print as neutral background. On CLEP, print is the mechanism that explains why reform becomes continental.
 
-Big Idea 3 — Language changes access
+Big Idea 3 ΓÇö Language changes access
 
 When scripture, liturgy, and devotional materials move into vernacular languages, religious life changes. Access and authority are tied together: if more believers can read or hear in their own language, mediation shifts.
 
 Students often see vernacular as a simple translation issue. It is really a control issue, a pedagogy issue, and a culture issue.
 
-Big Idea 4 — Images are contested
+Big Idea 4 ΓÇö Images are contested
 
 The Reformation changes how sacred images are used, criticized, destroyed, or defended. Not every Protestant tradition treats images identically, but the status of visual culture becomes unstable and politically charged.
 
 Students often think art and theology belong in separate chapters. This section proves the opposite.
 
-Big Idea 5 — Music becomes communal
+Big Idea 5 ΓÇö Music becomes communal
 
 Congregational song and the chorale help make belief audible, memorable, and participatory. This is one reason music belongs squarely inside Reformation study.
 
 Students often neglect music because no single image anchors it. The exam, however, includes music and performing arts.
 
-Big Idea 6 — Reform multiplies rather than simplifies
+Big Idea 6 ΓÇö Reform multiplies rather than simplifies
 
 Luther, Calvin, Anglican developments, and radical groups do not produce one neat Protestant outcome. The Reformation is a field of competing reforms and responses.
 
 Students often imagine Protestantism as one unified replacement. The reality is more fractured and historically important.
 
 ## Add-On 4.1
-**Belongs in:** Section 4 → Block 5) Textbook Content → Insert after `H1 — Entering Reformation`  
+**Belongs in:** Section 4 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H1 ΓÇö Entering Reformation`  
 **Why this add-on is needed:**  
 Students need a slower explanation of what broke and why.
 
-### Supplemental Add-On — What the Reformation is from the ground up
-The **Reformation** was not just “people disagreed with the Church.” It was a major rupture in western Christian unity involving authority, salvation, scripture, ritual, images, language, and institutional control. Before the Reformation, western Europe was largely organized around a shared Roman Catholic structure. That structure had internal criticism long before Luther, but in the sixteenth century criticism became a break.
+### Supplemental Add-On ΓÇö What the Reformation is from the ground up
+The **Reformation** was not just ΓÇ£people disagreed with the Church.ΓÇ¥ It was a major rupture in western Christian unity involving authority, salvation, scripture, ritual, images, language, and institutional control. Before the Reformation, western Europe was largely organized around a shared Roman Catholic structure. That structure had internal criticism long before Luther, but in the sixteenth century criticism became a break.
 
 Why then? Because several forces came together at once: religious dissatisfaction, intellectual critique, resentment of corruption, the growth of literacy, urban debate, and above all **print**. A complaint that might once have stayed local could now spread quickly through pamphlets, translations, and songs.
 
@@ -1468,11 +1468,11 @@ Why then? Because several forces came together at once: religious dissatisfactio
 ---
 
 ## Add-On 4.2
-**Belongs in:** Section 4 → Block 5) Textbook Content → Insert after `H2 — Defining the core term`  
+**Belongs in:** Section 4 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Defining the core term`  
 **Why this add-on is needed:**  
 Terms like indulgence, vernacular, and scriptural authority need grounding.
 
-### Supplemental Add-On — Key Reformation words in plain English
+### Supplemental Add-On ΓÇö Key Reformation words in plain English
 An **indulgence** was connected to the Catholic penitential system and became a major flashpoint because critics saw abuses in its sale and use.  
 **Vernacular** means the everyday spoken language of ordinary people. A **vernacular Bible** matters because it changes who can read and interpret sacred text directly.  
 **Scriptural authority** means the claim that scripture has decisive authority in religious life.  
@@ -1486,18 +1486,18 @@ A **chorale** is a hymn meant for congregational singing, especially important i
 ---
 
 ## Add-On 4.3
-**Belongs in:** Section 4 → Block 5) Textbook Content → Insert after all four H3 subsections (`Martin Luther`, `John Calvin`, `Lucas Cranach the Elder`, `Henry VIII`)  
+**Belongs in:** Section 4 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after all four H3 subsections (`Martin Luther`, `John Calvin`, `Lucas Cranach the Elder`, `Henry VIII`)  
 **Why this add-on is needed:**  
 The names need life/date/function framing.
 
-### Supplemental Add-On — The people behind the Reformation clues
-**Martin Luther (1483–1546)** was a German monk, theologian, and reformer whose critique of indulgence practice and church authority became the symbolic opening of the Reformation in 1517. He matters because he turned a dispute into a movement.
+### Supplemental Add-On ΓÇö The people behind the Reformation clues
+**Martin Luther (1483ΓÇô1546)** was a German monk, theologian, and reformer whose critique of indulgence practice and church authority became the symbolic opening of the Reformation in 1517. He matters because he turned a dispute into a movement.
 
-**John Calvin (1509–1564)** was a French theologian whose reform vision became highly influential in Geneva and beyond. Students should not collapse Calvin into Luther. Calvin helps signal a broader and more disciplined Reformed tradition.
+**John Calvin (1509ΓÇô1564)** was a French theologian whose reform vision became highly influential in Geneva and beyond. Students should not collapse Calvin into Luther. Calvin helps signal a broader and more disciplined Reformed tradition.
 
-**Lucas Cranach the Elder (1472–1553)** was a German artist tied closely to the visual side of reform. He matters because the Reformation is not only made of books and sermons. It also uses images and print culture.
+**Lucas Cranach the Elder (1472ΓÇô1553)** was a German artist tied closely to the visual side of reform. He matters because the Reformation is not only made of books and sermons. It also uses images and print culture.
 
-**Henry VIII (1491–1547)** matters because England’s break with Rome makes the Reformation politically national as well as theological. His story helps students connect reform to Tudor culture.
+**Henry VIII (1491ΓÇô1547)** matters because EnglandΓÇÖs break with Rome makes the Reformation politically national as well as theological. His story helps students connect reform to Tudor culture.
 
 **CLEP Keys**
 - **Luther** = 1517, reform opening
@@ -1508,11 +1508,11 @@ The names need life/date/function framing.
 ---
 
 ## Add-On 4.4
-**Belongs in:** Section 4 → Block 5) Textbook Content → Insert after `H2 — Major works and visual/literary clues`  
+**Belongs in:** Section 4 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Major works and visual/literary clues`  
 **Why this add-on is needed:**  
 Students need to see why music and media belong here.
 
-### Supplemental Add-On — Why music, printing, and propaganda belong in this section
+### Supplemental Add-On ΓÇö Why music, printing, and propaganda belong in this section
 A common beginner mistake is to think the Reformation is only a matter of sermons and church politics. But if worship changes, music changes. If authority changes, printing changes. If public persuasion matters, images matter. This is why the Reformation belongs in a humanities textbook: it transforms media, performance, visual culture, and language all at once.
 
 A **pamphlet** is short enough to spread quickly and cheaply. A **chorale** allows entire congregations to participate in worship. Reform-era images can function like arguments in visual form. The section becomes easier once students see that the Reformation is a cultural communication event as much as a doctrinal one.
@@ -1526,11 +1526,11 @@ A **pamphlet** is short enough to spread quickly and cheaply. A **chorale** allo
 ---
 
 ## Add-On 4.5
-**Belongs in:** Section 4 → Block 6) Canonical Works and Terms → Insert after `Key Terms`  
+**Belongs in:** Section 4 ΓåÆ Block 6) Canonical Works and Terms ΓåÆ Insert after `Key Terms`  
 **Why this add-on is needed:**  
 Some words are still abstract for younger learners.
 
-### Supplemental Add-On — Beginner-friendly vocabulary layer
+### Supplemental Add-On ΓÇö Beginner-friendly vocabulary layer
 - **Doctrine**: official religious teaching  
 - **Confessional**: relating to a defined branch or statement of belief  
 - **Remission**: cancellation or reduction of a penalty  
@@ -1569,16 +1569,16 @@ renaissance.s4.music_and_congregational_change	Explain why music and congregatio
 renaissance.s4.reformation_as_humanities_event	Explain why the Reformation reshapes art, language, media, and culture.
 
 5) Textbook Content
-H1 — Entering Reformation
+H1 ΓÇö Entering Reformation
 This section cannot begin inside its own topic. It must first pay its transition debt. What came before this section was Northern literacy, print, and Christian humanist critique. That matters because students are not satisfied by a sentence such as 'Reformation happened next.' They need a causal bridge. In Chapter 3, the real question is What happens when Christian Europe stops agreeing on where religious authority lives?
 
 CLEP Keys
-- Period clue: ca. 1517–1600
+- Period clue: ca. 1517ΓÇô1600
 - Place clue: German lands, Switzerland, England, wider Europe
 - Core term: Reformation
 - What CLEP is likely testing here: names, works, terms, style clues, and the transition from the previous section.
 
-H2 — Where this happens and why place matters
+H2 ΓÇö Where this happens and why place matters
 German lands, Switzerland, England, wider Europe is not just a backdrop. On CLEP, place is often the fastest way to organize evidence. When students know where an event, artwork, school, or intellectual movement is happening, they can sort it by patronage, politics, media, and style. This is why the section states its place early rather than hiding it in a side note. The location helps explain why particular people matter, why certain materials or institutions dominate, and why the works of the period look or sound the way they do.
 
 CLEP Keys
@@ -1586,7 +1586,7 @@ CLEP Keys
 - Recognition strategy: attach each major figure to a place as well as to a work.
 - Fast exam clue: if the geography changes, the style logic often changes too.
 
-H2 — Defining the core term
+H2 ΓÇö Defining the core term
 The term 'Reformation' must be taught before it is used. In this section, the term does not function as a slogan. It is the label for a precise cultural shift with identifiable institutions, forms, and habits of thought. Students who define the term loosely will struggle on style-recognition and comparison questions. Students who define it concretely can sort questions under time pressure.
 
 CLEP Keys
@@ -1594,26 +1594,26 @@ CLEP Keys
 - Be able to say what it is and what it is not.
 - Tie the term to at least two people, two works, and one style marker.
 
-H2 — The historical tension
+H2 ΓÇö The historical tension
 The central problem of this section is: What happens when Christian Europe stops agreeing on where religious authority lives? A good humanities section does not merely list artifacts. It shows why those artifacts exist. The people and works in this section are evidence that a larger change is underway. Once students can state the section's problem clearly, the names stop feeling random and begin to function as proof.
 
 CLEP Keys
 - If you can name the tension, you can answer compare/contrast questions faster.
 - Many exam items ask indirectly: what shift does this description point to?
 
-H3 — Martin Luther as evidence
+H3 ΓÇö Martin Luther as evidence
 Martin Luther matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Martin Luther should be tied directly to the shift in Reformation and to one or more of the section's recognition anchors: Ninety-Five Theses, German Bible translation, Lutheran chorales.
 
-H3 — John Calvin as evidence
+H3 ΓÇö John Calvin as evidence
 John Calvin matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, John Calvin should be tied directly to the shift in Reformation and to one or more of the section's recognition anchors: Ninety-Five Theses, German Bible translation, Lutheran chorales.
 
-H3 — Lucas Cranach the Elder as evidence
+H3 ΓÇö Lucas Cranach the Elder as evidence
 Lucas Cranach the Elder matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Lucas Cranach the Elder should be tied directly to the shift in Reformation and to one or more of the section's recognition anchors: Ninety-Five Theses, German Bible translation, Lutheran chorales.
 
-H3 — Henry VIII as evidence
+H3 ΓÇö Henry VIII as evidence
 Henry VIII matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Henry VIII should be tied directly to the shift in Reformation and to one or more of the section's recognition anchors: Ninety-Five Theses, German Bible translation, Lutheran chorales.
 
-H2 — Major works and visual/literary clues
+H2 ΓÇö Major works and visual/literary clues
 The works attached to this section must be learned as recognition systems, not as isolated museum labels. Ninety-Five Theses, German Bible translation, Lutheran chorales, Cranach reform images, Book of Common Prayer are high-yield because they can be used to test medium, style, patronage, theme, period, and creator. The right study move is to learn each work as a cluster: title, creator, place, style clue, and why CLEP would care.
 
 CLEP Keys
@@ -1621,7 +1621,7 @@ CLEP Keys
 - Style clues to know: Reformation, Protestant, vernacular, indulgence, iconoclasm
 - Typical question frame: Which work, artist, or movement best matches this description?
 
-H2 — Why this section leads to the next one
+H2 ΓÇö Why this section leads to the next one
 By the end of the section, the learner should be able to say why the next section becomes necessary. The chapter cannot feel stitched together; it must feel argued. This section resolves its own question and then raises the next one that Chapter 3 must answer. That is why the closing move of this section should naturally point forward rather than merely stop.
 
 CLEP Keys
@@ -1630,41 +1630,41 @@ CLEP Keys
 
 6) Canonical Works and Terms
 Key Terms
-- **Reformation** — structural break in western Christian unity centered on authority, doctrine, and practice.
-- **Protestant** — broad category for Christian groups emerging from reform movements against Roman Catholic authority.
-- **vernacular** — everyday language of a people rather than Latin or another learned language.
-- **indulgence** — remission associated with the Catholic penitential system that became a flashpoint in reform debate.
-- **iconoclasm** — destruction or rejection of sacred images.
-- **pamphlet** — short printed work used for fast argument and public persuasion.
-- **chorale** — strophic congregational hymn central to Lutheran musical practice.
-- **confession** — formal statement of doctrine or a confessional religious identity.
-- **Anglican** — relating to the Church of England.
-- **scriptural authority** — claim that scripture has decisive authority for doctrine and religious life.
+- **Reformation** ΓÇö structural break in western Christian unity centered on authority, doctrine, and practice.
+- **Protestant** ΓÇö broad category for Christian groups emerging from reform movements against Roman Catholic authority.
+- **vernacular** ΓÇö everyday language of a people rather than Latin or another learned language.
+- **indulgence** ΓÇö remission associated with the Catholic penitential system that became a flashpoint in reform debate.
+- **iconoclasm** ΓÇö destruction or rejection of sacred images.
+- **pamphlet** ΓÇö short printed work used for fast argument and public persuasion.
+- **chorale** ΓÇö strophic congregational hymn central to Lutheran musical practice.
+- **confession** ΓÇö formal statement of doctrine or a confessional religious identity.
+- **Anglican** ΓÇö relating to the Church of England.
+- **scriptural authority** ΓÇö claim that scripture has decisive authority for doctrine and religious life.
 
 Key People, Works, and Artifacts
-- **Martin Luther** — core CLEP anchor for this section.
-- **John Calvin** — core CLEP anchor for this section.
-- **Lucas Cranach the Elder** — core CLEP anchor for this section.
-- **Henry VIII** — core CLEP anchor for this section.
-- **Thomas Cranmer** — core CLEP anchor for this section.
-- **John Knox** — core CLEP anchor for this section.
-- **Ninety-Five Theses** — major recognition work/text associated with this section.
-- **German Bible translation** — major recognition work/text associated with this section.
-- **Lutheran chorales** — major recognition work/text associated with this section.
-- **Cranach reform images** — major recognition work/text associated with this section.
-- **Book of Common Prayer** — major recognition work/text associated with this section.
+- **Martin Luther** ΓÇö core CLEP anchor for this section.
+- **John Calvin** ΓÇö core CLEP anchor for this section.
+- **Lucas Cranach the Elder** ΓÇö core CLEP anchor for this section.
+- **Henry VIII** ΓÇö core CLEP anchor for this section.
+- **Thomas Cranmer** ΓÇö core CLEP anchor for this section.
+- **John Knox** ΓÇö core CLEP anchor for this section.
+- **Ninety-Five Theses** ΓÇö major recognition work/text associated with this section.
+- **German Bible translation** ΓÇö major recognition work/text associated with this section.
+- **Lutheran chorales** ΓÇö major recognition work/text associated with this section.
+- **Cranach reform images** ΓÇö major recognition work/text associated with this section.
+- **Book of Common Prayer** ΓÇö major recognition work/text associated with this section.
 
 7) Primary Source Excerpts
-- **Luther** — 'Here I stand; I can do no other.'
-- **Calvin** — 'The human heart is a perpetual factory of idols.'
-- **Book of Common Prayer** — 'Read, mark, learn, and inwardly digest.'
+- **Luther** ΓÇö 'Here I stand; I can do no other.'
+- **Calvin** ΓÇö 'The human heart is a perpetual factory of idols.'
+- **Book of Common Prayer** ΓÇö 'Read, mark, learn, and inwardly digest.'
 
 8) Timeline Anchors
-- 1517 — Luther's challenge becomes the symbolic opening of reform
-- 1520s — pamphlets and vernacular texts accelerate spread
-- 1530s — Reformed traditions diversify
-- 1534 — English break with Rome reshapes Tudor religious life
-- 1540s–1560s — confessional identities harden across Europe
+- 1517 ΓÇö Luther's challenge becomes the symbolic opening of reform
+- 1520s ΓÇö pamphlets and vernacular texts accelerate spread
+- 1530s ΓÇö Reformed traditions diversify
+- 1534 ΓÇö English break with Rome reshapes Tudor religious life
+- 1540sΓÇô1560s ΓÇö confessional identities harden across Europe
 
 9) Exam Hot Zones
 - Luther and authority
@@ -1746,47 +1746,47 @@ Key People, Works, and Artifacts
 (E) Baroque illusionism
 
 11) Answer Key with Explanations
-1. B — The correct answer is B. religious authority and access to truth best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+1. B ΓÇö The correct answer is B. religious authority and access to truth best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-2. B — The correct answer is B. Luther best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+2. B ΓÇö The correct answer is B. Luther best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-3. B — The correct answer is B. lets arguments, songs, and translations circulate widely best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+3. B ΓÇö The correct answer is B. lets arguments, songs, and translations circulate widely best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-4. B — The correct answer is B. changes access and authority in religious life best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+4. B ΓÇö The correct answer is B. changes access and authority in religious life best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-5. B — The correct answer is B. creates reform-era visual propaganda best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+5. B ΓÇö The correct answer is B. creates reform-era visual propaganda best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-6. B — The correct answer is B. destruction or rejection of sacred images best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+6. B ΓÇö The correct answer is B. destruction or rejection of sacred images best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-7. A — The correct answer is A. Book of Common Prayer best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+7. A ΓÇö The correct answer is A. Book of Common Prayer best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-8. B — The correct answer is B. a congregational hymn form best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+8. B ΓÇö The correct answer is B. a congregational hymn form best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-9. B — The correct answer is B. language, music, images, and media best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+9. B ΓÇö The correct answer is B. language, music, images, and media best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-10. B — The correct answer is B. pamphlets, vernacular scripture, and contested sacred images best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+10. B ΓÇö The correct answer is B. pamphlets, vernacular scripture, and contested sacred images best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
 12) Flashcards
-Core 1. Reformation → identify its section function, period clue, and one exam association.
-Core 2. Protestant → identify its section function, period clue, and one exam association.
-Core 3. vernacular → identify its section function, period clue, and one exam association.
-Core 4. indulgence → identify its section function, period clue, and one exam association.
-Core 5. iconoclasm → identify its section function, period clue, and one exam association.
-Core 6. Martin Luther → identify its section function, period clue, and one exam association.
-Core 7. John Calvin → identify its section function, period clue, and one exam association.
-Core 8. Lucas Cranach the Elder → identify its section function, period clue, and one exam association.
-Core 9. Ninety-Five Theses → identify its section function, period clue, and one exam association.
-Core 10. German Bible translation → identify its section function, period clue, and one exam association.
-Extra 1. pamphlet → define it, place it, and contrast it with one near-confuser.
-Extra 2. chorale → define it, place it, and contrast it with one near-confuser.
-Extra 3. confession → define it, place it, and contrast it with one near-confuser.
-Extra 4. Anglican → define it, place it, and contrast it with one near-confuser.
-Extra 5. scriptural authority → define it, place it, and contrast it with one near-confuser.
-Extra 6. Henry VIII → define it, place it, and contrast it with one near-confuser.
-Extra 7. Thomas Cranmer → define it, place it, and contrast it with one near-confuser.
-Extra 8. John Knox → define it, place it, and contrast it with one near-confuser.
-Extra 9. Lutheran chorales → define it, place it, and contrast it with one near-confuser.
-Extra 10. Cranach reform images → define it, place it, and contrast it with one near-confuser.
+Core 1. Reformation ΓåÆ identify its section function, period clue, and one exam association.
+Core 2. Protestant ΓåÆ identify its section function, period clue, and one exam association.
+Core 3. vernacular ΓåÆ identify its section function, period clue, and one exam association.
+Core 4. indulgence ΓåÆ identify its section function, period clue, and one exam association.
+Core 5. iconoclasm ΓåÆ identify its section function, period clue, and one exam association.
+Core 6. Martin Luther ΓåÆ identify its section function, period clue, and one exam association.
+Core 7. John Calvin ΓåÆ identify its section function, period clue, and one exam association.
+Core 8. Lucas Cranach the Elder ΓåÆ identify its section function, period clue, and one exam association.
+Core 9. Ninety-Five Theses ΓåÆ identify its section function, period clue, and one exam association.
+Core 10. German Bible translation ΓåÆ identify its section function, period clue, and one exam association.
+Extra 1. pamphlet ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 2. chorale ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 3. confession ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 4. Anglican ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 5. scriptural authority ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 6. Henry VIII ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 7. Thomas Cranmer ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 8. John Knox ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 9. Lutheran chorales ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 10. Cranach reform images ΓåÆ define it, place it, and contrast it with one near-confuser.
 
 13) 10 Later Test Questions
 1. Why is it historically weak to reduce the Reformation to indulgence abuse alone?
@@ -1801,17 +1801,17 @@ Extra 10. Cranach reform images → define it, place it, and contrast it with on
 10. Which clues would help you separate Reformation content from Counter-Reformation content?
 
 14) Link Images That Help
-- Martin Luther — Anchor the section in a specific reform figure. Link: https://en.wikipedia.org/wiki/Martin_Luther
-- Lucas Cranach the Elder — Use for reform-era image culture and propaganda. Link: https://en.wikipedia.org/wiki/Lucas_Cranach_the_Elder
-- Ninety-five Theses — Study the symbolic opening of reform conflict. Link: https://en.wikipedia.org/wiki/Ninety-five_Theses
-- Book of Common Prayer — Useful for English vernacular worship culture. Link: https://en.wikipedia.org/wiki/Book_of_Common_Prayer
-- John Calvin — Tie this figure to Reformed traditions and disciplined reform. Link: https://en.wikipedia.org/wiki/John_Calvin
-- Reformation overview — Use the overview page to track branches, disputes, and spread. Link: https://en.wikipedia.org/wiki/Reformation
+- Martin Luther ΓÇö Anchor the section in a specific reform figure. Link: https://en.wikipedia.org/wiki/Martin_Luther
+- Lucas Cranach the Elder ΓÇö Use for reform-era image culture and propaganda. Link: https://en.wikipedia.org/wiki/Lucas_Cranach_the_Elder
+- Ninety-five Theses ΓÇö Study the symbolic opening of reform conflict. Link: https://en.wikipedia.org/wiki/Ninety-five_Theses
+- Book of Common Prayer ΓÇö Useful for English vernacular worship culture. Link: https://en.wikipedia.org/wiki/Book_of_Common_Prayer
+- John Calvin ΓÇö Tie this figure to Reformed traditions and disciplined reform. Link: https://en.wikipedia.org/wiki/John_Calvin
+- Reformation overview ΓÇö Use the overview page to track branches, disputes, and spread. Link: https://en.wikipedia.org/wiki/Reformation
 
 15) Link Videos to Embed
-- YouTube search — Reformation overview — Watch-for: Watch for authority, print, and vernacular access working together. Link: https://www.youtube.com/results?search_query=Smarthistory+Reformation+overview
-- YouTube search — Luther and the Reformation — Watch-for: Watch for why Luther becomes the opening figure without explaining the whole movement alone. Link: https://www.youtube.com/results?search_query=Martin+Luther+Reformation+overview
-- YouTube search — Cranach and reform images — Watch-for: Watch for visual propaganda and why images remain central in a conflict about belief. Link: https://www.youtube.com/results?search_query=Lucas+Cranach+Reformation+images
+- YouTube search ΓÇö Reformation overview ΓÇö Watch-for: Watch for authority, print, and vernacular access working together. Link: https://www.youtube.com/results?search_query=Smarthistory+Reformation+overview
+- YouTube search ΓÇö Luther and the Reformation ΓÇö Watch-for: Watch for why Luther becomes the opening figure without explaining the whole movement alone. Link: https://www.youtube.com/results?search_query=Martin+Luther+Reformation+overview
+- YouTube search ΓÇö Cranach and reform images ΓÇö Watch-for: Watch for visual propaganda and why images remain central in a conflict about belief. Link: https://www.youtube.com/results?search_query=Lucas+Cranach+Reformation+images
 
 16) References
 - Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, Chapter 21.
@@ -1844,51 +1844,51 @@ For CLEP purposes, this section is high value because the Humanities exam reward
 The section's central claim is this: After High Renaissance confidence and Reformation fracture, culture becomes more pressured, self-conscious, unstable, and strategically expressive in both institutional and stylistic terms. That claim must stay visible all the way through the lesson, the CLEP keys, the quiz logic, and the flashcards.
 
 2) Big Ideas
-Big Idea 1 — Response is cultural as well as doctrinal
+Big Idea 1 ΓÇö Response is cultural as well as doctrinal
 
 The Catholic response to Protestant reform involves councils, new religious energy, educational work, and a strategic reconsideration of art. Institutional response is inseparable from visual and emotional communication.
 
 Students often hear Counter-Reformation and think only of doctrinal correction. The fuller story includes pedagogy, missions, devotion, and image strategy.
 
-Big Idea 2 — Mannerism marks pressure after balance
+Big Idea 2 ΓÇö Mannerism marks pressure after balance
 
 Mannerism does not simply repeat High Renaissance ideals. It stretches bodies, disturbs proportion, heightens artifice, and often produces a charged sense that balance has become unstable.
 
 Students often dismiss Mannerism as bad drawing. The correction is that distortion becomes expressive and historically meaningful.
 
-Big Idea 3 — Style records historical stress
+Big Idea 3 ΓÇö Style records historical stress
 
 When worlds become fractured, styles often change. Mannerism can be read as a formal response to instability, sophistication, courtliness, and tension after the mature confidence of the earlier sixteenth century.
 
 Students often separate history and style. CLEP recognition improves when formal traits are tied to historical conditions.
 
-Big Idea 4 — Catholic art becomes strategic
+Big Idea 4 ΓÇö Catholic art becomes strategic
 
 Post-Tridentine Catholic culture does not abandon art; it uses it more intentionally. Clarity, emotional force, and doctrinal usefulness become important evaluation standards.
 
 Students often assume religious controversy reduces art. In fact it raises the stakes for what art must do.
 
-Big Idea 5 — Music also belongs here
+Big Idea 5 ΓÇö Music also belongs here
 
 Sacred music, especially in discussions around clarity and worship, helps show that Counter-Reformation culture is not only visual. Palestrina often serves as a recognition anchor for this broader Catholic environment.
 
 Students often miss music because painting dominates surveys. CLEP does not divide the humanities that way.
 
-Big Idea 6 — Mannerism is a turning point
+Big Idea 6 ΓÇö Mannerism is a turning point
 
 This section matters because it explains why the late sixteenth century no longer feels simply Renaissance in the early Florentine or High Renaissance sense. It prepares the road toward the Baroque.
 
 Students often need a clean bridge here. This section is where Renaissance calm starts to crack.
 
 ## Add-On 5.1
-**Belongs in:** Section 5 → Block 5) Textbook Content → Insert after `H1 — Entering Counter-Reformation and Mannerism`  
+**Belongs in:** Section 5 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H1 ΓÇö Entering Counter-Reformation and Mannerism`  
 **Why this add-on is needed:**  
 Students need a cleaner explanation of why this section exists after the Reformation.
 
-### Supplemental Add-On — Why this section comes after the Reformation
+### Supplemental Add-On ΓÇö Why this section comes after the Reformation
 Once the Reformation breaks western Christian unity, the Catholic world does not simply disappear or remain unchanged. It responds. That response is what students call the **Counter-Reformation** or Catholic Reformation. At the same time, artistic style becomes less stable and less serene than the classic balance associated with the High Renaissance. These two developments belong together because both grow out of a world under pressure.
 
-This section is therefore not about “what happened after the Renaissance was over.” It is about what happened when Renaissance confidence was challenged and reworked.
+This section is therefore not about ΓÇ£what happened after the Renaissance was over.ΓÇ¥ It is about what happened when Renaissance confidence was challenged and reworked.
 
 **CLEP Keys**
 - **Counter-Reformation** = Catholic response
@@ -1898,11 +1898,11 @@ This section is therefore not about “what happened after the Renaissance was o
 ---
 
 ## Add-On 5.2
-**Belongs in:** Section 5 → Block 5) Textbook Content → Insert after `H2 — Defining the core term`  
+**Belongs in:** Section 5 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Defining the core term`  
 **Why this add-on is needed:**  
 Students commonly misunderstand Mannerism.
 
-### Supplemental Add-On — What Mannerism is and is not
+### Supplemental Add-On ΓÇö What Mannerism is and is not
 **Mannerism** is a late Renaissance style that often features elongated bodies, unusual space, unstable balance, elegant distortion, and a sense that visual harmony is being pushed past its classical limits. It is not simply sloppy art, bad anatomy, or failed realism. It is a deliberate stylistic choice that reflects tension, refinement, and self-conscious artifice.
 
 A useful way to teach this is comparison:
@@ -1918,14 +1918,14 @@ That contrast is very useful on CLEP because style-recognition questions often d
 ---
 
 ## Add-On 5.3
-**Belongs in:** Section 5 → Block 5) Textbook Content → Insert after `H3 — Council of Trent as evidence` and `H3 — Ignatius of Loyola as evidence`  
+**Belongs in:** Section 5 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Council of Trent as evidence` and `H3 ΓÇö Ignatius of Loyola as evidence`  
 **Why this add-on is needed:**  
 Institutional Catholic response needs clearer ground-level explanation.
 
-### Supplemental Add-On — Council of Trent and Loyola from the ground up
-The **Council of Trent (1545–1563)** was a major Catholic council that responded to Protestant reform by clarifying doctrine, reforming certain practices, and shaping the role of religious teaching and art. Students do not need to memorize every decree, but they do need to know why the council matters: it helped define Catholic response and gave institutional shape to reform from within.
+### Supplemental Add-On ΓÇö Council of Trent and Loyola from the ground up
+The **Council of Trent (1545ΓÇô1563)** was a major Catholic council that responded to Protestant reform by clarifying doctrine, reforming certain practices, and shaping the role of religious teaching and art. Students do not need to memorize every decree, but they do need to know why the council matters: it helped define Catholic response and gave institutional shape to reform from within.
 
-**Ignatius of Loyola (1491–1556)** founded the **Jesuits**, a religious order deeply involved in education, discipline, and missionary activity. Loyola matters because the Catholic response was not only defensive. It was also energetic, organized, and pedagogical. This is one reason the section belongs in a humanities course: it shows how institutions try to shape minds, souls, and culture at the same time.
+**Ignatius of Loyola (1491ΓÇô1556)** founded the **Jesuits**, a religious order deeply involved in education, discipline, and missionary activity. Loyola matters because the Catholic response was not only defensive. It was also energetic, organized, and pedagogical. This is one reason the section belongs in a humanities course: it shows how institutions try to shape minds, souls, and culture at the same time.
 
 **CLEP Keys**
 - **Council of Trent** = major Catholic response point
@@ -1935,13 +1935,13 @@ The **Council of Trent (1545–1563)** was a major Catholic council that respond
 ---
 
 ## Add-On 5.4
-**Belongs in:** Section 5 → Block 5) Textbook Content → Insert after `H3 — Pontormo as evidence` and `H3 — Parmigianino as evidence`  
+**Belongs in:** Section 5 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H3 ΓÇö Pontormo as evidence` and `H3 ΓÇö Parmigianino as evidence`  
 **Why this add-on is needed:**  
 The Mannerist artists need more explanation.
 
-### Supplemental Add-On — Pontormo and Parmigianino
-**Pontormo (1494–1557)** is a strong Mannerist clue because his figures often appear emotionally unsettled, elongated, and spatially uncertain.  
-**Parmigianino (1503–1540)** is a classic exam anchor because of works like **Madonna with the Long Neck**, where proportion is intentionally stretched. That work is useful because students can instantly see that they are no longer in the world of calm classical balance.
+### Supplemental Add-On ΓÇö Pontormo and Parmigianino
+**Pontormo (1494ΓÇô1557)** is a strong Mannerist clue because his figures often appear emotionally unsettled, elongated, and spatially uncertain.  
+**Parmigianino (1503ΓÇô1540)** is a classic exam anchor because of works like **Madonna with the Long Neck**, where proportion is intentionally stretched. That work is useful because students can instantly see that they are no longer in the world of calm classical balance.
 
 When students study Mannerist art, they should ask:
 - Are the bodies unusually long?
@@ -1957,12 +1957,12 @@ When students study Mannerist art, they should ask:
 ---
 
 ## Add-On 5.5
-**Belongs in:** Section 5 → Block 5) Textbook Content → Insert after `H2 — Major works and visual/literary clues`  
+**Belongs in:** Section 5 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Major works and visual/literary clues`  
 **Why this add-on is needed:**  
 Music and religious persuasion need stronger visibility.
 
-### Supplemental Add-On — Why Palestrina belongs here
-**Giovanni Pierluigi da Palestrina (c. 1525–1594)** is an important music clue for Catholic reform culture. His music matters because it shows that the Counter-Reformation is not only about painting and church councils. It is also about sound, worship, clarity, devotion, and the shaping of sacred experience.
+### Supplemental Add-On ΓÇö Why Palestrina belongs here
+**Giovanni Pierluigi da Palestrina (c. 1525ΓÇô1594)** is an important music clue for Catholic reform culture. His music matters because it shows that the Counter-Reformation is not only about painting and church councils. It is also about sound, worship, clarity, devotion, and the shaping of sacred experience.
 
 Students do not need advanced music theory here. They need the basic recognition point: **Palestrina = Catholic sacred music clue** in the later Renaissance / Counter-Reformation setting.
 
@@ -1973,11 +1973,11 @@ Students do not need advanced music theory here. They need the basic recognition
 ---
 
 ## Add-On 5.6
-**Belongs in:** Section 5 → Block 6) Canonical Works and Terms → Insert after `Key Terms`  
+**Belongs in:** Section 5 ΓåÆ Block 6) Canonical Works and Terms ΓåÆ Insert after `Key Terms`  
 **Why this add-on is needed:**  
 A few terms need simpler definitions.
 
-### Supplemental Add-On — Beginner-friendly vocabulary layer
+### Supplemental Add-On ΓÇö Beginner-friendly vocabulary layer
 - **Artifice**: a consciously made, highly controlled style rather than a natural-looking one  
 - **Elongation**: making a body or shape longer than expected  
 - **Instability**: a feeling of imbalance or tension  
@@ -2013,16 +2013,16 @@ renaissance.s5.key_mannerist_artists_and_works	Identify major Mannerist figures 
 renaissance.s5.bridge_toward_early_modern_instability	Explain why this section marks transition toward a more fractured early modern world.
 
 5) Textbook Content
-H1 — Entering Counter-Reformation and Mannerism
+H1 ΓÇö Entering Counter-Reformation and Mannerism
 This section cannot begin inside its own topic. It must first pay its transition debt. What came before this section was religious fracture caused by the Reformation. That matters because students are not satisfied by a sentence such as 'Counter-Reformation and Mannerism happened next.' They need a causal bridge. In Chapter 3, the real question is What does culture look like when High Renaissance balance no longer feels sufficient?
 
 CLEP Keys
-- Period clue: ca. 1545–1600
+- Period clue: ca. 1545ΓÇô1600
 - Place clue: Italy, Spain, wider Catholic Europe
 - Core term: Counter-Reformation and Mannerism
 - What CLEP is likely testing here: names, works, terms, style clues, and the transition from the previous section.
 
-H2 — Where this happens and why place matters
+H2 ΓÇö Where this happens and why place matters
 Italy, Spain, wider Catholic Europe is not just a backdrop. On CLEP, place is often the fastest way to organize evidence. When students know where an event, artwork, school, or intellectual movement is happening, they can sort it by patronage, politics, media, and style. This is why the section states its place early rather than hiding it in a side note. The location helps explain why particular people matter, why certain materials or institutions dominate, and why the works of the period look or sound the way they do.
 
 CLEP Keys
@@ -2030,7 +2030,7 @@ CLEP Keys
 - Recognition strategy: attach each major figure to a place as well as to a work.
 - Fast exam clue: if the geography changes, the style logic often changes too.
 
-H2 — Defining the core term
+H2 ΓÇö Defining the core term
 The term 'Counter-Reformation and Mannerism' must be taught before it is used. In this section, the term does not function as a slogan. It is the label for a precise cultural shift with identifiable institutions, forms, and habits of thought. Students who define the term loosely will struggle on style-recognition and comparison questions. Students who define it concretely can sort questions under time pressure.
 
 CLEP Keys
@@ -2038,26 +2038,26 @@ CLEP Keys
 - Be able to say what it is and what it is not.
 - Tie the term to at least two people, two works, and one style marker.
 
-H2 — The historical tension
+H2 ΓÇö The historical tension
 The central problem of this section is: What does culture look like when High Renaissance balance no longer feels sufficient? A good humanities section does not merely list artifacts. It shows why those artifacts exist. The people and works in this section are evidence that a larger change is underway. Once students can state the section's problem clearly, the names stop feeling random and begin to function as proof.
 
 CLEP Keys
 - If you can name the tension, you can answer compare/contrast questions faster.
 - Many exam items ask indirectly: what shift does this description point to?
 
-H3 — Council of Trent as evidence
+H3 ΓÇö Council of Trent as evidence
 Council of Trent matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Council of Trent should be tied directly to the shift in Counter-Reformation and Mannerism and to one or more of the section's recognition anchors: Madonna with the Long Neck, Deposition (Pontormo), Last Supper (Tintoretto).
 
-H3 — Ignatius of Loyola as evidence
+H3 ΓÇö Ignatius of Loyola as evidence
 Ignatius of Loyola matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Ignatius of Loyola should be tied directly to the shift in Counter-Reformation and Mannerism and to one or more of the section's recognition anchors: Madonna with the Long Neck, Deposition (Pontormo), Last Supper (Tintoretto).
 
-H3 — Pontormo as evidence
+H3 ΓÇö Pontormo as evidence
 Pontormo matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Pontormo should be tied directly to the shift in Counter-Reformation and Mannerism and to one or more of the section's recognition anchors: Madonna with the Long Neck, Deposition (Pontormo), Last Supper (Tintoretto).
 
-H3 — Parmigianino as evidence
+H3 ΓÇö Parmigianino as evidence
 Parmigianino matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Parmigianino should be tied directly to the shift in Counter-Reformation and Mannerism and to one or more of the section's recognition anchors: Madonna with the Long Neck, Deposition (Pontormo), Last Supper (Tintoretto).
 
-H2 — Major works and visual/literary clues
+H2 ΓÇö Major works and visual/literary clues
 The works attached to this section must be learned as recognition systems, not as isolated museum labels. Madonna with the Long Neck, Deposition (Pontormo), Last Supper (Tintoretto), Burial of the Count of Orgaz, Spiritual Exercises are high-yield because they can be used to test medium, style, patronage, theme, period, and creator. The right study move is to learn each work as a cluster: title, creator, place, style clue, and why CLEP would care.
 
 CLEP Keys
@@ -2065,7 +2065,7 @@ CLEP Keys
 - Style clues to know: Counter-Reformation, Council of Trent, Mannerism, elongation, artifice
 - Typical question frame: Which work, artist, or movement best matches this description?
 
-H2 — Why this section leads to the next one
+H2 ΓÇö Why this section leads to the next one
 By the end of the section, the learner should be able to say why the next section becomes necessary. The chapter cannot feel stitched together; it must feel argued. This section resolves its own question and then raises the next one that Chapter 3 must answer. That is why the closing move of this section should naturally point forward rather than merely stop.
 
 CLEP Keys
@@ -2074,42 +2074,42 @@ CLEP Keys
 
 6) Canonical Works and Terms
 Key Terms
-- **Counter-Reformation** — Catholic response to Protestant reform involving institutional, doctrinal, educational, and artistic action.
-- **Council of Trent** — Catholic council that defined reform policies and doctrinal positions in the mid-sixteenth century.
-- **Mannerism** — late Renaissance style marked by artifice, distortion, elongation, and instability.
-- **elongation** — deliberate stretching of bodies or forms.
-- **artifice** — self-conscious stylization rather than natural simplicity.
-- **instability** — formal tension, imbalance, or restless composition.
-- **clarity** — emphasis on intelligible subject matter, especially in religious art after reform.
-- **devotional persuasion** — use of art to teach, move, and orient worshippers.
-- **Jesuits** — religious order founded by Ignatius of Loyola and important in Catholic reform.
-- **chromatic tension** — emotionally charged use of color contrast and intensity.
+- **Counter-Reformation** ΓÇö Catholic response to Protestant reform involving institutional, doctrinal, educational, and artistic action.
+- **Council of Trent** ΓÇö Catholic council that defined reform policies and doctrinal positions in the mid-sixteenth century.
+- **Mannerism** ΓÇö late Renaissance style marked by artifice, distortion, elongation, and instability.
+- **elongation** ΓÇö deliberate stretching of bodies or forms.
+- **artifice** ΓÇö self-conscious stylization rather than natural simplicity.
+- **instability** ΓÇö formal tension, imbalance, or restless composition.
+- **clarity** ΓÇö emphasis on intelligible subject matter, especially in religious art after reform.
+- **devotional persuasion** ΓÇö use of art to teach, move, and orient worshippers.
+- **Jesuits** ΓÇö religious order founded by Ignatius of Loyola and important in Catholic reform.
+- **chromatic tension** ΓÇö emotionally charged use of color contrast and intensity.
 
 Key People, Works, and Artifacts
-- **Council of Trent** — core CLEP anchor for this section.
-- **Ignatius of Loyola** — core CLEP anchor for this section.
-- **Pontormo** — core CLEP anchor for this section.
-- **Parmigianino** — core CLEP anchor for this section.
-- **Tintoretto** — core CLEP anchor for this section.
-- **El Greco** — core CLEP anchor for this section.
-- **Palestrina** — core CLEP anchor for this section.
-- **Madonna with the Long Neck** — major recognition work/text associated with this section.
-- **Deposition (Pontormo)** — major recognition work/text associated with this section.
-- **Last Supper (Tintoretto)** — major recognition work/text associated with this section.
-- **Burial of the Count of Orgaz** — major recognition work/text associated with this section.
-- **Spiritual Exercises** — major recognition work/text associated with this section.
-- **Missa Papae Marcelli** — major recognition work/text associated with this section.
+- **Council of Trent** ΓÇö core CLEP anchor for this section.
+- **Ignatius of Loyola** ΓÇö core CLEP anchor for this section.
+- **Pontormo** ΓÇö core CLEP anchor for this section.
+- **Parmigianino** ΓÇö core CLEP anchor for this section.
+- **Tintoretto** ΓÇö core CLEP anchor for this section.
+- **El Greco** ΓÇö core CLEP anchor for this section.
+- **Palestrina** ΓÇö core CLEP anchor for this section.
+- **Madonna with the Long Neck** ΓÇö major recognition work/text associated with this section.
+- **Deposition (Pontormo)** ΓÇö major recognition work/text associated with this section.
+- **Last Supper (Tintoretto)** ΓÇö major recognition work/text associated with this section.
+- **Burial of the Count of Orgaz** ΓÇö major recognition work/text associated with this section.
+- **Spiritual Exercises** ΓÇö major recognition work/text associated with this section.
+- **Missa Papae Marcelli** ΓÇö major recognition work/text associated with this section.
 
 7) Primary Source Excerpts
-- **Ignatius of Loyola** — 'Act as if everything depended on you; trust as if everything depended on God.'
-- **Council of Trent principle** — Art should instruct the faithful and avoid confusing excess.
-- **El Greco visual clue** — Elongated forms and charged color intensify devotion rather than classical calm.
+- **Ignatius of Loyola** ΓÇö 'Act as if everything depended on you; trust as if everything depended on God.'
+- **Council of Trent principle** ΓÇö Art should instruct the faithful and avoid confusing excess.
+- **El Greco visual clue** ΓÇö Elongated forms and charged color intensify devotion rather than classical calm.
 
 8) Timeline Anchors
-- 1545–1563 — Council of Trent meets and shapes Catholic response
-- 1540s–1550s — Jesuit influence expands
-- 1530s–1570s — Pontormo and Parmigianino define key Mannerist tendencies
-- 1560s–1590s — Tintoretto and El Greco intensify late-century devotional drama
+- 1545ΓÇô1563 ΓÇö Council of Trent meets and shapes Catholic response
+- 1540sΓÇô1550s ΓÇö Jesuit influence expands
+- 1530sΓÇô1570s ΓÇö Pontormo and Parmigianino define key Mannerist tendencies
+- 1560sΓÇô1590s ΓÇö Tintoretto and El Greco intensify late-century devotional drama
 
 9) Exam Hot Zones
 - Counter-Reformation definition
@@ -2191,47 +2191,47 @@ Key People, Works, and Artifacts
 (E) epic from lyric
 
 11) Answer Key with Explanations
-1. B — The correct answer is B. the Catholic response to Protestant reform best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+1. B ΓÇö The correct answer is B. the Catholic response to Protestant reform best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-2. B — The correct answer is B. Mannerism best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+2. B ΓÇö The correct answer is B. Mannerism best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-3. B — The correct answer is B. Madonna with the Long Neck best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+3. B ΓÇö The correct answer is B. Madonna with the Long Neck best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-4. B — The correct answer is B. Catholic reform and clearer devotional standards best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+4. B ΓÇö The correct answer is B. Catholic reform and clearer devotional standards best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-5. A — The correct answer is A. the Jesuits best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+5. A ΓÇö The correct answer is A. the Jesuits best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-6. B — The correct answer is B. elongated figures and unstable space best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+6. B ΓÇö The correct answer is B. elongated figures and unstable space best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-7. B — The correct answer is B. He is a music recognition anchor for Catholic sacred culture best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+7. B ΓÇö The correct answer is B. He is a music recognition anchor for Catholic sacred culture best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-8. A — The correct answer is A. devotional persuasion and clarity best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+8. A ΓÇö The correct answer is A. devotional persuasion and clarity best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-9. A — The correct answer is A. Parmigianino best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+9. A ΓÇö The correct answer is A. Parmigianino best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-10. B — The correct answer is B. late Renaissance pressure from earlier High Renaissance balance best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+10. B ΓÇö The correct answer is B. late Renaissance pressure from earlier High Renaissance balance best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
 12) Flashcards
-Core 1. Counter-Reformation → identify its section function, period clue, and one exam association.
-Core 2. Council of Trent → identify its section function, period clue, and one exam association.
-Core 3. Mannerism → identify its section function, period clue, and one exam association.
-Core 4. elongation → identify its section function, period clue, and one exam association.
-Core 5. artifice → identify its section function, period clue, and one exam association.
-Core 6. Council of Trent → identify its section function, period clue, and one exam association.
-Core 7. Ignatius of Loyola → identify its section function, period clue, and one exam association.
-Core 8. Pontormo → identify its section function, period clue, and one exam association.
-Core 9. Madonna with the Long Neck → identify its section function, period clue, and one exam association.
-Core 10. Deposition (Pontormo) → identify its section function, period clue, and one exam association.
-Extra 1. instability → define it, place it, and contrast it with one near-confuser.
-Extra 2. clarity → define it, place it, and contrast it with one near-confuser.
-Extra 3. devotional persuasion → define it, place it, and contrast it with one near-confuser.
-Extra 4. Jesuits → define it, place it, and contrast it with one near-confuser.
-Extra 5. chromatic tension → define it, place it, and contrast it with one near-confuser.
-Extra 6. Parmigianino → define it, place it, and contrast it with one near-confuser.
-Extra 7. Tintoretto → define it, place it, and contrast it with one near-confuser.
-Extra 8. El Greco → define it, place it, and contrast it with one near-confuser.
-Extra 9. Last Supper (Tintoretto) → define it, place it, and contrast it with one near-confuser.
-Extra 10. Burial of the Count of Orgaz → define it, place it, and contrast it with one near-confuser.
+Core 1. Counter-Reformation ΓåÆ identify its section function, period clue, and one exam association.
+Core 2. Council of Trent ΓåÆ identify its section function, period clue, and one exam association.
+Core 3. Mannerism ΓåÆ identify its section function, period clue, and one exam association.
+Core 4. elongation ΓåÆ identify its section function, period clue, and one exam association.
+Core 5. artifice ΓåÆ identify its section function, period clue, and one exam association.
+Core 6. Council of Trent ΓåÆ identify its section function, period clue, and one exam association.
+Core 7. Ignatius of Loyola ΓåÆ identify its section function, period clue, and one exam association.
+Core 8. Pontormo ΓåÆ identify its section function, period clue, and one exam association.
+Core 9. Madonna with the Long Neck ΓåÆ identify its section function, period clue, and one exam association.
+Core 10. Deposition (Pontormo) ΓåÆ identify its section function, period clue, and one exam association.
+Extra 1. instability ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 2. clarity ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 3. devotional persuasion ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 4. Jesuits ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 5. chromatic tension ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 6. Parmigianino ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 7. Tintoretto ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 8. El Greco ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 9. Last Supper (Tintoretto) ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 10. Burial of the Count of Orgaz ΓåÆ define it, place it, and contrast it with one near-confuser.
 
 13) 10 Later Test Questions
 1. Why is it misleading to define the Counter-Reformation as doctrine alone?
@@ -2246,17 +2246,17 @@ Extra 10. Burial of the Count of Orgaz → define it, place it, and contrast it 
 10. How does this section respond directly to the Reformation?
 
 14) Link Images That Help
-- Madonna with the Long Neck — Look for elongation and unstable proportion. Link: https://en.wikipedia.org/wiki/Madonna_with_the_Long_Neck
-- Pontormo, Deposition — Useful for color tension and anti-classical balance. Link: https://en.wikipedia.org/wiki/Deposition_from_the_Cross_(Pontormo)
-- Tintoretto overview — Study charged movement and late Renaissance religious drama. Link: https://en.wikipedia.org/wiki/Tintoretto
-- Burial of the Count of Orgaz — Use to see El Greco's spiritual intensity and elongation. Link: https://en.wikipedia.org/wiki/The_Burial_of_the_Count_of_Orgaz
-- Ignatius of Loyola — Connect Catholic reform to new religious energy. Link: https://en.wikipedia.org/wiki/Ignatius_of_Loyola
-- Council of Trent — Anchor the institutional side of Counter-Reformation culture. Link: https://en.wikipedia.org/wiki/Council_of_Trent
+- Madonna with the Long Neck ΓÇö Look for elongation and unstable proportion. Link: https://en.wikipedia.org/wiki/Madonna_with_the_Long_Neck
+- Pontormo, Deposition ΓÇö Useful for color tension and anti-classical balance. Link: https://en.wikipedia.org/wiki/Deposition_from_the_Cross_(Pontormo)
+- Tintoretto overview ΓÇö Study charged movement and late Renaissance religious drama. Link: https://en.wikipedia.org/wiki/Tintoretto
+- Burial of the Count of Orgaz ΓÇö Use to see El Greco's spiritual intensity and elongation. Link: https://en.wikipedia.org/wiki/The_Burial_of_the_Count_of_Orgaz
+- Ignatius of Loyola ΓÇö Connect Catholic reform to new religious energy. Link: https://en.wikipedia.org/wiki/Ignatius_of_Loyola
+- Council of Trent ΓÇö Anchor the institutional side of Counter-Reformation culture. Link: https://en.wikipedia.org/wiki/Council_of_Trent
 
 15) Link Videos to Embed
-- YouTube search — Mannerism overview — Watch-for: Watch for elongation, artificiality, and instability after High Renaissance calm. Link: https://www.youtube.com/results?search_query=Smarthistory+Mannerism+overview
-- YouTube search — Madonna with the Long Neck — Watch-for: Watch for distorted proportion and purposeful elegance. Link: https://www.youtube.com/results?search_query=Smarthistory+Madonna+with+the+Long+Neck
-- YouTube search — Counter-Reformation art overview — Watch-for: Watch for why Catholic reform changes what art is expected to do. Link: https://www.youtube.com/results?search_query=Counter+Reformation+art+overview
+- YouTube search ΓÇö Mannerism overview ΓÇö Watch-for: Watch for elongation, artificiality, and instability after High Renaissance calm. Link: https://www.youtube.com/results?search_query=Smarthistory+Mannerism+overview
+- YouTube search ΓÇö Madonna with the Long Neck ΓÇö Watch-for: Watch for distorted proportion and purposeful elegance. Link: https://www.youtube.com/results?search_query=Smarthistory+Madonna+with+the+Long+Neck
+- YouTube search ΓÇö Counter-Reformation art overview ΓÇö Watch-for: Watch for why Catholic reform changes what art is expected to do. Link: https://www.youtube.com/results?search_query=Counter+Reformation+art+overview
 
 16) References
 - Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, Chapter 22.
@@ -2289,49 +2289,49 @@ For CLEP purposes, this section is high value because the Humanities exam reward
 The section's central claim is this: The Renaissance does not end in calm completion; it opens into a larger and less stable world shaped by global contact, political identity, literary performance, and contested self-understanding. That claim must stay visible all the way through the lesson, the CLEP keys, the quiz logic, and the flashcards.
 
 2) Big Ideas
-Big Idea 1 — Encounter changes self-understanding
+Big Idea 1 ΓÇö Encounter changes self-understanding
 
 Cross-cultural contact changes how Europeans map the world, imagine power, and represent difference. Encounter is therefore a humanities issue because it affects narrative, image, political thought, and identity.
 
 Students often think exploration belongs to geography rather than humanities. The correction is that encounter changes representation and worldview.
 
-Big Idea 2 — Expansion and domination are linked
+Big Idea 2 ΓÇö Expansion and domination are linked
 
 Expansion is not only curiosity or travel; it is tied to trade, conquest, slavery, missionary activity, and imperial rivalry. Cultural products from the period often reveal both fascination and hierarchy.
 
 Students often hear 'Age of Discovery' in sanitized form. CLEP study should use clearer language: expansion reshapes power as well as knowledge.
 
-Big Idea 3 — Political thought hardens
+Big Idea 3 ΓÇö Political thought hardens
 
 Machiavelli is a central clue because he treats power with a sharper realism than earlier moralized political writing. This makes him a useful bridge between civic humanism and emerging statecraft.
 
 Students often reduce Machiavelli to cynicism. The more accurate point is political realism under unstable conditions.
 
-Big Idea 4 — The courtier ideal matters
+Big Idea 4 ΓÇö The courtier ideal matters
 
 Castiglione gives the Renaissance social self a script: grace, cultivated speech, controlled display, and service at court. The ideal courtier belongs to the wider culture of status, education, and political performance.
 
 Students often miss prose works because painting dominates memory. On CLEP, political and courtly prose can be high-yield nonfiction/philosophy material.
 
-Big Idea 5 — Tudor England synthesizes multiple forces
+Big Idea 5 ΓÇö Tudor England synthesizes multiple forces
 
 Under the Tudors, England absorbs Renaissance learning, Protestant change, monarchy, court culture, and public performance. That is why Tudor England closes the chapter so well.
 
 Students often imagine Shakespeare appears in isolation. He actually belongs to a dense political and theatrical environment.
 
-Big Idea 6 — Shakespeare and Cervantes mark a late Renaissance literary climax
+Big Idea 6 ΓÇö Shakespeare and Cervantes mark a late Renaissance literary climax
 
 These writers show a culture capable of immense verbal complexity, self-awareness, irony, and experimentation. Their works are not side notes; they are among the chapter's strongest literature anchors.
 
 Students often memorize titles without situating them historically. Context makes recognition and interpretation easier.
 
 ## Add-On 6.1
-**Belongs in:** Section 6 → Block 5) Textbook Content → Insert after `H1 — Entering Encounter, Expansion, and Tudor England`  
+**Belongs in:** Section 6 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H1 ΓÇö Entering Encounter, Expansion, and Tudor England`  
 **Why this add-on is needed:**  
 Students need the bridge from earlier sections into global contact and Tudor culture.
 
-### Supplemental Add-On — Why this is the last section of Chapter 3
-This section closes Chapter 3 because the Renaissance does not end as a neat package. It opens outward. Europe’s contact with Africa, Asia, and the Americas widens horizons, changes trade, complicates identity, and raises new questions about power and representation. At the same time, **Tudor England** becomes a place where Renaissance learning, religious change, monarchy, and theater all converge.
+### Supplemental Add-On ΓÇö Why this is the last section of Chapter 3
+This section closes Chapter 3 because the Renaissance does not end as a neat package. It opens outward. EuropeΓÇÖs contact with Africa, Asia, and the Americas widens horizons, changes trade, complicates identity, and raises new questions about power and representation. At the same time, **Tudor England** becomes a place where Renaissance learning, religious change, monarchy, and theater all converge.
 
 That is why this section is not random. It takes the Renaissance out of the studio and courtly city and places it in a wider, more unstable world.
 
@@ -2343,29 +2343,29 @@ That is why this section is not random. It takes the Renaissance out of the stud
 ---
 
 ## Add-On 6.2
-**Belongs in:** Section 6 → Block 5) Textbook Content → Insert after `H2 — Where this happens and why place matters`  
+**Belongs in:** Section 6 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Where this happens and why place matters`  
 **Why this add-on is needed:**  
 Students may not know who the Tudors were or where they fit.
 
-### Supplemental Add-On — What Tudor and Elizabethan mean
-The **Tudors** were the ruling dynasty in England from 1485 to 1603. When a text says **Tudor England**, it means England under rulers such as **Henry VIII** and **Elizabeth I**. When a text says **Elizabethan**, it refers especially to the reign of **Elizabeth I (1558–1603)**, a period strongly associated with theater, poetry, court culture, and the consolidation of English identity.
+### Supplemental Add-On ΓÇö What Tudor and Elizabethan mean
+The **Tudors** were the ruling dynasty in England from 1485 to 1603. When a text says **Tudor England**, it means England under rulers such as **Henry VIII** and **Elizabeth I**. When a text says **Elizabethan**, it refers especially to the reign of **Elizabeth I (1558ΓÇô1603)**, a period strongly associated with theater, poetry, court culture, and the consolidation of English identity.
 
 This matters because names like Shakespeare, Sidney, Spenser, and Marlowe do not float in empty space. They belong to a political and cultural world shaped by monarchy, religion, patronage, and public performance.
 
 **CLEP Keys**
-- **Tudor** = English dynasty, 1485–1603
+- **Tudor** = English dynasty, 1485ΓÇô1603
 - **Elizabethan** = especially the reign of Elizabeth I
-- Exam use: Shakespeare’s context
+- Exam use: ShakespeareΓÇÖs context
 
 ---
 
 ## Add-On 6.3
-**Belongs in:** Section 6 → Block 5) Textbook Content → Insert after `H2 — Defining the core term`  
+**Belongs in:** Section 6 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Defining the core term`  
 **Why this add-on is needed:**  
 Encounter and expansion need clearer humanities framing.
 
-### Supplemental Add-On — Why encounter is a humanities topic
-A student might think “encounter” belongs only in political history. But in humanities, **encounter** matters because it changes how people imagine the world, describe other cultures, justify power, and represent themselves. New contact produces new maps, new stories, new fears, new fantasies, and new political arguments.
+### Supplemental Add-On ΓÇö Why encounter is a humanities topic
+A student might think ΓÇ£encounterΓÇ¥ belongs only in political history. But in humanities, **encounter** matters because it changes how people imagine the world, describe other cultures, justify power, and represent themselves. New contact produces new maps, new stories, new fears, new fantasies, and new political arguments.
 
 That is why this section belongs at the end of the Renaissance chapter. A changing world changes literature and thought. A widened horizon changes what counts as civilized, foreign, admirable, dangerous, or possible.
 
@@ -2377,18 +2377,18 @@ That is why this section belongs at the end of the Renaissance chapter. A changi
 ---
 
 ## Add-On 6.4
-**Belongs in:** Section 6 → Block 5) Textbook Content → Insert after all four H3 subsections (`Machiavelli`, `Castiglione`, `Cervantes`, `Shakespeare`)  
+**Belongs in:** Section 6 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after all four H3 subsections (`Machiavelli`, `Castiglione`, `Cervantes`, `Shakespeare`)  
 **Why this add-on is needed:**  
 These names need clearer life-function explanation.
 
-### Supplemental Add-On — The major literary/political anchors in plain language
-**Niccolò Machiavelli (1469–1527)** was a Florentine diplomat and political thinker whose **The Prince** became a major text in the history of political realism. He matters because he asks how power actually works, not how it ought to work in ideal moral stories.
+### Supplemental Add-On ΓÇö The major literary/political anchors in plain language
+**Niccol├▓ Machiavelli (1469ΓÇô1527)** was a Florentine diplomat and political thinker whose **The Prince** became a major text in the history of political realism. He matters because he asks how power actually works, not how it ought to work in ideal moral stories.
 
-**Baldassare Castiglione (1478–1529)** wrote **The Book of the Courtier**, a famous guide to the ideal courtly person. He matters because he shows Renaissance social ideals in elite culture.
+**Baldassare Castiglione (1478ΓÇô1529)** wrote **The Book of the Courtier**, a famous guide to the ideal courtly person. He matters because he shows Renaissance social ideals in elite culture.
 
-**Miguel de Cervantes (1547–1616)** wrote **Don Quixote**, a major Spanish literary work often described as foundational to the modern novel. He matters because his writing reflects a self-aware, complicated literary culture at the edge of the Renaissance world.
+**Miguel de Cervantes (1547ΓÇô1616)** wrote **Don Quixote**, a major Spanish literary work often described as foundational to the modern novel. He matters because his writing reflects a self-aware, complicated literary culture at the edge of the Renaissance world.
 
-**William Shakespeare (1564–1616)** was an English playwright and poet whose works became central to Elizabethan and Jacobean theater. He matters because he turns language, politics, love, power, and tragedy into a public art form of extraordinary range.
+**William Shakespeare (1564ΓÇô1616)** was an English playwright and poet whose works became central to Elizabethan and Jacobean theater. He matters because he turns language, politics, love, power, and tragedy into a public art form of extraordinary range.
 
 **CLEP Keys**
 - **Machiavelli** = **The Prince**, political realism
@@ -2399,18 +2399,18 @@ These names need clearer life-function explanation.
 ---
 
 ## Add-On 6.5
-**Belongs in:** Section 6 → Block 5) Textbook Content → Insert after `H2 — Major works and visual/literary clues`  
+**Belongs in:** Section 6 ΓåÆ Block 5) Textbook Content ΓåÆ Insert after `H2 ΓÇö Major works and visual/literary clues`  
 **Why this add-on is needed:**  
 Students need work-by-work anchors.
 
-### Supplemental Add-On — Work-by-work recognition guide for Section 6
+### Supplemental Add-On ΓÇö Work-by-work recognition guide for Section 6
 **The Prince**: associated with Machiavelli; a key political realism text  
 **The Book of the Courtier**: associated with Castiglione; ideal court behavior and social polish  
 **Don Quixote**: associated with Cervantes; satire, self-awareness, and literary transition  
 **Hamlet**: Shakespearean tragedy focused on hesitation, revenge, and inward thought  
 **Macbeth**: Shakespearean tragedy focused on ambition, power, and guilt  
 **Othello**: Shakespearean tragedy dealing with jealousy, manipulation, and trust  
-**A Midsummer Night’s Dream**: Shakespearean comedy; useful for genre recognition  
+**A Midsummer NightΓÇÖs Dream**: Shakespearean comedy; useful for genre recognition  
 **The Faerie Queene**: associated with Edmund Spenser; major Elizabethan literary anchor
 
 **CLEP Keys**
@@ -2421,13 +2421,13 @@ Students need work-by-work anchors.
 ---
 
 ## Add-On 6.6
-**Belongs in:** Section 6 → Block 6) Canonical Works and Terms → Insert after `Key Terms`  
+**Belongs in:** Section 6 ΓåÆ Block 6) Canonical Works and Terms ΓåÆ Insert after `Key Terms`  
 **Why this add-on is needed:**  
 Some terms need plainer language.
 
-### Supplemental Add-On — Beginner-friendly vocabulary layer
+### Supplemental Add-On ΓÇö Beginner-friendly vocabulary layer
 - **Dynasty**: a ruling family line  
-- **Court culture**: the social and political world around a ruler’s court  
+- **Court culture**: the social and political world around a rulerΓÇÖs court  
 - **Genre**: a category of literature such as tragedy or comedy  
 - **Political realism**: thinking about power in practical rather than ideal terms  
 - **Monarchy**: government ruled by a king or queen  
@@ -2463,16 +2463,16 @@ renaissance.s6.shakespeare_in_context	Explain Shakespeare as part of a larger Tu
 renaissance.s6.chapter_three_closure	Explain why Chapter 3 ends with expansion, performance, and instability rather than calm completion.
 
 5) Textbook Content
-H1 — Entering Encounter, Expansion, and Tudor England
+H1 ΓÇö Entering Encounter, Expansion, and Tudor England
 This section cannot begin inside its own topic. It must first pay its transition debt. What came before this section was a Europe already fractured by reform and stylistic tension. That matters because students are not satisfied by a sentence such as 'Encounter, Expansion, and Tudor England happened next.' They need a causal bridge. In Chapter 3, the real question is What happens when Renaissance Europe moves beyond inherited geographic and cultural boundaries while England turns Renaissance, reform, monarchy, and performance into a powerful synthesis?
 
 CLEP Keys
-- Period clue: ca. 1490–1603
+- Period clue: ca. 1490ΓÇô1603
 - Place clue: Atlantic world, Europe, England under the Tudors
 - Core term: Encounter, expansion, Tudor / Elizabethan culture
 - What CLEP is likely testing here: names, works, terms, style clues, and the transition from the previous section.
 
-H2 — Where this happens and why place matters
+H2 ΓÇö Where this happens and why place matters
 Atlantic world, Europe, England under the Tudors is not just a backdrop. On CLEP, place is often the fastest way to organize evidence. When students know where an event, artwork, school, or intellectual movement is happening, they can sort it by patronage, politics, media, and style. This is why the section states its place early rather than hiding it in a side note. The location helps explain why particular people matter, why certain materials or institutions dominate, and why the works of the period look or sound the way they do.
 
 CLEP Keys
@@ -2480,7 +2480,7 @@ CLEP Keys
 - Recognition strategy: attach each major figure to a place as well as to a work.
 - Fast exam clue: if the geography changes, the style logic often changes too.
 
-H2 — Defining the core term
+H2 ΓÇö Defining the core term
 The term 'Encounter, expansion, Tudor / Elizabethan culture' must be taught before it is used. In this section, the term does not function as a slogan. It is the label for a precise cultural shift with identifiable institutions, forms, and habits of thought. Students who define the term loosely will struggle on style-recognition and comparison questions. Students who define it concretely can sort questions under time pressure.
 
 CLEP Keys
@@ -2488,26 +2488,26 @@ CLEP Keys
 - Be able to say what it is and what it is not.
 - Tie the term to at least two people, two works, and one style marker.
 
-H2 — The historical tension
+H2 ΓÇö The historical tension
 The central problem of this section is: What happens when Renaissance Europe moves beyond inherited geographic and cultural boundaries while England turns Renaissance, reform, monarchy, and performance into a powerful synthesis? A good humanities section does not merely list artifacts. It shows why those artifacts exist. The people and works in this section are evidence that a larger change is underway. Once students can state the section's problem clearly, the names stop feeling random and begin to function as proof.
 
 CLEP Keys
 - If you can name the tension, you can answer compare/contrast questions faster.
 - Many exam items ask indirectly: what shift does this description point to?
 
-H3 — Machiavelli as evidence
+H3 ΓÇö Machiavelli as evidence
 Machiavelli matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Machiavelli should be tied directly to the shift in Encounter, expansion, Tudor / Elizabethan culture and to one or more of the section's recognition anchors: The Prince, The Book of the Courtier, Don Quixote.
 
-H3 — Castiglione as evidence
+H3 ΓÇö Castiglione as evidence
 Castiglione matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Castiglione should be tied directly to the shift in Encounter, expansion, Tudor / Elizabethan culture and to one or more of the section's recognition anchors: The Prince, The Book of the Courtier, Don Quixote.
 
-H3 — Cervantes as evidence
+H3 ΓÇö Cervantes as evidence
 Cervantes matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Cervantes should be tied directly to the shift in Encounter, expansion, Tudor / Elizabethan culture and to one or more of the section's recognition anchors: The Prince, The Book of the Courtier, Don Quixote.
 
-H3 — Shakespeare as evidence
+H3 ΓÇö Shakespeare as evidence
 Shakespeare matters in this section because the figure helps make the section's central claim visible. A CLEP student should never carry a name without a function. The useful question is not only 'who is this?' but 'what change does this person help prove?' In this section, Shakespeare should be tied directly to the shift in Encounter, expansion, Tudor / Elizabethan culture and to one or more of the section's recognition anchors: The Prince, The Book of the Courtier, Don Quixote.
 
-H2 — Major works and visual/literary clues
+H2 ΓÇö Major works and visual/literary clues
 The works attached to this section must be learned as recognition systems, not as isolated museum labels. The Prince, The Book of the Courtier, Don Quixote, Hamlet, Macbeth are high-yield because they can be used to test medium, style, patronage, theme, period, and creator. The right study move is to learn each work as a cluster: title, creator, place, style clue, and why CLEP would care.
 
 CLEP Keys
@@ -2515,7 +2515,7 @@ CLEP Keys
 - Style clues to know: encounter, expansion, empire, Tudor, Elizabethan
 - Typical question frame: Which work, artist, or movement best matches this description?
 
-H2 — Why this section leads to the next one
+H2 ΓÇö Why this section leads to the next one
 By the end of the section, the learner should be able to say why the next section becomes necessary. The chapter cannot feel stitched together; it must feel argued. This section resolves its own question and then raises the next one that Chapter 3 must answer. That is why the closing move of this section should naturally point forward rather than merely stop.
 
 CLEP Keys
@@ -2524,47 +2524,47 @@ CLEP Keys
 
 6) Canonical Works and Terms
 Key Terms
-- **encounter** — cross-cultural contact with intellectual, political, and representational consequences.
-- **expansion** — widening reach of trade, travel, conquest, and empire.
-- **empire** — political power extending rule over other peoples or territories.
-- **Tudor** — relating to England under the Tudor dynasty.
-- **Elizabethan** — relating especially to the reign of Elizabeth I and its cultural world.
-- **public theater** — commercial or civic performance culture open to broader audiences.
-- **court culture** — ritualized social and political life centered on elite patronage and display.
-- **humanist courtier** — educated court figure shaped by rhetorical and behavioral ideals.
-- **political realism** — analysis of power in practical rather than idealized terms.
-- **global contact** — interaction among distant regions that alters exchange and worldview.
+- **encounter** ΓÇö cross-cultural contact with intellectual, political, and representational consequences.
+- **expansion** ΓÇö widening reach of trade, travel, conquest, and empire.
+- **empire** ΓÇö political power extending rule over other peoples or territories.
+- **Tudor** ΓÇö relating to England under the Tudor dynasty.
+- **Elizabethan** ΓÇö relating especially to the reign of Elizabeth I and its cultural world.
+- **public theater** ΓÇö commercial or civic performance culture open to broader audiences.
+- **court culture** ΓÇö ritualized social and political life centered on elite patronage and display.
+- **humanist courtier** ΓÇö educated court figure shaped by rhetorical and behavioral ideals.
+- **political realism** ΓÇö analysis of power in practical rather than idealized terms.
+- **global contact** ΓÇö interaction among distant regions that alters exchange and worldview.
 
 Key People, Works, and Artifacts
-- **Machiavelli** — core CLEP anchor for this section.
-- **Castiglione** — core CLEP anchor for this section.
-- **Cervantes** — core CLEP anchor for this section.
-- **Shakespeare** — core CLEP anchor for this section.
-- **Elizabeth I** — core CLEP anchor for this section.
-- **Sir Philip Sidney** — core CLEP anchor for this section.
-- **Edmund Spenser** — core CLEP anchor for this section.
-- **Marlowe** — core CLEP anchor for this section.
-- **The Prince** — major recognition work/text associated with this section.
-- **The Book of the Courtier** — major recognition work/text associated with this section.
-- **Don Quixote** — major recognition work/text associated with this section.
-- **Hamlet** — major recognition work/text associated with this section.
-- **Macbeth** — major recognition work/text associated with this section.
-- **Othello** — major recognition work/text associated with this section.
-- **A Midsummer Night's Dream** — major recognition work/text associated with this section.
-- **The Faerie Queene** — major recognition work/text associated with this section.
+- **Machiavelli** ΓÇö core CLEP anchor for this section.
+- **Castiglione** ΓÇö core CLEP anchor for this section.
+- **Cervantes** ΓÇö core CLEP anchor for this section.
+- **Shakespeare** ΓÇö core CLEP anchor for this section.
+- **Elizabeth I** ΓÇö core CLEP anchor for this section.
+- **Sir Philip Sidney** ΓÇö core CLEP anchor for this section.
+- **Edmund Spenser** ΓÇö core CLEP anchor for this section.
+- **Marlowe** ΓÇö core CLEP anchor for this section.
+- **The Prince** ΓÇö major recognition work/text associated with this section.
+- **The Book of the Courtier** ΓÇö major recognition work/text associated with this section.
+- **Don Quixote** ΓÇö major recognition work/text associated with this section.
+- **Hamlet** ΓÇö major recognition work/text associated with this section.
+- **Macbeth** ΓÇö major recognition work/text associated with this section.
+- **Othello** ΓÇö major recognition work/text associated with this section.
+- **A Midsummer Night's Dream** ΓÇö major recognition work/text associated with this section.
+- **The Faerie Queene** ΓÇö major recognition work/text associated with this section.
 
 7) Primary Source Excerpts
-- **Machiavelli** — 'It is much safer to be feared than loved, if one must choose.'
-- **Castiglione** — 'A certain nonchalance that conceals all artistry.'
-- **Shakespeare** — 'All the world's a stage.'
+- **Machiavelli** ΓÇö 'It is much safer to be feared than loved, if one must choose.'
+- **Castiglione** ΓÇö 'A certain nonchalance that conceals all artistry.'
+- **Shakespeare** ΓÇö 'All the world's a stage.'
 
 8) Timeline Anchors
-- 1492 onward — Atlantic and global contact intensify
-- 1513 — Machiavelli writes The Prince
-- 1528 — Castiglione's Book of the Courtier circulates widely
-- 1558–1603 — Elizabeth I's reign shapes English political and theatrical culture
-- late 1500s — Shakespeare's plays dominate the Elizabethan/Jacobean stage
-- 1605 — Don Quixote signals a new literary self-consciousness
+- 1492 onward ΓÇö Atlantic and global contact intensify
+- 1513 ΓÇö Machiavelli writes The Prince
+- 1528 ΓÇö Castiglione's Book of the Courtier circulates widely
+- 1558ΓÇô1603 ΓÇö Elizabeth I's reign shapes English political and theatrical culture
+- late 1500s ΓÇö Shakespeare's plays dominate the Elizabethan/Jacobean stage
+- 1605 ΓÇö Don Quixote signals a new literary self-consciousness
 
 9) Exam Hot Zones
 - encounter as humanities problem
@@ -2646,47 +2646,47 @@ Key People, Works, and Artifacts
 (E) only Venetian painting
 
 11) Answer Key with Explanations
-1. B — The correct answer is B. The Prince best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+1. B ΓÇö The correct answer is B. The Prince best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-2. A — The correct answer is A. The Book of the Courtier best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+2. A ΓÇö The correct answer is A. The Book of the Courtier best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-3. B — The correct answer is B. synthesizes Renaissance learning, reform, monarchy, and performance culture best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+3. B ΓÇö The correct answer is B. synthesizes Renaissance learning, reform, monarchy, and performance culture best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-4. B — The correct answer is B. Shakespeare best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+4. B ΓÇö The correct answer is B. Shakespeare best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-5. B — The correct answer is B. changes representation, worldview, and power relations best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+5. B ΓÇö The correct answer is B. changes representation, worldview, and power relations best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-6. B — The correct answer is B. Macbeth best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+6. B ΓÇö The correct answer is B. Macbeth best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-7. C — The correct answer is C. Cervantes best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+7. C ΓÇö The correct answer is C. Cervantes best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-8. A — The correct answer is A. public theater and court culture best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+8. A ΓÇö The correct answer is A. public theater and court culture best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-9. A — The correct answer is A. political realism best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+9. A ΓÇö The correct answer is A. political realism best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
-10. B — The correct answer is B. global contact, political performance, and literary complexity best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
+10. B ΓÇö The correct answer is B. global contact, political performance, and literary complexity best fits the section's core claim and CLEP recognition clues. The distractors are designed to confuse period, place, medium, or movement, so the safest strategy is to match the term or work to its exact section logic rather than to a vague memory.
 
 12) Flashcards
-Core 1. encounter → identify its section function, period clue, and one exam association.
-Core 2. expansion → identify its section function, period clue, and one exam association.
-Core 3. empire → identify its section function, period clue, and one exam association.
-Core 4. Tudor → identify its section function, period clue, and one exam association.
-Core 5. Elizabethan → identify its section function, period clue, and one exam association.
-Core 6. Machiavelli → identify its section function, period clue, and one exam association.
-Core 7. Castiglione → identify its section function, period clue, and one exam association.
-Core 8. Cervantes → identify its section function, period clue, and one exam association.
-Core 9. The Prince → identify its section function, period clue, and one exam association.
-Core 10. The Book of the Courtier → identify its section function, period clue, and one exam association.
-Extra 1. public theater → define it, place it, and contrast it with one near-confuser.
-Extra 2. court culture → define it, place it, and contrast it with one near-confuser.
-Extra 3. humanist courtier → define it, place it, and contrast it with one near-confuser.
-Extra 4. political realism → define it, place it, and contrast it with one near-confuser.
-Extra 5. global contact → define it, place it, and contrast it with one near-confuser.
-Extra 6. Shakespeare → define it, place it, and contrast it with one near-confuser.
-Extra 7. Elizabeth I → define it, place it, and contrast it with one near-confuser.
-Extra 8. Sir Philip Sidney → define it, place it, and contrast it with one near-confuser.
-Extra 9. Don Quixote → define it, place it, and contrast it with one near-confuser.
-Extra 10. Hamlet → define it, place it, and contrast it with one near-confuser.
+Core 1. encounter ΓåÆ identify its section function, period clue, and one exam association.
+Core 2. expansion ΓåÆ identify its section function, period clue, and one exam association.
+Core 3. empire ΓåÆ identify its section function, period clue, and one exam association.
+Core 4. Tudor ΓåÆ identify its section function, period clue, and one exam association.
+Core 5. Elizabethan ΓåÆ identify its section function, period clue, and one exam association.
+Core 6. Machiavelli ΓåÆ identify its section function, period clue, and one exam association.
+Core 7. Castiglione ΓåÆ identify its section function, period clue, and one exam association.
+Core 8. Cervantes ΓåÆ identify its section function, period clue, and one exam association.
+Core 9. The Prince ΓåÆ identify its section function, period clue, and one exam association.
+Core 10. The Book of the Courtier ΓåÆ identify its section function, period clue, and one exam association.
+Extra 1. public theater ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 2. court culture ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 3. humanist courtier ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 4. political realism ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 5. global contact ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 6. Shakespeare ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 7. Elizabeth I ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 8. Sir Philip Sidney ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 9. Don Quixote ΓåÆ define it, place it, and contrast it with one near-confuser.
+Extra 10. Hamlet ΓåÆ define it, place it, and contrast it with one near-confuser.
 
 13) 10 Later Test Questions
 1. Why is encounter a humanities issue rather than a geography-only issue?
@@ -2701,22 +2701,22 @@ Extra 10. Hamlet → define it, place it, and contrast it with one near-confuser
 10. Why does Chapter 3 end in instability rather than serenity?
 
 14) Link Images That Help
-- Elizabeth I — Anchor Tudor political image and court culture. Link: https://en.wikipedia.org/wiki/Elizabeth_I
-- The Prince — Use this for political realism and statecraft. Link: https://en.wikipedia.org/wiki/The_Prince
-- The Book of the Courtier — Study courtly self-fashioning and social performance. Link: https://en.wikipedia.org/wiki/The_Book_of_the_Courtier
-- Globe Theatre — Useful for public theater and Elizabethan performance culture. Link: https://en.wikipedia.org/wiki/Globe_Theatre
-- William Shakespeare — Tie the dramatist to Tudor/Elizabethan context, not isolation. Link: https://en.wikipedia.org/wiki/William_Shakespeare
-- Don Quixote — Use for late Renaissance literary self-consciousness. Link: https://en.wikipedia.org/wiki/Don_Quixote
-- Tudor period overview — Track monarchy, reform, and cultural synthesis. Link: https://en.wikipedia.org/wiki/Tudor_period
-- Machiavelli overview — Anchor encounter-era politics and realism. Link: https://en.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli
+- Elizabeth I ΓÇö Anchor Tudor political image and court culture. Link: https://en.wikipedia.org/wiki/Elizabeth_I
+- The Prince ΓÇö Use this for political realism and statecraft. Link: https://en.wikipedia.org/wiki/The_Prince
+- The Book of the Courtier ΓÇö Study courtly self-fashioning and social performance. Link: https://en.wikipedia.org/wiki/The_Book_of_the_Courtier
+- Globe Theatre ΓÇö Useful for public theater and Elizabethan performance culture. Link: https://en.wikipedia.org/wiki/Globe_Theatre
+- William Shakespeare ΓÇö Tie the dramatist to Tudor/Elizabethan context, not isolation. Link: https://en.wikipedia.org/wiki/William_Shakespeare
+- Don Quixote ΓÇö Use for late Renaissance literary self-consciousness. Link: https://en.wikipedia.org/wiki/Don_Quixote
+- Tudor period overview ΓÇö Track monarchy, reform, and cultural synthesis. Link: https://en.wikipedia.org/wiki/Tudor_period
+- Machiavelli overview ΓÇö Anchor encounter-era politics and realism. Link: https://en.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli
 
 15) Link Videos to Embed
-- YouTube search — Shakespeare and Elizabethan theater — Watch-for: Watch for public theater, court culture, and Tudor political context. Link: https://www.youtube.com/results?search_query=Shakespeare+Elizabethan+theater+overview
-- YouTube search — Machiavelli The Prince overview — Watch-for: Watch for political realism under unstable conditions. Link: https://www.youtube.com/results?search_query=Machiavelli+The+Prince+overview
-- YouTube search — Tudor England Renaissance overview — Watch-for: Watch for how monarchy, reform, and Renaissance learning converge. Link: https://www.youtube.com/results?search_query=Tudor+England+Renaissance+overview
+- YouTube search ΓÇö Shakespeare and Elizabethan theater ΓÇö Watch-for: Watch for public theater, court culture, and Tudor political context. Link: https://www.youtube.com/results?search_query=Shakespeare+Elizabethan+theater+overview
+- YouTube search ΓÇö Machiavelli The Prince overview ΓÇö Watch-for: Watch for political realism under unstable conditions. Link: https://www.youtube.com/results?search_query=Machiavelli+The+Prince+overview
+- YouTube search ΓÇö Tudor England Renaissance overview ΓÇö Watch-for: Watch for how monarchy, reform, and Renaissance learning converge. Link: https://www.youtube.com/results?search_query=Tudor+England+Renaissance+overview
 
 16) References
-- Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, Chapters 23–24.
+- Sayre, The Humanities: Culture, Continuity & Change, Volume I, Book 3, Chapters 23ΓÇô24.
 - Fiero, The Humanistic Tradition, Volume II, Book 3 / related Renaissance and Reformation chapters, used as reinforcement.
 - College Board, CLEP Humanities exam overview and fact sheet: approximately 140 questions in 90 minutes; 50% literature / 50% arts; 50/30/20 skill weighting; Medieval and Renaissance content fairly balanced with other periods.
 
@@ -2734,3 +2734,4 @@ Extra 10. Hamlet → define it, place it, and contrast it with one near-confuser
 - Cervantes is a core fiction anchor.
 - Chapter 3 ends in expansion and instability, not calm closure.
 - 1-line summary: The Renaissance does not end in calm completion; it opens into a larger and less stable world shaped by global contact, political identity, literary performance, and contested self-understanding.
+

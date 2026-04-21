@@ -1,0 +1,84 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "check-content-cleanup",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"check:content"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "check-content-cleanup",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"check:content"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "run-ch3-cleanup",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				"tools/content-admin/ch3_cleanup.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "run-ch3-cleanup",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				"tools/content-admin/ch3_cleanup.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "run-ch3-cleanup",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				"tools/content-admin/ch3_cleanup.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "check-content-cleanup",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"check:content"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "check-content-cleanup",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"check:content"
+			],
+			"isBackground": false
+		}
+	]
+}

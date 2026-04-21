@@ -53,6 +53,18 @@ export function ChapterOverview({
           Pick any section and continue into the section hub. Once a chapter is live, all of its sections are open and
           only the hard test stays gated inside each section.
         </p>
+        {chapter.notebookLmUrl ? (
+          <p className="mt-4">
+            <a
+              className="inline-flex text-sm font-semibold text-(--accent) underline-offset-4 hover:underline"
+              href={chapter.notebookLmUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Visit this chapter's NotebookLM for additional content
+            </a>
+          </p>
+        ) : null}
       </Card>
 
       <div className="space-y-4">

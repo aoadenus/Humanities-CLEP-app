@@ -209,6 +209,19 @@ CLEP Elimination Trick
 - If the clue is dome over square, choose pendentive over buttress/column distractors.
 - If the clue is vast Roman interior span, prioritize arch-concrete-vault logic.
 
+H2 — Supplemental Integration: Early Christian Space and Image Logic
+1. The Basilica Pivot: From Law Courts to Sacred Space
+The Christian adoption of the Roman basilica is a decisive architectural pivot from civic administration to liturgical procession. Nave, apse, transept, and narthex reframe a legal hall into a cruciform sacred route. This shows how early Christianity repurposed Roman gravitas to establish institutional legitimacy.
+
+1. Basics of Building: Nave, Apse, and Transept
+Nave is the long central congregational aisle, apse is the terminal sacred focus, and transept forms the cross-axis that creates cruciform layout.
+
+5. The Good Shepherd: Secret Visuals of the Catacombs
+Early Christian catacomb imagery used coded symbols such as the Good Shepherd, orant figures, and fish to communicate salvation and identity under conditions of vulnerability.
+
+9. Verism vs Idealism vs Soul-Directed Art
+Roman verism and Greek idealism both give way in early Christian practice to symbolic emphasis on the soul and salvation history over bodily perfection.
+
 6) Canonical Works and Terms
 Late Antiquity — The transitional era in which the classical Roman world gradually became the early medieval Christian world.
 Judaism — The monotheistic religious tradition foundational to Christianity and essential to the biblical world of the Middle Ages.
@@ -763,6 +776,19 @@ Key Takeaways Box
 - Defenders of icons connect images to the Incarnation.
 - Byzantine image theory is one of the most important topics in medieval art.
 
+H2 — Supplemental Integration: Byzantine Structure and Light
+II. The Pendentive Revolution: Suspended Heaven
+Byzantine engineers solved dome-on-square loading through pendentives, enabling the luminous interior of Hagia Sophia. This is both a structural and theological innovation.
+
+II. The Mosaic: Painting with Stone and Glass
+Byzantine mosaics use angled tesserae and gold-ground fields to create flickering sacred light and non-naturalistic spiritual presence.
+
+8. Golden Ground: Tesserae and Mosaics
+Tesserae are glass or stone cubes, often including gold leaf, set at varied angles so candlelight animates surfaces.
+
+6. The Theodora Mosaic: Empress of Light
+Theodora's San Vitale mosaic demonstrates Byzantine theocratic image politics through frontal hierarchy, gold background, and ceremonial symbolism.
+
 6) Canonical Works and Terms
 Byzantine Empire — The eastern continuation of the Roman Empire centered at Constantinople and shaped by Christianity.
 Constantinople — The capital of the Byzantine Empire and a major center of trade, court ritual, and sacred power.
@@ -1294,6 +1320,10 @@ Key Takeaways Box
 - Islamic Spain is important for architecture, scholarship, and cultural exchange.
 - Poetry and mysticism are major parts of Islamic civilization.
 - The humanities of Islam include text, ritual, architecture, and intellectual transmission.
+
+H2 — Supplemental Integration: Translation and Knowledge Networks
+III. The House of Wisdom: Islam as Librarian of the World
+The Abbasid translation movement in Baghdad preserved and expanded classical knowledge, transmitted Aristotle and mathematics, and shaped later Latin scholastic development.
 
 6) Canonical Works and Terms
 Muhammad — The Prophet of Islam through whom Muslims understand the Qur'an to have been revealed.
@@ -1838,6 +1868,34 @@ Key Takeaways Box
 - Castles display both defense and lordship.
 - Troubadour and courtly literature refine aristocratic ideals.
 - Romanesque culture includes devotion, warfare, and performance.
+
+H2 — Supplemental Integration: Feudal, Monastic, and Devotional Systems
+1. The Feudal Contract: Social Symphony of Survival
+Feudal structures organized mutual obligation through fief, vassalage, homage, and manor economy.
+
+7. Sutton Hoo and Barbarian Interlace
+Migration-era metalwork and interlace patterns represent portable prestige, protective symbolism, and stylistic DNA later integrated into manuscript illumination.
+
+3. Solmization of Sound: Guido d'Arezzo
+Staff notation and solmization converted music from memory-dependent oral flow to transmissible text-based system, enabling large-scale liturgical consistency.
+
+Monastic Scriptorium: Saving Culture on Parchment
+Benedictine scriptoria preserved scriptural and classical texts through manuscript labor, illumination, and script reforms such as Carolingian minuscule.
+
+Pilgrimage Road: Journey in Stone and Relics
+Romanesque architecture and relic cults shaped routes, economies, and devotional imagination through ambulatories, tympana, and pilgrimage churches.
+
+8. Gero Crucifix and the Birth of Human Suffering
+The Christus patiens image type intensifies affective piety by presenting Christ's bodily suffering with emotional immediacy.
+
+5. Interlace and Animal Style
+Dense knotwork and stylized animals encode protection, identity, and non-classical design logics in early medieval northern arts.
+
+6. Monophony vs Polyphony
+Monophonic chant gives way to polyphonic layering in Notre Dame practice, mirroring broader medieval increases in formal complexity.
+
+10. Holy Scraps: Relics and Reliquaries
+Relic devotion drove pilgrimage architecture, liturgical movement, and artisanal metalwork in medieval sacred economies.
 
 6) Canonical Works and Terms
 Feudalism — The broad pattern of medieval social and political relationships organized around land, service, and personal allegiance.
@@ -2395,6 +2453,37 @@ Key Takeaways Box
 - Thomas Aquinas is a key thinker of this tradition.
 - Medieval culture is both visual and intellectual in its search for coherence.
 
+H2 — Supplemental Integration: Gothic Structure, Literature, and Scholastic Method
+2. Troubadour Song: Birth of Romantic Language
+Troubadour and trobairitz lyric traditions formalized courtly love, vernacular poetics, and secular interiority.
+
+4. Arthurian Cycle: Mythology of Reborn Europe
+Arthurian narrative became transregional moral mythology encoding chivalry, courtly love, and Grail quest theology.
+
+IV. Theology of Light: Physics of the Gothic Spirit
+Pointed arch, rib vault, and flying buttress transfer load to exterior supports, opening walls for stained-glass programs and Lux Nova theology.
+
+3. Structural Trinity: Pointed Arch, Rib Vault, Flying Buttress
+These three innovations are core recognition markers distinguishing Gothic vertical transparency from Romanesque mass.
+
+7. Scholastic Bridge: Reasoning with the Divine
+Aquinas and scholastic method systematized dialectical reasoning within university institutions.
+
+7. Heavenly Math: Trivium and Quadrivium
+Medieval liberal arts divide language disciplines from numerical disciplines, framing music and astronomy as mathematical order studies.
+
+4. Language of the Soul: Vernacular and Allegory
+Vernacular writing broadens access, while allegory encodes layered moral and theological meaning.
+
+9. Rose Window: Geometry of Divine Light
+Rose windows translate cosmological hierarchy into radial color geometry and shifting liturgical illumination.
+
+3. Seven Liberal Arts: Blueprint of the Medieval Mind
+The Trivium and Quadrivium provided the foundational intellectual curriculum that linked scholastic order to architectural and musical proportional thinking.
+
+III. Flying Buttress: The Exoskeleton of God
+Externalized structural thrust management enabled unprecedented wall perforation and stained-glass expansion in Gothic cathedrals.
+
 6) Canonical Works and Terms
 Gothic — Medieval style associated with structural innovation, large windows, and new uses of light.
 Saint-Denis — Abbey church associated with the beginnings of Gothic architecture.
@@ -2945,6 +3034,25 @@ Key Takeaways Box
 - Guo Xi's landscape painting is a major non-European medieval art form.
 - Heian and later Japanese literary culture expands the period's literary map.
 - Great Zimbabwe is a major medieval African architectural site.
+
+H2 — Supplemental Integration: Late Medieval Transition and Global Connectivity
+8. Black Death: The Scythe That Changed Art
+Pandemic trauma altered visual and literary tone, intensified memento mori culture, and contributed to social-economic shifts feeding Renaissance human focus.
+
+9. Italian City: Crucible of the Modern Eye
+Guild wealth and civic competition in Italian city-states supported naturalistic experiment and public art tied to urban identity.
+
+2. Chiaroscuro and Naturalism
+Modeling through light-dark contrast gives figures volume and embodied presence, signaling transition from symbolic flatness toward observed space.
+
+5. Memento Mori in Medieval Culture
+Ars moriendi, danse macabre, and transi tombs reflect a mortality-centered devotional worldview that framed art as preparation for eternity.
+
+10. Global Medieval Beyond Europe
+Song China, Heian Japan, Mali/Timbuktu, Great Zimbabwe, and Mesoamerican traditions demonstrate simultaneous medieval high cultures beyond Latin Christendom.
+
+1. Silk Road Symphony: First Global Humanities Network
+Transregional exchange moved paper, mathematical ideas, religious thought, motifs, and literary forms across Afro-Eurasian circuits.
 
 6) Canonical Works and Terms
 Siena — Important late medieval Italian city associated with civic art and elegant Gothic painting.

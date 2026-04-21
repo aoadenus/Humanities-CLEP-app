@@ -381,6 +381,7 @@ export interface EditorialChapter {
   emoji: string;
   color: string;
   locked: boolean;
+  notebookLmUrl?: string;
   sections: EditorialSection[];
 }
 
